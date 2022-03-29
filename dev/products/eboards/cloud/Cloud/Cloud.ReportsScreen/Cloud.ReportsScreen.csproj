@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{07C8FF0B-0A17-4327-ADD2-97DF713C5D03}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cloud.ReportsScreen</RootNamespace>
+    <AssemblyName>Cloud.ReportsScreen</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cloud_RoundScores.cs" />
+    <Compile Include="Cloud_SummaryReportData.cs" />
+    <Compile Include="ChargebackReport.cs" />
+    <Compile Include="NetworkReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OperationsScoreCardReport.cs" />
+    <Compile Include="CpuUsageReport.cs" />
+    <Compile Include="NewServicesReport.cs" />
+    <Compile Include="BusinessScoreCardReport.cs" />
+    <Compile Include="ChartScreen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CloudToolsScreen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OpExReport.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\libraries\core\BaseUtils\BaseUtils.csproj">
+      <Project>{0ADD80D1-5E7E-46B1-BF36-1E57DCCF4D84}</Project>
+      <Name>BaseUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\core\CoreUtils\CoreUtils.csproj">
+      <Project>{9C61E4E5-78BC-4D27-B5B0-DFDCB8DC935E}</Project>
+      <Name>CoreUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\core\LibCore\LibCore.csproj">
+      <Project>{6D70195C-C791-4909-81FC-37DAA61C143D}</Project>
+      <Name>LibCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\core\Logging\Logging.csproj">
+      <Project>{4D8B9BD2-3BCC-4BD0-80C0-DF2744DB16EE}</Project>
+      <Name>Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\GameManagement\GameManagement.csproj">
+      <Project>{37599BB8-B493-4323-BA2D-BE2BD8FE4561}</Project>
+      <Name>GameManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\Network\Network.csproj">
+      <Project>{B7AC785C-E7CE-4A7D-99CE-604E0CBA231B}</Project>
+      <Name>Network</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\ReportBuilder\ReportBuilder.csproj">
+      <Project>{82B44D1D-F102-4199-9E32-562D3563070B}</Project>
+      <Name>ReportBuilder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\ChartScreens\ChartScreens.csproj">
+      <Project>{9BCEC677-B934-4082-B614-4E9A6565AA65}</Project>
+      <Name>ChartScreens</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\Charts\Charts.csproj">
+      <Project>{134455F1-DF66-410B-93BC-E19494ACFF46}</Project>
+      <Name>Charts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\CommonGUI\CommonGUI.csproj">
+      <Project>{35070F1C-CE4F-4DCA-86AC-9D6240882DE0}</Project>
+      <Name>CommonGUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\CoreScreens\CoreScreens.csproj">
+      <Project>{CF933AC2-17F2-4948-B16C-9FB4BE7E1765}</Project>
+      <Name>CoreScreens</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\GameDetails\GameDetails.csproj">
+      <Project>{8ACB73F6-8191-483F-90C5-6387E89E8EEA}</Project>
+      <Name>GameDetails</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\NetworkScreens\NetworkScreens.csproj">
+      <Project>{7002FFFF-B22B-480B-9C9B-A375EDE27DD4}</Project>
+      <Name>NetworkScreens</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\EboardUi\ResizingUi\ResizingUi.csproj">
+      <Project>{08fda587-8773-4b58-a8e0-7f7d5c8e4637}</Project>
+      <Name>ResizingUi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cloud.OpsEngine\Cloud.OpsEngine.csproj">
+      <Project>{045b8ae9-3b4e-4b62-b7cd-841a0ad0564a}</Project>
+      <Name>Cloud.OpsEngine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

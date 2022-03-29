@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D7715DE8-2C1A-4A78-99B5-C01E0799C06E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevOps.Application</RootNamespace>
+    <AssemblyName>DevOps.Application</AssemblyName>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NO_XND DEVTOOLS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug-With-No-Licensor|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug-With-No-Licensor\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NO_XND ENABLE_LICENCE_FREE_PLAY DEVTOOLS</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="MainApplication.cs" />
+    <Compile Include="MainGameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DebugWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.XML">
+      <Name>System.XML</Name>
+    </Reference>
+    <EmbeddedResource Include="MainGameForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainGameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DebugWindow.resx">
+      <DependentUpon>DebugWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\libraries\core\BaseUtils\BaseUtils.csproj">
+      <Project>{0add80d1-5e7e-46b1-bf36-1e57dccf4d84}</Project>
+      <Name>BaseUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\core\LibCore\LibCore.csproj">
+      <Project>{6d70195c-c791-4909-81fc-37daa61c143d}</Project>
+      <Name>LibCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\Network\Network.csproj">
+      <Project>{B7AC785C-E7CE-4A7D-99CE-604E0CBA231B}</Project>
+      <Name>Network</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\NodeTreeViewer\NodeTreeViewer.csproj">
+      <Project>{a03f30a1-00ae-4b31-9e3d-446f2b78f539}</Project>
+      <Name>NodeTreeViewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\EboardUi\ApplicationUi\ApplicationUi.csproj">
+      <Project>{CA4C7599-C8B9-42F2-997C-523AEB265E3F}</Project>
+      <Name>ApplicationUi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\Licensor\Licensor.csproj">
+      <Project>{3A93A44B-3855-4F52-B44E-AF7D19461195}</Project>
+      <Name>Licensor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\media\Media\Media.csproj">
+      <Project>{5c02966b-f7e4-40bf-b40f-a36489cff1cb}</Project>
+      <Name>Media</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\CommonGUI\CommonGUI.csproj">
+      <Project>{35070f1c-ce4f-4dca-86ac-9d6240882de0}</Project>
+      <Name>CommonGUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\CoreScreens\CoreScreens.csproj">
+      <Project>{cf933ac2-17f2-4948-b16c-9fb4be7e1765}</Project>
+      <Name>CoreScreens</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\core\CoreUtils\CoreUtils.csproj">
+      <Project>{9c61e4e5-78bc-4d27-b5b0-dfdcb8dc935e}</Project>
+      <Name>CoreUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\GameDetails\GameDetails.csproj">
+      <Project>{8acb73f6-8191-483f-90c5-6387e89e8eea}</Project>
+      <Name>GameDetails</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\GameManagement\GameManagement.csproj">
+      <Project>{37599bb8-b493-4323-ba2d-be2bd8fe4561}</Project>
+      <Name>GameManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\core\Logging\Logging.csproj">
+      <Project>{4d8b9bd2-3bcc-4bd0-80c0-df2744db16ee}</Project>
+      <Name>Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DevOps.OpsEngine\DevOps.OpsEngine.csproj">
+      <Project>{e870637b-3cb9-495c-b6c0-4345b7fd19c6}</Project>
+      <Name>DevOps.OpsEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DevOps.OpsScreen\DevOps.OpsScreen.csproj">
+      <Project>{3aa9821f-c768-47ae-a9bc-9487bf90544a}</Project>
+      <Name>DevOps.OpsScreen</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+</Project>

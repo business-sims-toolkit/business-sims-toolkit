@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7CA3BDD1-6AB8-4DFA-B466-9A78E9D5CC64}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevOps.ReportsScreen</RootNamespace>
+    <AssemblyName>DevOps.ReportsScreen</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="BusinessServiceComparer.cs" />
+    <Compile Include="ChartScreen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CloudTimeChartReportPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CombinedGroupBarCharts.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CpuUsageReport.cs" />
+    <Compile Include="DevErrorImageTextButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DevErrorReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DevOpsSummaryReportData.cs" />
+    <Compile Include="DevOpsBusinessScorecard.cs" />
+    <Compile Include="DevOpsOperationsScorecard.cs" />
+    <Compile Include="DevOpsRoundScores.cs" />
+    <Compile Include="DevOpsToolsScreen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GroupedBoxChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IncidentGanttReport.cs" />
+    <Compile Include="Interfaces\IRoundScoresUpdater.cs" />
+    <Compile Include="NetworkReport.cs" />
+    <Compile Include="NewServicesReport.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="NpsSurveyReport.cs" />
+    <Compile Include="ProductQualityReportBuilder.cs" />
+    <Compile Include="ProductQualityReportPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportScreen.cs" />
+    <Compile Include="ReportsTabOrder.cs" />
+    <Compile Include="ReportsScreenPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ServerBladeUsageReport.cs" />
+    <Compile Include="TableReportPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\libraries\core\Algorithms\Algorithms.csproj">
+      <Project>{a402764f-2455-4ae6-b1b9-d129c2b083cd}</Project>
+      <Name>Algorithms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\core\BaseUtils\BaseUtils.csproj">
+      <Project>{0add80d1-5e7e-46b1-bf36-1e57dccf4d84}</Project>
+      <Name>BaseUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\core\CoreUtils\CoreUtils.csproj">
+      <Project>{9c61e4e5-78bc-4d27-b5b0-dfdcb8dc935e}</Project>
+      <Name>CoreUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\core\Events\Events.csproj">
+      <Project>{0e80302d-2ef7-4428-8ce2-198aef8ed0fc}</Project>
+      <Name>Events</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\core\LibCore\LibCore.csproj">
+      <Project>{6d70195c-c791-4909-81fc-37daa61c143d}</Project>
+      <Name>LibCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\core\Logging\Logging.csproj">
+      <Project>{4d8b9bd2-3bcc-4bd0-80c0-df2744db16ee}</Project>
+      <Name>Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\DevOps\DevOpsEngine\DevOpsEngine.csproj">
+      <Project>{d8599a09-86fb-4dd0-96ff-ffc36653c458}</Project>
+      <Name>DevOpsEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\DevOps\DevOpsReportBuilders\DevOpsReportBuilders.csproj">
+      <Project>{1841d8dc-2282-44f3-bcf6-6955e82bb199}</Project>
+      <Name>DevOpsReportBuilders</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\DevOps\DevOpsReportCharts\DevOpsReportCharts.csproj">
+      <Project>{bb7cbf2b-207a-47da-aa14-b848eb4f6a72}</Project>
+      <Name>DevOpsReportCharts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\ChartScreens\ChartScreens.csproj">
+      <Project>{9bcec677-b934-4082-b614-4e9a6565aa65}</Project>
+      <Name>ChartScreens</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\Charts\Charts.csproj">
+      <Project>{134455f1-df66-410b-93bc-e19494acff46}</Project>
+      <Name>Charts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\CommonGUI\CommonGUI.csproj">
+      <Project>{35070f1c-ce4f-4dca-86ac-9d6240882de0}</Project>
+      <Name>CommonGUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\GameEngine\GameEngine.csproj">
+      <Project>{d2a6864b-8134-416f-9e46-39c9dd0feaec}</Project>
+      <Name>GameEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\GameManagement\GameManagement.csproj">
+      <Project>{37599bb8-b493-4323-ba2d-be2bd8fe4561}</Project>
+      <Name>GameManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\NetworkScreens\NetworkScreens.csproj">
+      <Project>{7002ffff-b22b-480b-9c9b-a375ede27dd4}</Project>
+      <Name>NetworkScreens</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\Network\Network.csproj">
+      <Project>{b7ac785c-e7ce-4a7d-99ce-604e0cba231b}</Project>
+      <Name>Network</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\ReportBuilder\ReportBuilder.csproj">
+      <Project>{82b44d1d-f102-4199-9e32-562d3563070b}</Project>
+      <Name>ReportBuilder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\EboardUi\ResizingUi\ResizingUi.csproj">
+      <Project>{08fda587-8773-4b58-a8e0-7f7d5c8e4637}</Project>
+      <Name>ResizingUi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DevOps.OpsEngine\DevOps.OpsEngine.csproj">
+      <Project>{e870637b-3cb9-495c-b6c0-4345b7fd19c6}</Project>
+      <Name>DevOps.OpsEngine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SecondaryDisplay\" />
+  </ItemGroup>
+</Project>

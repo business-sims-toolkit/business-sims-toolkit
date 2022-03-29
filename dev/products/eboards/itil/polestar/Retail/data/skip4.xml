@@ -1,0 +1,26 @@
+<incidents>
+<i id="AtStart">
+
+  // Put SIPS 401 and 403 into the network as if they have been done and
+  // are ready for install.
+
+	<createNodes i_to="Stock Control/upgrades">
+		<node version="2" name="Stock Control v2" desc="Stock\r\nControl v2" shortdesc="Stock Control v2" slalimit="360" notinnetwork="true" upgraded_by_sip="401" biz_service_function="Stock Control"/>
+	</createNodes>
+  
+	<createNodes i_to="Retail Management System/upgrades">
+		<node version="2" name="Retail Management System v2" desc="Retail\r\nMgt v2" shortdesc="Retail Mgt v2" slalimit="360" notinnetwork="true" upgraded_by_sip="403" biz_service_function="Retail Management System"/>
+	</createNodes>
+  
+  //
+  <createNodes i_to="Projects">
+		<project round="4" createdinround="4" name="401" projectid="401" productid="4013" platformid="X" installname="Stock Control v2"  upgradename="Bellatrix" fixedlocation="D325" fixedzone="X" designdays="3" builddays="2" testdays="2" scheduled_days="7" completed_days="7" readyfordeployment="10" handovervalue="100" currentspend="160000"  actual_cost="160000" daiyspend="22857" MaxRevOffset="480000" stagedaystogo="0" regulation="true" slalimit="360" wrequest="1"  wcount="1" stage="ready"/> 
+		<project round="4" createdinround="4" name="403" projectid="403" productid="4032" platformid="X" installname="Retail Management v2" upgradename="Electra" fixedlocation="E332" fixedzone="X" designdays="3" builddays="3" testdays="3" scheduled_days="9" completed_days="9" readyfordeployment="12" handovervalue="100" currentspend="190000" actual_cost="190000" daiyspend="21111" MaxRevOffset="288000" stagedaystogo="0" regulation="false" slalimit="360" wrequest="1" wcount="1" stage="ready"/> 
+  </createNodes>
+  
+	<apply i_name="DevelopmentSpend" RoundBudgetLeft="450000" currentspendtotal="0" actualcosttotal ="0"/>  
+	<apply i_name="DevelopmentSpend" RoundBudgetLeft="100000" currentspendtotal="350000" actualcosttotal ="350000"/>
+</i>
+
+	<i id="AtStart"><apply i_name="IncidentCount" count="0" /></i>
+</incidents>

@@ -1,0 +1,44 @@
+<project projectid="504" round="5" regulation="false" installname="G-Tunes v2" upgradename = "Polaris" lookupplatform="true" fixedlocation="B334" fixedzone="X">
+<product productid="5041" actual_cost="200000">
+<platform platformid="X" designdays="2" builddays="4" testdays="3" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireMin i_locationOf="XXXX" disk_left="10" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_locationOf="XXXX" mem_left="500" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="G-Tunes/upgrades">
+		<node version="2" name="G-Tunes v2"  desc="G-Tunes v2" shortdesc="G-Tunes v2" slalimit="YYY" notinnetwork="true" upgraded_by_sip="504" biz_service_function="G-Tunes"/>
+	</createNodes>
+	<apply i_name = "504" MaxRevOffset="288000" />
+</oncreate>
+<oninstall>
+	<createNodes i_to="Retired Business Services">
+		<node name="G-Tunes (v1)" icon="Icon_GT" version="1"/>
+	</createNodes>
+	<copyAttributes i_to="G-Tunes (v1)" i_from="G-Tunes"/>
+	<apply i_name="G-Tunes (v1)"	type="retired_biz_service"/>
+	<copyAttributes i_to="G-Tunes" i_from="G-Tunes v2"/>
+	<deleteNode i_name="G-Tunes v2"/>
+	<apply i_name="G-Tunes" slalimit="YYY"/>
+	<apply i_name="Store 1 G-Tunes" desc="G-Tunes v2" shortdesc="G-Tunes v2" icon="Icon_GT" slalimit="YYY" />
+	<apply i_name="Store 2 G-Tunes" desc="G-Tunes v2" shortdesc="G-Tunes v2" icon="Icon_GT" slalimit="YYY" />
+	<apply i_name="Store 3 G-Tunes" desc="G-Tunes v2" shortdesc="G-Tunes v2" icon="Icon_GT" slalimit="YYY" />
+	<apply i_name="Store 4 G-Tunes" desc="G-Tunes v2" shortdesc="G-Tunes v2" icon="Icon_GT" slalimit="YYY" />
+	<incrementAtt i_name="Polaris" i_doAfterSecs="0" memrequired="500" diskrequired="10" />
+	<incrementAtt i_name="Polaris" i_doAfterSecs="0" proccap="1" />
+	<apply i_name="Polaris" upgraded_by_sip="504" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="24000" instore_bonus="0" />
+	<apply i_parentOf="Polaris" rebootFor="105" reasondown="Installing Polaris v2" />
+	<createNodes i_to="CostedEvents">
+		<node type="sipupgrade" desc="G-Tunes To Version 2" sip="504" ref="G-Tunes" />
+		<node type="project" desc="G-Tunes v2" sip="504" regulation="false" />
+	</createNodes>
+	<apply i_name = "504" MaxRevOffset="0" />
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+</project>

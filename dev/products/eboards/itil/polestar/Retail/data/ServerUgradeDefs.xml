@@ -1,0 +1,50 @@
+<ServerUpgradeDefs>
+  <upgrade server="Neptune">
+    <requirements>
+      <requireExists i_name="Neptune" i_failReason="Server Not Found" />
+      <ifAttrs i_name="Neptune" version="2" i_failReason="Already Upgraded" />
+    </requirements>
+    <i>
+      <apply i_name="Neptune" rebootFor="105" version="2" up="false" can_upgrade_hardware="false" danger_level="20" />
+      <createNodes i_to="CostedEvents">
+        <node type="upgradeserver" desc="Upgraded Neptune To Version 2" ref="Neptune" />
+      </createNodes>
+    </i>
+  </upgrade>
+  <upgrade server="Mercury">
+    <requirements>
+      <requireExists i_name="Mercury" i_failReason="Server Not Found" />
+      <ifAttrs i_name="Mercury" version="2" i_failReason="Already Upgraded" />
+    </requirements>
+    <i>
+      <apply i_name="Mercury" rebootFor="105" version="2" up="false" can_upgrade_hardware="false" danger_level="20" />
+      <createNodes i_to="CostedEvents">
+        <node type="upgradeserver" desc="Upgraded Mercury To Version 2" ref="Mercury" />
+      </createNodes>
+    </i>
+  </upgrade>
+  <upgrade server="Venus">
+    <requirements>
+      <requireExists i_name="Venus" i_failReason="Server Not Found" />
+      <ifAttrs i_name="Venus" version="2" i_failReason="Already Upgraded" />
+    </requirements>
+    <i>
+      <apply i_name="Venus" rebootFor="105" version="2" up="false" can_upgrade_hardware="false" danger_level="20" />
+      <createNodes i_to="CostedEvents">
+        <node type="upgradeserver" desc="Upgraded Venus To Version 2" ref="Venus" />
+      </createNodes>
+    </i>
+  </upgrade>
+  <upgrade server="Pluto">
+    <requirements>
+      <requireExists i_name="Pluto" i_failReason="Server Not Found" />
+      <ifAttrs i_name="Pluto" version="2" i_failReason="Already Upgraded" />
+    </requirements>
+    <i>
+      <apply i_name="Pluto" rebootFor="105" version="2" up="false" can_upgrade_hardware="false" danger_level="20" />
+      <createNodes i_to="CostedEvents">
+        <node type="upgradeserver" desc="Upgraded Pluto To Version 2" ref="Pluto" />
+      </createNodes>
+    </i>
+  </upgrade>
+</ServerUpgradeDefs>

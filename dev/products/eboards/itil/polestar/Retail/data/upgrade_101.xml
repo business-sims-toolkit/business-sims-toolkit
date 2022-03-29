@@ -1,0 +1,33 @@
+<incidents>
+	<i id="AtStart">
+
+		// 15 Minutes into the round (900 seconds) the Stores have an impact dependency on
+		// an app that the players have to install. Before this point there is no impact
+		// of not having that app installed.
+		//
+		// Apply Upgrade that should have been completed in round 1 but may have been missed.
+		//
+		<if i_name="Megrez" beta="true">
+			<then>
+				<createNodes i_to="Retired Business Services">
+					<node name="Online Credit Card Authorization (RTD)" icon="Icon_PMon"/>
+				</createNodes>
+				<copyAttributes i_to="Online Credit Card Authorization (RTD)" i_from="Online Credit Card Authorization"/>
+				<apply i_name="Online Credit Card Authorization (RTD)"	type="retired_biz_service"/>
+				<copyAttributes i_to="Online Credit Card Authorization" i_from="Online Security Mgt v1"/>
+				<deleteNode i_name="Online Security Mgt v1" />
+				<incrementAtt i_name="Megrez" i_doAfterSecs="0" memrequired="500" diskrequired="20" />
+				<apply i_name="Store 1 Security" shortdesc="Security v1" icon="Icon_osm"/>
+				<apply i_name="Store 2 Security" shortdesc="Security v1" icon="Icon_osm"/>
+				<apply i_name="Store 3 Security" shortdesc="Security v1" icon="Icon_osm"/>
+				<apply i_name="Store 4 Security" shortdesc="Security v1" icon="Icon_osm"/>
+				<apply i_name="Megrez" visible="true" version="1" beta = "false" up="true"/>
+				<apply i_name="Megrez" upgraded_by_sip="101" upgraded="true" />
+				<apply i_name="101" stage="installed_ok" />
+				<createNodes i_to="CostedEvents">
+					<node type="sipupgrade" desc="Upgraded Security to 1 " ref="Security"/>
+				</createNodes>
+			</then>
+		</if>
+	</i>
+</incidents>

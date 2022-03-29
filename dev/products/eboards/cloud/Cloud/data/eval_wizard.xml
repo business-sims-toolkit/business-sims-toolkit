@@ -1,0 +1,709 @@
+<?xml version="1.0"?>
+<evaluation_wizard>
+  <section>
+    <section_name>Service Strategy</section_name>
+    <section_order>5</section_order>
+    <aspects>
+      <aspect>
+        <aspect_name>Financial Management</aspect_name>
+        <aspect_desc></aspect_desc>
+        <dest_tag_name>People_FinReq</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors>
+          <factor>
+            <aspect>Costs detailed to enable decision making?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Service provider shall monitor and report costs?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Change management costing and approval?</aspect>
+            <weight>2</weight>
+            <guidance>how much was the information shared</guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Policy for budgeting/accounting for components?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Policy for apportioning and allocating costs?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+        </factors>
+      </aspect>
+      <aspect>
+        <aspect_name>Supplier Management</aspect_name>
+        <aspect_desc></aspect_desc>
+        <dest_tag_name>People_SupplierMan</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors>
+          <factor>
+            <aspect>Scope and service level documented?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Document process with named contract manager?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Lead and sub-contracted relationships documented?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Regular contract review process?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Supplier dispute process?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+        </factors>
+      </aspect>
+      <aspect>
+        <aspect_name>Service Portfolio Management</aspect_name>
+        <aspect_desc></aspect_desc>
+        <dest_tag_name>People_FinancialManagement</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors>
+        </factors>
+      </aspect>
+      <aspect>
+        <aspect_name>Customer Satisfaction</aspect_name>
+        <aspect_desc></aspect_desc>
+        <dest_tag_name>Cust_Satisfaction</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors>
+        </factors>
+      </aspect>
+      <aspect>
+        <aspect_name>Business Architecture</aspect_name>
+        <aspect_desc></aspect_desc>
+        <dest_tag_name>People_BussArch</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors>
+        </factors>
+      </aspect>
+      <aspect>
+        <aspect_name>Data Architecture</aspect_name>
+        <aspect_desc></aspect_desc>
+        <dest_tag_name>People_DataArch</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors>
+        </factors>
+      </aspect>
+      <aspect>
+        <aspect_name>Application Architecture</aspect_name>
+        <aspect_desc></aspect_desc>
+        <dest_tag_name>People_AppArch</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors>
+        </factors>
+      </aspect>
+      <aspect>
+        <aspect_name>Infrastructure Architecture</aspect_name>
+        <aspect_desc></aspect_desc>
+        <dest_tag_name>People_InfraArch</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors>
+        </factors>
+      </aspect>
+    </aspects>
+  </section>
+  <section>
+    <section_name>Service Design</section_name>
+    <section_order>3</section_order>
+    <aspects>
+      <aspect>
+        <aspect_name>Service Level Management</aspect_name>
+        <aspect_desc></aspect_desc>
+        <dest_tag_name>ServiceDesign_SLM</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors>
+          <factor>
+            <aspect>SLAs documented?</aspect>
+            <weight>2</weight>
+            <guidance>Customer Involved, Cost/ Benfit, Risks</guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>SLAs monitored against targets?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>SLAs regularly reviewed for effectiveness?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>SLAs controlled by Change Management?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Improvements fed into SIP?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+        </factors>
+      </aspect>
+      <aspect>
+        <aspect_name>Availability Management</aspect_name>
+        <aspect_desc></aspect_desc>
+        <dest_tag_name>ServiceDesign_Avail</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors>
+          <factor>
+            <aspect>Availability business driven?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Plan developed and reviewed?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Availability measured and recorded?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Unplanned availability investigated?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Plans tested at major change?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+        </factors>
+      </aspect>
+      <aspect>
+        <aspect_name>Capacity Management</aspect_name>
+          <aspect_desc></aspect_desc>
+          <dest_tag_name>ServiceDesign_Capacity</dest_tag_name>
+          <dest_tag_data>0</dest_tag_data>
+          <factors>
+            <factor>
+            <aspect>Procedure to monitor capacity?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Evaluate impact of changes and technology?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Cover current and future performance demands?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Capacity business driven?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Procedure to tune service performance?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+        </factors>
+      </aspect>
+      <aspect>
+        <aspect_name>IT Service Continuity Management</aspect_name>
+        <aspect_desc></aspect_desc>
+        <dest_tag_name>ServiceDesign_Continuity</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors>
+          <factor>
+            <aspect>ITSCM plan developed and reviewed?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>ITSCM plans tested?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>ITSCM plans available off-site?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>ITSCM business driven?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Plans tested at major change?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+        </factors>
+      </aspect>
+      <aspect>
+        <aspect_name>Catalog Management</aspect_name>
+        <aspect_desc></aspect_desc>
+        <dest_tag_name>ServiceDesign_Catalog</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors>
+          <factor>
+            <aspect>Business users aware of catalog services?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>IT staff have access to relevant information?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Accurate service catalog maintained?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Catalog Management business driven?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Catalog maintained under Change Management?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+        </factors>
+      </aspect>
+      <aspect>
+        <aspect_name>Security</aspect_name>
+        <aspect_desc></aspect_desc>
+        <dest_tag_name>ServiceDesign_Security</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors>
+        </factors>
+      </aspect>
+      <aspect>
+       <aspect_name>Standardisation</aspect_name>
+       <aspect_desc></aspect_desc>
+       <dest_tag_name>ServiceDesign_Standardisation</dest_tag_name>
+       <dest_tag_data>0</dest_tag_data>
+       <factors>
+       </factors>
+      </aspect>
+    </aspects>
+  </section>
+  <section>
+  <section_name>Service Transition</section_name>
+  <section_order>1</section_order>
+    <aspects>
+      <aspect>
+        <aspect_name>Change Management</aspect_name>
+        <aspect_desc></aspect_desc>
+        <dest_tag_name>ServiceTrans_ChangeManagement</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors>
+          <factor>
+            <aspect>Change requests recorded and classified?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Change requests assessed for risk?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+        <aspect>Change schedule communicated?</aspect>
+        <weight>2</weight>
+        <guidance></guidance>
+        <factor_data>False</factor_data>
+      </factor>
+      <factor>
+        <aspect>Emergency change procedure?</aspect>
+        <weight>2</weight>
+        <guidance></guidance>
+        <factor_data>False</factor_data>
+      </factor>
+      <factor>
+        <aspect>Improvements fed into SIP?</aspect>
+        <weight>2</weight>
+        <guidance></guidance>
+        <factor_data>False</factor_data>
+      </factor>	
+    </factors>
+      </aspect>	
+      <aspect>
+        <aspect_name>Release and Deployment Management</aspect_name>
+        <aspect_desc></aspect_desc>
+        <dest_tag_name>ServiceTrans_ReleaseDeployment</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors>
+      <factor>
+        <aspect>Release policy agreed and communicated?</aspect>
+        <weight>2</weight>
+        <guidance>Was someone considering the time</guidance>
+        <factor_data>False</factor_data>
+      </factor>
+      <factor>
+        <aspect>Assess impact of change on release plans?</aspect>
+        <weight>2</weight>
+        <guidance>have informed others</guidance>
+        <factor_data>False</factor_data>
+      </factor>
+      <factor>
+        <aspect>Release reverse/backout process in place?</aspect>
+        <weight>2</weight>
+        <guidance>Have a plan about how to back out.</guidance>
+        <factor_data>False</factor_data>
+      </factor>
+      <factor>
+        <aspect>Controlled acceptance environment?</aspect>
+        <weight>2</weight>
+        <guidance>Have a plan about how to back out.</guidance>
+        <factor_data>False</factor_data>
+      </factor>
+      <factor>
+        <aspect>Improvements fed into SIP?</aspect>
+        <weight>2</weight>
+        <guidance>Have a plan about how to back out.</guidance>
+        <factor_data>False</factor_data>
+      </factor>
+    </factors>
+      </aspect>
+      <aspect>
+        <aspect_name>SKMS and Configuration Management</aspect_name>
+        <aspect_desc></aspect_desc>
+        <dest_tag_name>ServiceTrans_SKMSConfiguration</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+      <factors>
+      <factor>
+        <aspect>Maintain accurate configuration information?</aspect>
+        <weight>2</weight>
+        <guidance></guidance>
+        <factor_data>False</factor_data>
+      </factor>
+      <factor>
+        <aspect>Unique configuration items in CMDB?</aspect>
+        <weight>2</weight>
+        <guidance></guidance>
+        <factor_data>False</factor_data>
+      </factor>
+      <factor>
+        <aspect>Configuration information include relationships?</aspect>
+        <weight>2</weight>
+        <guidance></guidance>
+        <factor_data>False</factor_data>
+      </factor>
+      <factor>
+        <aspect>Provide information to assess change impact?</aspect>
+        <weight>2</weight>
+        <guidance></guidance>
+        <factor_data>False</factor_data>
+      </factor>
+      <factor>
+        <aspect>Effective Knowledge Management system exists?</aspect>
+        <weight>2</weight>
+        <guidance></guidance>
+        <factor_data>False</factor_data>
+      </factor>
+    </factors>
+      </aspect>	
+      <aspect>
+        <aspect_name>Consolidation</aspect_name>
+        <aspect_desc></aspect_desc>
+        <dest_tag_name>ServiceTrans_Consolidation</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors>
+        </factors>
+      </aspect>
+    </aspects>
+  </section>
+  <section>
+    <section_name>Service Operation</section_name>
+    <section_order>2</section_order>
+    <aspects>
+      <aspect>
+        <aspect_name>Processing Rate</aspect_name>
+        <aspect_desc>This is the average number of minutes before the team looked at the question book.</aspect_desc>
+        <dest_tag_name>ServiceOps_ProcessingRate</dest_tag_name>
+        <dest_tag_data>25</dest_tag_data>
+        <factors>
+        </factors>
+      </aspect>
+      <aspect>
+        <aspect_name>Communication</aspect_name>
+        <aspect_desc></aspect_desc>
+        <dest_tag_name>ServiceOps_CustCommunication</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors>
+          <factor>
+            <aspect>Customer kept informed?</aspect>
+            <weight>3</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Timeliness of information exchange?</aspect>
+            <weight>3</weight>
+            <guidance>How quick was the information provide, in time for prompt decisions</guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Service provider professional and polite?</aspect>
+            <weight>4</weight>
+            <guidance>How well was the information presented </guidance>
+            <factor_data>False</factor_data>
+          </factor>
+        </factors>
+      </aspect>
+      <aspect>
+        <aspect_name>Event Management</aspect_name>
+        <aspect_desc></aspect_desc>
+        <dest_tag_name>ServiceOps_EventManagement</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors>
+          <factor>
+            <aspect>Event monitoring and detection in IT infrastructure?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Event logging, examination and filtering?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Event processing, correlation and escalation?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Event resolution and closure?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>	
+          <factor>
+            <aspect>Improvements fed into SIP?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+        </factors>
+      </aspect>
+      <aspect>
+        <aspect_name>Request Fulfilment</aspect_name>
+        <aspect_desc></aspect_desc>
+        <dest_tag_name>ServiceOps_RequestFulfillment</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors>
+          <factor>
+            <aspect>Published request fulfillment policy?</aspect> 
+            <weight>2</weight>
+            <guidance>Do they recognise the problems and log them</guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Service requests linked to Incidents or Events?</aspect>
+            <weight>2</weight>
+            <guidance>Procedure to minimize impact of problems?</guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Ability to submit service requests?</aspect>
+            <weight>2</weight>
+            <guidance></guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Workflow control of service requests?</aspect>
+            <weight>2</weight>
+            <guidance>Did they issue a Request for Change process</guidance>
+            <factor_data>False</factor_data>
+          </factor>
+          <factor>
+            <aspect>Monitor and report service requests?</aspect>
+            <weight>2</weight>
+            <guidance>Did they look at relevant factors (Cost/Benefits, Risks)</guidance>
+            <factor_data>False</factor_data>
+          </factor>
+        </factors>
+      </aspect>
+      <aspect>
+        <aspect_name>Automation</aspect_name>
+        <aspect_desc></aspect_desc>
+        <dest_tag_name>ServiceOps_Automation</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors>
+        </factors>
+      </aspect>
+      <aspect>
+        <aspect_name>Orchestration</aspect_name>
+        <aspect_desc></aspect_desc>
+        <dest_tag_name>ServiceOps_Orchestration</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors>
+        </factors>
+      </aspect>
+      <aspect>
+        <aspect_name>Resource Pool Manangement</aspect_name>
+        <aspect_desc></aspect_desc>
+        <dest_tag_name>ServiceOps_ResPoolMgt</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors>
+        </factors>
+      </aspect>
+      <aspect>
+        <aspect_name>Agility</aspect_name>
+        <aspect_desc></aspect_desc>
+        <dest_tag_name>ServiceOps_Agility</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors>
+        </factors>
+      </aspect>
+    </aspects>
+  </section>
+  <section>
+    <section_name>Continual Service Improvements</section_name>
+    <section_order>6</section_order>
+    <aspects>
+    <aspect>
+    <aspect_name>Process Improvement</aspect_name>
+    <aspect_desc></aspect_desc>
+    <dest_tag_name>CSI_ProcessImprovement</dest_tag_name>
+    <dest_tag_data>0</dest_tag_data>
+    <factors>
+      <factor>
+        <aspect>Roles and responsibilities clearly defined?</aspect> 
+        <weight>2</weight>
+        <guidance>Do they recognise the problems and log them</guidance>				
+        <factor_data>False</factor_data>
+      </factor>
+      <factor>
+        <aspect>Service Improvement Plan (SIP) in place?</aspect>
+        <weight>2</weight>
+        <guidance>Procedure to minimize impact of problems?</guidance>
+        <factor_data>False</factor_data>
+      </factor>
+      <factor>
+        <aspect>Published service improvement policy?</aspect>
+        <weight>2</weight>
+        <guidance></guidance>
+        <factor_data>False</factor_data>
+      </factor>
+      <factor>
+        <aspect>Measurable targets and metrics defined?</aspect>
+        <weight>2</weight>
+        <guidance>Did they issue a Request for Change process</guidance>
+        <factor_data>False</factor_data>
+      </factor>
+      <factor>
+        <aspect>Process Improvement business driven?</aspect>
+        <weight>2</weight>
+        <guidance>Did they look at relevant factors (Cost/Benefits, Risks)</guidance>
+        <factor_data>False</factor_data>
+      </factor>
+    </factors>
+      </aspect>
+    </aspects>
+  </section>
+  <section>
+    <section_name>Technology and Architecture</section_name>
+    <section_order>7</section_order>
+    <aspects>
+  <aspect>
+    <aspect_name>Tools</aspect_name>
+    <aspect_desc></aspect_desc>
+    <dest_tag_name>TechArch_Tools</dest_tag_name>
+    <dest_tag_data>0</dest_tag_data>
+    <factors>
+      <factor>
+        <aspect>Service Desk?</aspect> 
+        <weight>2</weight>
+        <guidance>Do they recognise the problems and log them</guidance>				
+        <factor_data>False</factor_data>
+      </factor>
+      <factor>
+        <aspect>Event Management?</aspect>
+        <weight>2</weight>
+        <guidance>Procedure to minimize impact of problems?</guidance>
+        <factor_data>False</factor_data>
+      </factor>
+      <factor>
+        <aspect>Project and Portfolio Management?</aspect>
+        <weight>2</weight>
+        <guidance></guidance>
+        <factor_data>False</factor_data>
+      </factor>
+      <factor>
+        <aspect>Systems and Network Management?</aspect>
+        <weight>2</weight>
+        <guidance>Did they issue a Request for Change process</guidance>
+        <factor_data>False</factor_data>
+      </factor>
+      <factor>
+        <aspect>Business Intelligence/Reporting?</aspect>
+        <weight>2</weight>
+        <guidance>Did they look at relevant factors (Cost/Benefits, Risks)</guidance>
+        <factor_data>False</factor_data>
+      </factor>
+    </factors>
+  </aspect>
+</aspects>
+</section>
+</evaluation_wizard>

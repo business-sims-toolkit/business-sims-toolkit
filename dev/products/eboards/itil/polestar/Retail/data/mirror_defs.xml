@@ -1,0 +1,24 @@
+<mirror_defs>
+
+// 
+
+<mirror>
+	<target>Saturn</target>
+	<apps>Bellatrix,Castor</apps>
+	// Allow for a post add model script to be run...
+	<i type="Post Install Script">
+		<createNodes i_to="CostedEvents">
+			<CostedEvent type="mirror" desc="Bought Saturn Mirror" ref="Saturn" />
+		</createNodes></i>
+</mirror>
+<mirror>
+	<target>Pluto</target>
+	<apps>Electra,Megrez</apps>
+	// Allow for a post add model script to be run...
+	<i type="Post Install Script">
+		<createNodes i_to="CostedEvents">
+			<CostedEvent type="mirror" desc="Bought Pluto Mirror" ref="Pluto" />
+		</createNodes>
+	</i>
+</mirror>
+</mirror_defs>

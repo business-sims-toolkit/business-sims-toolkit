@@ -1,0 +1,187 @@
+<skin>  // Skin file for Polestar PM v3
+	<minimum_licensor_version>1.0.4.2</minimum_licensor_version>
+
+	<allow_sales_game>true</allow_sales_game>
+	<allow_pdf_report>true</allow_pdf_report>
+	<allow_fac_sheet>false</allow_fac_sheet>
+	<hide_fac_sheet>true</hide_fac_sheet>
+	
+	<sales_round_1_ops_only>1</sales_round_1_ops_only>
+
+	<game_tab_title>Business Performance</game_tab_title>
+	<process_tab_title>Process Performance</process_tab_title>
+	
+	<race_preplay_status>true</race_preplay_status>
+	<race_preplay_time>900</race_preplay_time>
+	<transition_display_name>Preparation</transition_display_name>
+	<transition_preplay_status>false</transition_preplay_status>
+	<transition_preplay_time>0</transition_preplay_time>
+	<errortextcolor>255,255,255</errortextcolor>
+	<badge>MSBadge.png</badge>
+	<changewindowactions>true</changewindowactions>
+	<changewindowtimes>451,1051</changewindowtimes>
+
+	<voice_enable>true</voice_enable>
+	<voice_mode>batch</voice_mode>
+	<voice_files>cash.mp3</voice_files>
+	<sound_on_round_start>end.wav</sound_on_round_start>	
+	
+	<smi_icon_offset>-3</smi_icon_offset>
+	<smi_box_offset>1</smi_box_offset>
+	<smi_text_offset>-12</smi_text_offset>
+	<awt_provision_name>Trout</awt_provision_name>
+	<ops_banner>Round</ops_banner>
+	<reboot_time>105</reboot_time>
+	<licensed_game_text>Start a licensed Polestar PM game. Each licensed game is charged on a pay-per-play basis.</licensed_game_text>
+	<sales_game>The Sales Game is free to use for demonstration purposes only. Use of the Sales Game for any other purpose is strictly prohibited.</sales_game>
+	<biz>Exchange</biz>
+	<ourbiz>playerstore</ourbiz>
+	<allbiz>All Exchanges</allbiz>
+	//
+	<mirrored_server1>Panther</mirrored_server1>
+	<mirrored_server2>Toad</mirrored_server2>
+	//
+	<show_hour>0</show_hour>
+	<transition_screen_name>Transition Screen</transition_screen_name>
+	<race_screen_name>Game Screen</race_screen_name>
+	<bannerForeColor>50,50,50</bannerForeColor>
+	<bannerPrePlayForeColor>170,0,0</bannerPrePlayForeColor>
+	<admin_pages_title_forecolor>220,220,220</admin_pages_title_forecolor>
+	<error_panel_font_size>12</error_panel_font_size>
+	<skinname>Polestar_PM</skinname>
+	<gametype>Polestar_PM</gametype>
+	<transition_projects_count>2</transition_projects_count>
+	<transition_basebackcolor>165,196,195</transition_basebackcolor>	
+	<transition_operationsbackcolor>214,214,214</transition_operationsbackcolor>	
+	<transition_groupbackcolor>165,196,197</transition_groupbackcolor>		
+	<race_upgradebackcolor>255,255,255</race_upgradebackcolor>		
+	<race_backgroundcolor_normal>191,191,191</race_backgroundcolor_normal>		
+	<race_backgroundcolor_training>255,157,0</race_backgroundcolor_training>		
+	<race_panelbackgroundcolor>185,199,200</race_panelbackgroundcolor>		
+	<race_paneltitleforecolor>180,180,180</race_paneltitleforecolor>
+	<race_revenue_background>185,199,200</race_revenue_background>
+	<race_revenue_normaltext>0,0,0</race_revenue_normaltext>
+	<race_revenue_revlostcolor>245,0,17</race_revenue_revlostcolor>
+	<race_revenue_revgaincolor>0,128,0</race_revenue_revgaincolor>
+	
+	<generated_normal_tab_color>96,96,96</generated_normal_tab_color>
+	<generated_dark_tab_color>32,32,32</generated_dark_tab_color>
+	
+	<generated_tab_text_normal_color>0,0,0</generated_tab_text_normal_color>
+	<generated_tab_text_highlight_color>0,0,0</generated_tab_text_highlight_color>
+	<generated_tab_text_selected_normal_color>0,0,0</generated_tab_text_selected_normal_color>
+	<generated_tab_text_selected_highlight_color>0,0,0</generated_tab_text_selected_highlight_color>	
+	
+	<boardview_background_colour>255,255,255</boardview_background_colour>
+	<boardview_zone1_colour>208,112,6</boardview_zone1_colour>
+	<boardview_zone2_colour>131,168,121</boardview_zone2_colour>
+	<boardview_zone3_colour>75,144,154</boardview_zone3_colour>
+	<boardview_zone4_colour>125,129,129</boardview_zone4_colour>
+	<boardview_zone5_colour>176,159,0</boardview_zone5_colour>
+	<boardview_zone6_colour>205,93,120</boardview_zone6_colour>
+	<boardview_zone7_colour>128,128,255</boardview_zone7_colour>
+	<sla_lozenge_race_cols>5</sla_lozenge_race_cols>
+	<sla_lozenge_race_width>105</sla_lozenge_race_width>
+	<sla_lozenge_race_height>30</sla_lozenge_race_height>
+	<sla_lozenge_race_offentry>84</sla_lozenge_race_offentry>
+	<fontname>Trebuchet MS</fontname>
+	<transactionname>Flights</transactionname>
+	
+	<transition_pipeline_preplay_time_forecolor>221,16,221</transition_pipeline_preplay_time_forecolor>
+	<transition_pipeline_play_time_forecolor>105,105,105</transition_pipeline_play_time_forecolor>
+	<transition_pipeline_day_time_forecolor>165,196,197</transition_pipeline_day_time_forecolor>
+	<transition_pipeline_empty_time_forecolor>220,220,220</transition_pipeline_empty_time_forecolor>
+	<transition_pipeline_project_define_forecolor>158,83,4</transition_pipeline_project_define_forecolor>
+	<transition_pipeline_project_design_forecolor>158,83,4</transition_pipeline_project_design_forecolor>
+	<transition_pipeline_project_build_forecolor>208,112,6</transition_pipeline_project_build_forecolor>
+	<transition_pipeline_project_test_forecolor>221,146,70</transition_pipeline_project_test_forecolor>
+	<transition_pipeline_project_handover_forecolor>245,219,191</transition_pipeline_project_handover_forecolor>
+	<transition_pipeline_project_install_forecolor>255,229,22</transition_pipeline_project_install_forecolor>
+	<transition_pipeline_project_ready_forecolor>255,218,185</transition_pipeline_project_ready_forecolor>
+	<transition_pipeline_ops_booked_forecolor>169,169,169</transition_pipeline_ops_booked_forecolor>
+	<transition_pipeline_ops_completedok_forecolor>107,142,35</transition_pipeline_ops_completedok_forecolor>
+	<transition_pipeline_ops_completedfail_forecolor>183,56,42</transition_pipeline_ops_completedfail_forecolor>
+	
+	<report_network_default_text_colour>0,0,0</report_network_default_text_colour>
+	<report_network_upgraded_memory_text_colour>255,0,0</report_network_upgraded_memory_text_colour>
+	<report_network_upgraded_storage_text_colour>255,0,0</report_network_upgraded_storage_text_colour>
+	
+	<cooling_upgrade>0</cooling_upgrade>
+	
+	<day_runner_reset>0</day_runner_reset>
+	<clock_runs_at_real_time>1</clock_runs_at_real_time>
+	<clock_start_hour>7</clock_start_hour>
+	<stagedropprecent>50</stagedropprecent>
+	<extramarketcost1>10000</extramarketcost1>
+	<extramarketcost2>8000</extramarketcost2>
+	<extramarketcost3>6000</extramarketcost3>
+	<extramarketcost4>4000</extramarketcost4>
+	
+	<skip_transitions>1</skip_transitions>
+	<skip_transition_1>1</skip_transition_1>
+	<skip_transition_2>1</skip_transition_2>
+	<skip_transition_3>1</skip_transition_3>	
+	
+	<time_delay_it_shipping>180</time_delay_it_shipping>
+	<time_delay_it_installing>30</time_delay_it_installing>
+	<time_delay_it_starting>60</time_delay_it_starting>
+	<time_delay_it_connecting>60</time_delay_it_connecting>
+	<time_delay_it_storing>1</time_delay_it_storing>
+	<time_delay_hr_posting>180</time_delay_hr_posting>
+	<time_delay_hr_retry_access>180</time_delay_hr_retry_access>	
+	<time_delay_fm_opening>180</time_delay_fm_opening>
+	<time_delay_fm_closing>180</time_delay_fm_closing>
+	<time_delay_fm_leadtimefactor>60</time_delay_fm_leadtimefactor>
+	<time_delay_use_short_time>false</time_delay_use_short_time>
+	<time_delay_display_countdown>true</time_delay_display_countdown>	
+	
+	<usedataentrychecks>false</usedataentrychecks>
+	<show_res_util_debug_display>false</show_res_util_debug_display>
+	<show_predicted_days_in_round1>false</show_predicted_days_in_round1>
+
+	<revenue_money_per_point>25</revenue_money_per_point>
+	<expert_effect_per_point>5</expert_effect_per_point>
+	<gain_penalty_per_missed_reg_project>0</gain_penalty_per_missed_reg_project>
+	<fin_penalty_per_missed_reg_project>0</fin_penalty_per_missed_reg_project>
+	<costavoid_benefit_per_completed_reg_project>1600000</costavoid_benefit_per_completed_reg_project>
+	<race_team_name>Polestar Group</race_team_name>
+	<use_incidents_as_elapsed_days>true</use_incidents_as_elapsed_days>
+	<show_resource_plan_in_round1>false</show_resource_plan_in_round1>	
+	<use_single_staff_section>true</use_single_staff_section>
+	<use_experts_round3>true</use_experts_round3>
+	
+	<worker_internal_daypayrate>2000</worker_internal_daypayrate>
+	<worker_external_daypayrate>6000</worker_external_daypayrate>
+	
+	<round3_transaction_colour>150,0,150</round3_transaction_colour>
+	<round3_cost_avoidance_colour>0,150,150</round3_cost_avoidance_colour>
+	<round3_cost_reduction_colour>150,100,0</round3_cost_reduction_colour>
+	
+	<roundcount>3</roundcount>
+	
+	<table_row_colour>241,242,242</table_row_colour>
+	<table_row_colour_alternate>177,220,239</table_row_colour_alternate>
+	<table_border_colour>192,192,192</table_border_colour>
+	<table_row_height>22</table_row_height>
+	
+	<project_term_round_1>Project</project_term_round_1>
+	<project_term_round_2>Project</project_term_round_2>
+	<project_term_round_3>Project</project_term_round_3>
+	<projects_term_round_1>Projects</projects_term_round_1>
+	<projects_term_round_2>Projects</projects_term_round_2>
+	<projects_term_round_3>Projects</projects_term_round_3>
+	
+	<show_efficient_frontier_report>false</show_efficient_frontier_report>
+	<show_resource_levels_report>true</show_resource_levels_report>	
+	<allow_resource_levels_in_round_3>true</allow_resource_levels_in_round_3>
+	
+	<race_finish_flash_duration>8</race_finish_flash_duration>
+	<race_leaderboard_x_offset>7</race_leaderboard_x_offset>
+	
+	<help_game_with_it>Default setup.</help_game_with_it>
+	<help_game_without_it>Alternative setup, removing the IT Operations role, and automatically installing projects on completion of Handover.</help_game_without_it>
+	<help_game_with_it_disabled>You cannot change this setting once the game has been started.</help_game_with_it_disabled>
+	
+	<error_game_with_it>Please select whether the game should be played with or without the IT component.</error_game_with_it>
+	<confirm_game_without_it>Are you sure you wish to start a game with the IT component removed? You cannot change this setting once you have completed round 1!</confirm_game_without_it>
+</skin>

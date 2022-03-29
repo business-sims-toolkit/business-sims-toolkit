@@ -1,0 +1,50 @@
+<project projectid="204" round="2" regulation="true" installname="EPOS v2" fixedlocation="F333" fixedzone="Y" upgradename = "Izar">
+<product productid="2041" actual_cost="220000">
+<platform platformid="Y" designdays="2" builddays="3" testdays="1" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireExists i_name="Izar" i_failReason="App Not Found" i_failShortReason="App Not\r\nFound" />
+	<requireExists i_name="EPOS" i_failReason="Invalid Version" i_failShortReason="Invalid\r\nVersion" />
+	<requireAttrs i_name="Izar" location="XXXX" i_failReason="Invalid Location" i_failShortReason="Invalid\r\nLocation" />
+	<requireMin i_parentOf="Izar" disk_left="2" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="Izar" mem_left="1000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="EPOS/upgrades">
+		<node version="2" name="EPOS v2" desc="EPOS v2" shortdesc="EPOS v2" slalimit="YYY" notinnetwork="true" upgraded_by_sip="204" biz_service_function="EPOS" />
+	</createNodes>
+  <apply i_name = "204" MaxRevOffset="0" /> 
+</oncreate>
+<oninstall>
+	<createNodes i_to="Retired Business Services">
+		<node name="EPOS (v1)" icon="Icon_epos" version="1"/>
+	</createNodes>
+	<copyAttributes i_to="EPOS (v1)" i_from="EPOS"/>
+	<apply i_name="EPOS (v1)"	type="retired_biz_service"/>
+	<copyAttributes i_to="EPOS" i_from="EPOS v2"/>
+	<deleteNode i_name="EPOS v2"/>
+	<apply i_name="EPOS" slalimit="YYY"/>
+	<apply i_name="Store 1 EPOS" desc="EPOS v2" shortdesc="EPOS v2" icon="Icon_epos" slalimit="YYY" />
+	<apply i_name="Store 2 EPOS" desc="EPOS v2" shortdesc="EPOS v2" icon="Icon_epos" slalimit="YYY" />
+	<apply i_name="Store 3 EPOS" desc="EPOS v2" shortdesc="EPOS v2" icon="Icon_epos" slalimit="YYY" />
+	<apply i_name="Store 4 EPOS" desc="EPOS v2" shortdesc="EPOS v2" icon="Icon_epos" slalimit="YYY" />
+	<incrementAtt i_name="Izar" i_doAfterSecs="0" memrequired="1000" diskrequired="2" />
+	<incrementAtt i_name="Izar" i_doAfterSecs="0" proccap="2" />
+	<apply i_name="Izar" upgraded_by_sip="204" />
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="0" instore_bonus="0" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="0" instore_bonus="0" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="0" instore_bonus="0" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="0" instore_bonus="0" />
+	<apply i_name="Neptune" rebootFor="105" reasondown="Installing Izar" />
+	<createNodes i_to="CostedEvents">
+		<node type="sipupgrade" desc="Upgraded EPOS To Version 2" sip="204" ref="EPOS" />
+		<node type="project" desc="EPOS v2" sip="204" regulation="true" />
+	</createNodes>
+  <apply i_name = "204" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+</project>

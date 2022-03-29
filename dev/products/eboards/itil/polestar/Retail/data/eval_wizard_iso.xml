@@ -1,0 +1,1042 @@
+<?xml version="1.0"?>
+<evaluation_wizard use_check_boxes="true">	
+	<section>
+		<section_name>Design And Transition</section_name>
+		<aspects>
+			<aspect>
+				<aspect_name>Planning And Monitoring</aspect_name>
+				<aspect_desc/>
+				<dest_tag_name>Planning_and_monitoring</dest_tag_name>
+				<spot icon="icon" x="2422" y="211" centred="false" width="122" height="121" />
+				<dest_tag_data>0</dest_tag_data>
+				<factors>
+					<factor>
+						<aspect>New services are assessed for ROI?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>New services are reviewed to determine customer requirements?
+</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Communication with all stakeholders is effective?
+</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>New service SLAs are assessed and agreed in a timely manner?
+</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>The technical team are engaged early in the development of the service design package?
+</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+
+				</factors>
+			</aspect>
+			<aspect>
+				<aspect_name>Transition</aspect_name>
+				<aspect_desc/>
+				<dest_tag_name>Transition</dest_tag_name>
+				<spot icon="icon" x="2810" y="440" centred="false" width="120" height="121" />
+				<dest_tag_data>0</dest_tag_data>
+				<factors>
+					<factor>
+						<aspect>The service provider has a process for accepting new services?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>The technical requirements are communicated to all stakeholders in a timely manner?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>The benefits and outcomes of the new service are communicated in a timely manner?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>The benefits and outcomes are reported post implementation?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Is a roll back plan in place?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+
+				</factors>
+			</aspect>
+		</aspects>
+	</section>
+	<section>
+		<section_name>Service Delivery</section_name>
+		<aspects>
+			<aspect>
+				<aspect_name>Service Level Management</aspect_name>
+				<aspect_desc/>
+				<dest_tag_name>Service_Level_Management</dest_tag_name>
+				<spot icon="icon" x="968" y="1011" centred="false" width="122" height="121" />
+				<dest_tag_data>0</dest_tag_data>
+				<factors>
+					<factor>
+						<aspect>The full range of services are documented?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>There is a manageable set of targets?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Are SLAs reviewed regularly?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Are SLAs monitored and reported?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>SLAs expressed in business terms?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+				</factors>
+			</aspect>
+			<aspect>
+				<aspect_name>Service Reporting</aspect_name>
+				<aspect_desc/>
+				<dest_tag_name>Service_Reporting</dest_tag_name>
+				<dest_tag_data>0</dest_tag_data>
+				<spot icon="icon" x="960" y="1506" centred="false" width="122" height="121" />
+				<factors>
+					<factor>
+						<aspect>Service Reports are produced?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Service Reports are communicated to all parties?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Service Reports include performance against SLA?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Service Reports are used to aid decision making?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Service Reports are used to identify service improvements?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+
+				</factors>
+			</aspect>
+			<aspect>
+				<aspect_name>Service Continuity and Availability Management</aspect_name>
+				<aspect_desc/>
+				<dest_tag_name>Service_Management</dest_tag_name>
+				<spot icon="icon" x="1052" y="768" centred="false" width="122" height="121" />
+				<dest_tag_data>0</dest_tag_data>
+				<factors>
+					<factor>
+						<aspect>Availability is measured and recorded?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Availability reports are used to drive strategy?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Service Continuity plans exist?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Service Continuity plans assess cost and benefit?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Service Continuity and Availability attempts to mitigate anticipated disruptions?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+
+				</factors>
+			</aspect>
+			<aspect>
+				<aspect_name>Budgeting And Accounting For Services</aspect_name>
+				<aspect_desc/>
+				<dest_tag_name>Budgeting_And_Accounting</dest_tag_name>
+				<spot icon="icon" x="1161" y="1943" centred="false" width="122" height="121" />
+				<dest_tag_data>0</dest_tag_data>
+				<factors>
+					<factor>
+						<aspect>IT spend is reported on completion of each period?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>IT spend is itemized in sufficient detail?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>IT spend is tracked through each reporting period?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Policies exist for external / supplier spend?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>New services are assessed for all cost impact?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+				</factors>
+			</aspect>
+			<aspect>
+				<aspect_name>Capacity Management</aspect_name>
+				<aspect_desc/>
+				<dest_tag_name>Capacity Management</dest_tag_name>
+				<dest_tag_data>0</dest_tag_data>
+				<spot icon="icon" x="944" y="1256" centred="false" width="122" height="121" />
+				<factors>
+					<factor>
+						<aspect>A capacity database exists?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Ownership of the capacity database is documented?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>New services are assessed for capacity requirements?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Capacity costs for new services are assessed in a timely manner?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Capacity is proactively managed?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+
+				</factors>
+			</aspect>
+			<aspect>
+				<aspect_name>Information Security Management</aspect_name>
+				<aspect_desc/>
+				<dest_tag_name>Information_Security</dest_tag_name>
+				<dest_tag_data>0</dest_tag_data>
+				<spot icon="icon" x="1026" y="1732" centred="false" width="122" height="121" />
+				<factors>
+					<factor>
+						<aspect>An information security process owner exists?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>The process owner is familiar with ISO 27001?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>There is a documented information security policy?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Security controls are documented?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Security incidents are reported?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+
+				</factors>
+			</aspect>
+		</aspects>
+	</section>
+	<section>
+		<section_name>Requirements for a Management System</section_name>
+		<aspects>
+			<aspect>
+				<aspect_name>Management Responsibilities</aspect_name>
+				<aspect_desc/>
+				<dest_tag_name>Management_Responsibilities</dest_tag_name>
+				<spot icon="icon" x="3079" y="789" centred="false" width="122" height="121" />
+				<dest_tag_data>0</dest_tag_data>
+				<factors>
+					<factor>
+						<aspect>Does the service improvement program have executive sponsorship?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>The executive commitment reflects business requirements?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Are customer requirements understood?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Are current levels of service recorded and used as the basis for service improvement?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Does management undertake regular reviews?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+
+				</factors>
+			</aspect>
+			<aspect>
+				<aspect_name>Governance Of Processes Operated By Other Parties</aspect_name>
+				<aspect_desc/>
+				<dest_tag_name>Foreign_Process_Governance</dest_tag_name>
+				<spot icon="icon" x="3177" y="1333" centred="false" width="122" height="121" />
+				<dest_tag_data>0</dest_tag_data>
+				<factors>
+					<factor>
+						<aspect>Have processes operated by external providers have been identified?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Have processes operated by other internal groups have been identified?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Have processes operated by customer groups have been identified?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Where processes are operated by other parties, can accountability can be demonstrated?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Does evidence exist of suppliers managing other suppliers?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+
+
+				</factors>
+			</aspect>
+			<aspect>
+				<aspect_name>Documentation Management</aspect_name>
+				<aspect_desc/>
+				<dest_tag_name>Documentation_Management</dest_tag_name>
+				<spot icon="icon" x="3119" y="1635" centred="false" width="122" height="121" />
+				<dest_tag_data>0</dest_tag_data>
+				<factors>
+					<factor>
+						<aspect>Documentary evidence of processes exists?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Documentary evidence of process ownership exists?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Documentary evidence of SLAs exists?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Are the records fit for purpose?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Are records subject to management procedures (review, disposal)?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+
+				</factors>
+			</aspect>
+			<aspect>
+				<aspect_name>Resource Management</aspect_name>
+				<aspect_desc/>
+				<dest_tag_name>Resource_Management</dest_tag_name>
+				<spot icon="icon" x="3155" y="1065" centred="false" width="122" height="121" />
+				<dest_tag_data>0</dest_tag_data>
+				<factors>
+					<factor>
+						<aspect>All roles and responsibilities are defined?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>All roles and responsibilities are understood?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Resources are appropriate for levels of activity?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Staff competencies are documented?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Staff competencies are reviewed?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+
+				</factors>
+			</aspect>
+		</aspects>
+	</section>
+	<section>
+		<section_name>Relationship Processes</section_name>
+		<aspects>
+			<aspect>
+				<aspect_name>Business Relationship Management</aspect_name>
+				<aspect_desc/>
+				<dest_tag_name>Business_Relationship_Management</dest_tag_name>
+				<spot icon="icon" x="1685" y="2326" centred="false" width="122" height="121" />
+				<dest_tag_data>0</dest_tag_data>
+				<factors>
+					<factor>
+						<aspect>Are service customers identified?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Regular reviews are held?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>A customer satisfaction form exists?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>A complaints process exists?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Actions to improve service are documented?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+				</factors>
+			</aspect>
+			<aspect>
+				<aspect_name>Supplier Management</aspect_name>
+				<aspect_desc/>
+				<dest_tag_name>Supplier_Management</dest_tag_name>
+				<spot icon="icon" x="2456" y="2318" centred="false" width="122" height="121" />
+				<dest_tag_data>0</dest_tag_data>
+				<factors>
+					<factor>
+						<aspect>There is a named individual for managing suppliers?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+
+
+					<factor>
+						<aspect>The supplier relationship is documented?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Regular supplier reviews are held?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>A dispute process exists?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>The supplier is actively encouraged to search for improvements?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+
+
+				</factors>
+			</aspect>
+		</aspects>
+	</section>
+	<section>
+		<section_name>Resolution Processes</section_name>
+		<aspects>
+			<aspect>
+				<aspect_name>Incident Management</aspect_name>
+				<aspect_desc/>
+				<dest_tag_name>Incident_Management</dest_tag_name>
+				<spot icon="icon" x="1698" y="207" centred="false" width="122" height="121" />
+				<dest_tag_data>0</dest_tag_data>
+				<factors>
+					<factor>
+						<aspect>All incidents are recorded?</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>The incident reporting method is known and understood?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Customers are kept informed of progress?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Customers are notified prior to SLA breach?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Incident Management data is available to Problem Management?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+
+				</factors>
+			</aspect>
+			<aspect>
+				<aspect_name>Problem Management</aspect_name>
+				<aspect_desc/>
+				<dest_tag_name>Problem_Management</dest_tag_name>
+				<spot icon="icon" x="1311" y="435" centred="false" width="122" height="121" />
+				<dest_tag_data>0</dest_tag_data>
+				<factors>
+					<factor>
+						<aspect>A problem management process and owner exists?
+
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Incident history data is analysed to identify underlying causes and problems?
+
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Actions are taken to address problems (changes)?
+</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Where no actions are possible known errors are recorded and shared with incident management?
+</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>The effectiveness of problem management is reviewed and reported?
+</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+
+				</factors>
+			</aspect>
+		</aspects>
+	</section>
+	<section>
+		<section_name>Control Process</section_name>
+		<aspects>
+			<aspect>
+				<aspect_name>Configuration Management</aspect_name>
+				<aspect_desc/>
+				<dest_tag_name>Configuration_Management</dest_tag_name>
+				<spot icon="icon" x="1800" y="1238" centred="false" width="122" height="121" />
+				<dest_tag_data>0</dest_tag_data>
+				<factors>
+					<factor>
+						<aspect>A CMDB exists?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>The CMDB maps business services to IT infrastructure?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>The CMDB is maintained?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>The CMDB is used in support of change management?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>The CMDB is used in support of incident management?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+
+				</factors>
+			</aspect>
+			<aspect>
+				<aspect_name>Change Management</aspect_name>
+				<aspect_desc/>
+				<dest_tag_name>Change_Management</dest_tag_name>
+				<spot icon="icon" x="2063" y="1622" centred="false" width="122" height="121" />
+				<dest_tag_data>0</dest_tag_data>
+				<factors>
+					<factor>
+						<aspect>A change manager is identified?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Service infrastructure changes have a defined and documented scope?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Change windows are identified in the change schedule?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Changes are updated with all stakeholders?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>All changes are assessed for benefit and impact?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+
+				</factors>
+			</aspect>
+			<aspect>
+				<aspect_name>Release Management</aspect_name>
+				<aspect_desc/>
+				<dest_tag_name>Release_Management</dest_tag_name>
+				<spot icon="icon" x="2333" y="1237" centred="false" width="122" height="121" />
+				<dest_tag_data>0</dest_tag_data>
+				<factors>
+					<factor>
+						<aspect>Multiple changes are combined into a single release?
+</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Releases are documented and recorded?
+</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Releases are reviewed with incident and problem management?
+</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>All releases are tested before deployment?
+</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Deployment of releases are reversed or remedied if unsuccessful?
+</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+
+				</factors>
+			</aspect>
+		</aspects>
+	</section>
+	<section>
+		<section_name>Establish And Improve SMS</section_name>
+		<spot icon="icon" x="2983" y="1902" centred="false" width="122" height="121">
+			<collate_score dest_tag_name="Plan_the_SMS" />
+			<collate_score dest_tag_name="Implement_the_SMS" />
+			<collate_score dest_tag_name="Monitor_the_SMS" />
+			<collate_score dest_tag_name="Maintain_the_SMS" />
+		</spot>
+		<aspects>
+			<aspect>
+				<aspect_name>Plan The SMS (Plan)</aspect_name>
+				<aspect_desc/>
+				<dest_tag_name>Plan_the_SMS</dest_tag_name>
+				<dest_tag_data>0</dest_tag_data>
+				<factors>
+					<factor>
+						<aspect>A service management plan exists?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>The service management plan states what is to be achieved by service management overall?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>The plan includes details of resources, facilities, budgets?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>The identifies roles and responsibilities?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>The plan details the required service reports?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+
+				</factors>
+			</aspect>
+			<aspect>
+				<aspect_name>Implement And Operate the SMS (Do)</aspect_name>
+				<aspect_desc/>
+				<dest_tag_name>Implement_the_SMS</dest_tag_name>
+				<dest_tag_data>0</dest_tag_data>
+				<factors>
+					<factor>
+						<aspect>The service management plan has been implemented?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Funds are allocated to the managers?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Staff have the necessary skills and experience?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Staff are motivated and working together?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Processes are co-ordinated?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+
+				</factors>
+			</aspect>
+			<aspect>
+				<aspect_name>Monitor And Review the SMS (Check)</aspect_name>
+				<aspect_desc/>
+				<dest_tag_name>Monitor_the_SMS</dest_tag_name>
+				<dest_tag_data>0</dest_tag_data>
+				<factors>
+					<factor>
+						<aspect>The service provider monitors, measures and reports on services and processes?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>The SMS is reviewed at planned intervals?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Where the plan is off target non conformance is flagged?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Records from management reviews are maintained?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>The selection of auditors and conduct of audits is objective and impartial?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+
+				</factors>
+			</aspect>
+			<aspect>
+				<aspect_name>Maintain And Improve the SMS (Act)</aspect_name>
+				<aspect_desc/>
+				<dest_tag_name>Maintain_the_SMS</dest_tag_name>
+				<dest_tag_data>0</dest_tag_data>
+				<factors>
+					<factor>
+						<aspect>A policy on service improvement exists and is published?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Non compliance with the plan is remedied?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Suggested improvements are documented?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>Improvement action is reviewed on conclusion?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+					<factor>
+						<aspect>The CSI plan demonstrates evidence of service quality improvements?
+						</aspect>
+						<weight>1</weight>
+						<guidance/>
+						<factor_data>False</factor_data>
+					</factor>
+
+				</factors>
+			</aspect>
+		</aspects>
+	</section>
+</evaluation_wizard>

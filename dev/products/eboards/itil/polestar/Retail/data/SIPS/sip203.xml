@@ -1,0 +1,602 @@
+<project projectid="203" round="2" regulation="false" installname="Customer Location ID" upgradename = "">
+<product productid="2031" actual_cost="350000">
+<platform platformid="X" designdays="3" builddays="3" testdays="3" handovervalue="80">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="X" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="500" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" notinnetwork="true" type="biz_service" slalimit="YYY" new="true" created_by_sip="203" has_impact="true" impactkmh="-1" biz_service_function="Customer Location ID" />
+	</createNodes>
+	<createNodes i_to="Customer Location ID">
+		<upgrades type="upgrades" />
+	</createNodes>
+  <apply i_name = "203" MaxRevOffset="345600" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Customer Location ID" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="4" has_impact="false" impactkmh="-1" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="4" has_impact="false" impactkmh="-1" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="4" has_impact="false" impactkmh="-1" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Navi" />
+	<apply i_name = "Store 1 Customer Location ID" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 Customer Location ID" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 Customer Location ID" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Customer Location ID" i_doAfterSecs="105" transaction_type="none"/>
+	<apply i_name="XXXX" name="Navi" />
+	<apply i_name="Navi" type="App" proccap="1" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="500" diskrequired="20" created_by_sip="203" />
+	<createNodes i_to="Navi">
+		<link to="Store 1 Customer Location ID" type="Connection" name="Navi Store 1 Customer Location ID Connection" />
+		<link to="Store 2 Customer Location ID" type="Connection" name="Navi Store 2 Customer Location ID Connection" />
+		<link to="Store 3 Customer Location ID" type="Connection" name="Navi Store 3 Customer Location ID Connection" />
+	</createNodes>
+	<createNodes i_to="Customer Location ID">
+		<link to="Store 1 Customer Location ID" type="Connection" contype="Customer Location ID" name="BS Store 1 Customer Location ID Connection" />
+		<link to="Store 2 Customer Location ID" type="Connection" contype="Customer Location ID" name="BS Store 2 Customer Location ID Connection" />
+		<link to="Store 3 Customer Location ID" type="Connection" contype="Customer Location ID" name="BS Store 3 Customer Location ID Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="4800" instore_bonus="4800" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="4800" instore_bonus="4800" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="4800" instore_bonus="4800" />
+	<apply i_name="Store 1 Customer Location ID" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 2 Customer Location ID" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 3 Customer Location ID" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Customer Location ID" sip="203" ref="Customer Location ID" />
+		<node type="project" desc="Customer\r\nLocation" sip="203" regulation="false" />
+	</createNodes>
+  <apply i_name = "203" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Y" designdays="4" builddays="4" testdays="3" handovervalue="80">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Y" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="500" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" notinnetwork="true" type="biz_service" slalimit="YYY" new="true" created_by_sip="203" has_impact="true" impactkmh="-1" biz_service_function="Customer Location ID" />
+	</createNodes>
+	<createNodes i_to="Customer Location ID">
+		<upgrades type="upgrades" />
+	</createNodes>
+  <apply i_name = "203" MaxRevOffset="345600" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Customer Location ID" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="4" has_impact="false" impactkmh="-1" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="4" has_impact="false" impactkmh="-1" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="4" has_impact="false" impactkmh="-1" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Navi" />
+	<apply i_name = "Store 1 Customer Location ID" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 Customer Location ID" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 Customer Location ID" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Customer Location ID" i_doAfterSecs="105" transaction_type="none"/>
+	<apply i_name="XXXX" name="Navi" />
+	<apply i_name="Navi" type="App" proccap="1" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="500" diskrequired="20" created_by_sip="203" />
+	<createNodes i_to="Navi">
+		<link to="Store 1 Customer Location ID" type="Connection" name="Navi Store 1 Customer Location ID Connection" />
+		<link to="Store 2 Customer Location ID" type="Connection" name="Navi Store 2 Customer Location ID Connection" />
+		<link to="Store 3 Customer Location ID" type="Connection" name="Navi Store 3 Customer Location ID Connection" />
+	</createNodes>
+	<createNodes i_to="Customer Location ID">
+		<link to="Store 1 Customer Location ID" type="Connection" contype="Customer Location ID" name="BS Store 1 Customer Location ID Connection" />
+		<link to="Store 2 Customer Location ID" type="Connection" contype="Customer Location ID" name="BS Store 2 Customer Location ID Connection" />
+		<link to="Store 3 Customer Location ID" type="Connection" contype="Customer Location ID" name="BS Store 3 Customer Location ID Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="4800" instore_bonus="4800" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="4800" instore_bonus="4800" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="4800" instore_bonus="4800" />
+	<apply i_name="Store 1 Customer Location ID" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 2 Customer Location ID" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 3 Customer Location ID" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Customer Location ID" sip="203" ref="Customer Location ID" />
+		<node type="project" desc="Customer\r\nLocation" sip="203" regulation="false" />
+	</createNodes>
+  <apply i_name = "203" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Z" designdays="3" builddays="7" testdays="4" handovervalue="80">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Z" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="500" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" notinnetwork="true" type="biz_service" slalimit="YYY" new="true" created_by_sip="203" has_impact="true" impactkmh="-1" biz_service_function="Customer Location ID" />
+	</createNodes>
+	<createNodes i_to="Customer Location ID">
+		<upgrades type="upgrades" />
+	</createNodes>
+  <apply i_name = "203" MaxRevOffset="345600" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Customer Location ID" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="4" has_impact="false" impactkmh="-1" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="4" has_impact="false" impactkmh="-1" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="4" has_impact="false" impactkmh="-1" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Navi" />
+	<apply i_name = "Store 1 Customer Location ID" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 Customer Location ID" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 Customer Location ID" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Customer Location ID" i_doAfterSecs="105" transaction_type="none"/>
+	<apply i_name="XXXX" name="Navi" />
+	<apply i_name="Navi" type="App" proccap="1" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="500" diskrequired="20" created_by_sip="203" />
+	<createNodes i_to="Navi">
+		<link to="Store 1 Customer Location ID" type="Connection" name="Navi Store 1 Customer Location ID Connection" />
+		<link to="Store 2 Customer Location ID" type="Connection" name="Navi Store 2 Customer Location ID Connection" />
+		<link to="Store 3 Customer Location ID" type="Connection" name="Navi Store 3 Customer Location ID Connection" />
+	</createNodes>
+	<createNodes i_to="Customer Location ID">
+		<link to="Store 1 Customer Location ID" type="Connection" contype="Customer Location ID" name="BS Store 1 Customer Location ID Connection" />
+		<link to="Store 2 Customer Location ID" type="Connection" contype="Customer Location ID" name="BS Store 2 Customer Location ID Connection" />
+		<link to="Store 3 Customer Location ID" type="Connection" contype="Customer Location ID" name="BS Store 3 Customer Location ID Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="4800" instore_bonus="4800" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="4800" instore_bonus="4800" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="4800" instore_bonus="4800" />
+	<apply i_name="Store 1 Customer Location ID" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 2 Customer Location ID" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 3 Customer Location ID" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Customer Location ID" sip="203" ref="Customer Location ID" />
+		<node type="project" desc="Customer\r\nLocation" sip="203" regulation="false" />
+	</createNodes>
+  <apply i_name = "203" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+<product productid="2032" actual_cost="200000">
+<platform platformid="X" designdays="4" builddays="4" testdays="3" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="X" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="500" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" notinnetwork="true" type="biz_service" slalimit="YYY" new="true" created_by_sip="203" has_impact="true" impactkmh="-1" biz_service_function="Customer Location ID" />
+	</createNodes>
+	<createNodes i_to="Customer Location ID">
+		<upgrades type="upgrades" />
+	</createNodes>
+  <apply i_name = "203" MaxRevOffset="288000" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Customer Location ID" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="4" has_impact="false" impactkmh="-1" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="4" has_impact="false" impactkmh="-1" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="4" has_impact="false" impactkmh="-1" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Navi" />
+	<apply i_name = "Store 1 Customer Location ID" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 Customer Location ID" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 Customer Location ID" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Customer Location ID" i_doAfterSecs="105" transaction_type="none"/>
+	<apply i_name="XXXX" name="Navi" />
+	<apply i_name="Navi" type="App" proccap="1" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="500" diskrequired="20" created_by_sip="203" />
+	<createNodes i_to="Navi">
+		<link to="Store 1 Customer Location ID" type="Connection" name="Navi Store 1 Customer Location ID Connection" />
+		<link to="Store 2 Customer Location ID" type="Connection" name="Navi Store 2 Customer Location ID Connection" />
+		<link to="Store 3 Customer Location ID" type="Connection" name="Navi Store 3 Customer Location ID Connection" />
+	</createNodes>
+	<createNodes i_to="Customer Location ID">
+		<link to="Store 1 Customer Location ID" type="Connection" contype="Customer Location ID" name="BS Store 1 Customer Location ID Connection" />
+		<link to="Store 2 Customer Location ID" type="Connection" contype="Customer Location ID" name="BS Store 2 Customer Location ID Connection" />
+		<link to="Store 3 Customer Location ID" type="Connection" contype="Customer Location ID" name="BS Store 3 Customer Location ID Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="4000" instore_bonus="4000" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="4000" instore_bonus="4000" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="4000" instore_bonus="4000" />
+	<apply i_name="Store 1 Customer Location ID" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 2 Customer Location ID" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 3 Customer Location ID" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Customer Location ID" sip="203" ref="Customer Location ID" />
+		<node type="project" desc="Customer\r\nLocation" sip="203" regulation="false" />
+	</createNodes>
+  <apply i_name = "203" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Y" designdays="4" builddays="4" testdays="4" handovervalue="80">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Y" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="500" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" notinnetwork="true" type="biz_service" slalimit="YYY" new="true" created_by_sip="203" has_impact="true" impactkmh="-1" biz_service_function="Customer Location ID" />
+	</createNodes>
+	<createNodes i_to="Customer Location ID">
+		<upgrades type="upgrades" />
+	</createNodes>
+  <apply i_name = "203" MaxRevOffset="230400" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Customer Location ID" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="4" has_impact="false" impactkmh="-1" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="4" has_impact="false" impactkmh="-1" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="4" has_impact="false" impactkmh="-1" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Navi" />
+	<apply i_name = "Store 1 Customer Location ID" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 Customer Location ID" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 Customer Location ID" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Customer Location ID" i_doAfterSecs="105" transaction_type="none"/>
+	<apply i_name="XXXX" name="Navi" />
+	<apply i_name="Navi" type="App" proccap="1" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="500" diskrequired="20" created_by_sip="203" />
+	<createNodes i_to="Navi">
+	<link to="Store 1 Customer Location ID" type="Connection" name="Navi Store 1 Customer Location ID Connection" />
+		<link to="Store 2 Customer Location ID" type="Connection" name="Navi Store 2 Customer Location ID Connection" />
+		<link to="Store 3 Customer Location ID" type="Connection" name="Navi Store 3 Customer Location ID Connection" />
+	</createNodes>
+	<createNodes i_to="Customer Location ID">
+		<link to="Store 1 Customer Location ID" type="Connection" contype="Customer Location ID" name="BS Store 1 Customer Location ID Connection" />
+		<link to="Store 2 Customer Location ID" type="Connection" contype="Customer Location ID" name="BS Store 2 Customer Location ID Connection" />
+		<link to="Store 3 Customer Location ID" type="Connection" contype="Customer Location ID" name="BS Store 3 Customer Location ID Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="3200" instore_bonus="3200" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="3200" instore_bonus="3200" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="3200" instore_bonus="3200" />
+	<apply i_name="Store 1 Customer Location ID" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 2 Customer Location ID" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 3 Customer Location ID" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Customer Location ID" sip="203" ref="Customer Location ID" />
+		<node type="project" desc="Customer\r\nLocation" sip="203" regulation="false" />
+	</createNodes>
+  <apply i_name = "203" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Z" designdays="4" builddays="5" testdays="5" handovervalue="80">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Z" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="500" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" notinnetwork="true" type="biz_service" slalimit="YYY" new="true" created_by_sip="203" has_impact="true" impactkmh="-1" biz_service_function="Customer Location ID" />
+	</createNodes>
+	<createNodes i_to="Customer Location ID">
+		<upgrades type="upgrades" />
+	</createNodes>
+  <apply i_name = "203" MaxRevOffset="230400" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Customer Location ID" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="4" has_impact="false" impactkmh="-1" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="4" has_impact="false" impactkmh="-1" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="4" has_impact="false" impactkmh="-1" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Navi" />
+	<apply i_name = "Store 1 Customer Location ID" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 Customer Location ID" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 Customer Location ID" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Customer Location ID" i_doAfterSecs="105" transaction_type="none"/>
+	<apply i_name="XXXX" name="Navi" />
+	<apply i_name="Navi" type="App" proccap="1" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="500" diskrequired="20" created_by_sip="203" />
+	<createNodes i_to="Navi">
+		<link to="Store 1 Customer Location ID" type="Connection" name="Navi Store 1 Customer Location ID Connection" />
+		<link to="Store 2 Customer Location ID" type="Connection" name="Navi Store 2 Customer Location ID Connection" />
+		<link to="Store 3 Customer Location ID" type="Connection" name="Navi Store 3 Customer Location ID Connection" />
+	</createNodes>
+	<createNodes i_to="Customer Location ID">
+		<link to="Store 1 Customer Location ID" type="Connection" contype="Customer Location ID" name="BS Store 1 Customer Location ID Connection" />
+		<link to="Store 2 Customer Location ID" type="Connection" contype="Customer Location ID" name="BS Store 2 Customer Location ID Connection" />
+		<link to="Store 3 Customer Location ID" type="Connection" contype="Customer Location ID" name="BS Store 3 Customer Location ID Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="3200" instore_bonus="3200" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="3200" instore_bonus="3200" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="3200" instore_bonus="3200" />
+	<apply i_name="Store 1 Customer Location ID" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 2 Customer Location ID" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 3 Customer Location ID" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Customer Location ID" sip="203" ref="Customer Location ID" />
+		<node type="project" desc="Customer\r\nLocation" sip="203" regulation="false" />
+	</createNodes>
+  <apply i_name = "203" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+<product productid="2033" actual_cost="180000">
+<platform platformid="X" designdays="3" builddays="3" testdays="2" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="X" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="500" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" notinnetwork="true" type="biz_service" slalimit="YYY" new="true" created_by_sip="203" has_impact="true" impactkmh="-1" biz_service_function="Customer Location ID" />
+	</createNodes>
+	<createNodes i_to="Customer Location ID">
+		<upgrades type="upgrades" />
+	</createNodes>
+  <apply i_name = "203" MaxRevOffset="360000" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Customer Location ID" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="4" has_impact="false" impactkmh="-1" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="4" has_impact="false" impactkmh="-1" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="4" has_impact="false" impactkmh="-1" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Navi" />
+	<apply i_name = "Store 1 Customer Location ID" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 Customer Location ID" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 Customer Location ID" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Customer Location ID" i_doAfterSecs="105" transaction_type="none"/>
+	<apply i_name="XXXX" name="Navi" />
+	<apply i_name="Navi" type="App" proccap="1" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="500" diskrequired="20" created_by_sip="203" />
+	<createNodes i_to="Navi">
+		<link to="Store 1 Customer Location ID" type="Connection" name="Navi Store 1 Customer Location ID Connection" />
+		<link to="Store 2 Customer Location ID" type="Connection" name="Navi Store 2 Customer Location ID Connection" />
+		<link to="Store 3 Customer Location ID" type="Connection" name="Navi Store 3 Customer Location ID Connection" />
+	</createNodes>
+	<createNodes i_to="Customer Location ID">
+		<link to="Store 1 Customer Location ID" type="Connection" contype="Customer Location ID" name="BS Store 1 Customer Location ID Connection" />
+		<link to="Store 2 Customer Location ID" type="Connection" contype="Customer Location ID" name="BS Store 2 Customer Location ID Connection" />
+		<link to="Store 3 Customer Location ID" type="Connection" contype="Customer Location ID" name="BS Store 3 Customer Location ID Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="5000" instore_bonus="5000" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="5000" instore_bonus="5000" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="5000" instore_bonus="5000" />
+	<apply i_name="Store 1 Customer Location ID" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 2 Customer Location ID" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 3 Customer Location ID" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Customer Location ID" sip="203" ref="Customer Location ID" />
+		<node type="project" desc="Customer\r\nLocation" sip="203" regulation="false" />
+	</createNodes>
+  <apply i_name = "203" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Y" designdays="3" builddays="3" testdays="3" handovervalue="80">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Y" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="500" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" notinnetwork="true" type="biz_service" slalimit="YYY" new="true" created_by_sip="203" has_impact="true" impactkmh="-1" biz_service_function="Customer Location ID" />
+	</createNodes>
+	<createNodes i_to="Customer Location ID">
+		<upgrades type="upgrades" />
+	</createNodes>
+  <apply i_name = "203" MaxRevOffset="288000" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Customer Location ID" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="4" has_impact="false" impactkmh="-1" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="4" has_impact="false" impactkmh="-1" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="4" has_impact="false" impactkmh="-1" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Navi" />
+	<apply i_name = "Store 1 Customer Location ID" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 Customer Location ID" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 Customer Location ID" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Customer Location ID" i_doAfterSecs="105" transaction_type="none"/>
+	<apply i_name="XXXX" name="Navi" />
+	<apply i_name="Navi" type="App" proccap="1" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="500" diskrequired="20" created_by_sip="203" />
+	<createNodes i_to="Navi">
+		<link to="Store 1 Customer Location ID" type="Connection" name="Navi Store 1 Customer Location ID Connection" />
+		<link to="Store 2 Customer Location ID" type="Connection" name="Navi Store 2 Customer Location ID Connection" />
+		<link to="Store 3 Customer Location ID" type="Connection" name="Navi Store 3 Customer Location ID Connection" />
+	</createNodes>
+	<createNodes i_to="Customer Location ID">
+		<link to="Store 1 Customer Location ID" type="Connection" contype="Customer Location ID" name="BS Store 1 Customer Location ID Connection" />
+		<link to="Store 2 Customer Location ID" type="Connection" contype="Customer Location ID" name="BS Store 2 Customer Location ID Connection" />
+		<link to="Store 3 Customer Location ID" type="Connection" contype="Customer Location ID" name="BS Store 3 Customer Location ID Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="4000" instore_bonus="4000" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="4000" instore_bonus="4000" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="4000" instore_bonus="4000" />
+	<apply i_name="Store 1 Customer Location ID" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 2 Customer Location ID" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 3 Customer Location ID" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Customer Location ID" sip="203" ref="Customer Location ID" />
+		<node type="project" desc="Customer\r\nLocation" sip="203" regulation="false" />
+	</createNodes>
+  <apply i_name = "203" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Z" designdays="3" builddays="1" testdays="1" handovervalue="80">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Z" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="500" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" notinnetwork="true" type="biz_service" slalimit="YYY" new="true" created_by_sip="203" has_impact="true" impactkmh="-1" biz_service_function="Customer Location ID" />
+	</createNodes>
+	<createNodes i_to="Customer Location ID">
+		<upgrades type="upgrades" />
+	</createNodes>
+  <apply i_name = "203" MaxRevOffset="288000" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Customer Location ID" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="4" has_impact="false" impactkmh="-1" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="4" has_impact="false" impactkmh="-1" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="4" has_impact="false" impactkmh="-1" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Customer Location ID" desc="Customer\r\nLocation" shortdesc="Customer Location" icon="Icon_cl" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Customer Location ID" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Navi" />
+	<apply i_name = "Store 1 Customer Location ID" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 Customer Location ID" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 Customer Location ID" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Customer Location ID" i_doAfterSecs="105" transaction_type="none"/>
+	<apply i_name="XXXX" name="Navi" />
+	<apply i_name="Navi" type="App" proccap="1" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="500" diskrequired="20" created_by_sip="203" />
+	<createNodes i_to="Navi">
+		<link to="Store 1 Customer Location ID" type="Connection" name="Navi Store 1 Customer Location ID Connection" />
+		<link to="Store 2 Customer Location ID" type="Connection" name="Navi Store 2 Customer Location ID Connection" />
+		<link to="Store 3 Customer Location ID" type="Connection" name="Navi Store 3 Customer Location ID Connection" />
+	</createNodes>
+	<createNodes i_to="Customer Location ID">
+		<link to="Store 1 Customer Location ID" type="Connection" contype="Customer Location ID" name="BS Store 1 Customer Location ID Connection" />
+		<link to="Store 2 Customer Location ID" type="Connection" contype="Customer Location ID" name="BS Store 2 Customer Location ID Connection" />
+		<link to="Store 3 Customer Location ID" type="Connection" contype="Customer Location ID" name="BS Store 3 Customer Location ID Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="4000" instore_bonus="4000" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="4000" instore_bonus="4000" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="4000" instore_bonus="4000" />
+	<apply i_name="Store 1 Customer Location ID" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 2 Customer Location ID" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 3 Customer Location ID" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Customer Location ID" sip="203" ref="Customer Location ID" />
+		<node type="project" desc="Customer\r\nLocation" sip="203" regulation="false" />
+	</createNodes>
+  <apply i_name = "203" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+</project>

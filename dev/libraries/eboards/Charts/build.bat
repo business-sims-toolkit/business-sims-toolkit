@@ -1,0 +1,2 @@
+REM NETWORK VIEW LIB
+"C:\Program Files\GlobFX\NeoSwiff Framework\CCS\scc\scc.exe" /target:library /out:bin\Debug\Charts.scl /lib:"C:\Program Files\GlobFX\NeoSwiff Framework\CCS\scc\swfvm1\Debug","C:\NewWorkspaces\Juno\lib\neo\core\bin\Debug" LeftYAxis.cs LineGraph.cs RightYAxis.cs YAxis.cs ChartUtils.cs Axis.cs XAxis.cs /nostdlib /reference:System.scl,System.Drawing.scl,System.Windows.Forms.scl,System.Xml.scl,core.scl

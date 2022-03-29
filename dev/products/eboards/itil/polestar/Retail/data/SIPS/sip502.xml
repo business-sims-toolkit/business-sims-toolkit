@@ -1,0 +1,140 @@
+<project projectid="502" round="5" regulation="false" installname="Fulfillment v2" fixedlocation="B337" fixedzone="X" upgradename = "Rastaban">
+<product productid="5021" actual_cost="200000">
+<platform platformid="X" designdays="2" builddays="3" testdays="1" handovervalue="100">
+<InstallScript>
+<requirements>
+<requireExists i_name="Rastaban" i_failReason="App Not Found" i_failShortReason="App Not\r\nFound" />
+<requireAttrs i_name="Rastaban" location="XXXX" i_failReason="Invalid Location" i_failShortReason="Invalid\r\nLocation" />
+<requireMin i_parentOf="Rastaban" disk_left="5" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+<requireMin i_parentOf="Rastaban" mem_left="500" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Fulfillment/upgrades">
+		<node version="2" name="Fulfillment v2" desc="Fulfillment v2" shortdesc="Fulfillment v2" icon="Icon_F" notinnetwork="true" type="biz_service"  slalimit="YYY" upgraded_by_sip = "502" biz_service_function="Fulfillment" />
+	</createNodes>
+	<apply i_name = "502" MaxRevOffset="288000" />
+</oncreate>
+<oninstall>
+	<createNodes i_to="Retired Business Services">
+		<node name="Fulfillment (v1)" icon="Icon_F" version="1"/>
+	</createNodes>
+	<copyAttributes i_to="Fulfillment (v1)" i_from="Fulfillment"/>
+	<apply i_name="Fulfillment (v1)"	type="retired_biz_service"/>
+	<copyAttributes i_to="Fulfillment" i_from="Fulfillment v2"/>
+	<deleteNode i_name="Fulfillment v2" />
+	<apply i_name="Fulfillment" slalimit="YYY"/>
+	<apply i_name="Store 1 Fulfillment" desc="Fulfillment v2" shortdesc="Fulfillment v2" icon="Icon_F" slalimit="YYY" />
+	<apply i_name="Store 2 Fulfillment" desc="Fulfillment v2" shortdesc="Fulfillment v2" icon="Icon_F" slalimit="YYY" />
+	<apply i_name="Store 3 Fulfillment" desc="Fulfillment v2" shortdesc="Fulfillment v2" icon="Icon_F" slalimit="YYY" />
+	<apply i_name="Store 4 Fulfillment" desc="Fulfillment v2" shortdesc="Fulfillment v2" icon="Icon_F" slalimit="YYY" />
+	<incrementAtt i_name="Rastaban" i_doAfterSecs="0" memrequired="500" diskrequired="5" />
+	<incrementAtt i_name="Rastaban" i_doAfterSecs="0" proccap="2" />
+	<apply i_name="Rastaban" upgraded_by_sip="502" />
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="8000" instore_bonus="0" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="8000" instore_bonus="0" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="8000" instore_bonus="0" />
+	<apply i_parentOf="Rastaban" rebootFor="105" reasondown="Upgrading Rastaban" />
+	<createNodes i_to="CostedEvents">
+		<node type="sipupgrade" desc="Upgraded Fulfillment To Version 2" sip="502" ref="Fulfillment" />
+		<node type="project" desc="Fulfillment v2" sip="502" regulation="false" />
+	</createNodes>
+	<apply i_name = "502" MaxRevOffset="0" />
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+<product productid="5022" actual_cost="220000">
+<platform platformid="X" designdays="5" builddays="5" testdays="3" handovervalue="100">
+<InstallScript>
+<requirements>
+<requireExists i_name="Rastaban" i_failReason="App Not Found" i_failShortReason="App Not\r\nFound" />
+<requireAttrs i_name="Rastaban" location="XXXX" i_failReason="Invalid Location" i_failShortReason="Invalid\r\nLocation" />
+<requireMin i_parentOf="Rastaban" disk_left="5" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+<requireMin i_parentOf="Rastaban" mem_left="500" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Fulfillment/upgrades">
+		<node version="2" name="Fulfillment v2" desc="Fulfillment v2" shortdesc="Fulfillment v2" icon="Icon_F" notinnetwork="true" type="biz_service"  slalimit="YYY" upgraded_by_sip = "502" biz_service_function="Fulfillment" />
+	</createNodes>
+	<apply i_name = "502" MaxRevOffset="252000" />
+</oncreate>
+<oninstall>
+	<createNodes i_to="Retired Business Services">
+		<node name="Fulfillment (v1)" icon="Icon_F" version="1"/>
+	</createNodes>
+	<copyAttributes i_to="Fulfillment (v1)" i_from="Fulfillment"/>
+	<apply i_name="Fulfillment (v1)"	type="retired_biz_service"/>
+	<copyAttributes i_to="Fulfillment" i_from="Fulfillment v2"/>
+	<deleteNode i_name="Fulfillment v2" />
+	<apply i_name="Fulfillment" slalimit="YYY"/>
+	<apply i_name="Store 1 Fulfillment" desc="Fulfillment v2" shortdesc="Fulfillment v2" icon="Icon_F" slalimit="YYY" />
+	<apply i_name="Store 2 Fulfillment" desc="Fulfillment v2" shortdesc="Fulfillment v2" icon="Icon_F" slalimit="YYY" />
+	<apply i_name="Store 3 Fulfillment" desc="Fulfillment v2" shortdesc="Fulfillment v2" icon="Icon_F" slalimit="YYY" />
+	<apply i_name="Store 4 Fulfillment" desc="Fulfillment v2" shortdesc="Fulfillment v2" icon="Icon_F" slalimit="YYY" />
+	<incrementAtt i_name="Rastaban" i_doAfterSecs="0" memrequired="500" diskrequired="5" />
+	<incrementAtt i_name="Rastaban" i_doAfterSecs="0" proccap="2" />
+	<apply i_name="Rastaban" upgraded_by_sip="502" />
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="7000" instore_bonus="0" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="7000" instore_bonus="0" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="7000" instore_bonus="0" />
+	<apply i_parentOf="Rastaban" rebootFor="105" reasondown="Upgrading Rastaban" />
+	<createNodes i_to="CostedEvents">
+		<node type="sipupgrade" desc="Upgraded Fulfillment To Version 2" sip="502" ref="Fulfillment" />
+		<node type="project" desc="Fulfillment v2" sip="502" regulation="false" />
+	</createNodes>
+	<apply i_name = "502" MaxRevOffset="0" />
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+<product productid="5023" actual_cost="190000">
+<platform platformid="X" designdays="3" builddays="3" testdays="2" handovervalue="100">
+<InstallScript>
+<requirements>
+<requireExists i_name="Rastaban" i_failReason="App Not Found" i_failShortReason="App Not\r\nFound" />
+<requireAttrs i_name="Rastaban" location="XXXX" i_failReason="Invalid Location" i_failShortReason="Invalid\r\nLocation" />
+<requireMin i_parentOf="Rastaban" disk_left="5" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+<requireMin i_parentOf="Rastaban" mem_left="500" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Fulfillment/upgrades">
+		<node version="2" name="Fulfillment v2" desc="Fulfillment v2" shortdesc="Fulfillment v2" icon="Icon_F" notinnetwork="true" type="biz_service"  slalimit="YYY" upgraded_by_sip = "502" biz_service_function="Fulfillment" />
+	</createNodes>
+	<apply i_name = "502" MaxRevOffset="144000" />
+</oncreate>
+<oninstall>
+	<createNodes i_to="Retired Business Services">
+		<node name="Fulfillment (v1)" icon="Icon_F" version="1"/>
+	</createNodes>
+	<copyAttributes i_to="Fulfillment (v1)" i_from="Fulfillment"/>
+	<apply i_name="Fulfillment (v1)"	type="retired_biz_service"/>
+	<copyAttributes i_to="Fulfillment" i_from="Fulfillment v2"/>
+	<deleteNode i_name="Fulfillment v2" />
+	<apply i_name="Fulfillment" slalimit="YYY"/>
+	<apply i_name="Store 1 Fulfillment" desc="Fulfillment v2" shortdesc="Fulfillment v2" icon="Icon_F" slalimit="YYY" />
+	<apply i_name="Store 2 Fulfillment" desc="Fulfillment v2" shortdesc="Fulfillment v2" icon="Icon_F" slalimit="YYY" />
+	<apply i_name="Store 3 Fulfillment" desc="Fulfillment v2" shortdesc="Fulfillment v2" icon="Icon_F" slalimit="YYY" />
+	<apply i_name="Store 4 Fulfillment" desc="Fulfillment v2" shortdesc="Fulfillment v2" icon="Icon_F" slalimit="YYY" />
+	<incrementAtt i_name="Rastaban" i_doAfterSecs="0" memrequired="500" diskrequired="5" />
+	<incrementAtt i_name="Rastaban" i_doAfterSecs="0" proccap="2" />
+	<apply i_name="Rastaban" upgraded_by_sip="502" />
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="4000" instore_bonus="0" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="4000" instore_bonus="0" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="4000" instore_bonus="0" />
+	<apply i_parentOf="Rastaban" rebootFor="105" reasondown="Upgrading Rastaban" />
+	<createNodes i_to="CostedEvents">
+		<node type="sipupgrade" desc="Upgraded Fulfillment To Version 2" sip="502" ref="Fulfillment" />
+		<node type="project" desc="Fulfillment v2" sip="502" regulation="false" />
+	</createNodes>
+	<apply i_name = "502" MaxRevOffset="0" />
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+</project>

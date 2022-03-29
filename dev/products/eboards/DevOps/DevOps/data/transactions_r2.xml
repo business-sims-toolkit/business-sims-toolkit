@@ -1,0 +1,206 @@
+<incidents>
+	// At Time Start covering the intial set of transactions 
+	<i id="AtStart">
+	<createNodes i_to="Transactions" i_doAfterSecs="1">
+		<transaction round="1" name="trans01" displayname="BU101" revenuelevel="5" event_type="online" sequence="1" status="Queued" time="60" store="BU 1" />
+		<transaction round="1" name="trans02" displayname="BU201" revenuelevel="5" event_type="online" sequence="2" status="Queued" time="60" store="BU 2" />
+		<transaction round="1" name="trans03" displayname="BU301" revenuelevel="3" event_type="online" sequence="3" status="Queued" time="60" store="BU 3" />
+		<transaction round="1" name="trans04" displayname="BU401" revenuelevel="2" event_type="online" sequence="4" status="Queued" time="60" store="BU 4" />
+		
+		<transaction round="1" name="trans05" displayname="BU102" revenuelevel="5" event_type="instore" sequence="5" status="Queued" time="120" store="BU 1" />
+		<transaction round="1" name="trans06" displayname="BU202" revenuelevel="5" event_type="instore" sequence="6" status="Queued" time="120" store="BU 2" />
+		<transaction round="1" name="trans07" displayname="BU302" revenuelevel="3" event_type="instore" sequence="7" status="Queued" time="120" store="BU 3" />
+		<transaction round="1" name="trans08" displayname="BU402" revenuelevel="2" event_type="instore" sequence="8" status="Queued" time="120" store="BU 4" />
+		
+		<transaction round="1" name="trans09" displayname="BU103" revenuelevel="5" event_type="online" sequence="9" status="Queued" time="180" store="BU 1" />
+		<transaction round="1" name="trans10" displayname="BU203" revenuelevel="5" event_type="online" sequence="10" status="Queued" time="180" store="BU 2" />
+		<transaction round="1" name="trans11" displayname="BU303" revenuelevel="3" event_type="online" sequence="11" status="Queued" time="180" store="BU 3" />
+		<transaction round="1" name="trans12" displayname="BU403" revenuelevel="2" event_type="online" sequence="12" status="Queued" time="180" store="BU 4" />
+		
+		<transaction round="1" name="trans13" displayname="BU104" revenuelevel="5" event_type="instore" sequence="13" status="Queued" time="240" store="BU 1" />
+		<transaction round="1" name="trans14" displayname="BU204" revenuelevel="5" event_type="instore" sequence="14" status="Queued" time="240" store="BU 2" />
+		<transaction round="1" name="trans15" displayname="BU304" revenuelevel="3" event_type="instore" sequence="15" status="Queued" time="240" store="BU 3" />
+		<transaction round="1" name="trans16" displayname="BU404" revenuelevel="2" event_type="instore" sequence="16" status="Queued" time="240" store="BU 4" />
+	</createNodes></i>
+
+
+	// At Time 5:00
+	<i id="AtStart">
+	<createNodes i_to="Transactions" i_doAfterSecs="1">
+		<transaction round="1" name="trans17" displayname="BU105" revenuelevel="5" event_type="online" sequence="17" status="Queued" time="300" store="BU 1" />
+		<transaction round="1" name="trans18" displayname="BU205" revenuelevel="5" event_type="online" sequence="18" status="Queued" time="300" store="BU 2" />
+		<transaction round="1" name="trans19" displayname="BU305" revenuelevel="3" event_type="online" sequence="19" status="Queued" time="300" store="BU 3" />
+		<transaction round="1" name="trans20" displayname="BU405" revenuelevel="2" event_type="online" sequence="20" status="Queued" time="300" store="BU 4" />
+	</createNodes></i>
+
+	// At Time 6:00
+	<i id="AtStart">
+	<createNodes i_to="Transactions" i_doAfterSecs="1">
+		<transaction round="1" name="trans21" displayname="BU106" revenuelevel="5" event_type="instore" sequence="21" status="Queued" time="360" store="BU 1" />
+		<transaction round="1" name="trans22" displayname="BU206" revenuelevel="5" event_type="instore" sequence="22" status="Queued" time="360" store="BU 2" />
+		<transaction round="1" name="trans23" displayname="BU306" revenuelevel="3" event_type="instore" sequence="23" status="Queued" time="360" store="BU 3" />
+		<transaction round="1" name="trans24" displayname="BU406" revenuelevel="2" event_type="instore" sequence="24" status="Queued" time="360" store="BU 4" />
+	</createNodes></i>
+
+	// At Time 7:00
+	<i id="AtStart">
+	<createNodes i_to="Transactions" i_doAfterSecs="1">
+		<transaction round="1" name="trans25" displayname="BU107" revenuelevel="3" event_type="online" sequence="25" status="Queued" time="420" store="BU 1" />
+		<transaction round="1" name="trans26" displayname="BU207" revenuelevel="3" event_type="online" sequence="26" status="Queued" time="420" store="BU 2" />
+		<transaction round="1" name="trans27" displayname="BU307" revenuelevel="3" event_type="online" sequence="27" status="Queued" time="420" store="BU 3" />
+		<transaction round="1" name="trans28" displayname="BU407" revenuelevel="1" event_type="online" sequence="28" status="Queued" time="420" store="BU 4" />
+	</createNodes></i>
+
+	// At Time 8:00
+	<i id="AtStart">
+	<createNodes i_to="Transactions" i_doAfterSecs="1">
+		<transaction round="1" name="trans29" displayname="BU108" revenuelevel="3" event_type="instore" sequence="29" status="Queued" time="480" store="BU 1" />
+		<transaction round="1" name="trans30" displayname="BU208" revenuelevel="3" event_type="instore" sequence="30" status="Queued" time="480" store="BU 2" />
+		<transaction round="1" name="trans31" displayname="BU308" revenuelevel="3" event_type="instore" sequence="31" status="Queued" time="480" store="BU 3" />
+		<transaction round="1" name="trans32" displayname="BU408" revenuelevel="1" event_type="instore" sequence="32" status="Queued" time="480" store="BU 4" />
+	</createNodes></i>
+
+	// At Time 9:00
+	<i id="AtStart">
+	<createNodes i_to="Transactions" i_doAfterSecs="1">
+		<transaction round="1" name="trans33" displayname="BU109" revenuelevel="3" event_type="online" sequence="33" status="Queued" time="540" store="BU 1" />
+		<transaction round="1" name="trans34" displayname="BU209" revenuelevel="3" event_type="online" sequence="34" status="Queued" time="540" store="BU 2" />
+		<transaction round="1" name="trans35" displayname="BU309" revenuelevel="3" event_type="online" sequence="35" status="Queued" time="540" store="BU 3" />
+		<transaction round="1" name="trans36" displayname="BU409" revenuelevel="1" event_type="online" sequence="36" status="Queued" time="540" store="BU 4" />
+	</createNodes></i>
+
+	// At Time 10:00
+	<i id="AtStart">
+	<createNodes i_to="Transactions" i_doAfterSecs="1">
+		<transaction round="1" name="trans37" displayname="BU110" revenuelevel="3" event_type="instore" sequence="37" status="Queued" time="600" store="BU 1" />
+		<transaction round="1" name="trans38" displayname="BU210" revenuelevel="3" event_type="instore" sequence="38" status="Queued" time="600" store="BU 2" />
+		<transaction round="1" name="trans39" displayname="BU310" revenuelevel="3" event_type="instore" sequence="39" status="Queued" time="600" store="BU 3" />
+		<transaction round="1" name="trans40" displayname="BU410" revenuelevel="1" event_type="instore" sequence="40" status="Queued" time="600" store="BU 4" />
+	</createNodes></i>
+
+	// At Time 11:00
+	<i id="AtStart">
+	<createNodes i_to="Transactions" i_doAfterSecs="1">
+		<transaction round="1" name="trans41" displayname="BU111" revenuelevel="6" event_type="online" sequence="41" status="Queued" time="660" store="BU 1" />
+		<transaction round="1" name="trans42" displayname="BU211" revenuelevel="6" event_type="online" sequence="42" status="Queued" time="660" store="BU 2" />
+		<transaction round="1" name="trans43" displayname="BU311" revenuelevel="5" event_type="online" sequence="43" status="Queued" time="660" store="BU 3" />
+		<transaction round="1" name="trans44" displayname="BU411" revenuelevel="4" event_type="online" sequence="44" status="Queued" time="660" store="BU 4" />
+	</createNodes></i>
+
+	// At Time 12:00
+	<i id="AtStart">
+	<createNodes i_to="Transactions" i_doAfterSecs="1">
+		<transaction round="1" name="trans45" displayname="BU112" revenuelevel="6" event_type="instore" sequence="45" status="Queued" time="720" store="BU 1" />
+		<transaction round="1" name="trans46" displayname="BU212" revenuelevel="6" event_type="instore" sequence="46" status="Queued" time="720" store="BU 2" />
+		<transaction round="1" name="trans47" displayname="BU312" revenuelevel="5" event_type="instore" sequence="47" status="Queued" time="720" store="BU 3" />
+		<transaction round="1" name="trans48" displayname="BU412" revenuelevel="4" event_type="instore" sequence="48" status="Queued" time="720" store="BU 4" />
+	</createNodes></i>
+
+	// At Time 13:00
+	<i id="AtStart">
+	<createNodes i_to="Transactions" i_doAfterSecs="1">
+		<transaction round="1" name="trans49" displayname="BU113" revenuelevel="6" event_type="online" sequence="49" status="Queued" time="780" store="BU 1" />
+		<transaction round="1" name="trans50" displayname="BU213" revenuelevel="6" event_type="online" sequence="50" status="Queued" time="780" store="BU 2" />
+		<transaction round="1" name="trans51" displayname="BU313" revenuelevel="5" event_type="online" sequence="51" status="Queued" time="780" store="BU 3" />
+		<transaction round="1" name="trans52" displayname="BU413" revenuelevel="4" event_type="online" sequence="52" status="Queued" time="780" store="BU 4" />
+	</createNodes></i>
+
+	// At Time 14:00
+	<i id="AtStart">
+	<createNodes i_to="Transactions" i_doAfterSecs="1">
+		<transaction round="1" name="trans53" displayname="BU114" revenuelevel="6" event_type="instore" sequence="53" status="Queued" time="840" store="BU 1" />
+		<transaction round="1" name="trans54" displayname="BU214" revenuelevel="6" event_type="instore" sequence="54" status="Queued" time="840" store="BU 2" />
+		<transaction round="1" name="trans55" displayname="BU314" revenuelevel="5" event_type="instore" sequence="55" status="Queued" time="840" store="BU 3" />
+		<transaction round="1" name="trans56" displayname="BU414" revenuelevel="4" event_type="instore" sequence="56" status="Queued" time="840" store="BU 4" />
+	</createNodes></i>
+
+	// At Time 15:00
+	<i id="AtStart">
+	<createNodes i_to="Transactions" i_doAfterSecs="1">
+		<transaction round="1" name="trans57" displayname="BU115" revenuelevel="6" event_type="online" sequence="57" status="Queued" time="900" store="BU 1" />
+		<transaction round="1" name="trans58" displayname="BU215" revenuelevel="6" event_type="online" sequence="58" status="Queued" time="900" store="BU 2" />
+		<transaction round="1" name="trans59" displayname="BU315" revenuelevel="5" event_type="online" sequence="59" status="Queued" time="900" store="BU 3" />
+		<transaction round="1" name="trans60" displayname="BU415" revenuelevel="4" event_type="online" sequence="60" status="Queued" time="900" store="BU 4" />
+	</createNodes></i>
+
+	// At Time 16:00
+	<i id="AtStart">
+	<createNodes i_to="Transactions" i_doAfterSecs="1">
+		<transaction round="1" name="trans61" displayname="BU116" revenuelevel="6" event_type="instore" sequence="61" status="Queued" time="960" store="BU 1" />
+		<transaction round="1" name="trans62" displayname="BU216" revenuelevel="6" event_type="instore" sequence="62" status="Queued" time="960" store="BU 2" />
+		<transaction round="1" name="trans63" displayname="BU316" revenuelevel="5" event_type="instore" sequence="63" status="Queued" time="960" store="BU 3" />
+		<transaction round="1" name="trans64" displayname="BU416" revenuelevel="4" event_type="instore" sequence="64" status="Queued" time="960" store="BU 4" />
+	</createNodes></i>
+
+	// At Time 17:00
+	<i id="AtStart">
+	<createNodes i_to="Transactions" i_doAfterSecs="1">
+		<transaction round="1" name="trans65" displayname="BU117" revenuelevel="3" event_type="online" sequence="65" status="Queued" time="1020" store="BU 1" />
+		<transaction round="1" name="trans66" displayname="BU217" revenuelevel="3" event_type="online" sequence="66" status="Queued" time="1020" store="BU 2" />
+		<transaction round="1" name="trans67" displayname="BU317" revenuelevel="3" event_type="online" sequence="67" status="Queued" time="1020" store="BU 3" />
+		<transaction round="1" name="trans68" displayname="BU417" revenuelevel="1" event_type="online" sequence="68" status="Queued" time="1020" store="BU 4" />
+	</createNodes></i>
+
+	// At Time 17:30
+	<i id="AtStart">
+	<createNodes i_to="Transactions" i_doAfterSecs="1">
+		<transaction round="1" name="trans69" displayname="BU118" revenuelevel="3" event_type="instore" sequence="69" status="Queued" time="1080" store="BU 1" />
+		<transaction round="1" name="trans70" displayname="BU218" revenuelevel="3" event_type="instore" sequence="70" status="Queued" time="1080" store="BU 2" />
+		<transaction round="1" name="trans71" displayname="BU318" revenuelevel="3" event_type="instore" sequence="71" status="Queued" time="1080" store="BU 3" />
+		<transaction round="1" name="trans72" displayname="BU418" revenuelevel="1" event_type="instore" sequence="72" status="Queued" time="1080" store="BU 4" />
+	</createNodes></i>
+
+	// At Time 19:30
+	<i id="AtStart">
+	<createNodes i_to="Transactions" i_doAfterSecs="1">
+		<transaction round="1" name="trans73" displayname="BU119" revenuelevel="3" event_type="online" sequence="73" status="Queued" time="1140" store="BU 1" />
+		<transaction round="1" name="trans74" displayname="BU219" revenuelevel="3" event_type="online" sequence="74" status="Queued" time="1140" store="BU 2" />
+		<transaction round="1" name="trans75" displayname="BU319" revenuelevel="3" event_type="online" sequence="75" status="Queued" time="1140" store="BU 3" />
+		<transaction round="1" name="trans76" displayname="BU419" revenuelevel="1" event_type="online" sequence="76" status="Queued" time="1140" store="BU 4" />
+	</createNodes></i>
+
+	// At Time 20:00
+	<i id="AtStart">
+	<createNodes i_to="Transactions" i_doAfterSecs="1">
+		<transaction round="1" name="trans77" displayname="BU120" revenuelevel="3" event_type="instore" sequence="77" status="Queued" time="1200" store="BU 1" />
+		<transaction round="1" name="trans78" displayname="BU220" revenuelevel="3" event_type="instore" sequence="78" status="Queued" time="1200" store="BU 2" />
+		<transaction round="1" name="trans79" displayname="BU320" revenuelevel="3" event_type="instore" sequence="79" status="Queued" time="1200" store="BU 3" />
+		<transaction round="1" name="trans80" displayname="BU420" revenuelevel="1" event_type="instore" sequence="80" status="Queued" time="1200" store="BU 4" />
+	</createNodes></i>
+
+	// At Time 21:00
+	<i id="AtStart">
+	<createNodes i_to="Transactions" i_doAfterSecs="1">
+		<transaction round="1" name="trans81" displayname="BU121" revenuelevel="3" event_type="online" sequence="81" status="Queued" time="1260" store="BU 1" />
+		<transaction round="1" name="trans82" displayname="BU221" revenuelevel="3" event_type="online" sequence="82" status="Queued" time="1260" store="BU 2" />
+		<transaction round="1" name="trans83" displayname="BU321" revenuelevel="3" event_type="online" sequence="83" status="Queued" time="1260" store="BU 3" />
+		<transaction round="1" name="trans84" displayname="BU421" revenuelevel="1" event_type="online" sequence="84" status="Queued" time="1260" store="BU 4" />
+	</createNodes></i>
+
+	// At Time 22:00
+	<i id="AtStart">
+	<createNodes i_to="Transactions" i_doAfterSecs="1">
+		<transaction round="1" name="trans85" displayname="BU122" revenuelevel="3" event_type="instore" sequence="85" status="Queued" time="1320" store="BU 1" />
+		<transaction round="1" name="trans86" displayname="BU222" revenuelevel="3" event_type="instore" sequence="86" status="Queued" time="1320" store="BU 2" />
+		<transaction round="1" name="trans87" displayname="BU322" revenuelevel="3" event_type="instore" sequence="87" status="Queued" time="1320" store="BU 3" />
+		<transaction round="1" name="trans88" displayname="BU422" revenuelevel="1" event_type="instore" sequence="88" status="Queued" time="1320" store="BU 4" />
+	</createNodes></i>
+
+	// At Time 23:00
+	<i id="AtStart">
+	<createNodes i_to="Transactions" i_doAfterSecs="1">
+		<transaction round="1" name="trans89" displayname="BU123" revenuelevel="6" event_type="online" sequence="89" status="Queued" time="1380" store="BU 1" />
+		<transaction round="1" name="trans90" displayname="BU223" revenuelevel="6" event_type="online" sequence="90" status="Queued" time="1380" store="BU 2" />
+		<transaction round="1" name="trans91" displayname="BU323" revenuelevel="5" event_type="online" sequence="91" status="Queued" time="1380" store="BU 3" />
+		<transaction round="1" name="trans92" displayname="BU423" revenuelevel="4" event_type="online" sequence="92" status="Queued" time="1380" store="BU 4" />
+	</createNodes></i>
+
+	// At Time 24:00
+	<i id="AtStart">
+	<createNodes i_to="Transactions" i_doAfterSecs="1">
+		<transaction round="1" name="trans93" displayname="BU124" revenuelevel="6" event_type="instore" sequence="93" status="Queued" time="1440" store="BU 1" />
+		<transaction round="1" name="trans94" displayname="BU224" revenuelevel="6" event_type="instore" sequence="94" status="Queued" time="1440" store="BU 2" />
+		<transaction round="1" name="trans95" displayname="BU324" revenuelevel="5" event_type="instore" sequence="95" status="Queued" time="1440" store="BU 3" />
+		<transaction round="1" name="trans96" displayname="BU424" revenuelevel="4" event_type="instore" sequence="96" status="Queued" time="1440" store="BU 4" />
+	</createNodes></i>
+</incidents>

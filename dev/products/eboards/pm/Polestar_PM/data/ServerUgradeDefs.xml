@@ -1,0 +1,50 @@
+<ServerUpgradeDefs>
+  <upgrade server="Fox">
+    <requirements>
+      <requireExists i_name="Fox" i_failReason="Server Not Found" />
+      <ifAttrs i_name="Fox" version="2" i_failReason="Already Upgraded" />
+    </requirements>
+    <i>
+      <apply i_name="Fox" rebootFor="60" version="2" up="false" can_upgrade_hardware="false" danger_level="20" />
+      <createNodes i_to="CostedEvents">
+        <node type="upgradeserver" desc="Upgraded Fox To Version 2" ref="Fox" />
+      </createNodes>
+    </i>
+  </upgrade>
+  <upgrade server="Kangaroo">
+    <requirements>
+      <requireExists i_name="Kangaroo" i_failReason="Server Not Found" />
+      <ifAttrs i_name="Kangaroo" version="2" i_failReason="Already Upgraded" />
+    </requirements>
+    <i>
+      <apply i_name="Kangaroo" rebootFor="60" version="2" up="false" can_upgrade_hardware="false" danger_level="20" />
+      <createNodes i_to="CostedEvents">
+        <node type="upgradeserver" desc="Upgraded Kangaroo To Version 2" ref="Kangaroo" />
+      </createNodes>
+    </i>
+  </upgrade>
+  <upgrade server="Rat">
+    <requirements>
+      <requireExists i_name="Rat" i_failReason="Server Not Found" />
+      <ifAttrs i_name="Rat" version="2" i_failReason="Already Upgraded" />
+    </requirements>
+    <i>
+      <apply i_name="Rat" rebootFor="60" version="2" up="false" can_upgrade_hardware="false" danger_level="20" />
+      <createNodes i_to="CostedEvents">
+        <node type="upgradeserver" desc="Upgraded Rat To Version 2" ref="Rat" />
+      </createNodes>
+    </i>
+  </upgrade>
+  <upgrade server="Panther">
+    <requirements>
+      <requireExists i_name="Panther" i_failReason="Server Not Found" />
+      <ifAttrs i_name="Panther" version="2" i_failReason="Already Upgraded" />
+    </requirements>
+    <i>
+      <apply i_name="Panther" rebootFor="60" version="2" up="false" can_upgrade_hardware="false" danger_level="20" />
+      <createNodes i_to="CostedEvents">
+        <node type="upgradeserver" desc="Upgraded Panther To Version 2" ref="Panther" />
+      </createNodes>
+    </i>
+  </upgrade>
+</ServerUpgradeDefs>

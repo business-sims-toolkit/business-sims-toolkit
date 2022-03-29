@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{500A41D9-F289-44AA-9D21-881FC8A41D04}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Polestar_PM.ReportsScreen</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Polestar_PM.ReportsScreen</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug-NoPostBuildSteps|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug-NoPostBuildSteps\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Polestar_PM.ReportsScreen.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-NoPostBuildSteps|AnyCPU'">
+    <OutputPath>bin\Release-NoPostBuildSteps\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Polestar_PM.ReportsScreen.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\..\..\..\..\libraries\core\LibCore\LibCore.csproj">
+      <Project>{6D70195C-C791-4909-81FC-37DAA61C143D}</Project>
+      <Name>LibCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\GameBoardView\GameBoardView.csproj">
+      <Project>{0D044CCD-495A-4DB8-BF38-93EE3C97A79D}</Project>
+      <Name>GameBoardView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\Network\Network.csproj">
+      <Project>{B7AC785C-E7CE-4A7D-99CE-604E0CBA231B}</Project>
+      <Name>Network</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\ChartScreens\ChartScreens.csproj">
+      <Name>ChartScreens</Name>
+      <Project>{9BCEC677-B934-4082-B614-4E9A6565AA65}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\Charts\Charts.csproj">
+      <Name>Charts</Name>
+      <Project>{134455F1-DF66-410B-93BC-E19494ACFF46}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\CommonGUI\CommonGUI.csproj">
+      <Name>CommonGUI</Name>
+      <Project>{35070F1C-CE4F-4DCA-86AC-9D6240882DE0}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\core\CoreUtils\CoreUtils.csproj">
+      <Name>CoreUtils</Name>
+      <Project>{9C61E4E5-78BC-4D27-B5B0-DFDCB8DC935E}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\GameManagement\GameManagement.csproj">
+      <Name>GameManagement</Name>
+      <Project>{37599BB8-B493-4323-BA2D-BE2BD8FE4561}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\core\Logging\Logging.csproj">
+      <Name>Logging</Name>
+      <Project>{4D8B9BD2-3BCC-4BD0-80C0-DF2744DB16EE}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\NetworkScreens\NetworkScreens.csproj">
+      <Project>{7002FFFF-B22B-480B-9C9B-A375EDE27DD4}</Project>
+      <Name>NetworkScreens</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\ReportBuilder\ReportBuilder.csproj">
+      <Name>ReportBuilder</Name>
+      <Project>{82B44D1D-F102-4199-9E32-562D3563070B}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\TransitionScreens\TransitionScreens.csproj">
+      <Name>TransitionScreens</Name>
+      <Project>{0EADAF40-2A1D-4282-9E4D-A8266B14C3F0}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\EboardUi\ResizingUi\ResizingUi.csproj">
+      <Project>{08fda587-8773-4b58-a8e0-7f7d5c8e4637}</Project>
+      <Name>ResizingUi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Polestar_PM.DataLookup\Polestar_PM.DataLookup.csproj">
+      <Project>{D05A3A05-B603-4B35-9C11-8753D03E3AFC}</Project>
+      <Name>Polestar_PM.DataLookup</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Polestar_PM.OpsGUI\Polestar_PM.OpsGUI.csproj">
+      <Project>{885CEC37-2FA1-4678-BE89-B1778CB49CE1}</Project>
+      <Name>Polestar_PM.OpsGUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Polestar_PM.TransScreen\Polestar_PM.TransScreen.csproj">
+      <Name>Polestar_PM.TransScreen</Name>
+      <Project>{D16D7621-9EB0-423B-BF07-FBAB905E70ED}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MS_IT_TabbedChartScreen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MS_TabbedChartScreen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OpsGanttContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OpsGanttControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PM_IT_TabbedChartScreen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PM_LeaderboardReport.cs" />
+    <Compile Include="PM_PortfolioReport.cs" />
+    <Compile Include="PM_PortfolioReportMultiTrace.cs" />
+    <Compile Include="PM_ProjectsBenefitMultiTrace.cs" />
+    <Compile Include="PM_ScoreCardReportNew.cs" />
+    <Compile Include="PM_TabbedChartScreen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PM_ToolsScreen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PortfolioAchievementsContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrjPerfContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PrjPerfControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PM_ProjectsBenefitsByDayContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ResourceLevelsContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="OpsGanttControl.resx">
+      <DependentUpon>OpsGanttControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrjPerfControl.resx">
+      <DependentUpon>PrjPerfControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

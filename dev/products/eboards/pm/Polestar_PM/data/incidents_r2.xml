@@ -1,0 +1,217 @@
+<incidents>
+//
+// Incident elements have a series of local attributes hat start with i_
+// Any other attributes that do not start with i_ are applied to the target nodes.
+//
+// The incident engine should clear all incidents at startup.
+// Any reboots should be finished and any nodes that are down should
+// be brought up.
+//
+// Automatic Applied Incidents At Start (To Ensure Network Matches the Board in
+// case the players didn't get any installs in earlier rounds).
+//
+	//
+	// Incidents with an id of "AtStart" should be applied immediately at the start of
+	// a round.
+	//
+
+
+	<i id="AtStart">
+		<apply i_name="day_activity_messages" message="" />
+		<apply i_name="day_activity_messages1" message="" />
+		<apply i_name="day_activity_messages2" message="" />
+		<apply i_name="day_activity_messages3" message="" />
+		<apply i_name="day_activity_messages4" message="" />
+
+		<apply i_name="market_info"
+			leader_transaction_volume="336,000 (6.8%)" transactions_gain="123000"
+			cost_reduction="762000" cost_avoidance="1600000"
+		/>
+
+		<createNodes i_to="comms_list" i_doAfterSecs="0">
+		    <msg subtype="ops_msg" name="audit_alert" display_icon="block_msg" display_title="Operations Team: Audits Planned - Day 4, 13, 14" type="msg" display_content="" />
+		</createNodes>
+		<deleteNode i_name="audit_alert" i_doAfterSecs="900"/>
+
+		// Market Analysis Reports...
+
+		<createNodes i_to="comms_list" i_doAfterSecs="0">
+		    <msg subtype="ops_msg" name="ma_report" display_icon="block_msg" display_title="Business Team: Market Analysis Reports - Day 5, 15" type="msg" display_content="" />
+		</createNodes>
+		<deleteNode i_name="ma_report" i_doAfterSecs="960"/>
+	</i>
+
+	//ensuring that the experts system is switched off for Round 2
+	<i id="AtStart">
+		<apply i_name="experts" enabled="false" />
+	</i>
+
+	//ensuring that the incident count = 0 at start
+	<i id="AtStart"><apply i_name="IncidentCount" impact = "0" /></i>
+
+	//ensuring that the availability  is 100% at start
+	<i id="AtStart">
+		<apply i_name="Availability" availability="100.0"/>
+	</i>
+	
+	//ensuring all stores start at the same point 
+	<i id="AtStart">
+	  <apply i_name="Exchange 1" last_transaction="0"/>
+	  <apply i_name="Exchange 2" last_transaction="0"/>
+	  <apply i_name="Exchange 3" last_transaction="0"/>
+	  <apply i_name="Exchange 4" last_transaction="0"/>
+	</i>		
+
+	//ensuring that running benefit numbers are set to the correct start value 
+	<i id="AtStart">
+		<apply i_name="running_benefit" transactions_gained="0" cost_reduction="0" total_benefit="0" />
+	</i>
+
+
+	//ensuring that the Revenue system is correct (Reset to 0 and refresh the Max Revenue figure)
+	<i id="AtStart">
+		<apply i_name="Revenue" max_revenue="0" revenue="0" revenue_lost="0" />
+		<apply i_name="Revenue" revenue_refresh="true" />
+	</i>
+
+	//Reseting the Impact to 0
+	<i id="AtStart"><apply i_name="Impact" impact = "0" /></i>
+	
+	//Reseting the Transactions for the start of the round
+	<i id="AtStart"><apply i_name="Transactions" count_processed = "0" count_good = "0" count_max = "96" /></i>
+		
+	//ensuring that Budget is set to the correct value 
+	<i id="AtStart">
+		<apply i_name="pmo_budget" budget_allowed="1600000" budget_spent="0" budget_left="1600000" />
+	</i>
+
+
+	//ensuring that the Blocking days are correct
+	<i id="AtStart">
+		<createNodes i_to="ops_worklist" i_doAfterSecs="0">
+			<task type="ops_item" action="blockday" day="4" days_left="1" duration="1" status="todo" location="" display="Audit" memory_change="0" disk_change="0" money_cost="0" rx_nodename="" icon="audit.png" />
+			<task type="ops_item" action="blockday" day="13" days_left="1" duration="1" status="todo" location="" display="Audit" memory_change="0" disk_change="0" money_cost="0" rx_nodename="" icon="audit.png" />
+			<task type="ops_item" action="blockday" day="14" days_left="1" duration="1" status="todo" location="" display="Audit" memory_change="0" disk_change="0" money_cost="0" rx_nodename="" icon="audit.png" />
+			<task type="ops_item" action="blockday" day="25" days_left="1" duration="1" status="todo" location="" display="Freeze" memory_change="0" disk_change="0" money_cost="0" rx_nodename="" icon="freeze.png" />
+			<task type="ops_item" action="blockday" day="26" days_left="1" duration="1" status="todo" location="" display="Freeze" memory_change="0" disk_change="0" money_cost="0" rx_nodename="" icon="freeze.png" />
+		</createNodes>
+	</i>
+
+
+	//
+	// Problem Incidents
+	//
+	<i id="1">
+		<createNodes i_to="project_duration_change_list" i_doAfterSecs="0">
+			<node type="duration_change" slot="1" extra_days="3" status="active" reason="suppliers" />
+		</createNodes>
+		<createNodes i_to="comms_list" i_doAfterSecs="5">
+			<msg subtype="ops_msg" display_icon="block_msg" display_title="Project Managers: Project Slot 1 - Delayed by 3 days." type="msg" display_content="" timeout="180" />
+		</createNodes>
+	</i>
+	
+	<i id="2">
+		<createNodes i_to="project_duration_change_list" i_doAfterSecs="0">
+			<node type="duration_change" slot="2" extra_days="3" status="active" reason="suppliers" />
+		</createNodes>
+		<createNodes i_to="comms_list" i_doAfterSecs="5">
+			<msg subtype="ops_msg" display_icon="block_msg" display_title="Project Managers: Project Slot 2 - Delayed by 3 days." type="msg" display_content="" timeout="180" />
+		</createNodes>
+	</i>
+	
+	<i id="3">
+		<createNodes i_to="project_duration_change_list" i_doAfterSecs="0">
+			<node type="duration_change" slot="3" extra_days="3" status="active" reason="suppliers" />
+		</createNodes>
+		<createNodes i_to="comms_list" i_doAfterSecs="5">
+			<msg subtype="ops_msg" display_icon="block_msg" display_title="Project Managers: Project Slot 3 - Delayed by 3 days." type="msg" display_content="" timeout="180" />
+		</createNodes>
+	</i>
+	
+	<i id="4">
+		<createNodes i_to="project_duration_change_list" i_doAfterSecs="0">
+			<node type="duration_change" slot="4" extra_days="3" status="active" reason="suppliers" />
+		</createNodes>
+		<createNodes i_to="comms_list" i_doAfterSecs="5">
+			<msg subtype="ops_msg" display_icon="block_msg" display_title="Project Managers: Project Slot 4 - Delayed by 3 days." type="msg" display_content="" />
+		</createNodes>
+	</i>
+	
+	<i id="5">
+		<createNodes i_to="project_duration_change_list" i_doAfterSecs="0">
+			<node type="duration_change" slot="5" extra_days="3" status="active" reason="suppliers" />
+		</createNodes>
+		<createNodes i_to="comms_list" i_doAfterSecs="5">
+			<msg subtype="ops_msg" display_icon="block_msg" display_title="Project Managers: Project Slot 5 - Delayed by 3 days." type="msg" display_content="" timeout="180" />
+		</createNodes>
+	</i>
+	
+	<i id="6">
+		<createNodes i_to="project_duration_change_list" i_doAfterSecs="0">
+			<node type="duration_change" slot="6" extra_days="3" status="active" reason="suppliers" />
+		</createNodes>
+		<createNodes i_to="comms_list" i_doAfterSecs="5">
+			<msg subtype="ops_msg" display_icon="block_msg" display_title="Project Managers: Project Slot 6 - Delayed by 3 days." type="msg" display_content="" timeout="180" />
+		</createNodes>
+	</i>
+	
+	<i id="7">
+		<createNodes i_to="project_duration_change_list" i_doAfterSecs="0">
+			<node type="duration_change" slot="1" extra_days="-3" status="active" reason="suppliers" />
+		</createNodes>
+		<createNodes i_to="comms_list" i_doAfterSecs="5">
+			<msg subtype="ops_msg" display_icon="block_msg" display_title="Project Managers: Project Slot 1 - Accelerated by 3 days." type="msg" display_content="" timeout="180" />
+		</createNodes>
+	</i>
+	
+	<i id="8">
+		<createNodes i_to="project_duration_change_list" i_doAfterSecs="0">
+			<node type="duration_change" slot="2" extra_days="-3" status="active" reason="suppliers" />
+		</createNodes>
+		<createNodes i_to="comms_list" i_doAfterSecs="5">
+			<msg subtype="ops_msg" display_icon="block_msg" display_title="Project Managers: Project Slot 2 - Accelerated by 3 days." type="msg" display_content="" timeout="180" />
+		</createNodes>
+	</i>
+	
+	<i id="9">
+		<createNodes i_to="project_duration_change_list" i_doAfterSecs="0">
+			<node type="duration_change" slot="3" extra_days="-3" status="active" reason="suppliers" />
+		</createNodes>
+		<createNodes i_to="comms_list" i_doAfterSecs="5">
+			<msg subtype="ops_msg" display_icon="block_msg" display_title="Project Managers: Project Slot 3 - Accelerated by 3 days." type="msg" display_content="" timeout="180" />
+		</createNodes>
+	</i>
+	
+	<i id="10">
+		<createNodes i_to="project_duration_change_list" i_doAfterSecs="0">
+			<node type="duration_change" slot="4" extra_days="-3" status="active" reason="suppliers" />
+		</createNodes>
+		<createNodes i_to="comms_list" i_doAfterSecs="5">
+			<msg subtype="ops_msg" display_icon="block_msg" display_title="Project Managers: Project Slot 4 - Accelerated by 3 days." type="msg" display_content="" timeout="180" />
+		</createNodes>
+	</i>
+	
+	<i id="11">
+		<createNodes i_to="project_duration_change_list" i_doAfterSecs="0">
+			<node type="duration_change" slot="5" extra_days="-3" status="active" reason="suppliers" />
+		</createNodes>
+		<createNodes i_to="comms_list" i_doAfterSecs="5">
+			<msg subtype="ops_msg" display_icon="block_msg" display_title="Project Managers: Project Slot 5 - Accelerated by 3 days." type="msg" display_content="" timeout="180" />
+		</createNodes>
+	</i>	
+	
+	<i id="12">
+		<createNodes i_to="project_duration_change_list" i_doAfterSecs="0">
+			<node type="duration_change" slot="6" extra_days="-3" status="active" reason="suppliers" />
+		</createNodes>
+		<createNodes i_to="comms_list" i_doAfterSecs="5">
+			<msg subtype="ops_msg" display_icon="block_msg" display_title="Project Managers: Project Slot 6 - Accelerated by 3 days." type="msg" display_content="" timeout="180" />
+		</createNodes>
+	</i>		
+	
+	//
+	// Include the FreeStyle Incidents incidents.
+	//
+	<include>data/FreeStyleIncidents.xml</include>
+	//
+</incidents>

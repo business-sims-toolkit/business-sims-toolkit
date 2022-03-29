@@ -1,0 +1,275 @@
+<project>
+  <projectID>111</projectID>
+  <AppName>2nd Brake Pedal</AppName>
+  <ProposedBudget>300000</ProposedBudget>
+  <CostReduction>251000</CostReduction>  
+  <Type>OPTIONAL</Type>
+  <Visible>True</Visible>
+  <AllowedRecycle>True</AllowedRecycle>
+  <products>
+    <product>
+      <productID>1113</productID>
+      <cost>247000</cost>
+      <gain>0</gain>
+      <CostReduction>240000</CostReduction>  
+      <pick>False</pick>
+      <Platforms>
+        <Platform>
+          <PlatformID>1</PlatformID>
+          <PlatformRef>X</PlatformRef>
+          <NE_TotalCost>0</NE_TotalCost>
+          <NE_ImplementationEffect>50</NE_ImplementationEffect>
+          <NE_AppMemRequirements>500</NE_AppMemRequirements>
+          <NE_AppStoreRequirements>37</NE_AppStoreRequirements>
+          <NE_RecycleImprovement>20</NE_RecycleImprovement>
+          <project_tasks>
+            <work_stage stage="A" man_days="10" />
+            <work_stage stage="B" man_days="19" />
+            <work_stage stage="C" man_days="5" />
+            <work_stage stage="D" man_days="28" />
+            <work_stage stage="E" man_days="14" />
+            <work_stage stage="F" man_days="10" />
+            <work_stage stage="G" man_days="20" />
+            <work_stage stage="H" man_days="10" />
+          </project_tasks>
+        </Platform>
+        <Platform>
+          <PlatformID>2</PlatformID>
+          <PlatformRef>Y</PlatformRef>
+          <NE_TotalCost>0</NE_TotalCost>
+          <NE_ImplementationEffect>50</NE_ImplementationEffect>
+          <NE_AppMemRequirements>500</NE_AppMemRequirements>
+          <NE_AppStoreRequirements>37</NE_AppStoreRequirements>
+          <NE_RecycleImprovement>20</NE_RecycleImprovement>
+          <project_tasks>
+            <work_stage stage="A" man_days="10" />
+            <work_stage stage="B" man_days="19" />
+            <work_stage stage="C" man_days="5" />
+            <work_stage stage="D" man_days="28" />
+            <work_stage stage="E" man_days="14" />
+            <work_stage stage="F" man_days="10" />
+            <work_stage stage="G" man_days="20" />
+            <work_stage stage="H" man_days="10" />
+          </project_tasks>
+        </Platform>
+        <Platform>
+          <PlatformID>3</PlatformID>
+          <PlatformRef>Z</PlatformRef>
+          <NE_TotalCost>0</NE_TotalCost>
+          <NE_ImplementationEffect>50</NE_ImplementationEffect>
+          <NE_AppMemRequirements>500</NE_AppMemRequirements>
+          <NE_AppStoreRequirements>37</NE_AppStoreRequirements>
+          <NE_RecycleImprovement>20</NE_RecycleImprovement>
+          <project_tasks>
+            <work_stage stage="A" man_days="9" />
+            <work_stage stage="B" man_days="18" />
+            <work_stage stage="C" man_days="5" />
+            <work_stage stage="D" man_days="27" />
+            <work_stage stage="E" man_days="14" />
+            <work_stage stage="F" man_days="10" />
+            <work_stage stage="G" man_days="18" />
+            <work_stage stage="H" man_days="10" />
+          </project_tasks>
+        </Platform>
+      </Platforms>
+    </product>
+    <product>
+      <productID>1114</productID>
+      <cost>291000</cost>
+      <gain>0</gain>
+      <CostReduction>249000</CostReduction>  
+      <pick>False</pick>
+      <Platforms>
+        <Platform>
+          <PlatformID>1</PlatformID>
+          <PlatformRef>X</PlatformRef>
+          <NE_TotalCost>0</NE_TotalCost>
+          <NE_ImplementationEffect>40</NE_ImplementationEffect>
+          <NE_AppMemRequirements>500</NE_AppMemRequirements>
+          <NE_AppStoreRequirements>37</NE_AppStoreRequirements>
+          <NE_RecycleImprovement>20</NE_RecycleImprovement>
+          <project_tasks>
+            <work_stage stage="A" man_days="11" />
+            <work_stage stage="B" man_days="22" />
+            <work_stage stage="C" man_days="6" />
+            <work_stage stage="D" man_days="33" />
+            <work_stage stage="E" man_days="17" />
+            <work_stage stage="F" man_days="12" />
+            <work_stage stage="G" man_days="22" />
+            <work_stage stage="H" man_days="12" />
+          </project_tasks>
+        </Platform>
+        <Platform>
+          <PlatformID>2</PlatformID>
+          <PlatformRef>Y</PlatformRef>
+          <NE_TotalCost>0</NE_TotalCost>
+          <NE_ImplementationEffect>50</NE_ImplementationEffect>
+          <NE_AppMemRequirements>500</NE_AppMemRequirements>
+          <NE_AppStoreRequirements>37</NE_AppStoreRequirements>
+          <NE_RecycleImprovement>20</NE_RecycleImprovement>
+          <project_tasks>
+            <work_stage stage="A" man_days="12" />
+            <work_stage stage="B" man_days="23" />
+            <work_stage stage="C" man_days="6" />
+            <work_stage stage="D" man_days="34" />
+            <work_stage stage="E" man_days="17" />
+            <work_stage stage="F" man_days="12" />
+            <work_stage stage="G" man_days="22" />
+            <work_stage stage="H" man_days="14" />
+          </project_tasks>
+        </Platform>
+        <Platform>
+          <PlatformID>3</PlatformID>
+          <PlatformRef>Z</PlatformRef>
+          <NE_TotalCost>0</NE_TotalCost>
+          <NE_ImplementationEffect>40</NE_ImplementationEffect>
+          <NE_AppMemRequirements>500</NE_AppMemRequirements>
+          <NE_AppStoreRequirements>37</NE_AppStoreRequirements>
+          <NE_RecycleImprovement>20</NE_RecycleImprovement>
+          <project_tasks>
+            <work_stage stage="A" man_days="12" />
+            <work_stage stage="B" man_days="23" />
+            <work_stage stage="C" man_days="6" />
+            <work_stage stage="D" man_days="34" />
+            <work_stage stage="E" man_days="17" />
+            <work_stage stage="F" man_days="12" />
+            <work_stage stage="G" man_days="22" />
+            <work_stage stage="H" man_days="14" />
+          </project_tasks>
+        </Platform>
+      </Platforms>
+    </product>
+    <product>
+      <productID>1115</productID>
+      <cost>281000</cost>
+      <gain>0</gain>
+      <CostReduction>251000</CostReduction>  
+      <pick>False</pick>
+      <Platforms>
+        <Platform>
+          <PlatformID>1</PlatformID>
+          <PlatformRef>X</PlatformRef>
+          <NE_TotalCost>0</NE_TotalCost>
+          <NE_ImplementationEffect>70</NE_ImplementationEffect>
+          <NE_AppMemRequirements>500</NE_AppMemRequirements>
+          <NE_AppStoreRequirements>37</NE_AppStoreRequirements>
+          <NE_RecycleImprovement>20</NE_RecycleImprovement>
+          <project_tasks>
+            <work_stage stage="A" man_days="11" />
+            <work_stage stage="B" man_days="21" />
+            <work_stage stage="C" man_days="6" />
+            <work_stage stage="D" man_days="31" />
+            <work_stage stage="E" man_days="16" />
+            <work_stage stage="F" man_days="12" />
+            <work_stage stage="G" man_days="22" />
+            <work_stage stage="H" man_days="12" />
+          </project_tasks>
+        </Platform>
+        <Platform>
+          <PlatformID>2</PlatformID>
+          <PlatformRef>Y</PlatformRef>
+          <NE_TotalCost>0</NE_TotalCost>
+          <NE_ImplementationEffect>60</NE_ImplementationEffect>
+          <NE_AppMemRequirements>500</NE_AppMemRequirements>
+          <NE_AppStoreRequirements>37</NE_AppStoreRequirements>
+          <NE_RecycleImprovement>20</NE_RecycleImprovement>
+          <project_tasks>
+            <work_stage stage="A" man_days="10" />
+            <work_stage stage="B" man_days="20" />
+            <work_stage stage="C" man_days="5" />
+            <work_stage stage="D" man_days="30" />
+            <work_stage stage="E" man_days="15" />
+            <work_stage stage="F" man_days="10" />
+            <work_stage stage="G" man_days="20" />
+            <work_stage stage="H" man_days="10" />
+          </project_tasks>
+        </Platform>
+        <Platform>
+          <PlatformID>3</PlatformID>
+          <PlatformRef>Z</PlatformRef>
+          <NE_TotalCost>0</NE_TotalCost>
+          <NE_ImplementationEffect>50</NE_ImplementationEffect>
+          <NE_AppMemRequirements>500</NE_AppMemRequirements>
+          <NE_AppStoreRequirements>37</NE_AppStoreRequirements>
+          <NE_RecycleImprovement>20</NE_RecycleImprovement>
+          <project_tasks>
+            <work_stage stage="A" man_days="11" />
+            <work_stage stage="B" man_days="22" />
+            <work_stage stage="C" man_days="6" />
+            <work_stage stage="D" man_days="32" />
+            <work_stage stage="E" man_days="16" />
+            <work_stage stage="F" man_days="12" />
+            <work_stage stage="G" man_days="22" />
+            <work_stage stage="H" man_days="12" />
+          </project_tasks>
+        </Platform>
+      </Platforms>
+    </product>
+    <product>
+      <productID>1116</productID>
+      <cost>295000</cost>
+      <gain>0</gain>
+      <CostReduction>253000</CostReduction>  
+      <pick>False</pick>
+      <Platforms>
+        <Platform>
+          <PlatformID>1</PlatformID>
+          <PlatformRef>X</PlatformRef>
+          <NE_TotalCost>0</NE_TotalCost>
+          <NE_ImplementationEffect>70</NE_ImplementationEffect>
+          <NE_AppMemRequirements>500</NE_AppMemRequirements>
+          <NE_AppStoreRequirements>37</NE_AppStoreRequirements>
+          <NE_RecycleImprovement>20</NE_RecycleImprovement>
+          <project_tasks>
+            <work_stage stage="A" man_days="11" />
+            <work_stage stage="B" man_days="22" />
+            <work_stage stage="C" man_days="6" />
+            <work_stage stage="D" man_days="33" />
+            <work_stage stage="E" man_days="17" />
+            <work_stage stage="F" man_days="12" />
+            <work_stage stage="G" man_days="22" />
+            <work_stage stage="H" man_days="12" />
+          </project_tasks>
+        </Platform>
+        <Platform>
+          <PlatformID>2</PlatformID>
+          <PlatformRef>Y</PlatformRef>
+          <NE_TotalCost>0</NE_TotalCost>
+          <NE_ImplementationEffect>60</NE_ImplementationEffect>
+          <NE_AppMemRequirements>500</NE_AppMemRequirements>
+          <NE_AppStoreRequirements>37</NE_AppStoreRequirements>
+          <NE_RecycleImprovement>20</NE_RecycleImprovement>
+          <project_tasks>
+            <work_stage stage="A" man_days="12" />
+            <work_stage stage="B" man_days="23" />
+            <work_stage stage="C" man_days="6" />
+            <work_stage stage="D" man_days="34" />
+            <work_stage stage="E" man_days="17" />
+            <work_stage stage="F" man_days="12" />
+            <work_stage stage="G" man_days="24" />
+            <work_stage stage="H" man_days="12" />
+          </project_tasks>
+        </Platform>
+        <Platform>
+          <PlatformID>3</PlatformID>
+          <PlatformRef>Z</PlatformRef>
+          <NE_TotalCost>0</NE_TotalCost>
+          <NE_ImplementationEffect>50</NE_ImplementationEffect>
+          <NE_AppMemRequirements>500</NE_AppMemRequirements>
+          <NE_AppStoreRequirements>37</NE_AppStoreRequirements>
+          <NE_RecycleImprovement>20</NE_RecycleImprovement>
+          <project_tasks>
+            <work_stage stage="A" man_days="12" />
+            <work_stage stage="B" man_days="23" />
+            <work_stage stage="C" man_days="6" />
+            <work_stage stage="D" man_days="34" />
+            <work_stage stage="E" man_days="17" />
+            <work_stage stage="F" man_days="12" />
+            <work_stage stage="G" man_days="24" />
+            <work_stage stage="H" man_days="12" />
+          </project_tasks>
+        </Platform>
+      </Platforms>
+    </product>
+  </products>
+</project>

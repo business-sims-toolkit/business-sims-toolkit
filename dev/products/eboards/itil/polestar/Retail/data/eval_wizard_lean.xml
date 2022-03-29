@@ -1,0 +1,43 @@
+<root>
+  <section colour="154,209,208">
+    <section_name>Lean Processes</section_name>
+    <section_order>5</section_order>
+    <aspects>
+      <aspect>
+        <aspect_name>Specify Value</aspect_name>
+        <aspect_guidance></aspect_guidance>
+        <dest_tag_name>_Specify_Value_0</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors />
+      </aspect>
+      <aspect>
+        <aspect_name>Identify Value</aspect_name>
+        <aspect_guidance></aspect_guidance>
+        <dest_tag_name>_Identify_Value_1</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors />
+      </aspect>
+      <aspect>
+        <aspect_name>Create Flow</aspect_name>
+        <aspect_guidance></aspect_guidance>
+        <dest_tag_name>_Create_Flow_2</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors />
+      </aspect>
+      <aspect>
+        <aspect_name>Create Pull / Demand</aspect_name>
+        <aspect_guidance></aspect_guidance>
+        <dest_tag_name>_Create_Pull_Demand_3</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors />
+      </aspect>
+      <aspect>
+        <aspect_name>Standardize</aspect_name>
+        <aspect_guidance></aspect_guidance>
+        <dest_tag_name>_Standardize_4</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors />
+      </aspect>
+    </aspects>
+  </section>
+</root>

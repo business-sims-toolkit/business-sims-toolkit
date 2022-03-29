@@ -1,0 +1,143 @@
+<project projectid="401" round="4" regulation="false" installname="Stock Control v2" fixedlocation="D325" fixedzone="X" upgradename = "Bellatrix">
+<product productid="4011" actual_cost="170000">
+<platform platformid="X" designdays="4" builddays="4" testdays="3" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireExists i_name="Bellatrix" i_failReason="App Not Found" i_failShortReason="App Not\r\nFound" />
+	<requireAttrs i_name="Bellatrix" location="XXXX" i_failReason="Invalid Location" i_failShortReason="Invalid\r\nLocation" />
+	<requireMin i_parentOf="Bellatrix" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="Bellatrix" mem_left="500" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Stock Control/upgrades">
+		<node version="2" name="Stock Control v2" desc="Stock Control v2" shortdesc="Stock Control v2" slalimit="YYY" notinnetwork="true" upgraded_by_sip="401" biz_service_function="Stock Control" />
+	</createNodes>
+  <apply i_name = "401" MaxRevOffset="192000" /> 
+</oncreate>
+<oninstall>
+	<createNodes i_to="Retired Business Services">
+		<node name="Stock Control (v1)" icon="Icon_SC" version="1"/>
+	</createNodes>
+	<copyAttributes i_to="Stock Control (v1)" i_from="Stock Control"/>
+	<apply i_name="Stock Control (v1)"	type="retired_biz_service"/>
+	<copyAttributes i_to="Stock Control" i_from="Stock Control v2"/>
+	<deleteNode i_name="Stock Control v2" />
+	<apply i_name="Stock Control" slalimit="YYY"/>
+	<apply i_name="Store 1 Stock Control" desc="Stock Control v2" shortdesc="Stock Control v2" icon="Icon_SC" slalimit="YYY" />
+	<apply i_name="Store 2 Stock Control" desc="Stock Control v2" shortdesc="Stock Control v2" icon="Icon_SC" slalimit="YYY" />
+	<apply i_name="Store 3 Stock Control" desc="Stock Control v2" shortdesc="Stock Control v2" icon="Icon_SC" slalimit="YYY" />
+	<apply i_name="Store 4 Stock Control" desc="Stock Control v2" shortdesc="Stock Control v2" icon="Icon_SC" slalimit="YYY" />
+	<incrementAtt i_name="Bellatrix" i_doAfterSecs="0" memrequired="500" diskrequired="20" />
+	<incrementAtt i_name="Bellatrix" i_doAfterSecs="0" proccap="1" />
+	<apply i_name="Bellatrix" upgraded_by_sip="401" />
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<apply i_name="Saturn" rebootFor="105" reasondown="Upgrading Bellatrix" />
+	<createNodes i_to="CostedEvents">
+		<node type="sipupgrade" desc="Upgraded Stock Control To Version 2" sip="401" ref="Stock Control" />
+		<node type="project" desc="Stock Control v2" sip="401" regulation="false" />
+	</createNodes>
+  <apply i_name = "401" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+<product productid="4012" actual_cost="160000">
+<platform platformid="X" designdays="3" builddays="3" testdays="3" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireExists i_name="Bellatrix" i_failReason="App Not Found" i_failShortReason="App Not\r\nFound" />
+	<requireAttrs i_name="Bellatrix" location="XXXX" i_failReason="Invalid Location" i_failShortReason="Invalid\r\nLocation" />
+	<requireMin i_parentOf="Bellatrix" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="Bellatrix" mem_left="500" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Stock Control/upgrades">
+		<node version="2" name="Stock Control v2" desc="Stock Control v2" shortdesc="Stock Control v2" slalimit="YYY" notinnetwork="true" upgraded_by_sip="401" biz_service_function="Stock Control" />
+	</createNodes>
+  <apply i_name = "401" MaxRevOffset="288000" /> 
+</oncreate>
+<oninstall>
+	<createNodes i_to="Retired Business Services">
+		<node name="Stock Control v1" icon="Icon_SC" version="1"/>
+	</createNodes>
+	<copyAttributes i_to="Stock Control (v1)" i_from="Stock Control"/>
+	<apply i_name="Stock Control (v1)"	type="retired_biz_service"/>
+	<copyAttributes i_to="Stock Control" i_from="Stock Control v2"/>
+	<deleteNode i_name="Stock Control v2" />
+	<apply i_name="Stock Control" slalimit="YYY"/>
+	<apply i_name="Store 1 Stock Control" desc="Stock Control v2" shortdesc="Stock Control v2" icon="Icon_SC" slalimit="YYY" />
+	<apply i_name="Store 2 Stock Control" desc="Stock Control v2" shortdesc="Stock Control v2" icon="Icon_SC" slalimit="YYY" />
+	<apply i_name="Store 3 Stock Control" desc="Stock Control v2" shortdesc="Stock Control v2" icon="Icon_SC" slalimit="YYY" />
+	<apply i_name="Store 4 Stock Control" desc="Stock Control v2" shortdesc="Stock Control v2" icon="Icon_SC" slalimit="YYY" />
+	<incrementAtt i_name="Bellatrix" i_doAfterSecs="0" memrequired="500" diskrequired="20" />
+	<incrementAtt i_name="Bellatrix" i_doAfterSecs="0" proccap="1" />
+	<apply i_name="Bellatrix" upgraded_by_sip="401" />
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="3000" instore_bonus="3000" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="3000" instore_bonus="3000" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="3000" instore_bonus="3000" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="3000" instore_bonus="3000" />
+	<apply i_name="Saturn" rebootFor="105" reasondown="Upgrading Bellatrix" />
+	<createNodes i_to="CostedEvents">
+		<node type="sipupgrade" desc="Upgraded Stock Control To Version 2" sip="401" ref="Stock Control" />
+		<node type="project" desc="Stock Control v2" sip="401" regulation="false" />
+	</createNodes>
+  <apply i_name = "401" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+<product productid="4013" actual_cost="160000">
+<platform platformid="X" designdays="3" builddays="2" testdays="2" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireExists i_name="Bellatrix" i_failReason="App Not Found" i_failShortReason="App Not\r\nFound" />
+	<requireAttrs i_name="Bellatrix" location="XXXX" i_failReason="Invalid Location" i_failShortReason="Invalid\r\nLocation" />
+	<requireMin i_parentOf="Bellatrix" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="Bellatrix" mem_left="500" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Stock Control/upgrades">
+		<node version="2" name="Stock Control v2" desc="Stock Control v2" shortdesc="Stock Control v2" slalimit="YYY" notinnetwork="true" upgraded_by_sip="401" biz_service_function="Stock Control" />
+	</createNodes>
+  <apply i_name = "401" MaxRevOffset="480000" /> 
+</oncreate>
+<oninstall>
+	<createNodes i_to="Retired Business Services">
+		<node name="Stock Control (v1)" icon="Icon_SC" version="1"/>
+	</createNodes>
+	<copyAttributes i_to="Stock Control (v1)" i_from="Stock Control"/>
+	<apply i_name="Stock Control (v1)"	type="retired_biz_service"/>
+	<copyAttributes i_to="Stock Control" i_from="Stock Control v2"/>
+	<deleteNode i_name="Stock Control v2" />
+	<apply i_name="Stock Control" slalimit="YYY"/>
+	<apply i_name="Store 1 Stock Control" desc="Stock Control v2" shortdesc="Stock Control v2" icon="Icon_SC" slalimit="YYY" />
+	<apply i_name="Store 2 Stock Control" desc="Stock Control v2" shortdesc="Stock Control v2" icon="Icon_SC" slalimit="YYY" />
+	<apply i_name="Store 3 Stock Control" desc="Stock Control v2" shortdesc="Stock Control v2" icon="Icon_SC" slalimit="YYY" />
+	<apply i_name="Store 4 Stock Control" desc="Stock Control v2" shortdesc="Stock Control v2" icon="Icon_SC" slalimit="YYY" />
+	<incrementAtt i_name="Bellatrix" i_doAfterSecs="0" memrequired="500" diskrequired="20" />
+	<incrementAtt i_name="Bellatrix" i_doAfterSecs="0" proccap="1" />
+	<apply i_name="Bellatrix" upgraded_by_sip="401" />
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="5000" instore_bonus="5000" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="5000" instore_bonus="5000" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="5000" instore_bonus="5000" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="5000" instore_bonus="5000" />
+	<apply i_name="Saturn" rebootFor="105" reasondown="Upgrading Bellatrix" />
+	<createNodes i_to="CostedEvents">
+		<node type="sipupgrade" desc="Upgraded Stock Control To Version 2" sip="401" ref="Stock Control" />
+		<node type="project" desc="Stock Control v2" sip="401" regulation="false" />
+	</createNodes>
+  <apply i_name = "401" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+</project>

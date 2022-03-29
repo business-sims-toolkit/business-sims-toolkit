@@ -1,0 +1,608 @@
+<?xml version="1.0"?>
+<root name="Root" type="Root">
+
+  <node notinnetwork="true" type="biz_services" name="Business Services Group">
+  
+    <retirements notinnetwork="true" name="Retired Business Services" type="retired_biz_services">
+    </retirements>  
+
+    <node version="1" name="Service A" desc="Service A" shortdesc="Service A" disp_order="1" icon="icon_a" notinnetwork="true" type="biz_service" slalimit="1800" biz_service_function="Service A" impactkmh="-1" has_impact="true" chosen_team="zz" chosen_loc="z" chosen_it="zz" require_it_mem="6" require_it_disk="650" require_it_servers="10" update="0" >
+      <link to="Exchange 1 Service A" type="Connection" contype="Service A" name="BS Exchange 1 Service A Connection" />
+      <upgrades type="upgrades">
+      </upgrades>
+    </node>
+
+    <node version="1" name="Service B" desc="Service B" shortdesc="Service B" disp_order="2" icon="icon_b" notinnetwork="true" type="biz_service" slalimit="1800" biz_service_function="Service B" impactkmh="-1" has_impact="true" chosen_team="zz" chosen_loc="z" chosen_it="zz" require_it_mem="5" require_it_disk="500" require_it_servers="9" update="0">
+      <link to="Exchange 2 Service B" type="Connection" contype="Service B" name="BS Exchange 2 Service B Connection" />
+      <upgrades type="upgrades">
+      </upgrades>
+    </node>
+
+    <node version="1" name="Service C" desc="Service C" shortdesc="Service C" disp_order="3" icon="icon_c" notinnetwork="true" type="biz_service" slalimit="1800" biz_service_function="Service C" impactkmh="-1" has_impact="true" chosen_team="zz" chosen_loc="z" chosen_it="zz" require_it_mem="5" require_it_disk="500" require_it_servers="8" update="0">
+      <link to="Exchange 3 Service C" type="Connection" contype="Service C" name="BS Exchange 3 Service C Connection" />
+      <upgrades type="upgrades">
+      </upgrades>
+    </node>
+
+    <node version="1" name="Service D" desc="Service D" shortdesc="Service D" disp_order="4" icon="icon_d" notinnetwork="true" type="biz_service" slalimit="1800" biz_service_function="Service D" impactkmh="-1" has_impact="true" chosen_team="zz" chosen_loc="z" chosen_it="zz" require_it_mem="5" require_it_disk="575" require_it_servers="10" update="0">
+      <link to="Exchange 4 Service D" type="Connection" contype="Service D" name="BS Exchange 4 Service D Connection" />
+      <upgrades type="upgrades">
+      </upgrades>
+    </node>
+
+    <node version="1" name="Service E" desc="Service E" shortdesc="Service E" disp_order="5" icon="icon_e" notinnetwork="true" type="biz_service" slalimit="1800" biz_service_function="Service E" impactkmh="-1" has_impact="true" chosen_team="zz" chosen_loc="z" chosen_it="zz" require_it_mem="10" require_it_disk="800" require_it_servers="11" update="0">
+      <link to="Exchange 1 Service E" type="Connection" contype="Service E" name="BS Exchange 1 Service E Connection" />
+      <upgrades type="upgrades">
+      </upgrades>
+    </node>
+
+    <node version="1" name="Service F" desc="Service F" shortdesc="Service F" disp_order="6" icon="icon_f" notinnetwork="true" type="biz_service" slalimit="1800" biz_service_function="Service F" impactkmh="-1" has_impact="true" chosen_team="zz" chosen_loc="z" chosen_it="zz" require_it_mem="7" require_it_disk="600" require_it_servers="10" update="0">
+      <link to="Exchange 2 Service F" type="Connection" contype="Service F" name="BS Exchange 2 Service F Connection" />
+      <upgrades type="upgrades">
+      </upgrades>
+    </node>
+    
+    <node version="1" name="Service G" desc="Service G" shortdesc="Service G" disp_order="7" icon="icon_g" notinnetwork="true" type="biz_service" slalimit="1800" biz_service_function="Service G" impactkmh="-1" has_impact="true" chosen_team="zz" chosen_loc="z" chosen_it="zz" require_it_mem="7" require_it_disk="600" require_it_servers="10" update="0">
+      <link to="Exchange 3 Service G" type="Connection" contype="Service G" name="BS Exchange 3 Service G Connection" />
+      <upgrades type="upgrades">
+      </upgrades>
+    </node>
+
+    <node version="1" name="Service H" desc="Service H" shortdesc="Service H" disp_order="8" icon="icon_h" notinnetwork="true" type="biz_service" slalimit="1800" biz_service_function="Service H" impactkmh="-1" has_impact="true" chosen_team="zz" chosen_loc="z" chosen_it="zz" require_it_mem="2" require_it_disk="450" require_it_servers="10" update="0">
+      <link to="Exchange 4 Service H" type="Connection" contype="Service H" name="BS Exchange 4 Service H Connection" />
+      <upgrades type="upgrades">
+      </upgrades>
+    </node>
+
+    <node version="1" name="Service I" desc="Service I" shortdesc="Service I" disp_order="9" icon="icon_i" notinnetwork="true" type="biz_service" slalimit="1800" biz_service_function="Service I" impactkmh="-1" has_impact="true" chosen_team="zz" chosen_loc="z" chosen_it="zz" require_it_mem="6" require_it_disk="650" require_it_servers="10" update="0">
+      <link to="Exchange 1 Service I" type="Connection" contype="Service I" name="BS Exchange 1 Service I Connection" />
+      <upgrades type="upgrades">
+      </upgrades>
+    </node>
+
+    <node version="1" name="Service J" desc="Service J" shortdesc="Service J" disp_order="10" icon="icon_j" notinnetwork="true" type="biz_service" slalimit="1800" biz_service_function="Service J" impactkmh="-1" has_impact="true" chosen_team="zz" chosen_loc="z" chosen_it="zz" require_it_mem="5" require_it_disk="575" require_it_servers="5" update="0">
+      <link to="Exchange 2 Service J" type="Connection" contype="Service J" name="BS Exchange 2 Service J Connection" />
+      <upgrades type="upgrades">
+      </upgrades>
+    </node>
+
+    <node version="1" name="Service K" desc="Service K" shortdesc="Service K" disp_order="11" icon="icon_k" notinnetwork="true" type="biz_service" slalimit="1800" biz_service_function="Service K" impactkmh="-1" has_impact="true" chosen_team="zz" chosen_loc="z" chosen_it="zz" require_it_mem="3" require_it_disk="400" require_it_servers="10" update="0">
+      <link to="Exchange 3 Service K" type="Connection" contype="Service K" name="BS Exchange 3 Service K Connection" />
+      <upgrades type="upgrades">
+      </upgrades>
+    </node>
+
+    <node version="1" name="Service L" desc="Service L" shortdesc="Service L" disp_order="12" icon="icon_l" notinnetwork="true" type="biz_service" slalimit="1800" biz_service_function="Service L" impactkmh="-1" has_impact="true" chosen_team="zz" chosen_loc="z" chosen_it="zz" require_it_mem="3" require_it_disk="450" require_it_servers="10" update="0">
+      <link to="Exchange 4 Service L" type="Connection" contype="Service L" name="BS Exchange 4 Service L Connection" />
+      <upgrades type="upgrades">
+      </upgrades>
+    </node>
+    
+    <node version="1" name="Service M" desc="Service M" shortdesc="Service M" disp_order="13" icon="icon_m" notinnetwork="true" type="biz_service" slalimit="1800" biz_service_function="Service M" impactkmh="-1" has_impact="true" chosen_team="zz" chosen_loc="z" chosen_it="zz" require_it_mem="7" require_it_disk="600" require_it_servers="8" update="0">
+      <link to="Exchange 1 Service M" type="Connection" contype="Service M" name="BS Exchange 1 Service M Connection" />
+      <upgrades type="upgrades">
+      </upgrades>
+    </node>   
+    
+    
+  </node>
+  
+  <node type="nv" name="Exchanges">
+    <node type="Exchange" name="Exchange 1" desc="Pharma" shortdesc="Pharma" external="true" online_bonus="0" instore_bonus="0" playerstore="true" last_transaction="0" instore_portal_up= "true" online_portal_up= "true">
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Exchange 1 Service A" upbymirror="false" downforsecs="0" desc="Service A" shortdesc="Service A" icon="icon_a" up="true" slalimit="1800" slabreach="false" slaimpact="2" has_impact="true" impactkmh="-1" rev_impact="5" rev_hour="500" transaction_type="both"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Exchange 1 Service E" upbymirror="false" downforsecs="0" desc="Service E" shortdesc="Service E" icon="icon_e" up="true" slalimit="1800" slabreach="false" slaimpact="2" has_impact="true" impactkmh="-1" rev_impact="5" rev_hour="500" transaction_type="both"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Exchange 1 Service I" upbymirror="false" downforsecs="0" desc="Service I" shortdesc="Service I" icon="icon_i" up="true" slalimit="1800" slabreach="false" slaimpact="2" has_impact="true" impactkmh="-1" rev_impact="45" rev_hour="4500" transaction_type="both"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Exchange 1 Service M" upbymirror="false" downforsecs="0" desc="Service M" shortdesc="Service M" icon="icon_m" up="true" slalimit="1800" slabreach="false" slaimpact="0" has_impact="true" impactkmh="-1" rev_impact="0" rev_hour="0" transaction_type="both"/>
+    </node>
+
+    <node type="Exchange" name="Exchange 2" desc="Penfold" shortdesc="Penfold" external="true" online_bonus="0" instore_bonus="0" playerstore="true" last_transaction="0" instore_portal_up= "true" online_portal_up= "true">
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Exchange 2 Service B" upbymirror="false" downforsecs="0" desc="Service B" shortdesc="Service B" icon="icon_b" up="true" slalimit="1800" slabreach="false" slaimpact="2" has_impact="true" impactkmh="-1" rev_impact="5" rev_hour="350" transaction_type="both"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Exchange 2 Service F" upbymirror="false" downforsecs="0" desc="Service F" shortdesc="Service F" icon="icon_f" up="true" slalimit="1800" slabreach="false" slaimpact="2" has_impact="true" impactkmh="-1" rev_impact="5" rev_hour="350" transaction_type="both"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Exchange 2 Service J" upbymirror="false" downforsecs="0" desc="Service J" shortdesc="Service J" icon="icon_j" up="true" slalimit="1800" slabreach="false" slaimpact="1" has_impact="true" impactkmh="-1" rev_impact="5" rev_hour="350" transaction_type="both"/>
+    </node>
+
+    <node type="Exchange" name="Exchange 3" desc="Thalia" shortdesc="Thalia" external="true" online_bonus="0" instore_bonus="0" playerstore="true" last_transaction="0" instore_portal_up= "true" online_portal_up= "true">
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Exchange 3 Service C" upbymirror="false" downforsecs="0" desc="Service C" shortdesc="Service C" icon="icon_c" up="true" slalimit="1800" slabreach="false" slaimpact="2" has_impact="true" impactkmh="-1" rev_impact="5" rev_hour="550" transaction_type="both"/>
+			<biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Exchange 3 Service G" upbymirror="false" downforsecs="0" desc="Service G" shortdesc="Service G" icon="icon_g" up="true" slalimit="1800" slabreach="false" slaimpact="2" has_impact="true" impactkmh="-1" rev_impact="5" rev_hour="550" transaction_type="both"/>      
+			<biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Exchange 3 Service K" upbymirror="false" downforsecs="0" desc="Service K" shortdesc="Service K" icon="icon_k" up="true" slalimit="1800" slabreach="false" slaimpact="2" has_impact="true" impactkmh="-1" rev_impact="5" rev_hour="550" transaction_type="both"/>      			
+    </node>
+
+    <node type="Exchange" name="Exchange 4" desc="LBS" shortdesc="LBS" external="true" online_bonus="0" instore_bonus="0" playerstore="true" last_transaction="0" instore_portal_up= "true" online_portal_up= "true">
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Exchange 4 Service D" upbymirror="false" downforsecs="0" desc="Service D" shortdesc="Service D" icon="icon_g" up="true" slalimit="1800" slabreach="false" slaimpact="2" has_impact="true" impactkmh="-1" rev_impact="5" rev_hour="400" transaction_type="both"/>
+			<biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Exchange 4 Service H" upbymirror="false" downforsecs="0" desc="Service H" shortdesc="Service H" icon="icon_h" up="true" slalimit="1800" slabreach="false" slaimpact="2" has_impact="true" impactkmh="-1" rev_impact="5" rev_hour="400" transaction_type="both"/>      
+			<biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Exchange 4 Service L" upbymirror="false" downforsecs="0" desc="Service L" shortdesc="Service L" icon="icon_l" up="true" slalimit="1800" slabreach="false" slaimpact="2" has_impact="true" impactkmh="-1" rev_impact="5" rev_hour="400" transaction_type="both"/>      
+    </node>
+  </node>
+  
+  <node type="Hub" usernode="false" snmpq="alert1" extraspeed="0" desc="HubA" name="HubA" xpos="556" extraspeedrace="0" ypos="233" propagate="true" del="false" location="A320" canlink="true">
+    <node type="Switch" name="Service A Switch" desc="Switch" propagate="true">
+      <link to="Exchange 1 Service A" type="Connection" name="Stub Exchange 1 Service A Connection" />
+    </node >
+    <node type="Switch" name="Service B Switch" desc="Switch" propagate="true">
+      <link to="Exchange 2 Service B" type="Connection" name="Stub Exchange 2 Service B Connection" />
+    </node >
+    <node type="Switch" name="Service C Switch" desc="Switch" propagate="true">
+      <link to="Exchange 3 Service C" type="Connection" name="Stub Exchange 3 Service C Connection" />
+    </node >
+    <node type="Switch" name="Service D Switch" desc="Switch" propagate="true">
+      <link to="Exchange 4 Service D" type="Connection" name="Stub Exchange 4 Service D Connection" />
+    </node >
+    <node type="Switch" name="Service E Switch" desc="Switch" propagate="true">
+      <link to="Exchange 1 Service E" type="Connection" name="Stub Exchange 1 Service E Connection" />
+    </node >
+    <node type="Switch" name="Service F Switch" desc="Switch" propagate="true">
+      <link to="Exchange 2 Service F" type="Connection" name="Stub Exchange 2 Service F Connection" />
+    </node >
+    <node type="Switch" name="Service G Switch" desc="Switch" propagate="true">
+      <link to="Exchange 3 Service G" type="Connection" name="Stub Exchange 3 Service G Connection" />
+    </node >
+    <node type="Switch" name="Service H Switch" desc="Switch" propagate="true">
+      <link to="Exchange 4 Service H" type="Connection" name="Stub Exchange 4 Service H Connection" />
+    </node >
+    <node type="Switch" name="Service I Switch" desc="Switch" propagate="true">
+      <link to="Exchange 1 Service I" type="Connection" name="Stub Exchange 1 Service I Connection" />
+    </node >
+    <node type="Switch" name="Service J Switch" desc="Switch" propagate="true">
+      <link to="Exchange 2 Service J" type="Connection" name="Stub Exchange 2 Service J Connection" />
+    </node >
+    <node type="Switch" name="Service K Switch" desc="Switch" propagate="true">
+      <link to="Exchange 3 Service K" type="Connection" name="Stub Exchange 3 Service K Connection" />
+    </node >
+    <node type="Switch" name="Service L Switch" desc="Switch" propagate="true">
+      <link to="Exchange 4 Service L" type="Connection" name="Stub Exchange 4 Service L Connection" />
+    </node >
+    <node type="Switch" name="Service M Switch" desc="Switch" propagate="true">
+      <link to="Exchange 1 Service M" type="Connection" name="Stub Exchange 1 Service M Connection" />
+    </node >
+  </node>
+
+  <node type="Hub" desc="Hub" name="Hub" location="A320" canlink="true">
+    <node type="Router" proczone="1" name="N1201" desc="Zone 1 Router" location="E320" zone="1" >
+      <node type="Slot" proczone="1" danger_level="0" name="M101" desc="" location="M101" zone="1" />
+      <node type="Server" proczone="1" proccap="12" danger_level="0" name="Pollux" desc="Pollux" shortdesc="Pollux" location="E328" upgrade_allowed="true" disk="250" mem="4000" platform="X" zone="1">
+        <node type="App" proczone="1" proccap="2" danger_level="0" name="App1" desc="Email" location="E332" version="1" diskrequired="60" memrequired="1000" platform="X" />
+        <node type="App" proczone="1" proccap="3" danger_level="0" name="App2" desc="HR" location="E336" version="1" diskrequired="18" memrequired="500" platform="X" />
+        <node type="Slot" proczone="1" proccap="0" danger_level="0" name="E340" desc="" location="E340" />
+        <node type="Slot" proczone="1" proccap="0" danger_level="0" name="E344" desc="" location="E344" />
+        <node type="Slot" proczone="1" proccap="0" danger_level="0" name="E348" desc="" location="E348" />
+      </node>
+      <node type="Server" proczone="1" proccap="12" danger_level="0" name="Sirius" desc="Sirius" shortdesc="Sirius" location="E329" upgrade_allowed="true" disk="90" mem="2000" platform="X" zone="1">
+        <node type="App" proczone="1" proccap="2" danger_level="0" name="App3" desc="Finance" location="E333" version="1" memrequired="500" diskrequired="41" platform="X" />
+        <node type="App" proczone="1" proccap="2" danger_level="0" name="App4" desc="Banking" location="E337" version="1" memrequired="500" diskrequired="39" platform="X" />
+        <node type="Slot" proczone="1" proccap="0" danger_level="0" name="E341" desc="" location="E341" />
+        <node type="Slot" proczone="1" proccap="0" danger_level="0" name="E345" desc="" location="E345" />
+        <node type="Slot" proczone="1" proccap="0" danger_level="0" name="E349" desc="" location="E349" />
+      </node>
+      <node type="Server" proczone="1" proccap="12" danger_level="0" name="Algol" desc="Algol" shortdesc="Algol" location="E330" upgrade_allowed="true" disk="160" mem="2000" platform="X" zone="1">
+        <node type="App" proczone="1" proccap="3" danger_level="0" name="App5" desc="Legal" location="E334"  version="1" memrequired="500" diskrequired="10" platform="X" />
+        <node type="Slot" proczone="1" proccap="0" danger_level="0" name="E338" desc="" location="E338" />
+        <node type="Slot" proczone="1" proccap="0" danger_level="0" name="E342" desc="" location="E342" />
+        <node type="Slot" proczone="1" proccap="0" danger_level="0" name="E346" desc="" location="E346" />
+        <node type="Slot" proczone="1" proccap="0" danger_level="0" name="E350" desc="" location="E350" />
+      </node>
+      <node type="Server" proczone="1" proccap="12" danger_level="0" name="Deneb" desc="Deneb" shortdesc="Deneb" location="E331" upgrade_allowed="true"  disk="90" mem="3000" platform="X" zone="1">
+        <node type="App" proczone="1" proccap="3" danger_level="0" name="App6" desc="Payroll" location="E335" version="1"  memrequired="1000" diskrequired="57" platform="X" />
+        <node type="App" proczone="1" proccap="3" danger_level="0" name="App7" desc="Relational Database" location="E339" version="1" memrequired="1000" diskrequired="23" platform="X" />
+        <node type="Slot" proczone="1" proccap="0" danger_level="0" name="E343" desc="" location="E343" />
+        <node type="Slot" proczone="1" proccap="0" danger_level="0" name="E347" desc="" location="E347" />
+      </node>
+      
+    </node>
+    <node type="Router" proczone="2" name="P2132-5" desc="Zone 2 Router" location="F322" zone="2">
+      <node type="Server" proczone="2" proccap="10" danger_level="0" name="Hadar" desc="Hadar" shortdesc="Hadar" location="F325" upgrade_allowed="true"  disk="460" mem="12000" platform="Y" zone="2">
+        <node type="App" proczone="2" proccap="2" danger_level="0" name="App8" desc="Graphic Design" location="F329" version="1" memrequired="7000" diskrequired="200" platform="Y"/>
+        <node type="App" proczone="2" proccap="2" danger_level="0" name="App9" desc="Bid Management" location="F333" version="1" memrequired="1000" diskrequired="40" platform="Y"/>
+        <node type="App" proczone="2" proccap="2" danger_level="0" name="App10" desc="Logistics" location="F337" version="1" memrequired="500" diskrequired="16" platform="Y"/>
+        <node type="App" proczone="2" proccap="2" danger_level="0" name="App11" desc="Vendor Evaluation" location="F340" version="1" memrequired="500" diskrequired="2" platform="Y" />
+      </node>
+      <node type="Server" proczone="2" proccap="12" danger_level="0" name="Merak" desc="Merak" shortdesc="Merak" location="F326" upgrade_allowed="true"  disk="110" mem="5000" platform="Y" zone="2">
+        <node type="App" proczone="2" proccap="2" danger_level="0" name="App12" desc="Product Planning" location="F330" version="1" memrequired="500" diskrequired="2" platform="Y" />
+        <node type="App" proczone="2" proccap="2" danger_level="0" name="App13" desc="Travel Accomm"  location="F334" version="1" memrequired="500" diskrequired="34" platform="Y" />
+        <node type="App" proczone="2" proccap="2" danger_level="0" name="App14" desc="Stock Control" location="F338" version="1" memrequired="500" diskrequired="12" platform="Y" />
+        <node type="App" proczone="2" proccap="2" danger_level="0" name="App15" desc="Testing" location="F341"  version="1" memrequired="500" diskrequired="5" platform="Y" />
+        <node type="App" proczone="2" proccap="2" danger_level="0" name="App16" desc="Warehouse Management" location="F343" version="1" memrequired="500" diskrequired="6" platform="Y" />
+        <node type="Slot" proczone="2" proccap="0" danger_level="0" name="F345" desc="" location="F345" />
+      </node>
+      <node type="Server" proczone="2" proccap="12" danger_level="0" name="Mizar" desc="Mizar" shortdesc="Mizar" location="F327" upgrade_allowed="true"  disk="72" mem="3000" platform="Y" zone="2">
+        <node type="App" proczone="2" proccap="2" danger_level="0" name="App17" desc="Marketing" location="F331" version="1" memrequired="1000" diskrequired="27" platform="Y" />
+        <node type="App" proczone="2" proccap="2" danger_level="0" name="App18" desc="Prototyping" location="F335" version="1" memrequired="500" diskrequired="5" platform="Y" />
+        <node type="App" proczone="2" proccap="2" danger_level="0" name="App19" desc="Printing" location="F339" version="1" memrequired="500" diskrequired="2" platform="Y" />
+        <node type="Slot" proczone="2" proccap="0" danger_level="0" name="F342" desc="" location="F342" />
+        <node type="Slot" proczone="2" proccap="0" danger_level="0" name="F344" desc="" location="F344" />
+        <node type="Slot" proczone="2" proccap="0" danger_level="0" name="F346" desc="" location="F346" />
+      </node>
+    </node>
+    <node type="Router" proczone="3" name="N1321" desc="Zone 3 Router 1" location="B321" zone="3">
+      <node type="Server" proczone="3" proccap="12" danger_level="0" name="Rukbat" desc="Rukbat" shortdesc="Rukbat" location="B324" upgrade_allowed="true"  disk="190" mem="7000" platform="X" zone="3">
+        <node type="App" proczone="3" proccap="2" danger_level="0" name="App20" desc="Accounts" location="B329" version="1" memrequired="500" diskrequired="16" platform="X"/>
+        <node type="App" proczone="3" proccap="2" danger_level="0" name="App21" desc="Banking Backup(1)"  location="B334" version="1" memrequired="1000" diskrequired="56" platform="X"/>
+        <node type="App" proczone="3" proccap="1" danger_level="0" name="App22" desc="Doc Management" location="B339" version="1" memrequired="500" diskrequired="23" platform="X" />
+        <node type="App" proczone="3" proccap="1" danger_level="0" name="App23" desc="Advertising" location="B344" version="1" memrequired="1000" diskrequired="32" platform="X" />
+        <node type="Slot" proczone="3" proccap="0" danger_level="0" name="B348" location="B348" />
+        <node type="Slot" proczone="3" proccap="0" danger_level="0" name="B352" location="B352" />
+      </node>
+      <node type="Server" proczone="3" proccap="12" danger_level="0" name="Antares" desc="Antares" shortdesc="Antares" location="B325" upgrade_allowed="true"  disk="160" mem="4000" platform="X" zone="3">
+        <node type="App" proczone="3" proccap="2" danger_level="0" name="App24"  desc="Security" location="B330" version="1" memrequired="500" diskrequired="9" platform="X"/>
+        <node type="App" proczone="3" proccap="2" danger_level="0" name="App25" desc="Process Engineering" location="B335" version="1" memrequired="2000" diskrequired="83" platform="X"/>
+        <node type="App" proczone="3" proccap="1" danger_level="0" name="App26" desc="Stock Control Backup(1)" location="B340" version="1" memrequired="500" diskrequired="12" platform="X" />
+        <node type="App" proczone="3" proccap="1" danger_level="0" name="App27" desc="Desktop Publishing" location="B345" version="1" memrequired="500" diskrequired="20" platform="X" />
+        <node type="Slot" proczone="3" proccap="0" danger_level="0" name="B349"  desc="" location="B349" />
+        <node type="Slot" proczone="3" proccap="0" danger_level="0" name="B353" desc="" location="B353" />
+      </node>
+      <node type="Server" proczone="3" proccap="12" danger_level="0" name="Capella" desc="Capella" shortdesc="Capella" location="B326" upgrade_allowed="true"  disk="146" mem="4000" platform="X" zone="3">
+        <node type="App" proczone="3" proccap="2" danger_level="0" name="App28" desc="Contract Management"  location="B331" version="1" memrequired="500" diskrequired="2" platform="X" />
+        <node type="App" proczone="3" proccap="2" danger_level="0" name="App29" desc="Network Managmement" location="B336" version="1" memrequired="1000" diskrequired="4" platform="X" />
+        <node type="App" proczone="3" proccap="1" danger_level="0" name="App30" desc="Web Development" location="B341" version="1" memrequired="500" diskrequired="12" platform="X" />
+        <node type="Slot" proczone="3" proccap="0" danger_level="0" name="B346" desc="" location="B346" />
+        <node type="Slot" proczone="3" proccap="0" danger_level="0" name="B350" desc="" location="B350" />
+        <node type="Slot" proczone="3" proccap="0" danger_level="0" name="B354" desc="" location="B354" />
+      </node>
+      <node type="Router" proczone="3" zone="3" name="G3214" desc="Zone 3 Router 2" location="B323" >
+        <node type="Server" proczone="3" proccap="12" danger_level="0" name="Canopus" desc="Canopus" shortdesc="Canopus" location="B327"  upgrade_allowed="true"  disk="250" mem="6000" platform="X" zone="3">
+          <node type="App" proczone="3" proccap="2" danger_level="0" name="App31" desc="Multi Store" location="B332" version="1" memrequired="3000" diskrequired="120" platform="X" zone="3"/>
+          <node type="App" proczone="3" proccap="2" danger_level="0" name="App32" desc="Fulfillment" location="B337" version="1" memrequired="1500" diskrequired="24" platform="X" zone="3"/>
+          <node type="Slot" proczone="3" proccap="0" danger_level="0" name="B342" desc="" location="B342" />
+          <node type="Slot" proczone="3" proccap="0" danger_level="0" name="B347" desc="" location="B347" />
+          <node type="Slot" proczone="3" proccap="0" danger_level="0" ame="B351" desc="" location="B351" />
+        </node>
+      </node>
+    </node>
+    <node type="Router" proczone="4" zone="4" desc="Zone 4 Router" name="P2123-4" location="G322" >
+      <node type="Server" proczone="4" proccap="12" danger_level="0" name="Rigel" desc="Rigel" shortdesc="Rigel" location="G324" upgrade_allowed="true"  mem="4000" disk="160" platform="Y" zone="4">
+        <node type="App" proczone="4" proccap="1" danger_level="0" name="App33" desc="Media" version="1" location="G326" memrequired="1000" diskrequired="10" platform="Y" />
+        <node type="App" proczone="4" proccap="2" danger_level="0" name="App34" desc="Product Definition" version="1" location="G328" memrequired="1000" diskrequired="18" platform="Y" />
+        <node type="Slot" proczone="4" proccap="0" danger_level="0" name="G330" desc="" location="G330" />
+        <node type="Slot" proczone="4" proccap="0" danger_level="0" name="G332" desc="" location="G332" />
+        <node type="Slot" proczone="4" proccap="0" danger_level="0" name="G334" desc="" location="G334" />
+        <node type="Slot" proczone="4" proccap="0" danger_level="0" name="G336" desc="" location="G336" />
+        <node type="Slot" proczone="4" proccap="0" danger_level="0" name="G338" desc="" location="G338" />
+      </node>
+      <node type="Server" proczone="4" proccap="12" danger_level="0" name="Spica" desc="Spica" shortdesc="Spica" location="G325" upgrade_allowed="true"  mem="5000" disk="150" platform="Y" zone="4">
+        <node type="App" proczone="4" proccap="2" danger_level="0" name="App35" desc="Relational Backup (1)" location="G327" version="1" memrequired="500" diskrequired="23" platform="Y"/>
+        <node type="App" proczone="4" proccap="2" danger_level="0" name="App36" desc="Server Management" location="G329" version="1" memrequired="500" diskrequired="6" platform="Y"/>
+        <node type="App" proczone="4" proccap="2" danger_level="0" name="App37" desc="Procurement" location="G331" version="1" memrequired="500" diskrequired="27" platform="Y"/>
+        <node type="App" proczone="4" proccap="1" danger_level="0" name="App38" desc="Backup" location="G333" version="1"  memrequired="500" diskrequired="20" platform="Y" />
+        <node type="App" proczone="4" proccap="1" danger_level="0" name="App39"  desc="Supply Chain Management" location="G335" version="1" memrequired="500" diskrequired="19" platform="Y" />
+        <node type="Slot" proczone="4" proccap="0" danger_level="0" name="G337" desc="" location="G337"/>
+        <node type="Slot" proczone="4" proccap="0" danger_level="0" name="G339" desc="" location="G339"/>
+      </node>
+    </node>
+    <node type="Router" proczone="5" zone="5" name="M1232-1" desc="Zone 5 Router" location="H320" >
+      <node type="Server" proczone="5" proccap="10" danger_level="0" name="Vega" desc="Vega" shortdesc="Vega" location="H325" upgrade_allowed="true"  disk="160" mem="3000" platform="Z" zone="5">
+        <node type="Database" proczone="5" proccap="1" danger_level="0" name="App40" desc="Asset Management" location="H330" version="1" memrequired="500" diskrequired="23" platform="Z" />
+        <node type="App" proczone="5" proccap="2" danger_level="0" name="App41" desc="Analytics" location="H335" version="1" memrequired="500" diskrequired="10" platform="Z" />
+        <node type="Slot" proczone="5" proccap="0" danger_level="0" name="H340" desc="" location="H340" />
+        <node type="Slot" proczone="5" proccap="0" danger_level="0" name="H345" desc="" location="H345" />
+        <node type="Slot" proczone="5" proccap="0" danger_level="0" name="H350" desc="" location="H350" />
+      </node>
+      <node type="Server" proczone="5" proccap="10" danger_level="0" name="Izar" desc="Izar" shortdesc="Izar" location="H326" upgrade_allowed="true"  disk="160" mem="4000" platform="Z" zone="5">
+        <node type="Database" proczone="5" proccap="1" danger_level="0" name="App42" desc="Email Backup(1)" location="H331" version="1" memrequired="500" diskrequired="72" platform="Z" />
+        <node type="App" proczone="5" proccap="2" danger_level="0" name="App43" desc="Data Protection" location="H336" version="1" memrequired="1000" diskrequired="11" platform="Z" />
+        <node type="App" proczone="5" proccap="2" danger_level="0" name="App44" desc="Disaster Tolerance" location="H341" version="1" memrequired="500" diskrequired="2" platform="Z" />
+        <node type="Slot" proczone="5" proccap="0" danger_level="0" name="H346" location="H346"  />
+        <node type="Slot" proczone="5" proccap="0" danger_level="0" name="H351" location="H351"  />
+      </node>
+      <node type="Server" proczone="5" proccap="10" danger_level="0" name="Zosma" desc="Zosma" shortdesc="Zosma" location="H327" upgrade_allowed="true" disk="50" mem="3000" platform="Z" zone="5">
+        <node type="App" proczone="5" proccap="2" danger_level="0" name="App45" desc="Product Costing" location="H332" version="1" memrequired="500" diskrequired="4" platform="Z" />
+        <node type="App" proczone="5" proccap="2" danger_level="0" name="App46" desc="Capacity Optimisation" location="H337" version="1" memrequired="500" diskrequired="8" platform="Z" />
+        <node type="App" proczone="5" proccap="2" danger_level="0" name="App47" desc="Flat File DataBase Backup(1)" location="H342" version="1" memrequired="1000" diskrequired="26" platform="Z" />
+        <node type="Slot" proczone="5" proccap="0" danger_level="0" name="H347" desc="" location="H347" />
+        <node type="Slot" proczone="5" proccap="0" danger_level="0" name="H352" desc="" location="H352" />
+      </node>
+      <node type="Server" proczone="5" proccap="12" danger_level="0" name="Sabik" desc="Sabik" shortdesc="Sabik" location="H328" upgrade_allowed="true" disk="90" mem="2000" platform="Z" zone="5">
+        <node type="App" proczone="5" proccap="4" danger_level="0" name="App48" desc="Business Continuity" location="H333" version="1" memrequired="500" diskrequired="43" platform="Z" />
+        <node type="App" proczone="5" proccap="2" danger_level="0" name="App49" desc="Training and Development" location="H338" version="1" memrequired="500" diskrequired="9" platform="Z" />
+        <node type="Slot" proczone="5" proccap="0" danger_level="0" name="H343" desc="" location="H343" />
+        <node type="Slot" proczone="5" proccap="0" danger_level="0" name="H348" desc="" location="H348" />
+      </node>
+    </node>
+    <node type="Router" proczone="6" zone="6" name="M2403" desc="Zone 6 Router" location="D320" >
+       <node type="Server" proczone="6" proccap="10" danger_level="0" name="Altair" desc="Altair" shortdesc="Altair" location="D323" upgrade_allowed="true"  disk="360" mem="4000" platform="X" zone="6">
+         <node type="App" proczone="6" proccap="2" danger_level="0" name="App50" desc="Process Backup (1)" location="D324" version="1"   memrequired="1500" diskrequired="56" platform="X" />
+         <node type="App" proczone="6" proccap="2" danger_level="0" name="App51" desc="Payroll Backup (1)" location="D326" version="1" memrequired="1000" diskrequired="67" platform="X" />
+         <node type="App" proczone="6" proccap="4" danger_level="0" name="App52" desc="Driver Sim" location="D328" version="1" memrequired="1000" diskrequired="29" platform="X" />
+         <node type="Slot" proczone="6" proccap="0" danger_level="0" name="D330" desc="" location="D330" />
+         <node type="Slot" proczone="6" proccap="0" danger_level="0" name="D332" desc="" location="D332" />
+         <node type="Slot" proczone="6" proccap="0" danger_level="0" name="D334" desc="" location="D334" />
+       </node>
+       <node type="Server" proczone="6" proccap="12" danger_level="0" name="Castor" desc="Castor" shortdesc="Castor" location="D322" upgrade_allowed="true" disk="160" mem="3000" platform="X" zone="6">
+         <node type="App" proczone="6" proccap="4" danger_level="0" name="App53" desc="Ordering" location="D325" version="1" memrequired="500" diskrequired="21" platform="X"/>
+         <node type="App" proczone="6" proccap="4" danger_level="0" name="App54" desc="Email Backup (2)" location="D327" version="1" memrequired="500" diskrequired="34" platform="X"/>
+         <node type="App" proczone="6" proccap="1" danger_level="0" name="App55" desc="CRM" location="D329" version="1" memrequired="1000" diskrequired="98" platform="X" />
+         <node type="Slot" proczone="6" proccap="0" danger_level="0" name="D331" desc="" location="D331" />
+         <node type="Slot" proczone="6" proccap="0" danger_level="0" name="D333" desc="" location="D333" />
+       </node>
+     </node>
+    <node type="Router" proczone="7" zone="7" name="K1232-1" desc="Zone 7 Router" location="C321" >
+      <node type="Server" proczone="7" proccap="12" danger_level="0" name="Tarazed" desc="Tarazed" shortdesc="Tarazed" location="C324" upgrade_allowed="true" disk="160" mem="2000" platform="Z" zone="7">
+        <node type="App" proczone="7" proccap="3" danger_level="0" name="App56" desc="CAD" location="C328" version="1" memrequired="500" diskrequired="23" platform="X" />
+        <node type="App" proczone="7" proccap="3" danger_level="0" name="App57" desc="Numeric Database" location="C332" version="1" memrequired="500" diskrequired="20" platform="X" />
+        <node type="App" proczone="7" proccap="3" danger_level="0" name="App58" desc="Payroll backup (2)" location="C335" version="1" memrequired="500" diskrequired="76" platform="X" />
+        <node type="Slot" proczone="7" proccap="0" danger_level="0" name="C338" desc="" location="C338" />
+        <node type="Slot" proczone="7" proccap="0" danger_level="0" name="C344" desc="" location="C344" />
+      </node>
+      <node type="Server" proczone="7" proccap="12" danger_level="0" name="Regulus" desc="Regulus" shortdesc="Regulus" location="C325" upgrade_allowed="true"  disk="72" mem="5000" platform="Z" zone="7">
+        <node type="App" proczone="7" proccap="3" danger_level="0" name="App59" desc="Staff Discount System" location="C329" version="1" memrequired="500" diskrequired="20" platform="Z" />
+        <node type="App" proczone="7" proccap="3" danger_level="0" name="App60" desc="Emergency Management" location="C333" version="1" memrequired="500" diskrequired="13" platform="Z" />
+        <node type="App" proczone="7" proccap="3" danger_level="0" name="App61" desc="Data Management" location="C336" version="1" memrequired="500" diskrequired="9" platform="Z" />
+        <node type="Slot" proczone="7" proccap="0" danger_level="0" name="C339" desc="" location="C339" />
+        <node type="Slot" proczone="7" proccap="0" danger_level="0" name="C341" desc="" location="C341" />
+        <node type="Slot" proczone="7" proccap="0" danger_level="0" name="C345" desc="" location="C345" />
+      </node>
+      <node type="Server" proczone="7" proccap="12" danger_level="0" name="Procyon" desc="Procyon" shortdesc="Procyon" location="C326" upgrade_allowed="true"  disk="210" mem="5000" platform="Z" zone="7">
+        <node type="App" proczone="7" proccap="2" danger_level="0" name="App62" desc="Firewall" location="C330" version="1" memrequired="500" diskrequired="4" platform="Z" />
+        <node type="App" proczone="7" proccap="2" danger_level="0" name="App63" desc="HR Backup (1)" location="C334" version="1" memrequired="500" diskrequired="19" platform="Z" />
+        <node type="App" proczone="7" proccap="2" danger_level="0" name="App64" desc="Empolyee Management" location="C337" version="1" memrequired="500" diskrequired="7" platform="Z" />
+        <node type="App" proczone="7" proccap="2" danger_level="0" name="App65" desc="Project Management " location="C340" version="1" memrequired="1000" diskrequired="97" platform="Z" />
+        <node type="App" proczone="7" proccap="2" danger_level="0" name="App66" desc="Flat File Database Backup (2)" location="C342" version="1" memrequired="500" diskrequired="24" platform="Z" />
+        <node type="App" proczone="7" proccap="2" danger_level="0" name="App67" desc="Wireless Comms" location="C343" version="1" memrequired="500" diskrequired="2" platform="Z" />
+      </node>
+    </node>
+
+	<node type="Router" proczone="9" zone="9" name="MagicRouter" desc="Magic Router" shortdesc="Magic Router" location="M1000" >
+		<node type="Server" proczone="9" zone="9" name="MagicServerX" desc="Magic Server X" shortdesc="Magic Server X" location="X1000" upgrade_allowed="false" upgrade_hide="true" proccap="1000000" disk="1000000" mem="1000000" platform="X" />
+		<node type="Server" proczone="9" zone="9" name="MagicServerY" desc="Magic Server Y" shortdesc="Magic Server Y" location="Y1000" upgrade_allowed="false" upgrade_hide="true" proccap="1000000" disk="1000000" mem="1000000" platform="Y" />
+		<node type="Server" proczone="9" zone="9" name="MagicServerZ" desc="Magic Server Z" shortdesc="Magic Server Z" location="Z1000" upgrade_allowed="false" upgrade_hide="true" proccap="1000000" disk="1000000" mem="1000000" platform="Z" />
+	</node>
+  </node>
+
+  <node name="globaltimesheets" desc="gathers the data for the end of round report">
+    <day name="timesheet1" day="1" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet2" day="2" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet3" day="3" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet4" day="4" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet5" day="5" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet6" day="6" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet7" day="7" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet8" day="8" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet9" day="9" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet10" day="10" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet11" day="11" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet12" day="12" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet13" day="13" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet14" day="14" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet15" day="15" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet16" day="16" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet17" day="17" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet18" day="18" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet19" day="19" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet20" day="20" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet21" day="21" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet22" day="22" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet23" day="23" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet24" day="24" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet25" day="25" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+  </node>
+
+  <node name="demand_sheets" desc="These nodes list the maximum people demand for each day used in the Utilisation Chart Report">
+    <day name="demand_sheet1" day="1" IntDevPeopleRequired="0" ExtDevPeopleRequired="0" IntTestPeopleRequired="0" ExtTestPeopleRequired="0"/>
+    <day name="demand_sheet2" day="2" IntDevPeopleRequired="0" ExtDevPeopleRequired="0" IntTestPeopleRequired="0" ExtTestPeopleRequired="0"/> 
+    <day name="demand_sheet3" day="3" IntDevPeopleRequired="0" ExtDevPeopleRequired="0" IntTestPeopleRequired="0" ExtTestPeopleRequired="0"/> 
+    <day name="demand_sheet4" day="4" IntDevPeopleRequired="0" ExtDevPeopleRequired="0" IntTestPeopleRequired="0" ExtTestPeopleRequired="0"/> 
+    <day name="demand_sheet5" day="5" IntDevPeopleRequired="0" ExtDevPeopleRequired="0" IntTestPeopleRequired="0" ExtTestPeopleRequired="0"/> 
+    <day name="demand_sheet6" day="6" IntDevPeopleRequired="0" ExtDevPeopleRequired="0" IntTestPeopleRequired="0" ExtTestPeopleRequired="0"/> 
+    <day name="demand_sheet7" day="7" IntDevPeopleRequired="0" ExtDevPeopleRequired="0" IntTestPeopleRequired="0" ExtTestPeopleRequired="0"/> 
+    <day name="demand_sheet8" day="8" IntDevPeopleRequired="0" ExtDevPeopleRequired="0" IntTestPeopleRequired="0" ExtTestPeopleRequired="0"/> 
+    <day name="demand_sheet9" day="9" IntDevPeopleRequired="0" ExtDevPeopleRequired="0" IntTestPeopleRequired="0" ExtTestPeopleRequired="0"/> 
+    <day name="demand_sheet10" day="10" IntDevPeopleRequired="0" ExtDevPeopleRequired="0" IntTestPeopleRequired="0" ExtTestPeopleRequired="0"/>
+    <day name="demand_sheet11" day="11" IntDevPeopleRequired="0" ExtDevPeopleRequired="0" IntTestPeopleRequired="0" ExtTestPeopleRequired="0"/> 
+    <day name="demand_sheet12" day="12" IntDevPeopleRequired="0" ExtDevPeopleRequired="0" IntTestPeopleRequired="0" ExtTestPeopleRequired="0"/> 
+    <day name="demand_sheet13" day="13" IntDevPeopleRequired="0" ExtDevPeopleRequired="0" IntTestPeopleRequired="0" ExtTestPeopleRequired="0"/> 
+    <day name="demand_sheet14" day="14" IntDevPeopleRequired="0" ExtDevPeopleRequired="0" IntTestPeopleRequired="0" ExtTestPeopleRequired="0"/> 
+    <day name="demand_sheet15" day="15" IntDevPeopleRequired="0" ExtDevPeopleRequired="0" IntTestPeopleRequired="0" ExtTestPeopleRequired="0"/> 
+    <day name="demand_sheet16" day="16" IntDevPeopleRequired="0" ExtDevPeopleRequired="0" IntTestPeopleRequired="0" ExtTestPeopleRequired="0"/> 
+    <day name="demand_sheet17" day="17" IntDevPeopleRequired="0" ExtDevPeopleRequired="0" IntTestPeopleRequired="0" ExtTestPeopleRequired="0"/> 
+    <day name="demand_sheet18" day="18" IntDevPeopleRequired="0" ExtDevPeopleRequired="0" IntTestPeopleRequired="0" ExtTestPeopleRequired="0"/> 
+    <day name="demand_sheet19" day="19" IntDevPeopleRequired="0" ExtDevPeopleRequired="0" IntTestPeopleRequired="0" ExtTestPeopleRequired="0"/> 
+    <day name="demand_sheet20" day="20" IntDevPeopleRequired="0" ExtDevPeopleRequired="0" IntTestPeopleRequired="0" ExtTestPeopleRequired="0"/> 
+    <day name="demand_sheet21" day="21" IntDevPeopleRequired="0" ExtDevPeopleRequired="0" IntTestPeopleRequired="0" ExtTestPeopleRequired="0"/> 
+    <day name="demand_sheet22" day="22" IntDevPeopleRequired="0" ExtDevPeopleRequired="0" IntTestPeopleRequired="0" ExtTestPeopleRequired="0"/> 
+    <day name="demand_sheet23" day="23" IntDevPeopleRequired="0" ExtDevPeopleRequired="0" IntTestPeopleRequired="0" ExtTestPeopleRequired="0"/> 
+    <day name="demand_sheet24" day="24" IntDevPeopleRequired="0" ExtDevPeopleRequired="0" IntTestPeopleRequired="0" ExtTestPeopleRequired="0"/> 
+    <day name="demand_sheet25" day="25" IntDevPeopleRequired="0" ExtDevPeopleRequired="0" IntTestPeopleRequired="0" ExtTestPeopleRequired="0"/> 
+  </node>
+
+	<node name="project_duration_change_list">
+	</node>
+
+  <node name="round_results" project_completed="0" gain_achieved="0">
+    <node name="operational_results" market_position="1" predicted_market_position = "16" fines="0" missed_items="0" total_gain="0"/>
+    <node name="projects_results" project_completed="" missed_reg_projects_total="" missed_reg_projects_fines="" fine_per_project="50000"/>
+    <node name="fin_results" total_revenue="0" total_project_spend="0" fixed_costs="2500000" profitloss=""/>
+    <node name="resources_results" int_tasked_days="0" int_wasted_days="0" ext_tasked_days="0" ext_wasted_days="0" int_wasted_cost="0" ext_wasted_cost="0"/>
+    <node name="running_benefit" transactions_gained="0" cost_reduction="0" total_benefit="0"/>
+  </node>
+  
+  <node name="pmo_office">
+    <node name="pmo_budget" budget_allowed="1800000" budget_spent="0" budget_left="1800000" cancellation_money="0"/>
+  </node>
+  
+ <node name="department" int_recall="false" int_recall_count="0" ext_recall="false" ext_recall_count="0">
+    <node name="dev_staff" type="bench" total="30">
+      <node type="person" name="di01" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di02" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di03" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di04" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di05" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di06" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di07" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di08" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di09" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di10" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di11" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di12" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di13" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di14" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di15" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di16" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di17" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di18" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di19" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di20" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di21" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di22" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di23" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di24" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di25" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di26" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di27" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di28" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di29" skill="dev" section="dev_staff" is_contractor="false" />
+      <node type="person" name="di30" skill="dev" section="dev_staff" is_contractor="false" />
+    </node>
+    <node name="dev_contractor" type="bench" total="4" >
+      <node type="person" name="dc01" skill="dev" section="dev_contractor" is_contractor="true" />
+      <node type="person" name="dc02" skill="dev" section="dev_contractor" is_contractor="true" />
+      <node type="person" name="dc03" skill="dev" section="dev_contractor" is_contractor="true" />
+      <node type="person" name="dc04" skill="dev" section="dev_contractor" is_contractor="true" />
+    </node>
+    <node name="test_staff" type="bench" total="0" >
+    </node>
+    <node name="test_contractor" type="bench" total="0" >
+   </node>
+    <node name="dev_staff_recall" type="bench" total="0" >
+    </node>
+    <node name="dev_contractor_recall" type="bench" total="0" >
+    </node>
+    <node name="test_staff_recall" type="bench" total="0" >
+    </node>
+    <node name="test_contractor_recall" type="bench" total="0" >
+    </node>
+  </node>
+
+  <node name="pm_projects" >
+    <node name="pm_projects_running">
+    </node>
+    <node name="pm_projects_known">
+    </node>    
+    <node name="pm_projects_cancelled">
+    </node>    
+    <node name="pm_project_unique_no" value = "1000"/>
+  </node>
+
+  <TransactionStatus name="TransactionStatus" TransCompleted="0" TransMaximum="96"/>
+
+  <Transactions name="Transactions" count_good = "0" count_processed = "0" count_max = "96">
+  </Transactions>
+  
+  <PitStop activefor="" name="PitStop" />
+  <AdvancedWarningTechnology enabled="false" name="AdvancedWarningTechnology" up="true" />
+  <CameraActions num="0" name="CameraActions" />
+  <AppliedWorkArounds num="0" name="AppliedWorkArounds" />
+  <CostedEvents name="CostedEvents" totalspent="0" />
+  <ProjectsIncomingRequests name="ProjectsIncomingRequests" />
+  <Projects name="Projects">
+  </Projects>
+  <Calendar name="Calendar" days="30" />
+  <CurrentDay name="CurrentDay" day="0" />
+  <CurrentTime name="CurrentTime" seconds="0"/>
+  
+  <TaskManager name="TaskManager" />
+  
+  <enteredIncidents name="enteredIncidents" />
+  <FixItQueue name="FixItQueue" />
+  <FacilitatorNotifiedErrors name="FacilitatorNotifiedErrors" />
+  <BusinessNotifiedEvents name="BusinessNotifiedEvents" />
+
+  <ActivityLevel  name="ActivityLevel" calls_good="0" calls_missed="0" trades_good="0" trades_missed="0" settlements_good="0" settlements_missed="0"/>
+
+  <PrePlaySystem name="PrePlaySystem">
+    <preplay_name name="preplay_control" start="false" escape="false" time_ref="900"/>
+    <preplay_status name="preplay_status" time_left="900" preplay_running="true" />
+  </PrePlaySystem>
+  
+  <Availability name="Availability" availability="100.0" />
+  <Impact name="Impact" impact="0" />
+  <PowerLevel name="PowerLevel" level="100.0" z1_base="48" z1_now="48" z2_base="34" z2_now="34" z3_base="48" z3_now="48" z4_base="24" z4_now="24" z5_base="42" z5_now="42" z6_base="22" z6_now="22" z7_base="36" z7_now="36" />
+  <SLA_Breach name="sla_breach" biz_serv_count="0" biz_serv_user_count="0" impact_count="0" />
+  <MachineUpgradeQueue name="MachineUpgradeQueue" />
+  <AppUpgradeQueue name="AppUpgradeQueue" />
+  <AppUpgradeResetLinksQueue name="AppUpgradeResetLinksQueue" />
+  <MirrorCommandQueue name="MirrorCommandQueue" />
+  <IncidentCount name="IncidentCount" count="0" />  
+  <DevelopmentalSpend name="DevelopmentSpend" CurrentSpendTotal="0" ActualCostTotal="0" RoundBudgetLeft="0" />
+  <CoolingSystem name="CoolingSystem" upgraded="false" />
+  <MarketingCosts name="MarketingCosts" />
+  
+  <Security_Protection name="Security_Protection" on="false"/>
+  <testmode name="testmode" autostart="false"/>
+
+  <ops_work name="ops_worklist" type="ops_worklist" jobname="" block="false" project="false">
+  </ops_work>
+  
+  <ops_activity name="ops_activity" type="ops_activity" />
+  
+  <project_plans name="project_plans" type="project_plans" />
+
+  <comms_list name="comms_list" type="comms_list" >
+  
+  </comms_list>
+
+  <market_info name="market_info"
+	leader_transaction_volume="230,000 (8.2%)" transactions_gain="123000"
+	cost_reduction="560000" cost_avoidance="1600000"
+  />
+
+  <predicted_market_info name="predicted_market_info" transactions_gain="" cost_reduction="" displaytime="0" displaytext="false"/>
+
+	<day_activity_msgs name="day_activity_msgs" message="">
+		<day_activity_messages name="day_activity_messages" message=""/>
+		<day_activity_messages name="day_activity_messages1" message=""/>
+		<day_activity_messages name="day_activity_messages2" message=""/>
+		<day_activity_messages name="day_activity_messages3" message=""/>
+		<day_activity_messages name="day_activity_messages4" message=""/>
+	</day_activity_msgs>
+	
+	<BusinessTargets name="BusinessTargets">
+		<BusinessTarget name="BusinessTargetTransactions"  value="0" />
+		<BusinessTarget name="BusinessTargetCostAvoidance" value="0" />
+		<BusinessTarget name="BusinessTargetCostReduction" value="0" />
+	</BusinessTargets>	
+	
+  <fsc_list name="fsc_list" type="fsc_list" note="Some of the attribute tags could be moved to an external file but for now leave here (still being defined by the guys)">
+  <fsc name="fsc1" type="fsc_item" location="E336" dest="Megrez" entry_data="E336" memory="1000" disk="18" money_cost="0" time_cost="1" fine_cost="1" action="upgrade_fsc_app" required="false" status="todo" />
+  <fsc name="fsc2" type="fsc_item" location="B332" dest="Alshat" entry_data="B332" memory="1000" disk="9" money_cost="0" time_cost="1" fine_cost="1" action="upgrade_fsc_app" required="false" status="todo" />
+  <fsc name="fsc3" type="fsc_item" location="G335" dest="Keid" entry_data="G335" memory="500" disk="1" money_cost="0" time_cost="1" fine_cost="1" action="upgrade_fsc_app" required="false" status="todo" />
+  <fsc name="fsc4" type="fsc_item" location="G326" dest="Chort" entry_data="G326" memory="500" disk="28" money_cost="0" time_cost="1" fine_cost="1" action="upgrade_fsc_app" required="false" status="todo" />
+  <fsc name="fsc5" type="fsc_item" location="H328" dest="Sabik" entry_data="Sabik" memory="-500" disk="-2" money_cost="0" time_cost="1" fine_cost="1" action="rebuild_fsc" required="false" status="todo" />
+  <fsc name="fsc6" type="fsc_item" location="D325" dest="Bellatrix" entry_data="D325" memory="500" disk="1" money_cost="0" time_cost="1" fine_cost="1" action="upgrade_fsc_app" required="false" status="todo" />
+  </fsc_list>
+  
+  <cc_list name="change_list" type="cc_list" note="Some of the attribute tags could be moved to an external file but for now leave here (still being defined by the guys)">
+  <cc name="cc1" type="cc_item" appname="Dosadi" memory="1000" disk="50" platform="Y" money_cost="0" time_cost="1" fine_cost="50000" action="install_cc_app" required="true" status="todo" />
+  <cc name="cc2" type="cc_item" appname="Acheron" memory="3000" disk="50" platform="X" money_cost="0" time_cost="1" fine_cost="100000" action="install_cc_app" required="true" status="todo" />
+  <cc name="cc3" type="cc_item" appname="Jurai" memory="2500" disk="20" platform="Z" money_cost="0" time_cost="2" fine_cost="5000" action="install_cc_app" required="true" status="todo" />
+  <cc name="cc4" type="cc_item" appname="Tanagra" memory="1000" disk="50" platform="Z" money_cost="0" time_cost="1" fine_cost="50000" action="install_cc_app" required="true" status="todo" />
+  <cc name="cc5" type="cc_item" appname="Markar" memory="2500" disk="30" platform="Y" money_cost="0" time_cost="1" fine_cost="2000" action="install_cc_app" required="true" status="todo" />
+  <cc name="cc6" type="cc_item" appname="Nidor" memory="500" disk="200" platform="X" money_cost="0" time_cost="1" fine_cost="20000" action="install_cc_app" required="true" status="todo" />
+  </cc_list>
+
+  <endpoint name="endpoint" hits="0"/>
+  
+  <node name="install_constraints_switch" apply="true"/>
+	<node name="sound_alarm" sound_name="alarm.wav" emit_sound_count="0" />  
+	<node name="bubble_chart_display" afterIncident21="false" afterIncident22="false" pulse="0"/>  
+	
+	<Revenue name="Revenue" revenue="0" max_revenue="0" revenue_lost="0"/>
+	
+	<experts name="experts" enabled="false">
+		<expert expert_name="Cox" skill_type="Design Architect" skill_level="5" assigned_project=""/>
+		<expert expert_name="Spring" skill_type="Design Architect" skill_level="4" assigned_project=""/>
+		<expert expert_name="Marcotte" skill_type="Design Architect" skill_level="4" assigned_project=""/>
+		<expert expert_name="Thomas" skill_type="Design Architect" skill_level="3" assigned_project=""/>
+		<expert expert_name="Drennan" skill_type="Design Architect" skill_level="3" assigned_project=""/>
+		<expert expert_name="Shirley" skill_type="Design Architect" skill_level="2" assigned_project=""/>
+		<expert expert_name="Enderly" skill_type="Build Manager" skill_level="5" assigned_project=""/>
+		<expert expert_name="Busk" skill_type="Build Manager" skill_level="4" assigned_project=""/>
+		<expert expert_name="Beard" skill_type="Build Manager" skill_level="4" assigned_project=""/>
+		<expert expert_name="Summy" skill_type="Build Manager" skill_level="3" assigned_project=""/>
+		<expert expert_name="Toke" skill_type="Build Manager" skill_level="3" assigned_project=""/>
+		<expert expert_name="Zundel" skill_type="Build Manager" skill_level="3" assigned_project=""/>
+		<expert expert_name="Gleper" skill_type="Test Manager" skill_level="5" assigned_project=""/>
+		<expert expert_name="Draudy" skill_type="Test Manager" skill_level="5" assigned_project=""/>
+		<expert expert_name="Stewart" skill_type="Test Manager" skill_level="4" assigned_project=""/>
+		<expert expert_name="Omara" skill_type="Test Manager" skill_level="4" assigned_project=""/>
+		<expert expert_name="Hutton" skill_type="Test Manager" skill_level="4" assigned_project=""/>
+		<expert expert_name="Costello" skill_type="Test Manager" skill_level="4" assigned_project=""/>
+	</experts>
+</root>

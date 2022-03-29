@@ -1,0 +1,24 @@
+<mirror_defs>
+
+// 
+
+<mirror>
+	<target>Toad</target>
+	<apps>Swordfish,Soldierfish</apps>
+	// Allow for a post add model script to be run...
+	<i type="Post Install Script">
+		<createNodes i_to="CostedEvents">
+			<CostedEvent type="mirror" desc="Bought Toad Mirror" ref="Toad" />
+		</createNodes></i>
+</mirror>
+<mirror>
+	<target>Panther</target>
+	<apps>Manatee,Dartfish</apps>
+	// Allow for a post add model script to be run...
+	<i type="Post Install Script">
+		<createNodes i_to="CostedEvents">
+			<CostedEvent type="mirror" desc="Bought Panther Mirror" ref="Panther" />
+		</createNodes>
+	</i>
+</mirror>
+</mirror_defs>

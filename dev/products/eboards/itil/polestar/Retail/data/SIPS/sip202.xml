@@ -1,0 +1,503 @@
+<project projectid="202" round="2" regulation="false" installname="Charge Card" upgradename = "">
+<product productid="2021" actual_cost="280000">
+<platform platformid="X" designdays="3" builddays="4" testdays="3" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="X" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="1000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" notinnetwork="true" type="biz_service" slalimit="YYY" new="true" created_by_sip="202" has_impact="true" impactkmh="-1" biz_service_function="Charge Card" />
+	</createNodes>
+	<createNodes i_to="Charge Card">
+		<upgrades type="upgrades" />
+	</createNodes>
+  <apply i_name = "202" MaxRevOffset="192000" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Charge Card" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="12" has_impact="false" impactkmh="-1" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Nashira" />
+	<apply i_name = "Store 4 Charge Card" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Nashira" />
+	<apply i_name="Nashira" type="App" proccap="2" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="1000" diskrequired="20" created_by_sip="202" />
+	<createNodes i_to="Nashira">
+		<link to="Store 4 Charge Card" type="Connection" name="Nashira Store 4 Charge Card Connection" />
+	</createNodes>
+	<createNodes i_to="Charge Card">
+		<link to="Store 4 Charge Card" type="Connection" contype="Charge Card" name="BS Store 4 Charge Card Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="8000" instore_bonus="8000" />
+	<apply i_name="Store 4 Charge Card" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Charge Card" sip="202" ref="Charge Card" />
+		<node type="project" desc="Charge\r\nCard" sip="202" regulation="false" />
+	</createNodes>
+  <apply i_name = "202" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Y" designdays="4" builddays="4" testdays="3" handovervalue="90">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Y" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="1000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" notinnetwork="true" type="biz_service" slalimit="YYY" new="true" created_by_sip="202" has_impact="true" impactkmh="-1" biz_service_function="Charge Card" />
+	</createNodes>
+	<createNodes i_to="Charge Card">
+		<upgrades type="upgrades" />
+	</createNodes>
+  <apply i_name = "202" MaxRevOffset="172800" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Charge Card" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="12" has_impact="false" impactkmh="-1" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Nashira" />
+	<apply i_name = "Store 4 Charge Card" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Nashira" />
+	<apply i_name="Nashira" type="App" proccap="2" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="1000" diskrequired="20" created_by_sip="202" />
+	<createNodes i_to="Nashira">
+		<link to="Store 4 Charge Card" type="Connection" name="Nashira Store 4 Charge Card Connection" />
+	</createNodes>
+	<createNodes i_to="Charge Card">
+		<link to="Store 4 Charge Card" type="Connection" contype="Charge Card" name="BS Store 4 Charge Card Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="7200" instore_bonus="7200" />
+	<apply i_name="Store 4 Charge Card" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Charge Card" sip="202" ref="Charge Card" />
+		<node type="project" desc="Charge\r\nCard" sip="202" regulation="false" />
+	</createNodes>
+  <apply i_name = "202" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Z" designdays="4" builddays="6" testdays="4" handovervalue="80">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Z" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="1000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" notinnetwork="true" type="biz_service" slalimit="YYY" new="true" created_by_sip="202" has_impact="true" impactkmh="-1" biz_service_function="Charge Card" />
+	</createNodes>
+	<createNodes i_to="Charge Card">
+		<upgrades type="upgrades" />
+	</createNodes>
+  <apply i_name = "202" MaxRevOffset="153600" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Charge Card" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="12" has_impact="false" impactkmh="-1" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Nashira" />
+	<apply i_name = "Store 4 Charge Card" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Nashira" />
+	<apply i_name="Nashira" type="App" proccap="2" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="1000" diskrequired="20" created_by_sip="202" />
+	<createNodes i_to="Nashira">
+		<link to="Store 4 Charge Card" type="Connection" name="Nashira Store 4 Charge Card Connection" />
+	</createNodes>
+	<createNodes i_to="Charge Card">
+		<link to="Store 4 Charge Card" type="Connection" contype="Charge Card" name="BS Store 4 Charge Card Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="6400" instore_bonus="6400" />
+	<apply i_name="Store 4 Charge Card" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Charge Card" sip="202" ref="Charge Card" />
+		<node type="project" desc="Charge\r\nCard" sip="202" regulation="false" />
+	</createNodes>
+  <apply i_name = "202" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+<product productid="2022" actual_cost="270000">
+<platform platformid="X" designdays="3" builddays="2" testdays="1" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="X" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="1000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" notinnetwork="true" type="biz_service" slalimit="YYY" new="true" created_by_sip="202" has_impact="true" impactkmh="-1" biz_service_function="Charge Card" />
+	</createNodes>
+	<createNodes i_to="Charge Card">
+		<upgrades type="upgrades" />
+	</createNodes>
+  <apply i_name = "202" MaxRevOffset="240000" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Charge Card" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="12" has_impact="false" impactkmh="-1" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Nashira" />
+	<apply i_name = "Store 4 Charge Card" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Nashira" />
+	<apply i_name="Nashira" type="App" proccap="2" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="1000" diskrequired="20" created_by_sip="202" />
+	<createNodes i_to="Nashira">
+		<link to="Store 4 Charge Card" type="Connection" name="Nashira Store 4 Charge Card Connection" />
+	</createNodes>
+	<createNodes i_to="Charge Card">
+		<link to="Store 4 Charge Card" type="Connection" contype="Charge Card" name="BS Store 4 Charge Card Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="10000" instore_bonus="10000" />
+	<apply i_name="Store 4 Charge Card" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Charge Card" sip="202" ref="Charge Card" />
+		<node type="project" desc="Charge\r\nCard" sip="202" regulation="false" />
+	</createNodes>
+  <apply i_name = "202" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Y" designdays="3" builddays="4" testdays="3" handovervalue="90">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Y" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="1000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" notinnetwork="true" type="biz_service" slalimit="YYY" new="true" created_by_sip="202" has_impact="true" impactkmh="-1" biz_service_function="Charge Card" />
+	</createNodes>
+	<createNodes i_to="Charge Card">
+		<upgrades type="upgrades" />
+	</createNodes>
+  <apply i_name = "202" MaxRevOffset="216000" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Charge Card" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="12" has_impact="false" impactkmh="-1" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Nashira" />
+	<apply i_name = "Store 4 Charge Card" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Nashira" />
+	<apply i_name="Nashira" type="App" proccap="2" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="1000" diskrequired="20" created_by_sip="202" />
+	<createNodes i_to="Nashira">
+		<link to="Store 4 Charge Card" type="Connection" name="Nashira Store 4 Charge Card Connection" />
+	</createNodes>
+	<createNodes i_to="Charge Card">
+		<link to="Store 4 Charge Card" type="Connection" contype="Charge Card" name="BS Store 4 Charge Card Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="9000" instore_bonus="9000" />
+	<apply i_name="Store 4 Charge Card" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Charge Card" sip="202" ref="Charge Card" />
+		<node type="project" desc="Charge\r\nCard" sip="202" regulation="false" />
+	</createNodes>
+  <apply i_name = "202" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Z" designdays="3" builddays="2" testdays="1" handovervalue="80">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Z" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="1000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" notinnetwork="true" type="biz_service" slalimit="YYY" new="true" created_by_sip="202" has_impact="true" impactkmh="-1" biz_service_function="Charge Card" />
+	</createNodes>
+	<createNodes i_to="Charge Card">
+		<upgrades type="upgrades" />
+	</createNodes>
+  <apply i_name = "202" MaxRevOffset="192000" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Charge Card" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="12" has_impact="false" impactkmh="-1" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Nashira" />
+	<apply i_name = "Store 4 Charge Card" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Nashira" />
+	<apply i_name="Nashira" type="App" proccap="2" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="1000" diskrequired="20" created_by_sip="202" />
+	<createNodes i_to="Nashira">
+		<link to="Store 4 Charge Card" type="Connection" name="Nashira Store 4 Charge Card Connection" />
+	</createNodes>
+	<createNodes i_to="Charge Card">
+		<link to="Store 4 Charge Card" type="Connection" contype="Charge Card" name="BS Store 4 Charge Card Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="8000" instore_bonus="8000" />
+	<apply i_name="Store 4 Charge Card" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Charge Card" sip="202" ref="Charge Card" />
+		<node type="project" desc="Charge\r\nCard" sip="202" regulation="false" />
+	</createNodes>
+  <apply i_name = "202" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+<product productid="2023" actual_cost="180000">
+<platform platformid="X" designdays="2" builddays="4" testdays="1" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="X" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="1000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" notinnetwork="true" type="biz_service" slalimit="YYY" new="true" created_by_sip="202" has_impact="true" impactkmh="-1" biz_service_function="Charge Card" />
+	</createNodes>
+	<createNodes i_to="Charge Card">
+		<upgrades type="upgrades" />
+	</createNodes>
+  <apply i_name = "202" MaxRevOffset="24000" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Charge Card" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="12" has_impact="false" impactkmh="-1" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Nashira" />
+	<apply i_name = "Store 4 Charge Card" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Nashira" />
+	<apply i_name="Nashira" type="App" proccap="2" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="1000" diskrequired="20" created_by_sip="202" />
+	<createNodes i_to="Nashira">
+		<link to="Store 4 Charge Card" type="Connection" name="Nashira Store 4 Charge Card Connection" />
+	</createNodes>
+	<createNodes i_to="Charge Card">
+		<link to="Store 4 Charge Card" type="Connection" contype="Charge Card" name="BS Store 4 Charge Card Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="1000" instore_bonus="1000" />
+	<apply i_name="Store 4 Charge Card" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Charge Card" sip="202" ref="Charge Card" />
+		<node type="project" desc="Charge\r\nCard" sip="202" regulation="false" />
+	</createNodes>
+  <apply i_name = "202" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Y" designdays="3" builddays="3" testdays="3" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed)" />
+	<requireAttrs i_parentOf="XXXX" platform="Y" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="1000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" notinnetwork="true" type="biz_service" slalimit="YYY" new="true" created_by_sip="202" has_impact="true" impactkmh="-1" biz_service_function="Charge Card" />
+	</createNodes>
+	<createNodes i_to="Charge Card">
+		<upgrades type="upgrades" />
+	</createNodes>
+  <apply i_name = "202" MaxRevOffset="24000" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Charge Card" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="12" has_impact="false" impactkmh="-1" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Nashira" />
+	<apply i_name = "Store 4 Charge Card" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Nashira" />
+	<apply i_name="Nashira" type="App" proccap="2" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="1000" diskrequired="20" created_by_sip="202" />
+	<createNodes i_to="Nashira">
+		<link to="Store 4 Charge Card" type="Connection" name="Nashira Store 4 Charge Card Connection" />
+	</createNodes>
+	<createNodes i_to="Charge Card">
+		<link to="Store 4 Charge Card" type="Connection" contype="Charge Card" name="BS Store 4 Charge Card Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="1000" instore_bonus="1000" />
+	<apply i_name="Store 4 Charge Card" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Charge Card" sip="202" ref="Charge Card" />
+		<node type="project" desc="Charge\r\nCard" sip="202" regulation="false" />
+	</createNodes>
+  <apply i_name = "202" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Z" designdays="1" builddays="3" testdays="2" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Z" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="1000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" notinnetwork="true" type="biz_service" slalimit="YYY" new="true" created_by_sip="202" has_impact="true" impactkmh="-1" biz_service_function="Charge Card" />
+	</createNodes>
+	<createNodes i_to="Charge Card">
+		<upgrades type="upgrades" />
+	</createNodes>
+  <apply i_name = "202" MaxRevOffset="24000" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Charge Card" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Charge Card" desc="Charge\r\nCard" shortdesc="Charge Card" icon="Icon_cc" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="12" has_impact="false" impactkmh="-1" biz_service_function="Charge Card" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Nashira" />
+	<apply i_name = "Store 4 Charge Card" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Nashira" />
+	<apply i_name="Nashira" type="App" proccap="2" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="1000" diskrequired="20" created_by_sip="202" />
+	<createNodes i_to="Nashira">
+		<link to="Store 4 Charge Card" type="Connection" name="Nashira Store 4 Charge Card Connection" />
+	</createNodes>
+	<createNodes i_to="Charge Card">
+		<link to="Store 4 Charge Card" type="Connection" contype="Charge Card" name="BS Store 4 Charge Card Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="1000" instore_bonus="1000" />
+	<apply i_name="Store 4 Charge Card" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Charge Card" sip="202" ref="Charge Card" />
+		<node type="project" desc="Charge\r\nCard" sip="202" regulation="false" />
+	</createNodes>
+  <apply i_name = "202" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+</project>

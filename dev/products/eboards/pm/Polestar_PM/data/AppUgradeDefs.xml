@@ -1,0 +1,102 @@
+<AppUpgradeDefs>
+  <upgrade app="Soldierfish">
+    <requirements>
+      <requireExists i_name="Soldierfish" i_failReason="App Not Found" />
+      <requireMin i_parentOf="Soldierfish" disk_left="1" i_failReason="Not Sufficient Storage." />
+      <requireMin i_parentOf="Soldierfish" mem_left="500" i_failReason="Not Sufficient Memory." />
+      <ifAttrs i_parentOf="Soldierfish" up="false" i_failReason="Soldierfish Cannot Be Upgraded As The Server It Is Installed On Is Down." />
+    </requirements>
+    <i>
+      <apply i_name="Soldierfish" version="2" canupgrade="false" danger_level="20" />
+      <apply i_name="Soldierfish" up="true" incident_id="" goingDownInSecs="" />
+      <apply i_name="Toad" rebootFor="105" reasondown="Upgrading Soldierfish" />
+      <incrementAtt i_name="Soldierfish" i_doAfterSecs="0" memrequired="500" diskrequired="1" />
+      <createNodes i_to="AppUpgradeResetLinksQueue">
+        <node type="appupgrade_resetlinks" desc="Upgraded Soldierfish so clear any downed links" ref="Soldierfish" />
+      </createNodes>
+      <createNodes i_to="CostedEvents">
+        <node type="appupgrade" desc="Upgraded Soldierfish To Version 2" ref="Soldierfish" />
+      </createNodes>
+    </i>
+  </upgrade>
+  <upgrade app="Fingerfish">
+    <requirements>
+      <requireExists i_name="Fingerfish" i_failReason="App Not Found" />
+      <requireMin i_parentOf="Fingerfish" disk_left="1" i_failReason="Not Sufficient Storage." />
+      <requireMin i_parentOf="Fingerfish" mem_left="500" i_failReason="Not Sufficient Memory." />
+      <ifAttrs i_parentOf="Fingerfish" up="false" i_failReason="Fingerfish Cannot Be Upgraded As The Server It Is Installed On Is Down." />
+    </requirements>
+    <i>
+      <apply i_name="Fingerfish" version="2" canupgrade="false" danger_level="20" />
+      <apply i_name="Fingerfish" up="true" incident_id="" goingDownInSecs="" />
+      <apply i_name="Kangaroo" rebootFor="105" reasondown="Upgrading Fingerfish" />
+      <incrementAtt i_name="Fingerfish" i_doAfterSecs="0" memrequired="500" diskrequired="1" />
+      <createNodes i_to="AppUpgradeResetLinksQueue">
+        <node type="appupgrade_resetlinks" desc="Upgraded Fingerfish so clear any downed links" ref="Fingerfish" />
+      </createNodes>
+      <createNodes i_to="CostedEvents">
+        <node type="appupgrade" desc="Upgraded Fingerfish To Version 2" ref="Fingerfish" />
+      </createNodes>
+    </i>
+  </upgrade>
+  <upgrade app="Jellyfish">
+    <requirements>
+      <requireExists i_name="Jellyfish" i_failReason="App Not Found" />
+      <requireMin i_parentOf="Jellyfish" disk_left="1" i_failReason="Not Sufficient Storage." />
+      <requireMin i_parentOf="Jellyfish" mem_left="500" i_failReason="Not Sufficient Memory." />
+      <ifAttrs i_parentOf="Jellyfish" up="false" i_failReason="Jellyfish Cannot Be Upgraded As The Server That It Is Installed On Is Down." />
+    </requirements>
+    <i>
+      <apply i_name="Jellyfish" version="2" canupgrade="false" danger_level="20" />
+      <apply i_name="Jellyfish" up="true" incident_id="" goingDownInSecs="" />
+      <apply i_name="Rat" rebootFor="105" reasondown="Upgrading Jellyfish" />
+      <incrementAtt i_name="Jellyfish" i_doAfterSecs="0" memrequired="500" diskrequired="1" />
+      <createNodes i_to="AppUpgradeResetLinksQueue">
+        <node type="appupgrade_resetlinks" desc="Upgraded Jellyfish so clear any downed links" ref="Jellyfish" />
+      </createNodes>
+      <createNodes i_to="CostedEvents">
+        <node type="appupgrade" desc="Upgraded Jellyfish To Version 2" ref="Jellyfish" />
+      </createNodes>
+    </i>
+  </upgrade>
+  <upgrade app="Angelfish">
+    <requirements>
+      <requireExists i_name="Angelfish" i_failReason="App Not Found" />
+      <requireMin i_parentOf="Angelfish" disk_left="1" i_failReason="Not Sufficient Storage." />
+      <requireMin i_parentOf="Angelfish" mem_left="500" i_failReason="Not Sufficient Memory." />
+      <ifAttrs i_parentOf="Angelfish" up="false" i_failReason="Angelfish Cannot Be Upgraded As The Server It Is Installed On Is Down." />
+    </requirements>
+    <i>
+      <apply i_name="Angelfish" version="2" canupgrade="false" danger_level="20" />
+      <apply i_name="Angelfish" up="true" incident_id="" goingDownInSecs="" />
+      <apply i_name="Rat" rebootFor="105" reasondown="Upgrading Angelfish" />
+      <incrementAtt i_name="Angelfish" i_doAfterSecs="0" memrequired="500" diskrequired="1" />
+      <createNodes i_to="AppUpgradeResetLinksQueue">
+        <node type="appupgrade_resetlinks" desc="Upgraded Angelfish so clear any downed links" ref="Angelfish" />
+      </createNodes>
+      <createNodes i_to="CostedEvents">
+        <node type="appupgrade" desc="Upgraded Angelfish To Version 2" ref="Angelfish" />
+      </createNodes>
+    </i>
+  </upgrade>
+  <upgrade app="Dartfish">
+    <requirements>
+      <requireExists i_name="Dartfish" i_failReason="App Not Found" />
+      <requireMin i_parentOf="Dartfish" disk_left="1" i_failReason="Not Sufficient Storage." />
+      <requireMin i_parentOf="Dartfish" mem_left="500" i_failReason="Not Sufficient Memory." />
+      <ifAttrs i_parentOf="Dartfish" up="false" i_failReason="Dartfish Cannot Be Upgraded As The Server It Is Installed On Is Down." />
+    </requirements>
+    <i>
+      <apply i_name="Dartfish" version="2" beta="false" canupgrade="false" danger_level="20" />
+      <apply i_name="Dartfish" up="true" incident_id="" goingDownInSecs="" />
+      <apply i_name="Panther" rebootFor="105" reasondown="Upgrading Dartfish" />
+      <incrementAtt i_name="Dartfish" i_doAfterSecs="0" memrequired="500" diskrequired="1" />
+      <createNodes i_to="AppUpgradeResetLinksQueue">
+        <node type="appupgrade_resetlinks" desc="Upgraded Dartfish so clear any downed links" ref="Dartfish" />
+      </createNodes>
+      <createNodes i_to="CostedEvents">
+        <node type="appupgrade" desc="Upgraded Dartfish To Version 2" ref="Dartfish" />
+      </createNodes>
+    </i>
+  </upgrade>
+</AppUpgradeDefs>

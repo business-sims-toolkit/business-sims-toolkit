@@ -1,0 +1,524 @@
+<skin>  // Skin file for DevOps
+	<use_multiple_screens>true</use_multiple_screens>
+	<incident_popup_background>70,69,83</incident_popup_background>
+	<incident_popup_active_background>255,255,255</incident_popup_active_background>
+	<incident_popup_inactive_background>37,37,37</incident_popup_inactive_background>
+	<use_styled_buttons>true</use_styled_buttons>
+	<maturity_label_font_size>10</maturity_label_font_size>
+	<use_maturity_defaults>true</use_maturity_defaults>
+	<access_all_training_rounds>false</access_all_training_rounds>
+	<admin_pages_title_forecolor>255,255,255</admin_pages_title_forecolor>
+	<allbiz>All BUs</allbiz>
+	<allow_first_line_fix>true</allow_first_line_fix>
+	<allow_import_and_export_of_games>true</allow_import_and_export_of_games>
+	<autotimebackcolor>255,255,255</autotimebackcolor>
+	<autotimetextcolor>0,0,0</autotimetextcolor>
+	<availability_bold>true</availability_bold>
+	<availability_title_text>Availability</availability_title_text>
+	<availability_value_text>100%</availability_value_text>
+	<awt_provision_name>Ankaa</awt_provision_name>
+	<badge>DevOpsBadge.png</badge>
+	<bannerForeColor>0,0,0</bannerForeColor>
+	<bannerTrainingForeColor>0,0,0</bannerTrainingForeColor>
+	<biz>BU</biz>
+	<boardview_background_colour>255,255,255</boardview_background_colour>
+	<boardview_zone1_colour>235,95,1</boardview_zone1_colour>
+	<boardview_zone2_colour>0,102,255</boardview_zone2_colour>
+	<boardview_zone3_colour>79,175,0</boardview_zone3_colour>
+	<boardview_zone4_colour>153,0,0</boardview_zone4_colour>
+	<boardview_zone5_colour>51,102,102</boardview_zone5_colour>
+	<boardview_zone6_colour>85,192,216</boardview_zone6_colour>
+	<boardview_zone7_colour>255,204,0</boardview_zone7_colour>
+	<break_even_cost_per_app>600</break_even_cost_per_app>
+	<business_toggle_bar_button_height>25</business_toggle_bar_button_height>
+	<business_toggle_bar_button_width>80</business_toggle_bar_button_width>
+	<business_toggle_bar_label_position>2,4</business_toggle_bar_label_position>
+	<business_toggle_bar_label_size>75,20</business_toggle_bar_label_size>
+	<business_toggle_bar_label_text>Division</business_toggle_bar_label_text>
+	<business_toggle_bar_position>240,5</business_toggle_bar_position>
+	<business_toggle_bar_size>450,30</business_toggle_bar_size>
+	<changewindowactions>true</changewindowactions>
+	<changewindowtimes>451,1051</changewindowtimes>
+	<climb_tree_to_apply_workarounds>false</climb_tree_to_apply_workarounds>
+	<cpu_report_font_size>10</cpu_report_font_size>
+	<currency_symbol>$</currency_symbol>
+	<dev_colour>0,191,243</dev_colour>
+	<dev_metric_font_size>12.0</dev_metric_font_size>
+	<disable_incident_remapping>false</disable_incident_remapping>
+	<error_panel_font_size>12</error_panel_font_size>
+	<error_panel_back_colour>225,232,237</error_panel_back_colour>
+	<errortextcolor>255,255,255</errortextcolor>
+	<fontname>Roboto</fontname>
+	<free_cpu_colour>191,215,48</free_cpu_colour>
+	<fullsize_tabbar>true</fullsize_tabbar>
+	<gainlossname>Improvement on previous round</gainlossname>
+	<game_type_allow_lean>true</game_type_allow_lean>
+	<game_selection_screen_background_colour>240,245,249</game_selection_screen_background_colour>
+	<game_selection_screen_text_colour>0,0,0</game_selection_screen_text_colour>
+	<games_list_row_colour_alternate>255,255,255</games_list_row_colour_alternate>
+	<games_list_row_colour>246,246,246</games_list_row_colour>
+	<gametype>DevOps</gametype>
+	
+	<gantt_chart_timeline_title_fore_colour>255,255,255</gantt_chart_timeline_title_fore_colour>
+	<gantt_chart_timeline_minute_fore_colour>255,255,255</gantt_chart_timeline_minute_fore_colour>	
+	<gantt_chart_row_back_colour_one>#ffffff</gantt_chart_row_back_colour_one>
+	<gantt_chart_row_back_colour_two>240,245,249</gantt_chart_row_back_colour_two>
+	<gantt_chart_xaxis>Minute</gantt_chart_xaxis>
+	<gantt_show_warnings>0</gantt_show_warnings>
+	<gantt_warnings_start_round>3</gantt_warnings_start_round>
+	<report_titles_back_colour>63,62,73</report_titles_back_colour>
+	
+	<generated_dark_tab_color>225,232,237</generated_dark_tab_color>
+	<generated_draw_tabs_with_images>false</generated_draw_tabs_with_images>
+	<generated_normal_tab_color>225,232,237</generated_normal_tab_color>
+	<generated_tab_text_highlight_color>69,69,83</generated_tab_text_highlight_color>
+	<generated_tab_text_normal_color>69,69,83</generated_tab_text_normal_color>
+	<generated_tab_text_selected_highlight_color>34,40,49</generated_tab_text_selected_highlight_color>
+	<generated_tab_text_selected_normal_color>34,40,49</generated_tab_text_selected_normal_color>
+	<generated_tint_tab_color>225,232,237</generated_tint_tab_color>
+	
+	
+	<handled_batches_title_text>Info. Batches Handled</handled_batches_title_text>
+	<handled_batches_value_text>0</handled_batches_value_text>
+	<handled_transactions_colour>0, 255, 0</handled_transactions_colour>
+	<image_scale_ratio>1</image_scale_ratio>
+	<incident_colour>246,6,32</incident_colour>
+	<incident_breached_colour>161,110,209</incident_breached_colour>
+	<incident_entry_box_common_height>30</incident_entry_box_common_height>
+	<incident_entry_box_common_width>60</incident_entry_box_common_width>
+	<incident_entry_box_padding>5</incident_entry_box_padding>
+	<incident_entry_box_text_width>45</incident_entry_box_text_width>
+	<incident_panel_height>45</incident_panel_height>
+	<incident_panel_position>512,147</incident_panel_position>
+	<incident_panel_size>512,148</incident_panel_size>
+	<incident_panel_width>512</incident_panel_width>
+	<incident_panel_xpos>512</incident_panel_xpos>
+	<incident_panel_ypos>308</incident_panel_ypos>
+	<info_batches_labels_offset>0</info_batches_labels_offset>
+	<info_batches_title_text>Info. Batches</info_batches_title_text>
+	<info_batches_title_width>205</info_batches_title_width>
+	<info_batches_title_ypos>43</info_batches_title_ypos>
+	<info_batches_value_text>0</info_batches_value_text>
+	<info_batches_value_width>50</info_batches_value_width>
+	<info_batches_value_ypos>63</info_batches_value_ypos>
+	<install_inner_panel_height>130</install_inner_panel_height>
+	<install_panel_title_height>30</install_panel_title_height>
+	<investment_labels_offset>51</investment_labels_offset>
+	<investment_title_text>Investment</investment_title_text>
+	<investment_title_width>70</investment_title_width>
+	<investment_title_ypos>0</investment_title_ypos>
+	<investment_value_text>£0</investment_value_text>
+	<investment_value_width>100</investment_value_width>
+	<investment_value_ypos>20</investment_value_ypos>
+	<Left_Panel_PathFinder>false</Left_Panel_PathFinder>
+	<licensed_content_text>Start a licensed DevOps Courseware presentation. Each Courseware presentation is charged on a pay-per-delivery basis.</licensed_content_text>
+	<licensed_game_slides_text>Start a licensed DevOps game with Courseware. Each licensed game is charged on a pay-per-play basis.</licensed_game_slides_text>
+	<licensed_game_text>Start a licensed DevOps game. Each licensed game is charged on a pay-per-play basis.</licensed_game_text>
+	<license_box_bottom_pad>20</license_box_bottom_pad>
+	<live_colour>4,156,0</live_colour>
+	<live_debt_colour>64,197,92</live_debt_colour>
+	<live_profit_colour>43,131,61</live_profit_colour>
+	<logo_panel_transparency>true</logo_panel_transparency>
+	<lozenge_flash_count>20</lozenge_flash_count>
+	<main_background_colour>240,245,249</main_background_colour>
+	<max_broken_incidents>8</max_broken_incidents>
+	<max_new_services>18</max_new_services>
+	<max_revenue_title_text>Max. Revenue</max_revenue_title_text>
+	<max_revenue_value_text>$0</max_revenue_value_text>
+	<maxname>Maximum</maxname>
+	<maxtransactions>96</maxtransactions>
+	<mbu_metric_back_colour>8,12,11</mbu_metric_back_colour>
+	<mbu_metric_font_size>12.0</mbu_metric_font_size>
+	<mbu_metric_height>83</mbu_metric_height>
+	<mbu_metric_text_height>15</mbu_metric_text_height>
+	<mbu_metric_width>206</mbu_metric_width>
+	<metric_panel_backcolour>255,49,52,144</metric_panel_backcolour>
+	<metric_panel_column_widths>155,65,113,130</metric_panel_column_widths>
+	<metric_panel_fontsize>12</metric_panel_fontsize>
+	<metric_panel_height>82</metric_panel_height>
+	<metric_panel_left_title_width>170</metric_panel_left_title_width>
+	<metric_panel_left_value_width>85</metric_panel_left_value_width>
+	<metric_panel_metrics>availability,max_revenue,sla_breach,revenue_made,transactions,revenue_lost</metric_panel_metrics>
+	<metric_panel_num_columns>4</metric_panel_num_columns>
+	<metric_panel_position>512,458</metric_panel_position>
+	<metric_panel_right_title_width>113</metric_panel_right_title_width>
+	<metric_panel_right_value_width>92</metric_panel_right_value_width>
+	<metric_panel_size>512,80</metric_panel_size>
+	<metric_panel_text_height>30</metric_panel_text_height>
+	<metric_panel_width>512</metric_panel_width>
+	<metric_panel_xpos>512</metric_panel_xpos>
+	<metric_panel_ypos>452</metric_panel_ypos>
+	<minimum_licensor_version>1.0.4.2</minimum_licensor_version>
+	<mirrored_server1>Pluto</mirrored_server1>
+	<mirrored_server2>Saturn</mirrored_server2>
+	<missed_batches_title_text>Info. Batches Missed</missed_batches_title_text>
+	<missed_batches_value_text>0</missed_batches_value_text>
+	<missed_transactions_colour>255, 0, 0</missed_transactions_colour>
+	<mtrsname>Mean Time to Restore Service</mtrsname>
+
+	<network_report_section_back_colour>63,62,73</network_report_section_back_colour>
+	<network_report_section_text_colour>255,255,255</network_report_section_text_colour>
+
+	<new_button_colour>247,148,51</new_button_colour>
+	<new_button_foreground_colour>0,0,0</new_button_foreground_colour>
+	<nps_report_round_1_colour>#ffcb05</nps_report_round_1_colour>
+	<nps_report_round_2_colour>#f79433</nps_report_round_2_colour>
+	<nps_report_round_3_colour>#f15a22</nps_report_round_3_colour>
+	<nps_report_actual_colour>#ffcb05</nps_report_actual_colour>
+	<nps_report_expected_colour>34,159,166</nps_report_expected_colour>
+	<num_transactions_to_display>8</num_transactions_to_display>
+	<ops_banner>Round</ops_banner>
+	<ops_screen_tooltip>Game Screen</ops_screen_tooltip>
+	<optional_demands_font_size>10</optional_demands_font_size>
+	<ourbiz>playerstore</ourbiz>
+	<panel_back_colour>238,238,238</panel_back_colour>
+	<pdf_points_chart_color_1>0,0,0</pdf_points_chart_color_1>
+	<pdf_points_chart_color_2>255,0,0</pdf_points_chart_color_2>
+	<pending_action_text_colour>0,0,0</pending_action_text_colour>
+	
+	<pie_colour_0>255,203,5</pie_colour_0>
+	<pie_colour_1>34,159,166</pie_colour_1>
+	<pie_colour_2>191,215,48</pie_colour_2>
+	
+	<pop_up_panel_background_colour>37,37,37</pop_up_panel_background_colour>
+	<pop_up_panel_height>195</pop_up_panel_height>
+	<pop_up_panel_position>5,488</pop_up_panel_position>
+	<potential_labels_offset>103</potential_labels_offset>
+	<potential_title_text>Potential</potential_title_text>
+	<potential_title_ypos>43</potential_title_ypos>
+	<potential_value_text>0</potential_value_text>
+	<potential_value_ypos>63</potential_value_ypos>
+	<race_backgroundcolor_normal>255,255,255</race_backgroundcolor_normal>
+	<race_backgroundcolor_training>255,204,51</race_backgroundcolor_training>
+	<race_controlpanelcolor>255,255,255</race_controlpanelcolor>
+	<race_errormsg_override_color>128,0,0</race_errormsg_override_color>
+	<race_panels_upgrade_app_corneroffset>8</race_panels_upgrade_app_corneroffset>
+	<race_panels_upgrade_memdisk_corneroffset>8</race_panels_upgrade_memdisk_corneroffset>
+	<race_paneltitleforecolor>0,0,0</race_paneltitleforecolor>
+	<race_preplay_status>true</race_preplay_status>
+	<race_preplay_time>300</race_preplay_time>
+	<race_revenue_background>0,0,0</race_revenue_background>
+	<race_revenue_normaltext>25,255,255</race_revenue_normaltext>
+	<race_revenue_revgaincolor>124,252,0</race_revenue_revgaincolor>
+	<race_revenue_revlostcolor>255,165,0</race_revenue_revlostcolor>
+	<race_screen_name></race_screen_name>
+	<race_upgradebackcolor>255,255,255</race_upgradebackcolor>
+	<reboot_time>105</reboot_time>
+	<release_colour>247,148,29</release_colour>
+	<finished_release_colour>247,148,29</finished_release_colour>
+	<report_combo_box_text_colour></report_combo_box_text_colour>
+	<report_network_createdsip_text_colour>172,190,202</report_network_createdsip_text_colour>
+	<report_network_default_text_colour>0,0,0</report_network_default_text_colour>
+	<report_network_upgraded_memory_text_colour>255,0,0</report_network_upgraded_memory_text_colour>
+	<report_network_upgraded_storage_text_colour>255,0,0</report_network_upgraded_storage_text_colour>
+	<report_network_upgradedsip_text_colour>32,178,170</report_network_upgradedsip_text_colour>
+	<request_inner_panel_height>140</request_inner_panel_height>
+	<request_inner_panel_title_height>25</request_inner_panel_title_height>
+	<request_panel_button_up_colour>240, 245, 249</request_panel_button_up_colour>
+	<request_panel_button_down_colour>69, 69, 83</request_panel_button_down_colour>
+	<request_panel_button_hover_colour>240, 245, 249</request_panel_button_hover_colour>
+	<request_panel_button_disabled_colour>69, 69, 83</request_panel_button_disabled_colour>	
+	<request_panel_main_title_size>15</request_panel_main_title_size>
+	<request_panel_sub_title_size>11</request_panel_sub_title_size>
+	<request_panel_text_colour>240,240,240</request_panel_text_colour>
+	<revenue_lost_title_text>Lost Revenue</revenue_lost_title_text>
+	<revenue_lost_value_text>$0</revenue_lost_value_text>
+	<revenue_made_title_text>Revenue</revenue_made_title_text>
+	<revenue_made_value_text>$0</revenue_made_value_text>
+	<round_combo_box_position>0,15</round_combo_box_position>
+	<round_toggle_bar_button_height>25</round_toggle_bar_button_height>
+	<round_toggle_bar_button_width>32</round_toggle_bar_button_width>
+	<round_toggle_bar_label_position>2,4</round_toggle_bar_label_position>
+	<round_toggle_bar_label_size>60,20</round_toggle_bar_label_size>
+	<round_toggle_bar_label_text>Round</round_toggle_bar_label_text>
+	<round_toggle_bar_position>0,5</round_toggle_bar_position>
+	<round_toggle_bar_size>230,30</round_toggle_bar_size>
+	<roundcount>3</roundcount>
+	<rounds_with_regulation_fines>2</rounds_with_regulation_fines>
+	<sales_game>The Sales Game is free to use for demonstration purposes. The Sales Game is limited to the first 10 minutes of Round 2.</sales_game>
+	<ScheduleDayTaskTextOffsetY>-2</ScheduleDayTaskTextOffsetY>
+	<scorecard_border_colour>120,238,238,238</scorecard_border_colour>
+	<scorecard_column_heading_back_colour>240,245,249</scorecard_column_heading_back_colour>
+	<scorecard_column_heading_text_colour>0,0,0</scorecard_column_heading_text_colour>
+	<scorecard_row_one_colour>250,250,250</scorecard_row_one_colour>
+	<scorecard_row_two_colour>240,245,249</scorecard_row_two_colour>
+	<scorecard_section_title_back_colour>247,103,7</scorecard_section_title_back_colour>
+	<scorecard_section_title_text_colour>255,255,255</scorecard_section_title_text_colour>
+	<scorecard_text_colour>0,0,0</scorecard_text_colour>
+
+	<service_progress_panel_button_text_normal_colour>240,245,249</service_progress_panel_button_text_normal_colour>
+	<service_progress_panel_button_text_active_colour>69,69,83</service_progress_panel_button_text_active_colour>
+	<service_progress_panel_button_text_hover_colour>240,245,249</service_progress_panel_button_text_hover_colour>	
+	<service_progress_panel_button_text_disabled_colour>150,150,150</service_progress_panel_button_text_disabled_colour>
+
+
+	<setMaturityDefaults>true</setMaturityDefaults>
+	<show_courseware_buttons>false</show_courseware_buttons>
+	<show_gantt_key>true</show_gantt_key>
+	<show_hour>14</show_hour>
+	<skinname>PoleStar</skinname>
+	<skip_transition_1>1</skip_transition_1>
+	<skip_transition_2>1</skip_transition_2>
+	<skip_transition_3>1</skip_transition_3>
+	<skip_transition_4>1</skip_transition_4>
+	<skip_transitions>1</skip_transitions>
+	<sla_breach_title_text>SLA Breach Count</sla_breach_title_text>
+	<sla_breach_value_text>0</sla_breach_value_text>
+	<sla_foreground>240,240,240</sla_foreground>
+	<smi_box_offset>1</smi_box_offset>
+	<smi_icon_offset>-3</smi_icon_offset>
+	<smi_text_entry_x_offset>110</smi_text_entry_x_offset>
+	<smi_text_entry_y_offset>8</smi_text_entry_y_offset>
+	<smi_text_offset>-7</smi_text_offset>
+	<sound_on_round_start>start.wav</sound_on_round_start>
+	<status_name_cancelled>Canceled</status_name_cancelled>
+	<status_name_delayed>At Risk</status_name_delayed>
+	<status_name_handled>Handled</status_name_handled>
+	<status_name_queued>Queued</status_name_queued>
+	<tab_text_highlight_color>240,245,249</tab_text_highlight_color>
+	<tab_text_normal_color>240,245,249</tab_text_normal_color>
+	<tab_text_selected_highlight_color>34,40,49</tab_text_selected_highlight_color>
+	<tab_text_selected_normal_color>34,40,49</tab_text_selected_normal_color>
+
+	<table_header_color>63,62,73</table_header_color>
+	<table_no_border>true</table_no_border>
+	<table_row_colour>250,250,250</table_row_colour>
+	<table_row_colour_alternate>240,245,249</table_row_colour_alternate>
+	<table_text_colour>0,0,0</table_text_colour>
+	<table_header_text_colour>255,255,255</table_header_text_colour>
+	<table_use_section_numbering>false</table_use_section_numbering>
+	<reports_use_numbered_sections>0</reports_use_numbered_sections>
+	<table_header_alignment>left</table_header_alignment>
+	<table_header_bold>1</table_header_bold>
+	<table_row_height>20</table_row_height>
+	<table_text_alignment>left</table_text_alignment>
+	<table_column_heading_colour>240,245,249</table_column_heading_colour>
+	<table_show_round>true</table_show_round>
+	<table_heading_bold>true</table_heading_bold>
+
+	<test_colour>204,204,204</test_colour>
+	<time_line_panel_position>0,40</time_line_panel_position>
+	<time_line_panel_size>1024,5</time_line_panel_size>
+	<timer_font_size>20</timer_font_size>
+	<timer_game_time_colour>235,88,111</timer_game_time_colour>
+	<timer_panel_back_colour>69,69,83</timer_panel_back_colour>
+	<timer_pre_game_countdown_colour>97,209,220</timer_pre_game_countdown_colour>
+	<timer_text_colour>240,245,249</timer_text_colour>
+	<timer_x_offset>140</timer_x_offset>
+	<timer_y_offset>8</timer_y_offset>
+	<tool_tip_width>160</tool_tip_width>
+	
+	<transaction_code_bold>false</transaction_code_bold>
+	<transaction_status_bold>false</transaction_status_bold>
+	<transaction_store_bold>true</transaction_store_bold>
+	<transaction_time_bold>true</transaction_time_bold>
+	
+	<transaction_queued_fore_colour>34,40,49</transaction_queued_fore_colour>
+	<transaction_at_risk_back_colour>251,176,59</transaction_at_risk_back_colour>
+	<transaction_cancelled_back_colour>237,28,36</transaction_cancelled_back_colour>
+	<transaction_handled_back_colour>140,198,63</transaction_handled_back_colour>
+	<transaction_use_rounded_corners>true</transaction_use_rounded_corners>
+	<transaction_rounded_corner_radius>0.5</transaction_rounded_corner_radius>
+	<transaction_render_row>true</transaction_render_row>
+	
+	<transition_basebackcolor_train>232,165,7</transition_basebackcolor_train>
+	<transition_basebackcolor>153,153,153</transition_basebackcolor>
+	<transition_basebackgroundcolor>217,224,224</transition_basebackgroundcolor>
+	<transition_colour>250,190,0</transition_colour>
+	<transition_display_name>Transition</transition_display_name>
+	<transition_errormsg_override_color>128,0,0</transition_errormsg_override_color>
+	<transition_groupbackcolor>217,224,224</transition_groupbackcolor>
+	<transition_operationsbackcolor>153,153,153</transition_operationsbackcolor>
+	<transition_preplay_status>false</transition_preplay_status>
+	<transition_preplay_time>0</transition_preplay_time>
+	<transition_projects_count>2</transition_projects_count>
+	<transition_screen_name>Transition Screen</transition_screen_name>
+	<transition_text_colour>0,0,0</transition_text_colour>
+	<transition_use_code_drawn_catalog_button>1</transition_use_code_drawn_catalog_button>
+	<use_impact_based_slas>true</use_impact_based_slas>
+	<use_separate_fonts_in_transactions>true</use_separate_fonts_in_transactions>
+	<used_cpu_colour>34,159,166</used_cpu_colour>
+	<uses_transition_rounds>false</uses_transition_rounds>
+	<voice_enable>true</voice_enable>		// Setting voice_enable to true (can be taken out).
+	<voice_files>launch.wav</voice_files>	// voice_files chould be expanded so that it is not a comma delimited list	but actually maps the sound to the business that makes it.
+	<voice_mode>batch</voice_mode>			// voice_mode can be "biz" or "batch": "biz" means one sound per business, "batch" means one sound per transaction/flight.
+	<vulnerability_title_text>Vulnerability</vulnerability_title_text>
+	<vulnerability_value_text>Low</vulnerability_value_text>
+	<windows_button_colour>63,62,73</windows_button_colour>
+	<windows_button_foreground_colour>255,255,255</windows_button_foreground_colour>
+	<windows_button_border>false</windows_button_border>
+	<windows_button_text_size>10</windows_button_text_size>
+	<wizard_allow_expand>false</wizard_allow_expand>
+	<workaround_colour>34,159,166</workaround_colour>
+	<gradient_panels_arc_size>3</gradient_panels_arc_size>
+
+	<lozenge_incident_down_colour>#ff2b2b</lozenge_incident_down_colour>
+	<lozenge_incident_slabreach_colour>#b485d8</lozenge_incident_slabreach_colour>
+	<lozenge_incident_workaround_colour>#00adb5</lozenge_incident_workaround_colour>
+	<lozenge_border_width_percent>0.06</lozenge_border_width_percent>
+
+	<lozenge_background_colour>#464553</lozenge_background_colour>
+	<lozenge_circle_background_colour>255,255,255</lozenge_circle_background_colour>
+
+	<lozenge_shadow_starting_colour>80,0,0,0</lozenge_shadow_starting_colour>
+	<lozenge_shadow_ending_colour>0,0,0,0</lozenge_shadow_ending_colour>
+
+	<workaround_time>120</workaround_time>
+
+	<game_details_team_player_name_max_length>30</game_details_team_player_name_max_length>
+
+	<hold_panel_top_back_colour>#ffffff</hold_panel_top_back_colour>
+	<hold_panel_mid_back_colour>#000000</hold_panel_mid_back_colour>
+	<hold_panel_bottom_back_colour>#464553</hold_panel_bottom_back_colour>
+	<hold_panel_text_colour>#ffffff</hold_panel_text_colour>
+
+  <hatch_test_countdown_angle>-45</hatch_test_countdown_angle>
+  <hatch_test_countdown_line_width>5</hatch_test_countdown_line_width>
+  <hatch_test_countdown_line_colour>#8a8a8a</hatch_test_countdown_line_colour>
+  <hatch_test_countdown_alt_line_width>5.5</hatch_test_countdown_alt_line_width>
+  <hatch_test_countdown_alt_line_colour>#c0c0c0</hatch_test_countdown_alt_line_colour>
+
+  <hatch_cancelled_angle>45</hatch_cancelled_angle>
+  <hatch_cancelled_line_width>5</hatch_cancelled_line_width>
+  <hatch_cancelled_line_colour>#dd001b</hatch_cancelled_line_colour>
+  <hatch_cancelled_alt_line_width>5.5</hatch_cancelled_alt_line_width>
+  <hatch_cancelled_alt_line_colour>#111111</hatch_cancelled_alt_line_colour>
+
+  <hatch_live_debt_sub_angle>0</hatch_live_debt_sub_angle>
+  <hatch_live_debt_sub_line_width>4</hatch_live_debt_sub_line_width>
+  <hatch_live_debt_sub_line_colour>#2a722b</hatch_live_debt_sub_line_colour>
+  <hatch_live_debt_sub_alt_line_width>4</hatch_live_debt_sub_alt_line_width>
+  <hatch_live_debt_sub_alt_line_colour>#43bc44</hatch_live_debt_sub_alt_line_colour>
+
+  <hatch_live_profit_sub_angle>0</hatch_live_profit_sub_angle>
+  <hatch_live_profit_sub_line_width>4</hatch_live_profit_sub_line_width>
+  <hatch_live_profit_sub_line_colour>#183d19</hatch_live_profit_sub_line_colour>
+  <hatch_live_profit_sub_alt_line_width>4</hatch_live_profit_sub_alt_line_width>
+  <hatch_live_profit_sub_alt_line_colour>#2a722b</hatch_live_profit_sub_alt_line_colour>
+
+  <hatch_workaround_sla_breached_angle>0</hatch_workaround_sla_breached_angle>
+  <hatch_workaround_sla_breached_line_width>4</hatch_workaround_sla_breached_line_width>
+  <hatch_workaround_sla_breached_line_colour>#298f96</hatch_workaround_sla_breached_line_colour>
+  <hatch_workaround_sla_breached_alt_line_width>4</hatch_workaround_sla_breached_alt_line_width>
+  <hatch_workaround_sla_breached_alt_line_colour>#b485d8</hatch_workaround_sla_breached_alt_line_colour>
+
+  <standard_button_default_back_colour>#454553</standard_button_default_back_colour>
+  <standard_button_active_back_colour>#ffffff</standard_button_active_back_colour>
+  <standard_button_hover_back_colour>#454553</standard_button_hover_back_colour>
+  <standard_button_highlight_back_colour>#454553</standard_button_highlight_back_colour>
+
+  <standard_button_default_disabled_back_colour>#222831</standard_button_default_disabled_back_colour>
+  <standard_button_active_disabled_back_colour>#bbbbbb</standard_button_active_disabled_back_colour>
+  <standard_button_highlight_disabled_back_colour>#222831</standard_button_highlight_disabled_back_colour>
+
+  <standard_button_default_border_colour>#454553</standard_button_default_border_colour>
+  <standard_button_active_border_colour>#ffffff</standard_button_active_border_colour>
+  <standard_button_hover_border_colour>#ffffff</standard_button_hover_border_colour>
+  <standard_button_highlight_border_colour>#ffffff</standard_button_highlight_border_colour>
+
+  <standard_button_default_disabled_border_colour>#222831</standard_button_default_disabled_border_colour>
+  <standard_button_active_disabled_border_colour>#bbbbbb</standard_button_active_disabled_border_colour>
+  <standard_button_highlight_disabled_border_colour>#9391a3</standard_button_highlight_disabled_border_colour>
+
+  <standard_button_default_text_colour>240,245,249</standard_button_default_text_colour>
+  <standard_button_active_text_colour>#454545</standard_button_active_text_colour>
+  <standard_button_hover_text_colour>#ffffff</standard_button_hover_text_colour>
+  <standard_button_highlight_text_colour>240,245,249</standard_button_highlight_text_colour>
+
+  <standard_button_default_disabled_text_colour>150,150,150</standard_button_default_disabled_text_colour>
+  <standard_button_active_disabled_text_colour>#999999</standard_button_active_disabled_text_colour>
+  <standard_button_highlight_disabled_text_colour>150,150,150</standard_button_highlight_disabled_text_colour>
+
+  <standard_button_border_width>3</standard_button_border_width>
+
+  <standard_popup_control_button_font>12,Regular</standard_popup_control_button_font>
+
+
+  <combo_box_button_default_back_colour>#454553</combo_box_button_default_back_colour>
+  <combo_box_button_active_back_colour>#ffffff</combo_box_button_active_back_colour>
+  <combo_box_button_hover_back_colour>#454553</combo_box_button_hover_back_colour>
+
+  <combo_box_button_default_disabled_back_colour>#222831</combo_box_button_default_disabled_back_colour>
+  <combo_box_button_active_disabled_back_colour>#bbbbbb</combo_box_button_active_disabled_back_colour>
+  
+  <combo_box_button_hover_border_colour>#ffffff</combo_box_button_hover_border_colour>
+
+  <combo_box_button_default_text_colour>240,245,249</combo_box_button_default_text_colour>
+  <combo_box_button_active_text_colour>#454545</combo_box_button_active_text_colour>
+  <combo_box_button_hover_text_colour>#ffffff</combo_box_button_hover_text_colour>
+
+  <combo_box_button_default_disabled_text_colour>#999999</combo_box_button_default_disabled_text_colour>
+  <combo_box_button_active_disabled_text_colour>#aaaaaa</combo_box_button_active_disabled_text_colour>
+
+  <combo_box_button_font>9,Regular</combo_box_button_font>
+
+  <facilitator_developing_apps_back_colour>#252525</facilitator_developing_apps_back_colour>
+  <facilitator_developing_apps_row_colour>#454545</facilitator_developing_apps_row_colour>
+  <facilitator_developing_apps_alt_row_colour>#303030</facilitator_developing_apps_alt_row_colour>
+  <facilitator_development_stages_back_colour>#353535</facilitator_development_stages_back_colour>
+  <facilitator_app_development_back_colour>#202020</facilitator_app_development_back_colour>
+
+  <stage_button_size>53,30</stage_button_size>
+  <enclosure_button_size>115,30</enclosure_button_size>
+
+  <game_screen_top_bar_back_colour>37,37,37</game_screen_top_bar_back_colour>
+
+  <tabs_drawn_in_code>true</tabs_drawn_in_code>
+
+  <tab_normal_background_colour>#222831</tab_normal_background_colour>
+  <tab_normal_foreground_colour>240,245,249</tab_normal_foreground_colour>
+
+  <tab_hover_background_colour>#f0f5f9</tab_hover_background_colour>
+  <tab_hover_foreground_colour>#555555</tab_hover_foreground_colour>
+
+  <tab_selected_background_colour>#f0f5f9</tab_selected_background_colour>
+  <tab_selected_foreground_colour>#000000</tab_selected_foreground_colour>
+
+  <tab_selected_hover_background_colour>#f0f5f9</tab_selected_hover_background_colour>
+  <tab_selected_hover_foreground_colour>#555555</tab_selected_hover_foreground_colour>
+  
+	<title_bar_back_colour>29, 29, 40</title_bar_back_colour>
+	<title_bar_fore_colour>128, 128, 144</title_bar_fore_colour>
+	
+	<button_normal_back_colour>128, 128, 128</button_normal_back_colour>
+	<button_normal_fore_colour>255, 255, 255</button_normal_fore_colour>
+
+	<button_hover_back_colour>128, 128, 128</button_hover_back_colour>
+	<button_hover_fore_colour>255, 165, 0</button_hover_fore_colour>
+
+	<button_disabled_back_colour>105, 105, 105</button_disabled_back_colour>
+	<button_disabled_fore_colour>128, 128, 128</button_disabled_fore_colour>
+
+	<button_clicked_back_colour>128, 128, 128</button_clicked_back_colour>
+	<button_clicked_fore_colour>0, 191, 255</button_clicked_fore_colour>
+	
+	<button_click_glow_time>0.25</button_click_glow_time>
+
+	<product_in_development_colour>0, 191, 243</product_in_development_colour>
+	<product_in_transition_colour>247, 148, 29</product_in_transition_colour>
+	<product_failed_colour>255, 0, 0</product_failed_colour>
+	<product_live_in_debt_colour>64, 197, 92</product_live_in_debt_colour>
+	<product_live_in_profit_colour>43, 131, 61</product_live_in_profit_colour>
+	
+	<box_border_colour>108, 107, 118</box_border_colour>
+	<box_back_colour>150, 0, 0, 0</box_back_colour>
+	
+	<box_border_width>2</box_border_width>
+	<box_border_rounded_corner_radius>10</box_border_rounded_corner_radius>
+	
+	<metrics_fore_colour>255, 255, 255</metrics_fore_colour>
+  
+  <leaderboard_title_fore_colour>#252532</leaderboard_title_fore_colour>
+  <leaderboard_title_back_colour>#FAB636</leaderboard_title_back_colour>
+  <leaderboard_row_fore_colour>#1D1D28</leaderboard_row_fore_colour>
+  <leaderboard_row_back_colour>#d7c6bb</leaderboard_row_back_colour>
+  <leaderboard_selected_row_fore_colour>#FFFFFF</leaderboard_selected_row_fore_colour>
+  <leaderboard_selected_row_back_colour>#F76707</leaderboard_selected_row_back_colour>
+
+  <game_over_colour>0, 191, 243</game_over_colour>
+	
+	<gantt_chart_legend_text_colour>255, 255, 255</gantt_chart_legend_text_colour>	
+	<gantt_current_time_colour>#80F76707</gantt_current_time_colour>
+	
+	<default_player_name>You</default_player_name>
+</skin>

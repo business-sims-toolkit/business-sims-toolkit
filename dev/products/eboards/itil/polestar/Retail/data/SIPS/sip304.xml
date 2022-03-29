@@ -1,0 +1,214 @@
+<project projectid="304" round="3" regulation="false" installname="Dispatch DB" upgradename = "">
+<product productid="3041" actual_cost="220000">
+<platform platformid="X" designdays="2" builddays="2" testdays="2" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown Location" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location Used" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location Used" />
+	<requireAttrs i_parentOf="XXXX" platform="X" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform Conflict" />
+	<requireMin i_parentOf="XXXX" disk_left="10" i_failReason="No Storage (XXXX)" i_failShortReason="No Storage" />
+	<requireMin i_parentOf="XXXX" mem_left="1000" i_failReason="No Memory (XXXX)" i_failShortReason="No Memory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Dispatch Database" desc="Dispatch DB" shortdesc="Dispatch DB" icon="Icon_dd" notinnetwork="true" type="biz_service"  slalimit="YYY" new="true" created_by_sip="304" has_impact="true" impactkmh="-1" biz_service_function="Dispatch Database" />
+	</createNodes>
+	<createNodes i_to="Dispatch Database">
+		<upgrades type="upgrades" />
+	</createNodes>	
+  <apply i_name = "304" MaxRevOffset="192000" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Dispatch Database" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Dispatch Database" desc="Dispatch DB" shortdesc="Dispatch DB" icon="Icon_dd" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Dispatch Database" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Dispatch Database" desc="Dispatch DB" shortdesc="Dispatch DB" icon="Icon_dd" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Dispatch Database" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Dispatch Database" desc="Dispatch DB" shortdesc="Dispatch DB" icon="Icon_dd" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Dispatch Database" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Dispatch Database" desc="Dispatch DB" shortdesc="Dispatch DB" icon="Icon_dd" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Dispatch Database" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Porrima" />
+	<apply i_name = "Store 1 Dispatch Database" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 Dispatch Database" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 Dispatch Database" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Dispatch Database" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Porrima" />
+	<apply i_name="Porrima" type="App" proccap="2" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="1000" diskrequired="10" created_by_sip="304" />
+	<createNodes i_to="Porrima">
+		<link to="Store 1 Dispatch Database" type="Connection" name="Porrima Store 1 Dispatch Database Connection" />
+		<link to="Store 2 Dispatch Database" type="Connection" name="Porrima Store 2 Dispatch Database Connection" />
+		<link to="Store 3 Dispatch Database" type="Connection" name="Porrima Store 3 Dispatch Database Connection" />
+		<link to="Store 4 Dispatch Database" type="Connection" name="Porrima Store 4 Dispatch Database Connection" />
+	</createNodes>
+	<createNodes i_to="Dispatch Database">
+		<link to="Store 1 Dispatch Database" type="Connection" contype="Dispatch Database" name="BS Store 1 Dispatch Database Connection" />
+		<link to="Store 2 Dispatch Database" type="Connection" contype="Dispatch Database" name="BS Store 2 Dispatch Database Connection" />
+		<link to="Store 3 Dispatch Database" type="Connection" contype="Dispatch Database" name="BS Store 3 Dispatch Database Connection" />
+		<link to="Store 4 Dispatch Database" type="Connection" contype="Dispatch Database" name="BS Store 4 Dispatch Database Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<apply i_name="Store 1 Dispatch Database" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 2 Dispatch Database" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 3 Dispatch Database" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 4 Dispatch Database" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Dispatch Database" sip="304" ref="Dispatch Database" />
+		<node type="project" desc="Dispatch DB" sip="304" regulation="false" />
+	</createNodes>
+  <apply i_name = "304" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Y" designdays="3" builddays="3" testdays="3" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown Location" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location Used" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location Used" />
+	<requireAttrs i_parentOf="XXXX" platform="Y" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform Conflict" />
+	<requireMin i_parentOf="XXXX" disk_left="10" i_failReason="No Storage (XXXX)" i_failShortReason="No Storage" />
+	<requireMin i_parentOf="XXXX" mem_left="1000" i_failReason="No Memory (XXXX)" i_failShortReason="No Memory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Dispatch Database" desc="Dispatch DB" shortdesc="Dispatch DB" icon="Icon_dd" notinnetwork="true" type="biz_service"  slalimit="YYY" new="true" created_by_sip="304" has_impact="true" impactkmh="-1" biz_service_function="Dispatch Database" />
+	</createNodes>
+	<createNodes i_to="Dispatch Database">
+		<upgrades type="upgrades" />
+	</createNodes>	
+  <apply i_name = "304" MaxRevOffset="192000" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Dispatch Database" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Dispatch Database" desc="Dispatch DB" shortdesc="Dispatch DB" icon="Icon_dd" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Dispatch Database" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Dispatch Database" desc="Dispatch DB" shortdesc="Dispatch DB" icon="Icon_dd" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Dispatch Database" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Dispatch Database" desc="Dispatch DB" shortdesc="Dispatch DB" icon="Icon_dd" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Dispatch Database" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Dispatch Database" desc="Dispatch DB" shortdesc="Dispatch DB" icon="Icon_dd" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Dispatch Database" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Porrima" />
+	<apply i_name = "Store 1 Dispatch Database" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 Dispatch Database" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 Dispatch Database" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Dispatch Database" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Porrima" />
+	<apply i_name="Porrima" type="App" proccap="2" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="1000" diskrequired="10" created_by_sip="304" />
+	<createNodes i_to="Porrima">
+		<link to="Store 1 Dispatch Database" type="Connection" name="Porrima Store 1 Dispatch Database Connection" />
+		<link to="Store 2 Dispatch Database" type="Connection" name="Porrima Store 2 Dispatch Database Connection" />
+		<link to="Store 3 Dispatch Database" type="Connection" name="Porrima Store 3 Dispatch Database Connection" />
+		<link to="Store 4 Dispatch Database" type="Connection" name="Porrima Store 4 Dispatch Database Connection" />
+	</createNodes>
+	<createNodes i_to="Dispatch Database">
+		<link to="Store 1 Dispatch Database" type="Connection" contype="Dispatch Database" name="BS Store 1 Dispatch Database Connection" />
+		<link to="Store 2 Dispatch Database" type="Connection" contype="Dispatch Database" name="BS Store 2 Dispatch Database Connection" />
+		<link to="Store 3 Dispatch Database" type="Connection" contype="Dispatch Database" name="BS Store 3 Dispatch Database Connection" />
+		<link to="Store 4 Dispatch Database" type="Connection" contype="Dispatch Database" name="BS Store 4 Dispatch Database Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<apply i_name="Store 1 Dispatch Database" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 2 Dispatch Database" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 3 Dispatch Database" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 4 Dispatch Database" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Dispatch Database" sip="304" ref="Dispatch Database" />
+		<node type="project" desc="Dispatch DB" sip="304" regulation="false" />
+	</createNodes>
+  <apply i_name = "304" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Z" designdays="3" builddays="4" testdays="4" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown Location" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location Used" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location Used" />
+	<requireAttrs i_parentOf="XXXX" platform="Z" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform Conflict" />
+	<requireMin i_parentOf="XXXX" disk_left="10" i_failReason="No Storage (XXXX)" i_failShortReason="No Storage" />
+	<requireMin i_parentOf="XXXX" mem_left="1000" i_failReason="No Memory (XXXX)" i_failShortReason="No Memory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Dispatch Database" desc="Dispatch DB" shortdesc="Dispatch DB" icon="Icon_dd" notinnetwork="true" type="biz_service"  slalimit="YYY" new="true" created_by_sip="304" has_impact="true" impactkmh="-1" biz_service_function="Dispatch Database" />
+	</createNodes>
+	<createNodes i_to="Dispatch Database">
+		<upgrades type="upgrades" />
+	</createNodes>	
+  <apply i_name = "304" MaxRevOffset="192000" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Dispatch Database" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Dispatch Database" desc="Dispatch DB" shortdesc="Dispatch DB" icon="Icon_dd" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Dispatch Database" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Dispatch Database" desc="Dispatch DB" shortdesc="Dispatch DB" icon="Icon_dd" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Dispatch Database" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Dispatch Database" desc="Dispatch DB" shortdesc="Dispatch DB" icon="Icon_dd" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Dispatch Database" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Dispatch Database" desc="Dispatch DB" shortdesc="Dispatch DB" icon="Icon_dd" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Dispatch Database" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Porrima" />
+	<apply i_name = "Store 1 Dispatch Database" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 Dispatch Database" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 Dispatch Database" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Dispatch Database" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Porrima" />
+	<apply i_name="Porrima" type="App" proccap="2" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="1000" diskrequired="10" created_by_sip="304" />
+	<createNodes i_to="Porrima">
+		<link to="Store 1 Dispatch Database" type="Connection" name="Porrima Store 1 Dispatch Database Connection" />
+		<link to="Store 2 Dispatch Database" type="Connection" name="Porrima Store 2 Dispatch Database Connection" />
+		<link to="Store 3 Dispatch Database" type="Connection" name="Porrima Store 3 Dispatch Database Connection" />
+		<link to="Store 4 Dispatch Database" type="Connection" name="Porrima Store 4 Dispatch Database Connection" />
+	</createNodes>
+	<createNodes i_to="Dispatch Database">
+		<link to="Store 1 Dispatch Database" type="Connection" contype="Dispatch Database" name="BS Store 1 Dispatch Database Connection" />
+		<link to="Store 2 Dispatch Database" type="Connection" contype="Dispatch Database" name="BS Store 2 Dispatch Database Connection" />
+		<link to="Store 3 Dispatch Database" type="Connection" contype="Dispatch Database" name="BS Store 3 Dispatch Database Connection" />
+		<link to="Store 4 Dispatch Database" type="Connection" contype="Dispatch Database" name="BS Store 4 Dispatch Database Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<apply i_name="Store 1 Dispatch Database" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 2 Dispatch Database" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 3 Dispatch Database" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 4 Dispatch Database" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Dispatch Database" sip="304" ref="Dispatch Database" />
+		<node type="project" desc="Dispatch DB" sip="304" regulation="false" />
+	</createNodes>
+  <apply i_name = "304" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+</project>

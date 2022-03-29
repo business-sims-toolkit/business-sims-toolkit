@@ -1,0 +1,977 @@
+<?xml version="1.0"?>
+<Root name="Root" type="Root">
+	<Node notinnetwork="true" name="uninstalled" up="false">
+		<Cooling del="false" location="E327" desc="Cooling Zone 1" xpos="1089" ypos="457" type="Cooling" name="C1" />
+		<Cooling del="false" location="F321" desc="Cooling Zone 2" xpos="1089" ypos="457" type="Cooling" name="C2" />
+		<Cooling del="false" location="B319" desc="Cooling Zone 3" xpos="1089" ypos="457" type="Cooling" name="C3" />
+		<Cooling del="false" location="G323" desc="Cooling Zone 4" xpos="1089" ypos="457" type="Cooling" name="C4" />
+		<Cooling del="false" location="H321" desc="Cooling Zone 5" xpos="1089" ypos="457" type="Cooling" name="C5" />
+		<Cooling del="false" location="D321" desc="Cooling Zone 6" xpos="1089" ypos="457" type="Cooling" name="C6" />
+		<Cooling del="false" location="C320" desc="Cooling Zone 7" xpos="1089" ypos="457" type="Cooling" name="C7" />
+	</Node>
+	<Revenue revenue="0" name="Revenue" revenue_lost="0" max_revenue="0" />
+	<PitStop activefor="" name="PitStop" />
+	<AdvancedWarningTechnology enabled="false" up="true" name="AdvancedWarningTechnology" />
+	<CameraActions num="0" name="CameraActions" />
+	<AppliedWorkArounds num="0" name="AppliedWorkArounds" />
+	<CostedEvents name="CostedEvents" totalspent="0" />
+	<BeginServicesCommandQueue extract_incidents="true" name="BeginServicesCommandQueue" />
+	<ProjectsIncomingRequests name="ProjectsIncomingRequests" />
+	<Projects name="Projects">
+		<Project wcount="1" stagedaystogo="0" name="101" stage="ready" testdays="3" slalimit="360" projectid="101" fixedlocation="E336" wrequest="1" productid="1011" builddays="5" actual_cost="0" handovervalue="100" regulation="false" installname="Dual Authentication" platformid="X" round="1" handover="100" createdinround="1" currentspend="0" designdays="6" readyfordeployment="1" fixedzone="X" estimated_gain="0" />
+	</Projects>
+	<Calendar name="Calendar" days="30" />
+	<CurrentDay name="CurrentDay" day="1" />
+	<CurrentTime round_start_clock_time="09:00:00" game_second_duration_in_real_world_ms="1000" seconds="0" type="current_time" round_duration="1500" name="CurrentTime" real_world_second_corresponds_to_simulated_seconds="360" />
+	<EnteredIncidents name="enteredIncidents" />
+	<FixItQueue name="FixItQueue" />
+	<FacilitatorNotifiedErrors name="FacilitatorNotifiedErrors" />
+	<BusinessNotifiedEvents name="BusinessNotifiedEvents" />
+	<ApplicationsProcessed apps_lost="0" max_apps_processed="0" apps_processed="0" complaints="0" name="ApplicationsProcessed" />
+	<TransactionStatus transcompleted="0" instoremaxpermbu="12" name="TransactionStatus" onlinemaxpermbu="12" instoremaxperstore="12" transmaximum="96" instoremaximum="48" onlinemaxperstore="12" onlinemaximum="48" />
+	<Transactions count_good="0" count_max="96" count_processed="0" zzz="" name="Transactions" />
+	<TransactionProfile name="TransactionProfiles">
+		<Transactiontype storename="BU 1" profile="O5,I5,O5,I5,O5,I5,O3,I3,O3,I3,O6,I6,O6,I6,O6,I6,O3,I3,O3,I3,O3,I3,O6,I6" name="transactionprofile1" />
+		<Transactiontype storename="BU 2" profile="O5,I5,O5,I5,O5,I5,O3,I3,O3,I3,O6,I6,O6,I6,O6,I6,O3,I3,O3,I3,O3,I3,O6,I6" name="transactionprofile2" />
+		<Transactiontype storename="BU 3" profile="O3,I3,O3,I3,O3,I3,O3,I3,O3,I3,O5,I5,O5,I5,O5,I5,O3,I3,O3,I3,O3,I3,O5,I5" name="transactionprofile3" />
+		<Transactiontype storename="BU 4" profile="O2,I2,O2,I2,O2,I2,O1,I1,O1,I1,O4,I4,O4,I4,O4,I4,O1,I1,O1,I1,O1,I1,O4,I4" name="transactionprofile4" />
+	</TransactionProfile>
+	<TransactionValues name="TransactionValues">
+		<Transactiontype applications="140" revenuelevel="1" revenue="140000" event_type="online" name="transaction_type_1_online" />
+		<Transactiontype applications="150" revenuelevel="2" revenue="160000" event_type="online" name="transaction_type_2_online" />
+		<Transactiontype applications="147" revenuelevel="3" revenue="180000" event_type="online" name="transaction_type_3_online" />
+		<Transactiontype applications="300" revenuelevel="4" revenue="200000" event_type="online" name="transaction_type_4_online" />
+		<Transactiontype applications="328" revenuelevel="5" revenue="220000" event_type="online" name="transaction_type_5_online" />
+		<Transactiontype applications="419" revenuelevel="6" revenue="240000" event_type="online" name="transaction_type_6_online" />
+		<Transactiontype applications="140" revenuelevel="1" revenue="140000" event_type="instore" name="transaction_type_1_instore" />
+		<Transactiontype applications="150" revenuelevel="2" revenue="160000" event_type="instore" name="transaction_type_2_instore" />
+		<Transactiontype applications="147" revenuelevel="3" revenue="180000" event_type="instore" name="transaction_type_3_instore" />
+		<Transactiontype applications="300" revenuelevel="4" revenue="200000" event_type="instore" name="transaction_type_4_instore" />
+		<Transactiontype applications="328" revenuelevel="5" revenue="220000" event_type="instore" name="transaction_type_5_instore" />
+		<Transactiontype applications="419" revenuelevel="6" revenue="240000" event_type="instore" name="transaction_type_6_instore" />
+	</TransactionValues>
+	<BeginNewServicesInstall type="BeginNewServicesInstall" extract_incidents="false" name="BeginNewServicesInstall" />
+	<PrePlaySystem name="PrePlaySystem">
+		<PreplayName escape="false" time_ref="300" name="preplay_control" start="false" />
+		<PreplayStatus preplay_running="true" time_left="300" name="preplay_status" />
+	</PrePlaySystem>
+	<Availability name="Availability" availability="100.0" />
+	<Impact impact="0" name="Impact" />
+	<PowerLevel z7_now="36" z6_base="22" z5_base="42" name="PowerLevel" z7_base="36" level="100.0" z5_now="42" z4_now="24" z3_now="48" z2_now="34" z1_now="48" z4_base="24" z3_base="48" z6_now="22" z2_base="34" z1_base="48" />
+	<SLABreach biz_serv_user_count="0" impact_count="0" biz_serv_count="0" name="sla_breach" />
+	<MachineUpgradeQueue name="MachineUpgradeQueue" />
+	<AppUpgradeQueue name="AppUpgradeQueue" />
+	<AppUpgradeResetLinksQueue name="AppUpgradeResetLinksQueue" />
+	<MirrorCommandQueue name="MirrorCommandQueue" />
+	<DevelopmentalSpend actualcosttotal="0" currentspendtotal="0" roundbudgetleft="0" name="DevelopmentSpend" />
+	<CoolingSystem name="CoolingSystem" upgraded="false" />
+	<Slas name="SLAs" type="slas">
+		<Sla revenue_streams_max="8" revenue_streams_min="6" type="sla" slalimit="360" />
+		<Sla revenue_streams_max="5" revenue_streams_min="4" type="sla" slalimit="360" />
+		<Sla revenue_streams_max="3" revenue_streams_min="2" type="sla" slalimit="360" />
+		<Sla revenue_streams_max="1" revenue_streams_min="1" type="sla" slalimit="360" />
+		<Sla revenue_streams_max="0" revenue_streams_min="0" type="sla" slalimit="360" />
+	</Slas>
+	<NSInfoBatches name="NewServiceInfoBatches" type="NSInfoBatches">
+		<Round round="1" type="round" total_info_batches="0" name="Info Batches From NS Round 1" />
+		<Round round="2" type="round" total_info_batches="0" name="Info Batches From NS Round 2" />
+		<Round round="3" type="round" total_info_batches="0" name="Info Batches From NS Round 3" />
+		<Round round="4" type="round" total_info_batches="0" name="Info Batches From NS Round 4" />
+	</NSInfoBatches>
+	<StartServices name="StartServices" type="StartServices" />
+	<Hub desc="Hub" type="Hub" name="Hub">
+		<Router usernode="false" desc="Router" proczone="1" type="Router" zone="1" name="N1201" propagate="true">
+			<Server platform="X" name="Saturn" max_height="6" proczone="1" hidden="false" desc="Server" type="Server" usernode="false" zone="1" propagate="true" model="CW-24D" free_cpu="60" security_level="Low" total_cpu="75" network_controller="CAD-A27" free_height="1" used_cpu="15" database_type="1" daily_power="15" opex="14000">
+				<App platform="X" name="Castor" proczone="1" desc="App" type="App" usernode="false" fixable="true" zone="1" propagate="true" version="1" canupgrade="true" up="true" userupgrade="false">
+					<Connection to="BU 1 Catalog Management" type="Connection" name="Castor BU 1 Catalog Management Connection" />
+					<Connection to="BU 2 Catalog Management" type="Connection" name="Castor BU 2 Catalog Management Connection" />
+					<Connection to="BU 3 Catalog Management" type="Connection" name="Castor BU 3 Catalog Management Connection" />
+					<Connection to="BU 4 Catalog Management" type="Connection" name="Castor BU 4 Catalog Management Connection" />
+				</App>
+				<App platform="X" name="Bellatrix" proczone="1" desc="App" type="App" usernode="false" fixable="true" zone="1" propagate="true" version="1" canupgrade="true" up="true" userupgrade="false">
+					<Connection to="BU 1 Credit Authorization" type="Connection" name="Bellatrix BU 1 Credit Authorization Connection" />
+					<Connection to="BU 2 Credit Authorization" type="Connection" name="Bellatrix BU 2 Credit Authorization Connection" />
+					<Connection to="BU 3 Credit Authorization" type="Connection" name="Bellatrix BU 3 Credit Authorization Connection" />
+					<Connection to="BU 4 Credit Authorization" type="Connection" name="Bellatrix BU 4 Credit Authorization Connection" />
+				</App>
+			</Server>
+			<Server platform="Y" name="Pluto" max_height="6" proczone="1" hidden="false" desc="Server" type="Server" usernode="false" zone="1" propagate="true" model="CW-24D" free_cpu="5" security_level="Low" total_cpu="90" network_controller="CAD-X40" free_height="0" used_cpu="85" database_type="2" daily_power="15" opex="14000">
+				<App platform="X" name="Electra" proczone="1" desc="App" type="App" usernode="false" fixable="true" zone="1" propagate="true" version="1" canupgrade="true" up="true" userupgrade="false">
+					<Connection to="BU 1 Stock Control" type="Connection" name="Electra BU 1 Stock Control Connection" />
+					<Connection to="BU 2 Stock Control" type="Connection" name="Electra BU 2 Stock Control Connection" />
+					<Connection to="BU 3 Stock Control" type="Connection" name="Electra BU 3 Stock Control Connection" />
+					<Connection to="BU 4 Stock Control" type="Connection" name="Electra BU 4 Stock Control Connection" />
+				</App>
+				<App platform="X" name="Megrez" proczone="1" desc="App" type="App" usernode="false" fixable="true" zone="1" propagate="true" version="1" canupgrade="true" up="true" userupgrade="false">
+					<Connection to="BU 1 Retail Management" type="Connection" name="Megrez BU 1 Retail Management Connection" />
+					<Connection to="BU 2 Retail Management" type="Connection" name="Megrez BU 2 Retail Management Connection" />
+					<Connection to="BU 3 Retail Management" type="Connection" name="Megrez BU 3 Retail Management Connection" />
+					<Connection to="BU 4 Retail Management" type="Connection" name="Megrez BU 4 Retail Management Connection" />
+				</App>
+			</Server>
+			<Server platform="Z" name="Deneb" max_height="6" proczone="1" hidden="false" desc="Server" type="Server" usernode="false" zone="1" propagate="true" model="CW-24D" free_cpu="30" security_level="Low" total_cpu="75" network_controller="CAD-M61" free_height="1" used_cpu="45" database_type="3" daily_power="15" opex="14000" />
+			<Server platform="X" name="Altair" max_height="6" proczone="1" hidden="false" desc="Server" type="Server" usernode="false" zone="1" propagate="true" model="CW-24D" free_cpu="20" security_level="Low" total_cpu="75" network_controller="CAD-M61" free_height="1" used_cpu="55" database_type="1" daily_power="15" opex="14000" />
+			<Server platform="Y" name="Uranus" max_height="6" proczone="1" hidden="false" desc="Server" type="Server" usernode="false" zone="1" propagate="true" model="CW-24D" free_cpu="55" security_level="Low" total_cpu="75" network_controller="CAD-X40" free_height="1" used_cpu="20" database_type="4" daily_power="15" opex="14000" />
+			<Server platform="Z" name="Deimos" max_height="6" proczone="1" hidden="false" always_optimal="true" desc="Server" type="Server" usernode="false" zone="1" propagate="true" model="CW-24D" free_cpu="16384" security_level="All" total_cpu="16384" network_controller="All" free_height="6" used_cpu="0" database_type="" daily_power="15" opex="14000" />
+		</Router>
+		<Router usernode="false" desc="Router" proczone="1" type="Router" zone="1" name="P1232-4" propagate="true">
+			<Server platform="Z" name="Mars" max_height="6" proczone="1" hidden="false" desc="Server" type="Server" usernode="false" zone="1" propagate="true" model="CW-24D" free_cpu="35" security_level="Medium" total_cpu="90" network_controller="CAD-M61" free_height="0" used_cpu="55" database_type="1" daily_power="15" opex="14000">
+				<App platform="X" name="Nunki" proczone="1" desc="App" type="App" usernode="false" fixable="true" zone="1" propagate="true" version="1" canupgrade="true" up="true" userupgrade="false">
+					<Connection to="BU 1 Online Security Management" type="Connection" name="Nunki BU 1 Online Security Management Connection" />
+					<Connection to="BU 2 Online Security Management" type="Connection" name="Nunki BU 2 Online Security Management Connection" />
+					<Connection to="BU 3 Online Security Management" type="Connection" name="Nunki BU 3 Online Security Management Connection" />
+					<Connection to="BU 4 Online Security Management" type="Connection" name="Nunki BU 4 Online Security Management Connection" />
+				</App>
+				<App platform="X" name="Nash" proczone="1" desc="App" type="App" usernode="false" fixable="true" zone="1" propagate="true" version="1" canupgrade="true" up="true" userupgrade="false">
+					<Connection to="BU 1 Dispatch Scanning" type="Connection" name="Nash BU 1 Dispatch Scanning Connection" />
+					<Connection to="BU 2 Dispatch Scanning" type="Connection" name="Nash BU 2 Dispatch Scanning Connection" />
+					<Connection to="BU 3 Dispatch Scanning" type="Connection" name="Nash BU 3 Dispatch Scanning Connection" />
+					<Connection to="BU 4 Dispatch Scanning" type="Connection" name="Nash BU 4 Dispatch Scanning Connection" />
+				</App>
+			</Server>
+			<Server platform="Y" name="Proxycon" max_height="6" proczone="1" hidden="false" desc="Server" type="Server" usernode="false" zone="1" propagate="true" model="CW-24D" free_cpu="50" security_level="Medium" total_cpu="60" network_controller="CAD-X40" free_height="2" used_cpu="10" database_type="4" daily_power="15" opex="14000" />
+			<Server platform="Z" name="Sirius" max_height="6" proczone="1" hidden="false" desc="Server" type="Server" usernode="false" zone="1" propagate="true" model="CW-24D" free_cpu="40" security_level="Medium" total_cpu="90" network_controller="CAD-M61" free_height="0" used_cpu="50" database_type="3" daily_power="15" opex="14000" />
+		</Router>
+		<Router usernode="false" desc="Router" proczone="1" type="Router" zone="1" name="N1321" propagate="true">
+			<Server platform="X" name="Venus" max_height="6" proczone="1" hidden="false" desc="Server" type="Server" usernode="false" zone="1" propagate="true" model="CW-24D" free_cpu="48" security_level="High" total_cpu="90" network_controller="CAD-M61" free_height="0" used_cpu="42" database_type="3" daily_power="15" opex="14000">
+				<App platform="X" name="Tarazed" proczone="1" desc="App" type="App" usernode="false" fixable="true" zone="1" propagate="true" version="1" canupgrade="true" up="true" userupgrade="false">
+					<Connection to="BU 1 Warehouse Management" type="Connection" name="Tarazed BU 1 Warehouse Management Connection" />
+					<Connection to="BU 2 Warehouse Management" type="Connection" name="Tarazed BU 2 Warehouse Management Connection" />
+					<Connection to="BU 3 Warehouse Management" type="Connection" name="Tarazed BU 3 Warehouse Management Connection" />
+					<Connection to="BU 4 Warehouse Management" type="Connection" name="Tarazed BU 4 Warehouse Management Connection" />
+				</App>
+				<App platform="X" name="Sham" proczone="1" desc="App" type="App" usernode="false" fixable="true" zone="1" propagate="true" version="1" canupgrade="true" up="true" userupgrade="false">
+					<Connection to="BU 1 EPOS" type="Connection" name="Sham BU 1 EPOS Connection" />
+					<Connection to="BU 2 EPOS" type="Connection" name="Sham BU 2 EPOS Connection" />
+					<Connection to="BU 3 EPOS" type="Connection" name="Sham BU 3 EPOS Connection" />
+					<Connection to="BU 4 EPOS" type="Connection" name="Sham BU 4 EPOS Connection" />
+				</App>
+			</Server>
+			<Server platform="Y" name="Jupiter" max_height="6" proczone="1" hidden="false" desc="Server" type="Server" usernode="false" zone="1" propagate="true" model="CW-24D" free_cpu="82" security_level="High" total_cpu="90" network_controller="CAD-A27" free_height="0" used_cpu="8" database_type="1" daily_power="15" opex="14000">
+				<App platform="X" name="Alshat" proczone="1" desc="App" type="App" usernode="false" fixable="true" zone="1" propagate="true" version="1" canupgrade="true" up="true" userupgrade="false">
+					<Connection to="BU 1 Multi-Store" type="Connection" name="Alshat BU 1 Multi-Store Connection" />
+					<Connection to="BU 2 Multi-Store" type="Connection" name="Alshat BU 2 Multi-Store Connection" />
+					<Connection to="BU 3 Multi-Store" type="Connection" name="Alshat BU 3 Multi-Store Connection" />
+					<Connection to="BU 4 Multi-Store" type="Connection" name="Alshat BU 4 Multi-Store Connection" />
+				</App>
+				<App platform="X" name="Rastaban" proczone="1" desc="App" type="App" usernode="false" fixable="true" zone="1" propagate="true" version="1" canupgrade="true" up="true" userupgrade="false">
+					<Connection to="BU 1 Fulfilment" type="Connection" name="Rastaban BU 1 Fulfilment Connection" />
+					<Connection to="BU 2 Fulfilment" type="Connection" name="Rastaban BU 2 Fulfilment Connection" />
+					<Connection to="BU 3 Fulfilment" type="Connection" name="Rastaban BU 3 Fulfilment Connection" />
+					<Connection to="BU 4 Fulfilment" type="Connection" name="Rastaban BU 4 Fulfilment Connection" />
+				</App>
+			</Server>
+			<Server platform="Z" name="Rigel" max_height="6" proczone="1" hidden="false" desc="Server" type="Server" usernode="false" zone="1" propagate="true" model="CW-24D" free_cpu="55" security_level="High" total_cpu="75" network_controller="CAD-M61" free_height="1" used_cpu="20" database_type="1" daily_power="15" opex="14000" />
+			<Server platform="X" name="Epsilon" max_height="6" proczone="1" hidden="false" desc="Server" type="Server" usernode="false" zone="1" propagate="true" model="CW-24D" free_cpu="21" security_level="High" total_cpu="75" network_controller="CAD-X40" free_height="1" used_cpu="54" database_type="4" daily_power="15" opex="14000" />
+			<Server platform="Y" name="Tau Ceti" max_height="6" proczone="1" hidden="false" desc="Server" type="Server" usernode="false" zone="1" propagate="true" model="CW-24D" free_cpu="10" security_level="High" total_cpu="30" network_controller="CAD-A27" free_height="4" used_cpu="20" database_type="2" daily_power="15" opex="14000" />
+		</Router>
+		<Router usernode="false" desc="Router" proczone="1" type="Router" zone="1" name="P1232-5" propagate="true">
+			<Server platform="Z" name="Mercury" max_height="6" proczone="1" hidden="false" desc="Server" type="Server" usernode="false" zone="1" propagate="true" model="CW-24D" free_cpu="28" security_level="Medium" total_cpu="90" network_controller="CAD-X40" free_height="0" used_cpu="62" database_type="2" daily_power="15" opex="14000">
+				<App platform="X" name="Polaris" proczone="1" desc="App" type="App" usernode="false" fixable="true" zone="1" propagate="true" version="1" canupgrade="true" up="true" userupgrade="false">
+					<Connection to="BU 1 G-Tunes" type="Connection" name="Polaris BU 1 G-Tunes Connection" />
+					<Connection to="BU 2 G-Tunes" type="Connection" name="Polaris BU 2 G-Tunes Connection" />
+					<Connection to="BU 3 G-Tunes" type="Connection" name="Polaris BU 3 G-Tunes Connection" />
+					<Connection to="BU 4 G-Tunes" type="Connection" name="Polaris BU 4 G-Tunes Connection" />
+				</App>
+				<App platform="X" name="Phad" proczone="1" desc="App" type="App" usernode="false" fixable="true" zone="1" propagate="true" version="1" canupgrade="true" up="true" userupgrade="false">
+					<Connection to="BU 1 Promotion Management" type="Connection" name="Phad BU 1 Promotion Management Connection" />
+					<Connection to="BU 2 Promotion Management" type="Connection" name="Phad BU 2 Promotion Management Connection" />
+					<Connection to="BU 3 Promotion Management" type="Connection" name="Phad BU 3 Promotion Management Connection" />
+					<Connection to="BU 4 Promotion Management" type="Connection" name="Phad BU 4 Promotion Management Connection" />
+				</App>
+			</Server>
+			<Server platform="X" name="Neptune" max_height="6" proczone="1" hidden="false" desc="Server" type="Server" usernode="false" zone="1" propagate="true" model="CW-24D" free_cpu="56" security_level="Medium" total_cpu="90" network_controller="CAD-A27" free_height="0" used_cpu="34" database_type="2" daily_power="15" opex="14000">
+				<App platform="X" name="Zosma" proczone="1" desc="App" type="App" usernode="false" fixable="true" zone="1" propagate="true" version="1" canupgrade="true" up="true" userupgrade="false">
+					<Connection to="BU 1 Customer Support" type="Connection" name="Zosma BU 1 Customer Support Connection" />
+					<Connection to="BU 2 Customer Support" type="Connection" name="Zosma BU 2 Customer Support Connection" />
+					<Connection to="BU 3 Customer Support" type="Connection" name="Zosma BU 3 Customer Support Connection" />
+					<Connection to="BU 4 Customer Support" type="Connection" name="Zosma BU 4 Customer Support Connection" />
+				</App>
+				<App platform="X" name="Izar" proczone="1" desc="App" type="App" usernode="false" fixable="true" zone="1" propagate="true" version="1" canupgrade="true" up="true" userupgrade="false">
+					<Connection to="BU 1 Shopping Basket Management" type="Connection" name="Izar BU 1 Shopping Basket Management Connection" />
+					<Connection to="BU 2 Shopping Basket Management" type="Connection" name="Izar BU 2 Shopping Basket Management Connection" />
+					<Connection to="BU 3 Shopping Basket Management" type="Connection" name="Izar BU 3 Shopping Basket Management Connection" />
+					<Connection to="BU 4 Shopping Basket Management" type="Connection" name="Izar BU 4 Shopping Basket Management Connection" />
+				</App>
+			</Server>
+		</Router>
+	</Hub>
+	<BizServices notinnetwork="true" type="biz_services" name="Business Services Group">
+		<BizService service_id="C01" data_security_classification="High" name="Catalog Management" has_impact="true" notinnetwork="true" transaction_type="both" biz_service_function="Catalog Management" slalimit="360" shortdesc="Catalog Mgmt" type="biz_service" gain_per_minute="-1" version="1" icon="catalog_mgmt" desc="Catalog Management">
+			<Connection to="BU 1 Catalog Management" type="Connection" contype="Catalog Management" name="BS BU 1 Catalog Management Connection" />
+			<Connection to="BU 2 Catalog Management" type="Connection" contype="Catalog Management" name="BS BU 2 Catalog Management Connection" />
+			<Connection to="BU 3 Catalog Management" type="Connection" contype="Catalog Management" name="BS BU 3 Catalog Management Connection" />
+			<Connection to="BU 4 Catalog Management" type="Connection" contype="Catalog Management" name="BS BU 4 Catalog Management Connection" />
+		</BizService>
+		<BizService service_id="C09" data_security_classification="High" name="Credit Authorization" has_impact="true" notinnetwork="true" transaction_type="both" biz_service_function="Credit Authorization" slalimit="360" shortdesc="Credit Auth" type="biz_service" gain_per_minute="-1" version="1" icon="credit_auth" desc="Credit Authorization">
+			<Connection to="BU 1 Credit Authorization" type="Connection" contype="Credit Authorization" name="BS BU 1 Credit Authorization Connection" />
+			<Connection to="BU 2 Credit Authorization" type="Connection" contype="Credit Authorization" name="BS BU 2 Credit Authorization Connection" />
+			<Connection to="BU 3 Credit Authorization" type="Connection" contype="Credit Authorization" name="BS BU 3 Credit Authorization Connection" />
+			<Connection to="BU 4 Credit Authorization" type="Connection" contype="Credit Authorization" name="BS BU 4 Credit Authorization Connection" />
+		</BizService>
+		<BizService service_id="C10" data_security_classification="Low" name="Customer Support" has_impact="true" notinnetwork="true" transaction_type="online" biz_service_function="Customer Support" slalimit="360" shortdesc="Customer Support" type="biz_service" gain_per_minute="-1" version="1" icon="customer_support" desc="Customer Support">
+			<Connection to="BU 1 Customer Support" type="Connection" contype="Customer Support" name="BS BU 1 Customer Support Connection" />
+			<Connection to="BU 2 Customer Support" type="Connection" contype="Customer Support" name="BS BU 2 Customer Support Connection" />
+			<Connection to="BU 3 Customer Support" type="Connection" contype="Customer Support" name="BS BU 3 Customer Support Connection" />
+			<Connection to="BU 4 Customer Support" type="Connection" contype="Customer Support" name="BS BU 4 Customer Support Connection" />
+		</BizService>
+		<BizService service_id="D02" data_security_classification="High" name="Dispatch Scanning" has_impact="true" notinnetwork="true" transaction_type="both" biz_service_function="Dispatch Scanning" slalimit="360" shortdesc="Dispatch Scan" type="biz_service" gain_per_minute="-1" version="1" icon="dispatch_scan" desc="Dispatch Scanning">
+			<Connection to="BU 1 Dispatch Scanning" type="Connection" contype="Dispatch Scanning" name="BS BU 1 Dispatch Scanning Connection" />
+			<Connection to="BU 2 Dispatch Scanning" type="Connection" contype="Dispatch Scanning" name="BS BU 2 Dispatch Scanning Connection" />
+			<Connection to="BU 3 Dispatch Scanning" type="Connection" contype="Dispatch Scanning" name="BS BU 3 Dispatch Scanning Connection" />
+			<Connection to="BU 4 Dispatch Scanning" type="Connection" contype="Dispatch Scanning" name="BS BU 4 Dispatch Scanning Connection" />
+		</BizService>
+		<BizService service_id="E03" data_security_classification="Medium" name="EPOS" has_impact="true" notinnetwork="true" transaction_type="instore" biz_service_function="EPOS" slalimit="360" shortdesc="EPOS" type="biz_service" gain_per_minute="-1" version="1" icon="epos" desc="EPOS">
+			<Connection to="BU 1 EPOS" type="Connection" contype="EPOS" name="BS BU 1 EPOS Connection" />
+			<Connection to="BU 2 EPOS" type="Connection" contype="EPOS" name="BS BU 2 EPOS Connection" />
+			<Connection to="BU 3 EPOS" type="Connection" contype="EPOS" name="BS BU 3 EPOS Connection" />
+			<Connection to="BU 4 EPOS" type="Connection" contype="EPOS" name="BS BU 4 EPOS Connection" />
+		</BizService>
+		<BizService service_id="F02" data_security_classification="Low" name="Fulfilment" has_impact="true" notinnetwork="true" transaction_type="online" biz_service_function="Fulfilment" slalimit="360" shortdesc="Fulfilment" type="biz_service" gain_per_minute="-1" version="1" icon="fulfilment" desc="Fulfilment">
+			<Connection to="BU 1 Fulfilment" type="Connection" contype="Fulfilment" name="BS BU 1 Fulfilment Connection" />
+			<Connection to="BU 2 Fulfilment" type="Connection" contype="Fulfilment" name="BS BU 2 Fulfilment Connection" />
+			<Connection to="BU 3 Fulfilment" type="Connection" contype="Fulfilment" name="BS BU 3 Fulfilment Connection" />
+			<Connection to="BU 4 Fulfilment" type="Connection" contype="Fulfilment" name="BS BU 4 Fulfilment Connection" />
+		</BizService>
+		<BizService service_id="G01" data_security_classification="Medium" name="G-Tunes" has_impact="true" notinnetwork="true" transaction_type="online" biz_service_function="G-Tunes" slalimit="360" shortdesc="G-Tunes" type="biz_service" gain_per_minute="-1" version="1" icon="g-tunes" desc="G-Tunes">
+			<Connection to="BU 1 G-Tunes" type="Connection" contype="G-Tunes" name="BS BU 1 G-Tunes Connection" />
+			<Connection to="BU 2 G-Tunes" type="Connection" contype="G-Tunes" name="BS BU 2 G-Tunes Connection" />
+			<Connection to="BU 3 G-Tunes" type="Connection" contype="G-Tunes" name="BS BU 3 G-Tunes Connection" />
+			<Connection to="BU 4 G-Tunes" type="Connection" contype="G-Tunes" name="BS BU 4 G-Tunes Connection" />
+		</BizService>
+		<BizService service_id="M03" data_security_classification="Medium" name="Multi-Store" has_impact="true" notinnetwork="true" transaction_type="instore" biz_service_function="Multi-Store" slalimit="360" shortdesc="Multi-Store" type="biz_service" gain_per_minute="-1" version="1" icon="multi-store" desc="Multi-Store">
+			<Connection to="BU 1 Multi-Store" type="Connection" contype="Multi-Store" name="BS BU 1 Multi-Store Connection" />
+			<Connection to="BU 2 Multi-Store" type="Connection" contype="Multi-Store" name="BS BU 2 Multi-Store Connection" />
+			<Connection to="BU 3 Multi-Store" type="Connection" contype="Multi-Store" name="BS BU 3 Multi-Store Connection" />
+			<Connection to="BU 4 Multi-Store" type="Connection" contype="Multi-Store" name="BS BU 4 Multi-Store Connection" />
+		</BizService>
+		<BizService service_id="O02" data_security_classification="Medium" name="Online Security Management" has_impact="true" notinnetwork="true" transaction_type="online" biz_service_function="Online Security Management" slalimit="360" shortdesc="Online Sec Mgmt" type="biz_service" gain_per_minute="-1" version="1" icon="online_sec_mgmt" desc="Online Security Management">
+			<Connection to="BU 1 Online Security Management" type="Connection" contype="Online Security Management" name="BS BU 1 Online Security Management Connection" />
+			<Connection to="BU 2 Online Security Management" type="Connection" contype="Online Security Management" name="BS BU 2 Online Security Management Connection" />
+			<Connection to="BU 3 Online Security Management" type="Connection" contype="Online Security Management" name="BS BU 3 Online Security Management Connection" />
+			<Connection to="BU 4 Online Security Management" type="Connection" contype="Online Security Management" name="BS BU 4 Online Security Management Connection" />
+		</BizService>
+		<BizService service_id="P12" data_security_classification="High" name="Promotion Management" has_impact="true" notinnetwork="true" transaction_type="online" biz_service_function="Promotion Management" slalimit="360" shortdesc="Promotion Mgmt" type="biz_service" gain_per_minute="-1" version="1" icon="promotion_mgmt" desc="Promotion Management">
+			<Connection to="BU 1 Promotion Management" type="Connection" contype="Promotion Management" name="BS BU 1 Promotion Management Connection" />
+			<Connection to="BU 2 Promotion Management" type="Connection" contype="Promotion Management" name="BS BU 2 Promotion Management Connection" />
+			<Connection to="BU 3 Promotion Management" type="Connection" contype="Promotion Management" name="BS BU 3 Promotion Management Connection" />
+			<Connection to="BU 4 Promotion Management" type="Connection" contype="Promotion Management" name="BS BU 4 Promotion Management Connection" />
+		</BizService>
+		<BizService service_id="R05" data_security_classification="Low" name="Retail Management" has_impact="true" notinnetwork="true" transaction_type="both" biz_service_function="Retail Management" slalimit="360" shortdesc="Retail Mgmt" type="biz_service" gain_per_minute="-1" version="1" icon="retail_mgmt" desc="Retail Management">
+			<Connection to="BU 1 Retail Management" type="Connection" contype="Retail Management" name="BS BU 1 Retail Management Connection" />
+			<Connection to="BU 2 Retail Management" type="Connection" contype="Retail Management" name="BS BU 2 Retail Management Connection" />
+			<Connection to="BU 3 Retail Management" type="Connection" contype="Retail Management" name="BS BU 3 Retail Management Connection" />
+			<Connection to="BU 4 Retail Management" type="Connection" contype="Retail Management" name="BS BU 4 Retail Management Connection" />
+		</BizService>
+		<BizService service_id="S03" data_security_classification="Medium" name="Shopping Basket Management" has_impact="true" notinnetwork="true" transaction_type="online" biz_service_function="Shopping Basket Management" slalimit="360" shortdesc="Shopping Basket Mgmt" type="biz_service" gain_per_minute="-1" version="1" icon="shopping_basket_mgmt" desc="Shopping Basket Management">
+			<Connection to="BU 1 Shopping Basket Management" type="Connection" contype="Shopping Basket Management" name="BS BU 1 Shopping Basket Management Connection" />
+			<Connection to="BU 2 Shopping Basket Management" type="Connection" contype="Shopping Basket Management" name="BS BU 2 Shopping Basket Management Connection" />
+			<Connection to="BU 3 Shopping Basket Management" type="Connection" contype="Shopping Basket Management" name="BS BU 3 Shopping Basket Management Connection" />
+			<Connection to="BU 4 Shopping Basket Management" type="Connection" contype="Shopping Basket Management" name="BS BU 4 Shopping Basket Management Connection" />
+		</BizService>
+		<BizService service_id="S02" data_security_classification="Low" name="Stock Control" has_impact="true" notinnetwork="true" transaction_type="both" biz_service_function="Stock Control" slalimit="360" shortdesc="Stock Control" type="biz_service" gain_per_minute="-1" version="1" icon="stock_control" desc="Stock Control">
+			<Connection to="BU 1 Stock Control" type="Connection" contype="Stock Control" name="BS BU 1 Stock Control Connection" />
+			<Connection to="BU 2 Stock Control" type="Connection" contype="Stock Control" name="BS BU 2 Stock Control Connection" />
+			<Connection to="BU 3 Stock Control" type="Connection" contype="Stock Control" name="BS BU 3 Stock Control Connection" />
+			<Connection to="BU 4 Stock Control" type="Connection" contype="Stock Control" name="BS BU 4 Stock Control Connection" />
+		</BizService>
+		<BizService service_id="W02" data_security_classification="Low" name="Warehouse Management" has_impact="true" notinnetwork="true" transaction_type="online" biz_service_function="Warehouse Management" slalimit="360" shortdesc="Warehouse Mgmt" type="biz_service" gain_per_minute="-1" version="1" icon="warehouse_mgmt" desc="Warehouse Management">
+			<Connection to="BU 1 Warehouse Management" type="Connection" contype="Warehouse Management" name="BS BU 1 Warehouse Management Connection" />
+			<Connection to="BU 2 Warehouse Management" type="Connection" contype="Warehouse Management" name="BS BU 2 Warehouse Management Connection" />
+			<Connection to="BU 3 Warehouse Management" type="Connection" contype="Warehouse Management" name="BS BU 3 Warehouse Management Connection" />
+			<Connection to="BU 4 Warehouse Management" type="Connection" contype="Warehouse Management" name="BS BU 4 Warehouse Management Connection" />
+		</BizService>
+	</BizServices>
+	<Nv name="BUs" type="nv">
+		<BU order="1" desc="BU 1" shortdesc="1" instore_portal_up="true" instore_bonus="0" online_bonus="0" last_transaction="0" type="BU" name="BU 1" playerstore="true" online_portal_up="true">
+			<BizServiceUser icon="catalog_mgmt" name="BU 1 Catalog Management" has_impact="true" transaction_type="both" biz_service_function="Catalog Management" slalimit="360" shortdesc="Catalog Mgmt" type="biz_service_user" desc="BU 1 Catalog Management" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="credit_auth" name="BU 1 Credit Authorization" has_impact="true" transaction_type="both" biz_service_function="Credit Authorization" slalimit="360" shortdesc="Credit Auth" type="biz_service_user" desc="BU 1 Credit Authorization" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="customer_support" name="BU 1 Customer Support" has_impact="true" transaction_type="online" biz_service_function="Customer Support" slalimit="360" shortdesc="Customer Support" type="biz_service_user" desc="BU 1 Customer Support" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="dispatch_scan" name="BU 1 Dispatch Scanning" has_impact="true" transaction_type="both" biz_service_function="Dispatch Scanning" slalimit="360" shortdesc="Dispatch Scan" type="biz_service_user" desc="BU 1 Dispatch Scanning" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="epos" name="BU 1 EPOS" has_impact="true" transaction_type="instore" biz_service_function="EPOS" slalimit="360" shortdesc="EPOS" type="biz_service_user" desc="BU 1 EPOS" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="fulfilment" name="BU 1 Fulfilment" has_impact="true" transaction_type="online" biz_service_function="Fulfilment" slalimit="360" shortdesc="Fulfilment" type="biz_service_user" desc="BU 1 Fulfilment" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="g-tunes" name="BU 1 G-Tunes" has_impact="true" transaction_type="online" biz_service_function="G-Tunes" slalimit="360" shortdesc="G-Tunes" type="biz_service_user" desc="BU 1 G-Tunes" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="multi-store" name="BU 1 Multi-Store" has_impact="true" transaction_type="instore" biz_service_function="Multi-Store" slalimit="360" shortdesc="Multi-Store" type="biz_service_user" desc="BU 1 Multi-Store" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="online_sec_mgmt" name="BU 1 Online Security Management" has_impact="true" transaction_type="online" biz_service_function="Online Security Management" slalimit="360" shortdesc="Online Sec Mgmt" type="biz_service_user" desc="BU 1 Online Security Management" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="promotion_mgmt" name="BU 1 Promotion Management" has_impact="true" transaction_type="online" biz_service_function="Promotion Management" slalimit="360" shortdesc="Promotion Mgmt" type="biz_service_user" desc="BU 1 Promotion Management" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="retail_mgmt" name="BU 1 Retail Management" has_impact="true" transaction_type="both" biz_service_function="Retail Management" slalimit="360" shortdesc="Retail Mgmt" type="biz_service_user" desc="BU 1 Retail Management" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="shopping_basket_mgmt" name="BU 1 Shopping Basket Management" has_impact="true" transaction_type="online" biz_service_function="Shopping Basket Management" slalimit="360" shortdesc="Shopping Basket Mgmt" type="biz_service_user" desc="BU 1 Shopping Basket Management" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="stock_control" name="BU 1 Stock Control" has_impact="true" transaction_type="both" biz_service_function="Stock Control" slalimit="360" shortdesc="Stock Control" type="biz_service_user" desc="BU 1 Stock Control" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="warehouse_mgmt" name="BU 1 Warehouse Management" has_impact="true" transaction_type="online" biz_service_function="Warehouse Management" slalimit="360" shortdesc="Warehouse Mgmt" type="biz_service_user" desc="BU 1 Warehouse Management" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+		</BU>
+		<BU order="2" desc="BU 2" shortdesc="2" instore_portal_up="true" instore_bonus="0" online_bonus="0" last_transaction="0" type="BU" name="BU 2" playerstore="true" online_portal_up="true">
+			<BizServiceUser icon="catalog_mgmt" name="BU 2 Catalog Management" has_impact="true" transaction_type="both" biz_service_function="Catalog Management" slalimit="360" shortdesc="Catalog Mgmt" type="biz_service_user" desc="BU 2 Catalog Management" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="credit_auth" name="BU 2 Credit Authorization" has_impact="true" transaction_type="both" biz_service_function="Credit Authorization" slalimit="360" shortdesc="Credit Auth" type="biz_service_user" desc="BU 2 Credit Authorization" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="customer_support" name="BU 2 Customer Support" has_impact="true" transaction_type="online" biz_service_function="Customer Support" slalimit="360" shortdesc="Customer Support" type="biz_service_user" desc="BU 2 Customer Support" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="dispatch_scan" name="BU 2 Dispatch Scanning" has_impact="true" transaction_type="both" biz_service_function="Dispatch Scanning" slalimit="360" shortdesc="Dispatch Scan" type="biz_service_user" desc="BU 2 Dispatch Scanning" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="epos" name="BU 2 EPOS" has_impact="true" transaction_type="instore" biz_service_function="EPOS" slalimit="360" shortdesc="EPOS" type="biz_service_user" desc="BU 2 EPOS" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="fulfilment" name="BU 2 Fulfilment" has_impact="true" transaction_type="online" biz_service_function="Fulfilment" slalimit="360" shortdesc="Fulfilment" type="biz_service_user" desc="BU 2 Fulfilment" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="g-tunes" name="BU 2 G-Tunes" has_impact="true" transaction_type="online" biz_service_function="G-Tunes" slalimit="360" shortdesc="G-Tunes" type="biz_service_user" desc="BU 2 G-Tunes" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="multi-store" name="BU 2 Multi-Store" has_impact="true" transaction_type="instore" biz_service_function="Multi-Store" slalimit="360" shortdesc="Multi-Store" type="biz_service_user" desc="BU 2 Multi-Store" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="online_sec_mgmt" name="BU 2 Online Security Management" has_impact="true" transaction_type="online" biz_service_function="Online Security Management" slalimit="360" shortdesc="Online Sec Mgmt" type="biz_service_user" desc="BU 2 Online Security Management" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="promotion_mgmt" name="BU 2 Promotion Management" has_impact="true" transaction_type="online" biz_service_function="Promotion Management" slalimit="360" shortdesc="Promotion Mgmt" type="biz_service_user" desc="BU 2 Promotion Management" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="retail_mgmt" name="BU 2 Retail Management" has_impact="true" transaction_type="both" biz_service_function="Retail Management" slalimit="360" shortdesc="Retail Mgmt" type="biz_service_user" desc="BU 2 Retail Management" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="shopping_basket_mgmt" name="BU 2 Shopping Basket Management" has_impact="true" transaction_type="online" biz_service_function="Shopping Basket Management" slalimit="360" shortdesc="Shopping Basket Mgmt" type="biz_service_user" desc="BU 2 Shopping Basket Management" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="stock_control" name="BU 2 Stock Control" has_impact="true" transaction_type="both" biz_service_function="Stock Control" slalimit="360" shortdesc="Stock Control" type="biz_service_user" desc="BU 2 Stock Control" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="warehouse_mgmt" name="BU 2 Warehouse Management" has_impact="true" transaction_type="online" biz_service_function="Warehouse Management" slalimit="360" shortdesc="Warehouse Mgmt" type="biz_service_user" desc="BU 2 Warehouse Management" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+		</BU>
+		<BU order="3" desc="BU 3" shortdesc="3" instore_portal_up="true" instore_bonus="0" online_bonus="0" last_transaction="0" type="BU" name="BU 3" playerstore="true" online_portal_up="true">
+			<BizServiceUser icon="catalog_mgmt" name="BU 3 Catalog Management" has_impact="true" transaction_type="both" biz_service_function="Catalog Management" slalimit="360" shortdesc="Catalog Mgmt" type="biz_service_user" desc="BU 3 Catalog Management" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="credit_auth" name="BU 3 Credit Authorization" has_impact="true" transaction_type="both" biz_service_function="Credit Authorization" slalimit="360" shortdesc="Credit Auth" type="biz_service_user" desc="BU 3 Credit Authorization" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="customer_support" name="BU 3 Customer Support" has_impact="true" transaction_type="online" biz_service_function="Customer Support" slalimit="360" shortdesc="Customer Support" type="biz_service_user" desc="BU 3 Customer Support" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="dispatch_scan" name="BU 3 Dispatch Scanning" has_impact="true" transaction_type="both" biz_service_function="Dispatch Scanning" slalimit="360" shortdesc="Dispatch Scan" type="biz_service_user" desc="BU 3 Dispatch Scanning" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="epos" name="BU 3 EPOS" has_impact="true" transaction_type="instore" biz_service_function="EPOS" slalimit="360" shortdesc="EPOS" type="biz_service_user" desc="BU 3 EPOS" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="fulfilment" name="BU 3 Fulfilment" has_impact="true" transaction_type="online" biz_service_function="Fulfilment" slalimit="360" shortdesc="Fulfilment" type="biz_service_user" desc="BU 3 Fulfilment" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="g-tunes" name="BU 3 G-Tunes" has_impact="true" transaction_type="online" biz_service_function="G-Tunes" slalimit="360" shortdesc="G-Tunes" type="biz_service_user" desc="BU 3 G-Tunes" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="multi-store" name="BU 3 Multi-Store" has_impact="true" transaction_type="instore" biz_service_function="Multi-Store" slalimit="360" shortdesc="Multi-Store" type="biz_service_user" desc="BU 3 Multi-Store" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="online_sec_mgmt" name="BU 3 Online Security Management" has_impact="true" transaction_type="online" biz_service_function="Online Security Management" slalimit="360" shortdesc="Online Sec Mgmt" type="biz_service_user" desc="BU 3 Online Security Management" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="promotion_mgmt" name="BU 3 Promotion Management" has_impact="true" transaction_type="online" biz_service_function="Promotion Management" slalimit="360" shortdesc="Promotion Mgmt" type="biz_service_user" desc="BU 3 Promotion Management" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="retail_mgmt" name="BU 3 Retail Management" has_impact="true" transaction_type="both" biz_service_function="Retail Management" slalimit="360" shortdesc="Retail Mgmt" type="biz_service_user" desc="BU 3 Retail Management" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="shopping_basket_mgmt" name="BU 3 Shopping Basket Management" has_impact="true" transaction_type="online" biz_service_function="Shopping Basket Management" slalimit="360" shortdesc="Shopping Basket Mgmt" type="biz_service_user" desc="BU 3 Shopping Basket Management" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="stock_control" name="BU 3 Stock Control" has_impact="true" transaction_type="both" biz_service_function="Stock Control" slalimit="360" shortdesc="Stock Control" type="biz_service_user" desc="BU 3 Stock Control" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="warehouse_mgmt" name="BU 3 Warehouse Management" has_impact="true" transaction_type="online" biz_service_function="Warehouse Management" slalimit="360" shortdesc="Warehouse Mgmt" type="biz_service_user" desc="BU 3 Warehouse Management" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+		</BU>
+		<BU order="4" desc="BU 4" shortdesc="4" instore_portal_up="true" instore_bonus="0" online_bonus="0" last_transaction="0" type="BU" name="BU 4" playerstore="true" online_portal_up="true">
+			<BizServiceUser icon="catalog_mgmt" name="BU 4 Catalog Management" has_impact="true" transaction_type="both" biz_service_function="Catalog Management" slalimit="360" shortdesc="Catalog Mgmt" type="biz_service_user" desc="BU 4 Catalog Management" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="credit_auth" name="BU 4 Credit Authorization" has_impact="true" transaction_type="both" biz_service_function="Credit Authorization" slalimit="360" shortdesc="Credit Auth" type="biz_service_user" desc="BU 4 Credit Authorization" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="customer_support" name="BU 4 Customer Support" has_impact="true" transaction_type="online" biz_service_function="Customer Support" slalimit="360" shortdesc="Customer Support" type="biz_service_user" desc="BU 4 Customer Support" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="dispatch_scan" name="BU 4 Dispatch Scanning" has_impact="true" transaction_type="both" biz_service_function="Dispatch Scanning" slalimit="360" shortdesc="Dispatch Scan" type="biz_service_user" desc="BU 4 Dispatch Scanning" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="epos" name="BU 4 EPOS" has_impact="true" transaction_type="instore" biz_service_function="EPOS" slalimit="360" shortdesc="EPOS" type="biz_service_user" desc="BU 4 EPOS" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="fulfilment" name="BU 4 Fulfilment" has_impact="true" transaction_type="online" biz_service_function="Fulfilment" slalimit="360" shortdesc="Fulfilment" type="biz_service_user" desc="BU 4 Fulfilment" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="g-tunes" name="BU 4 G-Tunes" has_impact="true" transaction_type="online" biz_service_function="G-Tunes" slalimit="360" shortdesc="G-Tunes" type="biz_service_user" desc="BU 4 G-Tunes" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="multi-store" name="BU 4 Multi-Store" has_impact="true" transaction_type="instore" biz_service_function="Multi-Store" slalimit="360" shortdesc="Multi-Store" type="biz_service_user" desc="BU 4 Multi-Store" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="online_sec_mgmt" name="BU 4 Online Security Management" has_impact="true" transaction_type="online" biz_service_function="Online Security Management" slalimit="360" shortdesc="Online Sec Mgmt" type="biz_service_user" desc="BU 4 Online Security Management" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="promotion_mgmt" name="BU 4 Promotion Management" has_impact="true" transaction_type="online" biz_service_function="Promotion Management" slalimit="360" shortdesc="Promotion Mgmt" type="biz_service_user" desc="BU 4 Promotion Management" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="retail_mgmt" name="BU 4 Retail Management" has_impact="true" transaction_type="both" biz_service_function="Retail Management" slalimit="360" shortdesc="Retail Mgmt" type="biz_service_user" desc="BU 4 Retail Management" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="shopping_basket_mgmt" name="BU 4 Shopping Basket Management" has_impact="true" transaction_type="online" biz_service_function="Shopping Basket Management" slalimit="360" shortdesc="Shopping Basket Mgmt" type="biz_service_user" desc="BU 4 Shopping Basket Management" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="stock_control" name="BU 4 Stock Control" has_impact="true" transaction_type="both" biz_service_function="Stock Control" slalimit="360" shortdesc="Stock Control" type="biz_service_user" desc="BU 4 Stock Control" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+			<BizServiceUser icon="warehouse_mgmt" name="BU 4 Warehouse Management" has_impact="true" transaction_type="online" biz_service_function="Warehouse Management" slalimit="360" shortdesc="Warehouse Mgmt" type="biz_service_user" desc="BU 4 Warehouse Management" slabreach="false" slaimpact="0" canworkaround="false" up="true" />
+		</BU>
+	</Nv>
+	<NewServices name="New Services" type="NewServices">
+		<Round1 round="1" type="Round 1" name="New Services Round 1">
+			<NewService data_security_classification="Low" is_installed_at_round_end="true" zone="1" target_gain="50000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Event Plan" is_hidden_in_reports="false" transaction_type="instore" version="1" desc="Round 1 Event Planning" stores="1,2,3,4" biz_service_function="Event Planning" name="NS Event Planning" usernode="false" proczone="1" slabreach="false" has_impact="true" round="1" notinnetwork="true" propagate="true" canupgrade="true" icon="104" slalimit="360" canworkaround="false" type="New_Service" service_id="E01" fixable="true" up="true">
+				<NewService release_code="XP-3" platform="X" test_environment="1" product_id="1041" app_name="Acamar" cpu_req="6" gain_per_minute="50000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="0" server_name="Saturn" type="new_service">
+					<DevTeamOptions build_environment="1.2.0" type="dev_team_options" dev_team="1" configuration_id="BL3" />
+					<DevTeamOptions build_environment="1.4.3" type="dev_team_options" dev_team="2" configuration_id="BL3" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="Medium" is_installed_at_round_end="true" zone="1" target_gain="20000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Enterp Biz Mgmt" is_hidden_in_reports="false" transaction_type="both" version="1" desc="Round 1 Enterprise Business Management" stores="1,4" biz_service_function="Enterprise Business Management" name="NS Enterprise Business Management" usernode="false" proczone="1" slabreach="false" has_impact="true" round="1" notinnetwork="true" propagate="true" canupgrade="true" icon="101" slalimit="360" canworkaround="false" type="New_Service" service_id="P04" fixable="true" up="true">
+				<NewService release_code="CD-2" platform="W" test_environment="2" product_id="1011" app_name="Achird" cpu_req="7" gain_per_minute="20000" failure_remark="W not supported " is_optimal_product="false" test_time="180" integration_pass="true" business_investment="30000" server_name="Mars" type="new_service">
+					<DevTeamOptions build_environment="2.9.10" type="dev_team_options" dev_team="1" configuration_id="6" />
+					<DevTeamOptions build_environment="2.2.0" type="dev_team_options" dev_team="2" configuration_id="2" />
+				</NewService>
+				<NewService release_code="CD-2" platform="Y" test_environment="2" product_id="1012" app_name="Achird" cpu_req="7" gain_per_minute="10000" failure_remark="" is_optimal_product="false" test_time="180" integration_pass="true" business_investment="50000" server_name="Mars" type="new_service">
+					<DevTeamOptions build_environment="2.6.2" type="dev_team_options" dev_team="1" configuration_id="12" />
+					<DevTeamOptions build_environment="2.8.3" type="dev_team_options" dev_team="2" configuration_id="8" />
+				</NewService>
+				<NewService release_code="CD-2" platform="Z" test_environment="2" product_id="1013" app_name="Achird" cpu_req="10" gain_per_minute="20000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="50000" server_name="Mars" type="new_service">
+					<DevTeamOptions build_environment="2.2.0" type="dev_team_options" dev_team="1" configuration_id="11" />
+					<DevTeamOptions build_environment="2.6.2" type="dev_team_options" dev_team="2" configuration_id="6" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="Medium" is_installed_at_round_end="true" zone="1" target_gain="20000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Product Sched" is_hidden_in_reports="false" transaction_type="both" version="1" desc="Round 1 Production Scheduler" stores="1,3,4" biz_service_function="Production Scheduler" name="NS Production Scheduler" usernode="false" proczone="1" slabreach="false" has_impact="true" round="1" notinnetwork="true" propagate="true" canupgrade="true" icon="102" slalimit="360" canworkaround="false" type="New_Service" service_id="P11" fixable="true" up="true">
+				<NewService release_code="CD-2" platform="X" test_environment="3" product_id="1021" app_name="Acubens" cpu_req="5" gain_per_minute="20000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="30000" server_name="Proxycon" type="new_service">
+					<DevTeamOptions build_environment="2.9.10" type="dev_team_options" dev_team="1" configuration_id="18" />
+					<DevTeamOptions build_environment="2.8.3" type="dev_team_options" dev_team="2" configuration_id="11" />
+				</NewService>
+				<NewService release_code="CD-2" platform="Y" test_environment="3" product_id="1022" app_name="Acubens" cpu_req="11" gain_per_minute="20000" failure_remark="" is_optimal_product="false" test_time="180" integration_pass="true" business_investment="40000" server_name="Proxycon" type="new_service">
+					<DevTeamOptions build_environment="2.9.10" type="dev_team_options" dev_team="1" configuration_id="9" />
+					<DevTeamOptions build_environment="2.2.0" type="dev_team_options" dev_team="2" configuration_id="4" />
+				</NewService>
+				<NewService release_code="CD-2" platform="Z" test_environment="3" product_id="1023" app_name="Acubens" cpu_req="9" gain_per_minute="20000" failure_remark="" is_optimal_product="false" test_time="180" integration_pass="true" business_investment="40000" server_name="Proxycon" type="new_service">
+					<DevTeamOptions build_environment="2.2.0" type="dev_team_options" dev_team="1" configuration_id="1" />
+					<DevTeamOptions build_environment="2.6.2" type="dev_team_options" dev_team="2" configuration_id="7" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="High" is_installed_at_round_end="true" zone="1" target_gain="20000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Network VPN" is_hidden_in_reports="false" transaction_type="online" version="1" desc="Round 1 Network - VPN Services" stores="4" biz_service_function="Network - VPN Services" name="NS Network - VPN Services" usernode="false" proczone="1" slabreach="false" has_impact="true" round="1" notinnetwork="true" propagate="true" canupgrade="true" icon="103" slalimit="360" canworkaround="false" type="New_Service" service_id="P01" fixable="true" up="true">
+				<NewService release_code="BX-2" platform="X" test_environment="2" product_id="1031" app_name="Alcor" cpu_req="8" gain_per_minute="20000" failure_remark="" is_optimal_product="false" test_time="180" integration_pass="true" business_investment="150000" server_name="Rigel" type="new_service">
+					<DevTeamOptions build_environment="3.4.2" type="dev_team_options" dev_team="1" configuration_id="5" />
+					<DevTeamOptions build_environment="3.4.2" type="dev_team_options" dev_team="2" configuration_id="16" />
+				</NewService>
+				<NewService release_code="BX-2" platform="Y" test_environment="2" product_id="1032" app_name="Alcor" cpu_req="5" gain_per_minute="25000" failure_remark="" is_optimal_product="false" test_time="180" integration_pass="true" business_investment="140000" server_name="Rigel" type="new_service">
+					<DevTeamOptions build_environment="3.2.0" type="dev_team_options" dev_team="1" configuration_id="4" />
+					<DevTeamOptions build_environment="3.4.3" type="dev_team_options" dev_team="2" configuration_id="1" />
+				</NewService>
+				<NewService release_code="BX-2" platform="Z" test_environment="2" product_id="1033" app_name="Alcor" cpu_req="10" gain_per_minute="25000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="120000" server_name="Rigel" type="new_service">
+					<DevTeamOptions build_environment="3.8.3" type="dev_team_options" dev_team="1" configuration_id="17" />
+					<DevTeamOptions build_environment="3.9.10" type="dev_team_options" dev_team="2" configuration_id="20" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="High" is_installed_at_round_end="false" zone="1" target_gain="10000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Auto Stock" is_hidden_in_reports="false" transaction_type="instore" version="1" desc="Round 1 Automated Stock Retrieval" stores="1,2,3,4" biz_service_function="Automated Stock Retrieval" name="NS Automated Stock Retrieval" usernode="false" proczone="1" slabreach="false" has_impact="true" round="1" notinnetwork="true" propagate="true" canupgrade="true" icon="105" slalimit="360" canworkaround="false" type="New_Service" service_id="C03" fixable="true" up="true">
+				<NewService release_code="BX-2" platform="Y" test_environment="1" product_id="1054" app_name="Beid" cpu_req="4" gain_per_minute="10000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="0" server_name="Jupiter" type="new_service">
+					<DevTeamOptions build_environment="3.9.10" type="dev_team_options" dev_team="1" configuration_id="BL3" />
+					<DevTeamOptions build_environment="3.8.3" type="dev_team_options" dev_team="2" configuration_id="BL2" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="Medium" is_installed_at_round_end="false" zone="1" target_gain="20000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Channel B&amp;M" is_hidden_in_reports="false" transaction_type="both" version="1" desc="Round 1 Channel Branding and Marketing" stores="1,2,3,4" biz_service_function="Channel Branding and Marketing" name="NS Channel Branding and Marketing" usernode="false" proczone="1" slabreach="false" has_impact="true" round="1" notinnetwork="true" propagate="true" canupgrade="true" icon="106" slalimit="360" canworkaround="false" type="New_Service" service_id="C07" fixable="true" up="true">
+				<NewService release_code="CD-2" platform="X" test_environment="2" product_id="1062" app_name="Capella" cpu_req="10" gain_per_minute="20000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="0" server_name="Sirius" type="new_service">
+					<DevTeamOptions build_environment="2.2.0" type="dev_team_options" dev_team="1" configuration_id="BL4" />
+					<DevTeamOptions build_environment="2.8.3" type="dev_team_options" dev_team="2" configuration_id="BL1" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="High" is_installed_at_round_end="false" zone="1" target_gain="20000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Auto Search" is_hidden_in_reports="false" transaction_type="both" version="1" desc="Round 1 Automated Search and Match" stores="1,2,3,4" biz_service_function="Automated Search and Match" name="NS Automated Search and Match" usernode="false" proczone="1" slabreach="false" has_impact="true" round="1" notinnetwork="true" propagate="true" canupgrade="true" icon="108" slalimit="360" canworkaround="false" type="New_Service" service_id="A02" fixable="true" up="true">
+				<NewService release_code="BX-2" platform="Y" test_environment="1" product_id="1085" app_name="Cheleb" cpu_req="8" gain_per_minute="20000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="0" server_name="Jupiter" type="new_service">
+					<DevTeamOptions build_environment="3.6.2" type="dev_team_options" dev_team="1" configuration_id="BL4" />
+					<DevTeamOptions build_environment="3.4.3" type="dev_team_options" dev_team="2" configuration_id="BL1" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="High" is_installed_at_round_end="false" zone="1" target_gain="0" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Services Avail" is_hidden_in_reports="true" transaction_type="both" version="1" propagate="true" desc="Round 1 Services Availability" stores="1,2,3,4" biz_service_function="Services Availability" name="NS Services Availability" usernode="false" proczone="1" slabreach="false" has_impact="true" round="1" target_status="test" notinnetwork="true" service_id="Z02" canupgrade="true" icon="501" slalimit="360" canworkaround="false" type="New_Service" fixable="true" up="true">
+				<NewService release_code="BX-2" platform="X" test_environment="1" product_id="2000" app_name="Fake" cpu_req="5" gain_per_minute="0" failure_remark="Test backlog " is_optimal_product="true" test_time="180" integration_pass="false" business_investment="0" server_name="Rigel" type="new_service">
+					<DevTeamOptions build_environment="3.4.3" type="dev_team_options" dev_team="1" configuration_id="" />
+					<DevTeamOptions build_environment="3.2.0" type="dev_team_options" dev_team="2" configuration_id="" />
+				</NewService>
+			</NewService>
+		</Round1>
+		<Round2 round="2" type="Round 2" name="New Services Round 2">
+			<NewService data_security_classification="High" is_installed_at_round_end="false" zone="1" target_gain="10000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Prod Mgmt Sys" is_hidden_in_reports="false" transaction_type="both" version="1" desc="Round 2 Production Management System" stores="2,3,4" biz_service_function="Production Management System" name="NS Production Management System" usernode="false" proczone="1" slabreach="false" has_impact="true" round="2" notinnetwork="true" propagate="true" canupgrade="true" icon="201" slalimit="360" canworkaround="false" type="New_Service" service_id="M02" fixable="true" up="true">
+				<NewService release_code="XP-4" platform="X" test_environment="2" product_id="2011" app_name="Coxa" cpu_req="4" gain_per_minute="10000" failure_remark="" is_optimal_product="false" test_time="180" integration_pass="true" business_investment="27000" server_name="Rigel" type="new_service">
+					<DevTeamOptions build_environment="3.4.3" type="dev_team_options" dev_team="1" configuration_id="13" />
+					<DevTeamOptions build_environment="3.6.2" type="dev_team_options" dev_team="2" configuration_id="8" />
+				</NewService>
+				<NewService release_code="XP-4" platform="Y" test_environment="2" product_id="2012" app_name="Coxa" cpu_req="9" gain_per_minute="10000" failure_remark="" is_optimal_product="false" test_time="180" integration_pass="true" business_investment="18000" server_name="Rigel" type="new_service">
+					<DevTeamOptions build_environment="3.4.3" type="dev_team_options" dev_team="1" configuration_id="6" />
+					<DevTeamOptions build_environment="3.9.10" type="dev_team_options" dev_team="2" configuration_id="7" />
+				</NewService>
+				<NewService release_code="XP-4" platform="Z" test_environment="2" product_id="2013" app_name="Coxa" cpu_req="8" gain_per_minute="20000" failure_remark="Dev2 -3- 3.2.0 Int Fail" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="20000" server_name="Rigel" type="new_service">
+					<DevTeamOptions build_environment="3.9.10" type="dev_team_options" dev_team="1" configuration_id="2" />
+					<DevTeamOptions build_environment="3.8.3" type="dev_team_options" dev_team="2" configuration_id="17" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="Low" is_installed_at_round_end="false" zone="1" target_gain="40000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Event Conf" is_hidden_in_reports="false" transaction_type="instore" version="1" desc="Round 2 Event Confirmation" stores="2" biz_service_function="Event Confirmation" name="NS Event Confirmation" usernode="false" proczone="1" slabreach="false" has_impact="true" round="2" notinnetwork="true" propagate="true" canupgrade="true" icon="202" slalimit="360" canworkaround="false" type="New_Service" service_id="F01" fixable="true" up="true">
+				<NewService release_code="LD-5" platform="X" test_environment="2" product_id="2021" app_name="Denebola" cpu_req="9" gain_per_minute="40000" failure_remark="" is_optimal_product="false" test_time="180" integration_pass="true" business_investment="25000" server_name="Deneb" type="new_service">
+					<DevTeamOptions build_environment="1.8.3" type="dev_team_options" dev_team="1" configuration_id="9" />
+					<DevTeamOptions build_environment="1.4.3" type="dev_team_options" dev_team="2" configuration_id="20" />
+				</NewService>
+				<NewService release_code="LD-5" platform="W" test_environment="2" product_id="2022" app_name="Denebola" cpu_req="8" gain_per_minute="40000" failure_remark="W not supported " is_optimal_product="false" test_time="180" integration_pass="true" business_investment="5000" server_name="Deneb" type="new_service">
+					<DevTeamOptions build_environment="1.2.0" type="dev_team_options" dev_team="1" configuration_id="7" />
+					<DevTeamOptions build_environment="1.4.3" type="dev_team_options" dev_team="2" configuration_id="4" />
+				</NewService>
+				<NewService release_code="LD-5" platform="Z" test_environment="2" product_id="2023" app_name="Denebola" cpu_req="7" gain_per_minute="40000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="20000" server_name="Deneb" type="new_service">
+					<DevTeamOptions build_environment="1.9.10" type="dev_team_options" dev_team="1" configuration_id="3" />
+					<DevTeamOptions build_environment="1.8.3" type="dev_team_options" dev_team="2" configuration_id="9" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="Medium" is_installed_at_round_end="false" zone="1" target_gain="30000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Req Proc" is_hidden_in_reports="false" transaction_type="both" version="1" desc="Round 2 Requirement Processing" stores="1,2,3,4" biz_service_function="Requirement Processing" name="NS Requirement Processing" usernode="false" proczone="1" slabreach="false" has_impact="true" round="2" notinnetwork="true" propagate="true" canupgrade="true" icon="203" slalimit="360" canworkaround="false" type="New_Service" service_id="R04" fixable="true" up="true">
+				<NewService release_code="DS-4" platform="X" test_environment="3" product_id="2031" app_name="Enif" cpu_req="4" gain_per_minute="30000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="30000" server_name="Proxycon" type="new_service">
+					<DevTeamOptions build_environment="2.4.2" type="dev_team_options" dev_team="1" configuration_id="2" />
+					<DevTeamOptions build_environment="2.9.10" type="dev_team_options" dev_team="2" configuration_id="9" />
+				</NewService>
+				<NewService release_code="DS-4" platform="Y" test_environment="3" product_id="2032" app_name="Enif" cpu_req="9" gain_per_minute="30000" failure_remark="" is_optimal_product="false" test_time="180" integration_pass="true" business_investment="55000" server_name="Proxycon" type="new_service">
+					<DevTeamOptions build_environment="2.6.2" type="dev_team_options" dev_team="1" configuration_id="2" />
+					<DevTeamOptions build_environment="2.2.0" type="dev_team_options" dev_team="2" configuration_id="4" />
+				</NewService>
+				<NewService release_code="DS-4" platform="Z" test_environment="3" product_id="2033" app_name="Enif" cpu_req="9" gain_per_minute="20000" failure_remark="" is_optimal_product="false" test_time="180" integration_pass="true" business_investment="30000" server_name="Proxycon" type="new_service">
+					<DevTeamOptions build_environment="2.8.3" type="dev_team_options" dev_team="1" configuration_id="12" />
+					<DevTeamOptions build_environment="2.2.0" type="dev_team_options" dev_team="2" configuration_id="10" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="High" is_installed_at_round_end="false" zone="1" target_gain="25000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Hosting Serv" is_hidden_in_reports="false" transaction_type="online" version="1" desc="Round 2 Hosting Services" stores="1,2" biz_service_function="Hosting Services" name="NS Hosting Services" usernode="false" proczone="1" slabreach="false" has_impact="true" round="2" notinnetwork="true" propagate="true" canupgrade="true" icon="204" slalimit="360" canworkaround="false" type="New_Service" service_id="S01" fixable="true" up="true">
+				<NewService release_code="XP-4" platform="W" test_environment="1" product_id="2041" app_name="Giedi" cpu_req="8" gain_per_minute="10000" failure_remark="W not supported " is_optimal_product="false" test_time="180" integration_pass="true" business_investment="10000" server_name="Jupiter" type="new_service">
+					<DevTeamOptions build_environment="3.6.2" type="dev_team_options" dev_team="1" configuration_id="14" />
+					<DevTeamOptions build_environment="3.4.3" type="dev_team_options" dev_team="2" configuration_id="10" />
+				</NewService>
+				<NewService release_code="XP-4" platform="Y" test_environment="1" product_id="2042" app_name="Giedi" cpu_req="9" gain_per_minute="15000" failure_remark="" is_optimal_product="false" test_time="180" integration_pass="true" business_investment="50000" server_name="Jupiter" type="new_service">
+					<DevTeamOptions build_environment="3.4.3" type="dev_team_options" dev_team="1" configuration_id="6" />
+					<DevTeamOptions build_environment="3.9.10" type="dev_team_options" dev_team="2" configuration_id="7" />
+				</NewService>
+				<NewService release_code="XP-4" platform="Z" test_environment="1" product_id="2043" app_name="Giedi" cpu_req="4" gain_per_minute="17000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="20000" server_name="Jupiter" type="new_service">
+					<DevTeamOptions build_environment="3.2.0" type="dev_team_options" dev_team="1" configuration_id="20" />
+					<DevTeamOptions build_environment="3.6.2" type="dev_team_options" dev_team="2" configuration_id="12" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="Low" is_installed_at_round_end="false" zone="1" target_gain="40000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Activity Mgmt" is_hidden_in_reports="false" transaction_type="both" version="1" desc="Round 2 Activity Management" stores="2,3,4" biz_service_function="Activity Management" name="NS Activity Management" usernode="false" proczone="1" slabreach="false" has_impact="true" round="2" notinnetwork="true" propagate="true" canupgrade="true" icon="205" slalimit="360" canworkaround="false" type="New_Service" service_id="L04" fixable="true" up="true">
+				<NewService release_code="LD-5" platform="X" test_environment="2" product_id="2051" app_name="Hamal" cpu_req="9" gain_per_minute="40000" failure_remark="" is_optimal_product="false" test_time="180" integration_pass="true" business_investment="200000" server_name="Altair" type="new_service">
+					<DevTeamOptions build_environment="1.8.3" type="dev_team_options" dev_team="1" configuration_id="9" />
+					<DevTeamOptions build_environment="1.4.3" type="dev_team_options" dev_team="2" configuration_id="20" />
+				</NewService>
+				<NewService release_code="LD-5" platform="Y" test_environment="2" product_id="2052" app_name="Hamal" cpu_req="8" gain_per_minute="40000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="150000" server_name="Altair" type="new_service">
+					<DevTeamOptions build_environment="1.2.0" type="dev_team_options" dev_team="1" configuration_id="1" />
+					<DevTeamOptions build_environment="1.4.3" type="dev_team_options" dev_team="2" configuration_id="2" />
+				</NewService>
+				<NewService release_code="LD-5" platform="Z" test_environment="2" product_id="2053" app_name="Hamal" cpu_req="7" gain_per_minute="40000" failure_remark="" is_optimal_product="false" test_time="180" integration_pass="true" business_investment="250000" server_name="Altair" type="new_service">
+					<DevTeamOptions build_environment="1.9.10" type="dev_team_options" dev_team="1" configuration_id="3" />
+					<DevTeamOptions build_environment="1.8.3" type="dev_team_options" dev_team="2" configuration_id="19" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="Low" is_installed_at_round_end="false" zone="1" target_gain="50000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Content Avail" is_hidden_in_reports="false" transaction_type="both" version="1" desc="Round 2 Content Availabilty" stores="1,2,3,4" biz_service_function="Content Availabilty" name="NS Content Availabilty" usernode="false" proczone="1" slabreach="false" has_impact="true" round="2" notinnetwork="true" propagate="true" canupgrade="true" icon="206" slalimit="360" canworkaround="false" type="New_Service" service_id="C05" fixable="true" up="true">
+				<NewService release_code="LD-5" platform="X" test_environment="3" product_id="2061" app_name="Kajam" cpu_req="7" gain_per_minute="50000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="250000" server_name="Uranus" type="new_service">
+					<DevTeamOptions build_environment="1.8.3" type="dev_team_options" dev_team="1" configuration_id="1" />
+					<DevTeamOptions build_environment="1.4.3" type="dev_team_options" dev_team="2" configuration_id="7" />
+				</NewService>
+				<NewService release_code="LD-5" platform="Y" test_environment="3" product_id="2062" app_name="Kajam" cpu_req="6" gain_per_minute="50000" failure_remark="" is_optimal_product="false" test_time="180" integration_pass="true" business_investment="350000" server_name="Uranus" type="new_service">
+					<DevTeamOptions build_environment="1.6.2" type="dev_team_options" dev_team="1" configuration_id="15" />
+					<DevTeamOptions build_environment="1.4.2" type="dev_team_options" dev_team="2" configuration_id="3" />
+				</NewService>
+				<NewService release_code="LD-5" platform="Z" test_environment="3" product_id="2063" app_name="Kajam" cpu_req="9" gain_per_minute="50000" failure_remark="" is_optimal_product="false" test_time="180" integration_pass="true" business_investment="300000" server_name="Uranus" type="new_service">
+					<DevTeamOptions build_environment="1.9.10" type="dev_team_options" dev_team="1" configuration_id="10" />
+					<DevTeamOptions build_environment="1.8.3" type="dev_team_options" dev_team="2" configuration_id="14" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="Low" is_installed_at_round_end="false" zone="1" target_gain="5000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Royalties Billing" is_hidden_in_reports="false" transaction_type="both" version="1" desc="Round 2 Royalties Billing" stores="2,4" biz_service_function="Royalties Billing" name="NS Royalties Billing" usernode="false" proczone="1" slabreach="false" has_impact="true" round="2" notinnetwork="true" propagate="true" canupgrade="true" icon="207" slalimit="360" canworkaround="false" type="New_Service" service_id="R03" fixable="true" up="true">
+				<NewService release_code="LD-5" platform="Z" test_environment="1" product_id="2071" app_name="Lesath" cpu_req="9" gain_per_minute="5000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="0" server_name="Saturn" type="new_service">
+					<DevTeamOptions build_environment="1.9.10" type="dev_team_options" dev_team="1" configuration_id="BL2" />
+					<DevTeamOptions build_environment="1.6.2" type="dev_team_options" dev_team="2" configuration_id="BL2" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="Low" is_installed_at_round_end="false" zone="1" target_gain="60000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Event Planning v2" is_hidden_in_reports="false" transaction_type="online" version="1" desc="Round 2 Event Planning v2.0" stores="1,2,3,4" biz_service_function="Event Planning v2.0" name="NS Event Planning v2.0" usernode="false" proczone="1" slabreach="false" has_impact="true" round="2" notinnetwork="true" propagate="true" canupgrade="true" icon="208" slalimit="360" canworkaround="false" type="New_Service" service_id="E21" fixable="true" up="true">
+				<NewService make_unbreakable="Acamar" release_code="LD-5" platform="Y" test_environment="1" product_id="2081" app_name="Acamar2" cpu_req="7" gain_per_minute="60000" failure_remark="Upgrade" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="50000" server_name="Saturn" type="new_service">
+					<DevTeamOptions build_environment="1.9.10" type="dev_team_options" dev_team="1" configuration_id="BL2" />
+					<DevTeamOptions build_environment="1.6.2" type="dev_team_options" dev_team="2" configuration_id="BL4" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="Low" is_installed_at_round_end="false" zone="1" target_gain="5000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Stock Control v2" is_hidden_in_reports="false" transaction_type="both" version="1" desc="Round 2 Stock Control v2" stores="1,2,3,4" biz_service_function="Stock Control v2" name="NS Stock Control v2" usernode="false" proczone="1" slabreach="false" has_impact="true" round="2" notinnetwork="true" propagate="true" canupgrade="true" icon="311" slalimit="360" canworkaround="false" type="New_Service" service_id="S21" fixable="true" up="true">
+				<NewService make_unbreakable="Electra" release_code="LD-5" platform="Y" test_environment="3" product_id="4010" app_name="Electra2" cpu_req="7" gain_per_minute="5000" failure_remark="Upgrade" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="50000" server_name="Uranus" type="new_service">
+					<DevTeamOptions build_environment="1.2.0" type="dev_team_options" dev_team="1" configuration_id="BL1" />
+					<DevTeamOptions build_environment="1.4.3" type="dev_team_options" dev_team="2" configuration_id="BL5" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="High" is_installed_at_round_end="false" zone="1" target_gain="1000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Network VPN Services v1.2" is_hidden_in_reports="false" transaction_type="online" version="1" desc="Round 2 Network VPN Services v1.2" stores="1,2,3,4" biz_service_function="Network VPN Services v1.2" name="NS Network VPN Services v1.2" usernode="false" proczone="1" slabreach="false" has_impact="true" round="2" notinnetwork="true" propagate="true" canupgrade="true" icon="210" slalimit="360" canworkaround="false" type="New_Service" service_id="A05" fixable="true" up="true">
+				<NewService release_code="XP-4" platform="X" test_environment="1" product_id="2092" app_name="Mira" cpu_req="5" gain_per_minute="1000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="0" server_name="Tau Ceti" type="new_service">
+					<DevTeamOptions build_environment="3.2.0" type="dev_team_options" dev_team="1" configuration_id="BL2" />
+					<DevTeamOptions build_environment="3.8.3" type="dev_team_options" dev_team="2" configuration_id="BL4" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="Low" is_installed_at_round_end="false" zone="1" target_gain="5000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Cost Planning" is_hidden_in_reports="false" transaction_type="instore" version="1" desc="Round 2 Cost Planning" stores="2,3,4" biz_service_function="Cost Planning" name="NS Cost Planning" usernode="false" proczone="1" slabreach="false" has_impact="true" round="2" notinnetwork="true" propagate="true" canupgrade="true" icon="211" slalimit="360" canworkaround="false" type="New_Service" service_id="C04" fixable="true" up="true">
+				<NewService release_code="LD-5" platform="Y" test_environment="2" product_id="2093" app_name="Murzim" cpu_req="6" gain_per_minute="5000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="0" server_name="Deneb" type="new_service">
+					<DevTeamOptions build_environment="1.2.0" type="dev_team_options" dev_team="1" configuration_id="BL1" />
+					<DevTeamOptions build_environment="1.4.3" type="dev_team_options" dev_team="2" configuration_id="BL5" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="High" is_installed_at_round_end="false" zone="1" target_gain="10000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Sub Mgmt v1.2" is_hidden_in_reports="false" transaction_type="instore" version="1" desc="Round 2 Subscription Management v2.0" stores="1" biz_service_function="Subscription Management v2.0" name="NS Subscription Management v2.0" usernode="false" proczone="1" slabreach="false" has_impact="true" round="2" notinnetwork="true" propagate="true" canupgrade="true" icon="315" slalimit="360" canworkaround="false" type="New_Service" service_id="P11" fixable="true" up="true">
+				<NewService make_unbreakable="Peacock" release_code="XP-4" platform="X" test_environment="1" product_id="3061" app_name="Peacock2" cpu_req="2" gain_per_minute="10000" failure_remark="Upgrade" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="50000" server_name="Jupiter" type="new_service">
+					<DevTeamOptions build_environment="3.4.3" type="dev_team_options" dev_team="1" configuration_id="BL5" />
+					<DevTeamOptions build_environment="3.9.10" type="dev_team_options" dev_team="2" configuration_id="BL5" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="High" is_installed_at_round_end="false" zone="1" target_gain="20000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Online Security Management v2" is_hidden_in_reports="false" transaction_type="instore" version="1" desc="Round 2 Online Security Management v2.0" stores="1,2,3" biz_service_function="Online Security Management v2.0" name="NS Online Security Management v2.0" usernode="false" proczone="1" slabreach="false" has_impact="true" round="2" notinnetwork="true" propagate="true" canupgrade="true" icon="209" slalimit="360" canworkaround="false" type="New_Service" service_id="O03" fixable="true" up="true">
+				<NewService make_unbreakable="Nunki" release_code="XP-4" platform="Y" test_environment="1" product_id="2091" app_name="Nunki2" cpu_req="8" gain_per_minute="20000" failure_remark="Upgrade" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="50000" server_name="Jupiter" type="new_service">
+					<DevTeamOptions build_environment="3.6.2" type="dev_team_options" dev_team="1" configuration_id="BL4" />
+					<DevTeamOptions build_environment="3.4.3" type="dev_team_options" dev_team="2" configuration_id="BL1" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="Medium" is_installed_at_round_end="false" zone="1" target_gain="20000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Promotion Mgmt v2" is_hidden_in_reports="false" transaction_type="online" version="1" desc="Round 2 Promotion Management  v2.0" stores="1,2" biz_service_function="Promotion Management  v2.0" name="NS Promotion Management  v2.0" usernode="false" proczone="1" slabreach="false" has_impact="true" round="2" notinnetwork="true" propagate="true" canupgrade="true" icon="403" slalimit="360" canworkaround="false" type="New_Service" service_id="P21" fixable="true" up="true">
+				<NewService make_unbreakable="Phad" release_code="DS-4" platform="Z" test_environment="3" product_id="4030" app_name="Phad2" cpu_req="8" gain_per_minute="20000" failure_remark="Upgrade" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="50000" server_name="Mercury" type="new_service">
+					<DevTeamOptions build_environment="2.6.2" type="dev_team_options" dev_team="1" configuration_id="BL4" />
+					<DevTeamOptions build_environment="2.2.0" type="dev_team_options" dev_team="2" configuration_id="BL1" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="Low" is_installed_at_round_end="false" zone="1" target_gain="10000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Unified Communications" is_hidden_in_reports="false" transaction_type="instore" version="1" desc="Round 2 Unified Communications" stores="1,3" biz_service_function="Unified Communications" name="NS Unified Communications" usernode="false" proczone="1" slabreach="false" has_impact="true" round="2" notinnetwork="true" propagate="true" canupgrade="true" icon="212" slalimit="360" canworkaround="false" type="New_Service" service_id="P09" fixable="true" up="true">
+				<NewService release_code="LD-5" platform="Z" test_environment="3" product_id="2094" app_name="Navi" cpu_req="8" gain_per_minute="10000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="0" server_name="Uranus" type="new_service">
+					<DevTeamOptions build_environment="1.6.2" type="dev_team_options" dev_team="1" configuration_id="BL1" />
+					<DevTeamOptions build_environment="1.9.10" type="dev_team_options" dev_team="2" configuration_id="BL4" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="High" is_installed_at_round_end="false" zone="1" target_gain="10000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="MultiStore v2" is_hidden_in_reports="false" transaction_type="online" version="1" desc="Round 2 MultiStore v2" stores="1" biz_service_function="MultiStore v2" name="NS MultiStore v2" usernode="false" proczone="1" slabreach="false" has_impact="true" round="2" notinnetwork="true" propagate="true" canupgrade="true" icon="406" slalimit="360" canworkaround="false" type="New_Service" service_id="M21" fixable="true" up="true">
+				<NewService make_unbreakable="Alshat" release_code="XP-4" platform="X" test_environment="1" product_id="4060" app_name="Alshat2" cpu_req="2" gain_per_minute="10000" failure_remark="Upgrade" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="50000" server_name="Jupiter" type="new_service">
+					<DevTeamOptions build_environment="3.4.3" type="dev_team_options" dev_team="1" configuration_id="BL5" />
+					<DevTeamOptions build_environment="3.9.10" type="dev_team_options" dev_team="2" configuration_id="BL5" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="High" is_installed_at_round_end="false" zone="1" target_gain="10000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Fulfilment v2" is_hidden_in_reports="false" transaction_type="instore" version="1" desc="Round 2 Fulfilment v2" stores="1" biz_service_function="Fulfilment v2" name="NS Fulfilment v2" usernode="false" proczone="1" slabreach="false" has_impact="true" round="2" notinnetwork="true" propagate="true" canupgrade="true" icon="408" slalimit="360" canworkaround="false" type="New_Service" service_id="F21" fixable="true" up="true">
+				<NewService make_unbreakable="Rastaban" release_code="XP-4" platform="Y" test_environment="1" product_id="4080" app_name="Rastaban2" cpu_req="4" gain_per_minute="10000" failure_remark="Upgrade" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="50000" server_name="Jupiter" type="new_service">
+					<DevTeamOptions build_environment="3.9.10" type="dev_team_options" dev_team="1" configuration_id="BL3" />
+					<DevTeamOptions build_environment="3.8.3" type="dev_team_options" dev_team="2" configuration_id="BL2" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="High" is_installed_at_round_end="false" zone="1" target_gain="1000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Wireless v2" is_hidden_in_reports="false" transaction_type="online" version="1" desc="Round 2 Wireless Data System v2.0" stores="1,2,3,4" biz_service_function="Wireless Data System v2.0" name="NS Wireless Data System v2.0" usernode="false" proczone="1" slabreach="false" has_impact="true" round="2" notinnetwork="true" propagate="true" canupgrade="true" icon="402" slalimit="360" canworkaround="false" type="New_Service" service_id="W21" fixable="true" up="true">
+				<NewService make_unbreakable="Pisces" release_code="XP-4" platform="X" test_environment="2" product_id="4020" app_name="Pisces" cpu_req="10" gain_per_minute="1000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="50000" server_name="Venus" type="new_service">
+					<DevTeamOptions build_environment="3.2.0" type="dev_team_options" dev_team="1" configuration_id="BL2" />
+					<DevTeamOptions build_environment="3.8.3" type="dev_team_options" dev_team="2" configuration_id="BL4" />
+				</NewService>
+			</NewService>
+		</Round2>
+		<Round3 round="3" type="Round 3" name="New Services Round 3">
+			<NewService data_security_classification="High" is_installed_at_round_end="false" zone="1" target_gain="10000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Sub Mgmt v1.2" is_hidden_in_reports="false" transaction_type="instore" version="1" desc="Round 3 Subscription Management v2.1" stores="1" biz_service_function="Subscription Management v2.1" name="NS Subscription Management v2.1" usernode="false" proczone="1" slabreach="false" has_impact="true" round="3" notinnetwork="true" propagate="true" canupgrade="true" icon="315" slalimit="360" canworkaround="false" type="New_Service" service_id="P11" fixable="true" up="true">
+				<NewService make_unbreakable="Peacock" release_code="BG-3" platform="X" test_environment="1" product_id="3061" app_name="Peacock2" cpu_req="2" gain_per_minute="10000" failure_remark="Upgrade" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="50000" server_name="Jupiter" type="new_service">
+					<DevTeamOptions build_environment="3.4.3" type="dev_team_options" dev_team="1" configuration_id="BL5" />
+					<DevTeamOptions build_environment="3.9.10" type="dev_team_options" dev_team="2" configuration_id="BL5" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="High" is_installed_at_round_end="false" zone="1" target_gain="10000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Prod Plan" is_hidden_in_reports="false" transaction_type="instore" version="1" desc="Round 3 Production Planning" stores="2" biz_service_function="Production Planning" name="NS Production Planning" usernode="false" proczone="1" slabreach="false" has_impact="true" round="3" notinnetwork="true" propagate="true" canupgrade="true" icon="301" slalimit="360" canworkaround="false" type="New_Service" service_id="P10" fixable="true" up="true">
+				<NewService release_code="BG-3" platform="X" test_environment="1" product_id="3011" app_name="Rana" cpu_req="4" gain_per_minute="10000" failure_remark="" is_optimal_product="false" test_time="180" integration_pass="true" business_investment="10000" server_name="Jupiter" type="new_service">
+					<DevTeamOptions build_environment="3.4.3" type="dev_team_options" dev_team="1" configuration_id="13" />
+					<DevTeamOptions build_environment="3.6.2" type="dev_team_options" dev_team="2" configuration_id="8" />
+				</NewService>
+				<NewService release_code="BG-3" platform="Y" test_environment="1" product_id="3012" app_name="Rana" cpu_req="8" gain_per_minute="15000" failure_remark="" is_optimal_product="false" test_time="180" integration_pass="true" business_investment="50000" server_name="Jupiter" type="new_service">
+					<DevTeamOptions build_environment="3.4.2" type="dev_team_options" dev_team="1" configuration_id="18" />
+					<DevTeamOptions build_environment="3.4.2" type="dev_team_options" dev_team="2" configuration_id="11" />
+				</NewService>
+				<NewService release_code="BG-3" platform="Z" test_environment="1" product_id="3013" app_name="Rana" cpu_req="7" gain_per_minute="17000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="20000" server_name="Jupiter" type="new_service">
+					<DevTeamOptions build_environment="3.2.0" type="dev_team_options" dev_team="1" configuration_id="20" />
+					<DevTeamOptions build_environment="3.6.2" type="dev_team_options" dev_team="2" configuration_id="12" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="Low" is_installed_at_round_end="false" zone="1" target_gain="50000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Order Mgmt Sys" is_hidden_in_reports="false" transaction_type="online" version="1" desc="Round 3 Order Management System" stores="1,2,3,4" biz_service_function="Order Management System" name="NS Order Management System" usernode="false" proczone="1" slabreach="false" has_impact="true" round="3" notinnetwork="true" propagate="true" canupgrade="true" icon="302" slalimit="360" canworkaround="false" type="New_Service" service_id="O04" fixable="true" up="true">
+				<NewService release_code="LD-5" platform="X" test_environment="2" product_id="3021" app_name="Salm" cpu_req="7" gain_per_minute="50000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="250000" server_name="Altair" type="new_service">
+					<DevTeamOptions build_environment="1.2.0" type="dev_team_options" dev_team="1" configuration_id="15" />
+					<DevTeamOptions build_environment="1.4.3" type="dev_team_options" dev_team="2" configuration_id="17" />
+				</NewService>
+				<NewService release_code="LD-5" platform="Y" test_environment="2" product_id="3022" app_name="Salm" cpu_req="11" gain_per_minute="50000" failure_remark="" is_optimal_product="false" test_time="180" integration_pass="true" business_investment="350000" server_name="Altair" type="new_service">
+					<DevTeamOptions build_environment="1.4.3" type="dev_team_options" dev_team="1" configuration_id="20" />
+					<DevTeamOptions build_environment="1.6.2" type="dev_team_options" dev_team="2" configuration_id="19" />
+				</NewService>
+				<NewService release_code="LD-5" platform="Z" test_environment="2" product_id="3023" app_name="Salm" cpu_req="9" gain_per_minute="50000" failure_remark="" is_optimal_product="false" test_time="180" integration_pass="true" business_investment="300000" server_name="Altair" type="new_service">
+					<DevTeamOptions build_environment="1.9.10" type="dev_team_options" dev_team="1" configuration_id="10" />
+					<DevTeamOptions build_environment="1.8.3" type="dev_team_options" dev_team="2" configuration_id="14" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="High" is_installed_at_round_end="false" zone="1" target_gain="25000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Perf Mon v2" is_hidden_in_reports="false" transaction_type="instore" version="1" desc="Round 3 Performance Monitoring v1.2.1" stores="1,2" biz_service_function="Performance Monitoring v1.2.1" name="NS Performance Monitoring v1.2.1" usernode="false" proczone="1" slabreach="false" has_impact="true" round="3" notinnetwork="true" propagate="true" canupgrade="true" icon="303" slalimit="360" canworkaround="false" type="New_Service" service_id="P08" fixable="true" up="true">
+				<NewService release_code="BG-3" platform="W" test_environment="1" product_id="3031" app_name="Spica" cpu_req="8" gain_per_minute="25000" failure_remark="W not supported " is_optimal_product="false" test_time="180" integration_pass="true" business_investment="10000" server_name="Jupiter" type="new_service">
+					<DevTeamOptions build_environment="3.6.2" type="dev_team_options" dev_team="1" configuration_id="14" />
+					<DevTeamOptions build_environment="3.4.3" type="dev_team_options" dev_team="2" configuration_id="10" />
+				</NewService>
+				<NewService release_code="BG-3" platform="Y" test_environment="1" product_id="3032" app_name="Spica" cpu_req="9" gain_per_minute="10000" failure_remark="" is_optimal_product="false" test_time="180" integration_pass="true" business_investment="50000" server_name="Jupiter" type="new_service">
+					<DevTeamOptions build_environment="3.4.3" type="dev_team_options" dev_team="1" configuration_id="6" />
+					<DevTeamOptions build_environment="3.9.10" type="dev_team_options" dev_team="2" configuration_id="7" />
+				</NewService>
+				<NewService release_code="BG-3" platform="Z" test_environment="1" product_id="3033" app_name="Spica" cpu_req="6" gain_per_minute="18000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="20000" server_name="Jupiter" type="new_service">
+					<DevTeamOptions build_environment="3.6.2" type="dev_team_options" dev_team="1" configuration_id="5" />
+					<DevTeamOptions build_environment="3.9.10" type="dev_team_options" dev_team="2" configuration_id="13" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="Medium" is_installed_at_round_end="false" zone="1" target_gain="20000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Network OD" is_hidden_in_reports="false" transaction_type="both" version="1" desc="Round 3 Network on Demand" stores="2,3,4" biz_service_function="Network on Demand" name="NS Network on Demand" usernode="false" proczone="1" slabreach="false" has_impact="true" round="3" notinnetwork="true" propagate="true" canupgrade="true" icon="304" slalimit="360" canworkaround="false" type="New_Service" service_id="R02" fixable="true" up="true">
+				<NewService release_code="BG-3" platform="X" test_environment="3" product_id="3041" app_name="Wasat" cpu_req="5" gain_per_minute="20000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="20000" server_name="Proxycon" type="new_service">
+					<DevTeamOptions build_environment="2.9.10" type="dev_team_options" dev_team="1" configuration_id="18" />
+					<DevTeamOptions build_environment="2.8.3" type="dev_team_options" dev_team="2" configuration_id="11" />
+				</NewService>
+				<NewService release_code="BG-3" platform="W" test_environment="3" product_id="3042" app_name="Wasat" cpu_req="2" gain_per_minute="20000" failure_remark="W not supported " is_optimal_product="false" test_time="180" integration_pass="true" business_investment="10000" server_name="Proxycon" type="new_service">
+					<DevTeamOptions build_environment="2.9.10" type="dev_team_options" dev_team="1" configuration_id="9" />
+					<DevTeamOptions build_environment="2.2.0" type="dev_team_options" dev_team="2" configuration_id="15" />
+				</NewService>
+				<NewService release_code="BG-3" platform="Z" test_environment="3" product_id="3043" app_name="Wasat" cpu_req="8" gain_per_minute="14000" failure_remark="" is_optimal_product="false" test_time="180" integration_pass="true" business_investment="20000" server_name="Proxycon" type="new_service">
+					<DevTeamOptions build_environment="2.6.2" type="dev_team_options" dev_team="1" configuration_id="16" />
+					<DevTeamOptions build_environment="2.2.0" type="dev_team_options" dev_team="2" configuration_id="15" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="Medium" is_installed_at_round_end="false" zone="1" target_gain="20000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Prod Mgmt Sys v2" is_hidden_in_reports="false" transaction_type="both" version="1" desc="Round 3 Production Management System v1.2.1" stores="1,2,3,4" biz_service_function="Production Management System v1.2.1" name="NS Production Management System v1.2.1" usernode="false" proczone="1" slabreach="false" has_impact="true" round="3" notinnetwork="true" propagate="true" canupgrade="true" icon="305" slalimit="360" canworkaround="false" type="New_Service" service_id="M01" fixable="true" up="true">
+				<NewService release_code="BG-3" platform="X" test_environment="2" product_id="3051" app_name="Cancer" cpu_req="6" gain_per_minute="20000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="250000" server_name="Sirius" type="new_service">
+					<DevTeamOptions build_environment="2.9.10" type="dev_team_options" dev_team="1" configuration_id="11" />
+					<DevTeamOptions build_environment="2.2.0" type="dev_team_options" dev_team="2" configuration_id="15" />
+				</NewService>
+				<NewService release_code="BG-3" platform="Y" test_environment="2" product_id="3052" app_name="Cancer" cpu_req="4" gain_per_minute="20000" failure_remark="" is_optimal_product="false" test_time="180" integration_pass="true" business_investment="350000" server_name="Sirius" type="new_service">
+					<DevTeamOptions build_environment="2.4.2" type="dev_team_options" dev_team="1" configuration_id="19" />
+					<DevTeamOptions build_environment="2.9.10" type="dev_team_options" dev_team="2" configuration_id="5" />
+				</NewService>
+				<NewService release_code="BG-3" platform="Z" test_environment="2" product_id="3053" app_name="Cancer" cpu_req="5" gain_per_minute="13000" failure_remark="" is_optimal_product="false" test_time="180" integration_pass="true" business_investment="200000" server_name="Sirius" type="new_service">
+					<DevTeamOptions build_environment="2.6.2" type="dev_team_options" dev_team="1" configuration_id="4" />
+					<DevTeamOptions build_environment="2.2.0" type="dev_team_options" dev_team="2" configuration_id="1" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="Medium" is_installed_at_round_end="false" zone="1" target_gain="20000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Satellite Sys" is_hidden_in_reports="false" transaction_type="both" version="1" desc="Round 3 Satellite Systems" stores="2,4" biz_service_function="Satellite Systems" name="NS Satellite Systems" usernode="false" proczone="1" slabreach="false" has_impact="true" round="3" notinnetwork="true" propagate="true" canupgrade="true" icon="309" slalimit="360" canworkaround="false" type="New_Service" service_id="A04" fixable="true" up="true">
+				<NewService release_code="BG-3" platform="Z" test_environment="3" product_id="3091" app_name="Virgo" cpu_req="8" gain_per_minute="20000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="0" server_name="Proxycon" type="new_service">
+					<DevTeamOptions build_environment="2.6.2" type="dev_team_options" dev_team="1" configuration_id="BL4" />
+					<DevTeamOptions build_environment="2.2.0" type="dev_team_options" dev_team="2" configuration_id="BL1" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="Low" is_installed_at_round_end="false" zone="1" target_gain="60000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Event Network Supp" is_hidden_in_reports="false" transaction_type="online" version="1" desc="Round 3 Event Network Support" stores="1,2,3,4" biz_service_function="Event Network Support" name="NS Event Network Support" usernode="false" proczone="1" slabreach="false" has_impact="true" round="3" notinnetwork="true" propagate="true" canupgrade="true" icon="310" slalimit="360" canworkaround="false" type="New_Service" service_id="E02" fixable="true" up="true">
+				<NewService release_code="LD-5" platform="Y" test_environment="1" product_id="3101" app_name="Aquarius" cpu_req="8" gain_per_minute="60000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="0" server_name="Saturn" type="new_service">
+					<DevTeamOptions build_environment="1.9.10" type="dev_team_options" dev_team="1" configuration_id="BL2" />
+					<DevTeamOptions build_environment="1.6.2" type="dev_team_options" dev_team="2" configuration_id="BL4" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="Low" is_installed_at_round_end="false" zone="1" target_gain="5000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Stock Control v2" is_hidden_in_reports="false" transaction_type="both" version="1" desc="Round 3 Stock Control v2.1" stores="1,2,3,4" biz_service_function="Stock Control v2.1" name="NS Stock Control v2.1" usernode="false" proczone="1" slabreach="false" has_impact="true" round="3" notinnetwork="true" propagate="true" canupgrade="true" icon="311" slalimit="360" canworkaround="false" type="New_Service" service_id="S21" fixable="true" up="true">
+				<NewService make_unbreakable="Electra" release_code="LD-5" platform="Y" test_environment="3" product_id="4010" app_name="Electra2" cpu_req="7" gain_per_minute="5000" failure_remark="Upgrade" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="50000" server_name="Uranus" type="new_service">
+					<DevTeamOptions build_environment="1.2.0" type="dev_team_options" dev_team="1" configuration_id="BL1" />
+					<DevTeamOptions build_environment="1.4.3" type="dev_team_options" dev_team="2" configuration_id="BL5" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="Low" is_installed_at_round_end="false" zone="1" target_gain="60000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Event Planning v2" is_hidden_in_reports="false" transaction_type="online" version="1" desc="Round 3 Event Planning v2.1" stores="1,2,3,4" biz_service_function="Event Planning v2.1" name="NS Event Planning v2.1" usernode="false" proczone="1" slabreach="false" has_impact="true" round="3" notinnetwork="true" propagate="true" canupgrade="true" icon="208" slalimit="360" canworkaround="false" type="New_Service" service_id="E21" fixable="true" up="true">
+				<NewService make_unbreakable="Acamar" release_code="LD-5" platform="Y" test_environment="1" product_id="2081" app_name="Acamar2" cpu_req="7" gain_per_minute="60000" failure_remark="Upgrade" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="50000" server_name="Saturn" type="new_service">
+					<DevTeamOptions build_environment="1.9.10" type="dev_team_options" dev_team="1" configuration_id="BL2" />
+					<DevTeamOptions build_environment="1.6.2" type="dev_team_options" dev_team="2" configuration_id="BL4" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="High" is_installed_at_round_end="false" zone="1" target_gain="20000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Online Security Management v2" is_hidden_in_reports="false" transaction_type="instore" version="1" desc="Round 3 Online Security Management v2.1" stores="1,2,3" biz_service_function="Online Security Management v2.1" name="NS Online Security Management v2.1" usernode="false" proczone="1" slabreach="false" has_impact="true" round="3" notinnetwork="true" propagate="true" canupgrade="true" icon="209" slalimit="360" canworkaround="false" type="New_Service" service_id="O03" fixable="true" up="true">
+				<NewService make_unbreakable="Nunki" release_code="BG-3" platform="Y" test_environment="1" product_id="2091" app_name="Nunki2" cpu_req="8" gain_per_minute="20000" failure_remark="Upgrade" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="50000" server_name="Jupiter" type="new_service">
+					<DevTeamOptions build_environment="3.6.2" type="dev_team_options" dev_team="1" configuration_id="BL4" />
+					<DevTeamOptions build_environment="3.4.3" type="dev_team_options" dev_team="2" configuration_id="BL1" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="High" is_installed_at_round_end="false" zone="1" target_gain="10000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Resource Plan" is_hidden_in_reports="false" transaction_type="instore" version="1" desc="Round 3 Resource Planning" stores="1,2,3,4" biz_service_function="Resource Planning" name="NS Resource Planning" usernode="false" proczone="1" slabreach="false" has_impact="true" round="3" notinnetwork="true" propagate="true" canupgrade="true" icon="312" slalimit="360" canworkaround="false" type="New_Service" service_id="R01" fixable="true" up="true">
+				<NewService release_code="BG-3" platform="X" test_environment="2" product_id="3121" app_name="Taurus" cpu_req="4" gain_per_minute="10000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="0" server_name="Rigel" type="new_service">
+					<DevTeamOptions build_environment="3.4.3" type="dev_team_options" dev_team="1" configuration_id="BL5" />
+					<DevTeamOptions build_environment="3.6.2" type="dev_team_options" dev_team="2" configuration_id="BL5" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="Medium" is_installed_at_round_end="false" zone="1" target_gain="20000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Promotion Mgmt v2" is_hidden_in_reports="false" transaction_type="online" version="1" desc="Round 3 Promotion Management  v2.1" stores="1,2" biz_service_function="Promotion Management  v2.1" name="NS Promotion Management  v2.1" usernode="false" proczone="1" slabreach="false" has_impact="true" round="3" notinnetwork="true" propagate="true" canupgrade="true" icon="403" slalimit="360" canworkaround="false" type="New_Service" service_id="P21" fixable="true" up="true">
+				<NewService make_unbreakable="Phad" release_code="BG-3" platform="Z" test_environment="3" product_id="4030" app_name="Phad2" cpu_req="8" gain_per_minute="20000" failure_remark="Upgrade" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="50000" server_name="Mercury" type="new_service">
+					<DevTeamOptions build_environment="2.6.2" type="dev_team_options" dev_team="1" configuration_id="BL4" />
+					<DevTeamOptions build_environment="2.2.0" type="dev_team_options" dev_team="2" configuration_id="BL1" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="High" is_installed_at_round_end="false" zone="1" target_gain="10000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Event Network Supp v2" is_hidden_in_reports="false" transaction_type="both" version="1" desc="Round 3 Event Network Support v1.2.1" stores="1,2,3,4" biz_service_function="Event Network Support v1.2.1" name="NS Event Network Support v1.2.1" usernode="false" proczone="1" slabreach="false" has_impact="true" round="3" notinnetwork="true" propagate="true" canupgrade="true" icon="306" slalimit="360" canworkaround="false" type="New_Service" service_id="P06" fixable="true" up="true">
+				<NewService make_unbreakable="Aquarius" release_code="BG-3" platform="X" test_environment="1" product_id="3061" app_name="Scorpius" cpu_req="11" gain_per_minute="10000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="10000" server_name="Jupiter" type="new_service">
+					<DevTeamOptions build_environment="3.4.3" type="dev_team_options" dev_team="1" configuration_id="16" />
+					<DevTeamOptions build_environment="3.2.0" type="dev_team_options" dev_team="2" configuration_id="19" />
+				</NewService>
+				<NewService make_unbreakable="Aquarius" release_code="BG-3" platform="Y" test_environment="1" product_id="3062" app_name="Scorpius" cpu_req="4" gain_per_minute="10000" failure_remark="" is_optimal_product="false" test_time="180" integration_pass="true" business_investment="15000" server_name="Jupiter" type="new_service">
+					<DevTeamOptions build_environment="3.4.3" type="dev_team_options" dev_team="1" configuration_id="10" />
+					<DevTeamOptions build_environment="3.8.3" type="dev_team_options" dev_team="2" configuration_id="10" />
+				</NewService>
+				<NewService make_unbreakable="Aquarius" release_code="BG-3" platform="Z" test_environment="1" product_id="3063" app_name="Scorpius" cpu_req="6" gain_per_minute="5000" failure_remark="" is_optimal_product="false" test_time="180" integration_pass="true" business_investment="75000" server_name="Jupiter" type="new_service">
+					<DevTeamOptions build_environment="3.6.2" type="dev_team_options" dev_team="1" configuration_id="13" />
+					<DevTeamOptions build_environment="3.9.10" type="dev_team_options" dev_team="2" configuration_id="13" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="High" is_installed_at_round_end="false" zone="1" target_gain="1000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Wireless v2" is_hidden_in_reports="false" transaction_type="online" version="1" desc="Round 3 Wireless Data System v2.1" stores="1,2,3,4" biz_service_function="Wireless Data System v2.1" name="NS Wireless Data System v2.1" usernode="false" proczone="1" slabreach="false" has_impact="true" round="3" notinnetwork="true" propagate="true" canupgrade="true" icon="402" slalimit="360" canworkaround="false" type="New_Service" service_id="W21" fixable="true" up="true">
+				<NewService make_unbreakable="Pisces" release_code="BG-3" platform="X" test_environment="2" product_id="4020" app_name="Pisces" cpu_req="10" gain_per_minute="1000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="50000" server_name="Venus" type="new_service">
+					<DevTeamOptions build_environment="3.2.0" type="dev_team_options" dev_team="1" configuration_id="BL2" />
+					<DevTeamOptions build_environment="3.8.3" type="dev_team_options" dev_team="2" configuration_id="BL4" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="Medium" is_installed_at_round_end="false" zone="1" target_gain="30000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Prog Info Mgmt" is_hidden_in_reports="false" transaction_type="online" version="1" desc="Round 3 Program Information Management" stores="2,4" biz_service_function="Program Information Management" name="NS Program Information Management" usernode="false" proczone="1" slabreach="false" has_impact="true" round="3" notinnetwork="true" propagate="true" canupgrade="true" icon="307" slalimit="360" canworkaround="false" type="New_Service" service_id="P05" fixable="true" up="true">
+				<NewService release_code="BG-3" platform="X" test_environment="3" product_id="3071" app_name="Phoenix" cpu_req="4" gain_per_minute="30000" failure_remark="" is_optimal_product="false" test_time="180" integration_pass="true" business_investment="300000" server_name="Proxycon" type="new_service">
+					<DevTeamOptions build_environment="2.4.2" type="dev_team_options" dev_team="1" configuration_id="2" />
+					<DevTeamOptions build_environment="2.9.10" type="dev_team_options" dev_team="2" configuration_id="9" />
+				</NewService>
+				<NewService release_code="BG-3" platform="Y" test_environment="3" product_id="3072" app_name="Phoenix" cpu_req="11" gain_per_minute="20000" failure_remark="" is_optimal_product="false" test_time="180" integration_pass="true" business_investment="150000" server_name="Proxycon" type="new_service">
+					<DevTeamOptions build_environment="2.9.10" type="dev_team_options" dev_team="1" configuration_id="16" />
+					<DevTeamOptions build_environment="2.2.0" type="dev_team_options" dev_team="2" configuration_id="13" />
+				</NewService>
+				<NewService release_code="BG-3" platform="Z" test_environment="3" product_id="3073" app_name="Phoenix" cpu_req="9" gain_per_minute="20000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="20000" server_name="Proxycon" type="new_service">
+					<DevTeamOptions build_environment="2.8.3" type="dev_team_options" dev_team="1" configuration_id="12" />
+					<DevTeamOptions build_environment="2.2.0" type="dev_team_options" dev_team="2" configuration_id="10" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="Low" is_installed_at_round_end="false" zone="1" target_gain="5000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Depot Mgmt" is_hidden_in_reports="false" transaction_type="instore" version="1" desc="Round 3 Depot Management" stores="2,3,4" biz_service_function="Depot Management" name="NS Depot Management" usernode="false" proczone="1" slabreach="false" has_impact="true" round="3" notinnetwork="true" propagate="true" canupgrade="true" icon="411" slalimit="360" canworkaround="false" type="New_Service" service_id="C04" fixable="true" up="true">
+				<NewService release_code="LD-5" platform="Y" test_environment="2" product_id="2093" app_name="Capricorn" cpu_req="6" gain_per_minute="5000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="0" server_name="Deneb" type="new_service">
+					<DevTeamOptions build_environment="1.2.0" type="dev_team_options" dev_team="1" configuration_id="BL1" />
+					<DevTeamOptions build_environment="1.4.3" type="dev_team_options" dev_team="2" configuration_id="BL5" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="Low" is_installed_at_round_end="false" zone="1" target_gain="5000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Logistics" is_hidden_in_reports="false" transaction_type="both" version="1" desc="Round 3 Logistics and Transfers" stores="2,4" biz_service_function="Logistics and Transfers" name="NS Logistics and Transfers" usernode="false" proczone="1" slabreach="false" has_impact="true" round="3" notinnetwork="true" propagate="true" canupgrade="true" icon="407" slalimit="360" canworkaround="false" type="New_Service" service_id="R03" fixable="true" up="true">
+				<NewService release_code="LD-5" platform="Z" test_environment="1" product_id="2071" app_name="Leo" cpu_req="9" gain_per_minute="5000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="0" server_name="Saturn" type="new_service">
+					<DevTeamOptions build_environment="1.9.10" type="dev_team_options" dev_team="1" configuration_id="BL2" />
+					<DevTeamOptions build_environment="1.6.2" type="dev_team_options" dev_team="2" configuration_id="BL2" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="High" is_installed_at_round_end="false" zone="1" target_gain="1000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Mobile Comms" is_hidden_in_reports="false" transaction_type="online" version="1" desc="Round 3 Mobile Communications" stores="1,2,3,4" biz_service_function="Mobile Communications" name="NS Mobile Communications" usernode="false" proczone="1" slabreach="false" has_impact="true" round="3" notinnetwork="true" propagate="true" canupgrade="true" icon="410" slalimit="360" canworkaround="false" type="New_Service" service_id="A05" fixable="true" up="true">
+				<NewService release_code="BG-3" platform="X" test_environment="1" product_id="2092" app_name="Crux" cpu_req="5" gain_per_minute="1000" failure_remark="" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="0" server_name="Tau Ceti" type="new_service">
+					<DevTeamOptions build_environment="3.2.0" type="dev_team_options" dev_team="1" configuration_id="BL2" />
+					<DevTeamOptions build_environment="3.8.3" type="dev_team_options" dev_team="2" configuration_id="BL4" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="High" is_installed_at_round_end="false" zone="1" target_gain="10000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="MultiStore v2" is_hidden_in_reports="false" transaction_type="online" version="1" desc="Round 3 MultiStore v2.1" stores="1" biz_service_function="MultiStore v2.1" name="NS MultiStore v2.1" usernode="false" proczone="1" slabreach="false" has_impact="true" round="3" notinnetwork="true" propagate="true" canupgrade="true" icon="406" slalimit="360" canworkaround="false" type="New_Service" service_id="M21" fixable="true" up="true">
+				<NewService make_unbreakable="Alshat" release_code="BG-3" platform="X" test_environment="1" product_id="4060" app_name="Alshat2" cpu_req="2" gain_per_minute="10000" failure_remark="Upgrade" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="50000" server_name="Jupiter" type="new_service">
+					<DevTeamOptions build_environment="3.4.3" type="dev_team_options" dev_team="1" configuration_id="BL5" />
+					<DevTeamOptions build_environment="3.9.10" type="dev_team_options" dev_team="2" configuration_id="BL5" />
+				</NewService>
+			</NewService>
+			<NewService data_security_classification="High" is_installed_at_round_end="false" zone="1" target_gain="10000" userupgrade="false" slaimpact="0" is_third_party="false" shortdesc="Fulfilment v2" is_hidden_in_reports="false" transaction_type="instore" version="1" desc="Round 3 Fulfilment v2.1" stores="1" biz_service_function="Fulfilment v2.1" name="NS Fulfilment v2.1" usernode="false" proczone="1" slabreach="false" has_impact="true" round="3" notinnetwork="true" propagate="true" canupgrade="true" icon="408" slalimit="360" canworkaround="false" type="New_Service" service_id="F21" fixable="true" up="true">
+				<NewService make_unbreakable="Rastaban" release_code="BG-3" platform="Y" test_environment="1" product_id="4080" app_name="Rastaban2" cpu_req="4" gain_per_minute="10000" failure_remark="Upgrade" is_optimal_product="true" test_time="180" integration_pass="true" business_investment="50000" server_name="Jupiter" type="new_service">
+					<DevTeamOptions build_environment="3.9.10" type="dev_team_options" dev_team="1" configuration_id="BL3" />
+					<DevTeamOptions build_environment="3.8.3" type="dev_team_options" dev_team="2" configuration_id="BL2" />
+				</NewService>
+			</NewService>
+		</Round3>
+		<Round4 round="4" type="Round 4" name="New Services Round 4" />
+	</NewServices>
+	<DevBuildEnvironments name="DevBuildEnvironments" type="DevBuildEnvironments">
+		<DevBuildEnvironments data_security_level="Low" type="DevBuildEnvironments">
+			<DevBuildEnvironment desc="1.2.0" type="DevBuildEnvironment">
+				<IntegrationCombination desc="1.4.3" type="IntegrationCombination" />
+				<IntegrationCombination desc="1.4.2" type="IntegrationCombination" />
+			</DevBuildEnvironment>
+			<DevBuildEnvironment desc="1.4.2" type="DevBuildEnvironment">
+				<IntegrationCombination desc="1.9.10" type="IntegrationCombination" />
+				<IntegrationCombination desc="1.6.2" type="IntegrationCombination" />
+				<IntegrationCombination desc="1.2.0" type="IntegrationCombination" />
+			</DevBuildEnvironment>
+			<DevBuildEnvironment desc="1.4.3" type="DevBuildEnvironment">
+				<IntegrationCombination desc="1.2.0" type="IntegrationCombination" />
+				<IntegrationCombination desc="1.6.2" type="IntegrationCombination" />
+				<IntegrationCombination desc="1.8.3" type="IntegrationCombination" />
+			</DevBuildEnvironment>
+			<DevBuildEnvironment desc="1.6.2" type="DevBuildEnvironment">
+				<IntegrationCombination desc="1.9.10" type="IntegrationCombination" />
+				<IntegrationCombination desc="1.4.3" type="IntegrationCombination" />
+				<IntegrationCombination desc="1.4.2" type="IntegrationCombination" />
+			</DevBuildEnvironment>
+			<DevBuildEnvironment desc="1.8.3" type="DevBuildEnvironment">
+				<IntegrationCombination desc="1.4.3" type="IntegrationCombination" />
+				<IntegrationCombination desc="1.9.10" type="IntegrationCombination" />
+			</DevBuildEnvironment>
+			<DevBuildEnvironment desc="1.9.10" type="DevBuildEnvironment">
+				<IntegrationCombination desc="1.6.2" type="IntegrationCombination" />
+				<IntegrationCombination desc="1.4.2" type="IntegrationCombination" />
+				<IntegrationCombination desc="1.8.3" type="IntegrationCombination" />
+			</DevBuildEnvironment>
+		</DevBuildEnvironments>
+		<DevBuildEnvironments data_security_level="Medium" type="DevBuildEnvironments">
+			<DevBuildEnvironment desc="2.2.0" type="DevBuildEnvironment">
+				<IntegrationCombination desc="2.8.3" type="IntegrationCombination" />
+				<IntegrationCombination desc="2.9.10" type="IntegrationCombination" />
+				<IntegrationCombination desc="2.6.2" type="IntegrationCombination" />
+			</DevBuildEnvironment>
+			<DevBuildEnvironment desc="2.4.2" type="DevBuildEnvironment">
+				<IntegrationCombination desc="2.9.10" type="IntegrationCombination" />
+			</DevBuildEnvironment>
+			<DevBuildEnvironment desc="2.6.2" type="DevBuildEnvironment">
+				<IntegrationCombination desc="2.9.10" type="IntegrationCombination" />
+				<IntegrationCombination desc="2.8.3" type="IntegrationCombination" />
+				<IntegrationCombination desc="2.2.0" type="IntegrationCombination" />
+			</DevBuildEnvironment>
+			<DevBuildEnvironment desc="2.8.3" type="DevBuildEnvironment">
+				<IntegrationCombination desc="2.2.0" type="IntegrationCombination" />
+				<IntegrationCombination desc="2.9.10" type="IntegrationCombination" />
+				<IntegrationCombination desc="2.6.2" type="IntegrationCombination" />
+			</DevBuildEnvironment>
+			<DevBuildEnvironment desc="2.9.10" type="DevBuildEnvironment">
+				<IntegrationCombination desc="2.2.0" type="IntegrationCombination" />
+				<IntegrationCombination desc="2.8.3" type="IntegrationCombination" />
+				<IntegrationCombination desc="2.4.2" type="IntegrationCombination" />
+				<IntegrationCombination desc="2.6.2" type="IntegrationCombination" />
+			</DevBuildEnvironment>
+			<DevBuildEnvironment desc="2.4.3" type="DevBuildEnvironment">
+				<IntegrationCombination desc="2.4.3" type="IntegrationCombination" />
+			</DevBuildEnvironment>
+		</DevBuildEnvironments>
+		<DevBuildEnvironments data_security_level="High" type="DevBuildEnvironments">
+			<DevBuildEnvironment desc="3.2.0" type="DevBuildEnvironment">
+				<IntegrationCombination desc="3.6.2" type="IntegrationCombination" />
+				<IntegrationCombination desc="3.4.3" type="IntegrationCombination" />
+				<IntegrationCombination desc="3.8.3" type="IntegrationCombination" />
+			</DevBuildEnvironment>
+			<DevBuildEnvironment desc="3.4.2" type="DevBuildEnvironment">
+				<IntegrationCombination desc="3.4.2" type="IntegrationCombination" />
+			</DevBuildEnvironment>
+			<DevBuildEnvironment desc="3.4.3" type="DevBuildEnvironment">
+				<IntegrationCombination desc="3.6.2" type="IntegrationCombination" />
+				<IntegrationCombination desc="3.8.3" type="IntegrationCombination" />
+				<IntegrationCombination desc="3.9.10" type="IntegrationCombination" />
+				<IntegrationCombination desc="3.2.0" type="IntegrationCombination" />
+			</DevBuildEnvironment>
+			<DevBuildEnvironment desc="3.6.2" type="DevBuildEnvironment">
+				<IntegrationCombination desc="3.4.3" type="IntegrationCombination" />
+				<IntegrationCombination desc="3.8.3" type="IntegrationCombination" />
+				<IntegrationCombination desc="3.9.10" type="IntegrationCombination" />
+				<IntegrationCombination desc="3.2.0" type="IntegrationCombination" />
+			</DevBuildEnvironment>
+			<DevBuildEnvironment desc="3.8.3" type="DevBuildEnvironment">
+				<IntegrationCombination desc="3.4.3" type="IntegrationCombination" />
+				<IntegrationCombination desc="3.6.2" type="IntegrationCombination" />
+				<IntegrationCombination desc="3.9.10" type="IntegrationCombination" />
+				<IntegrationCombination desc="3.2.0" type="IntegrationCombination" />
+			</DevBuildEnvironment>
+			<DevBuildEnvironment desc="3.9.10" type="DevBuildEnvironment">
+				<IntegrationCombination desc="3.4.3" type="IntegrationCombination" />
+				<IntegrationCombination desc="3.6.2" type="IntegrationCombination" />
+				<IntegrationCombination desc="3.8.3" type="IntegrationCombination" />
+			</DevBuildEnvironment>
+		</DevBuildEnvironments>
+	</DevBuildEnvironments>
+	<TestEnvironments bypass_test_effectiveness_percent="60" type="TestEnvironments" run_bad_effectiveness_percent="80" name="TestEnvironments">
+		<TestEnvironment extra_test_time="0" network_controller="CAD-A27" desc="1" type="TestEnvironment" can_be_blocked="true" extra_cost="0">
+			<SecurityLevel desc="Low" type="SecurityLevel" />
+			<SecurityLevel desc="High" type="SecurityLevel" />
+			<DatabaseType desc="1" type="DatabaseType" />
+			<DatabaseType desc="2" type="DatabaseType" />
+		</TestEnvironment>
+		<TestEnvironment extra_test_time="60" network_controller="CAD-M61" desc="2" type="TestEnvironment" can_be_blocked="true" extra_cost="0">
+			<SecurityLevel desc="Low" type="SecurityLevel" />
+			<SecurityLevel desc="Medium" type="SecurityLevel" />
+			<SecurityLevel desc="High" type="SecurityLevel" />
+			<DatabaseType desc="1" type="DatabaseType" />
+			<DatabaseType desc="3" type="DatabaseType" />
+		</TestEnvironment>
+		<TestEnvironment extra_test_time="0" network_controller="CAD-X40" desc="3" type="TestEnvironment" can_be_blocked="true" extra_cost="5000">
+			<SecurityLevel desc="Low" type="SecurityLevel" />
+			<SecurityLevel desc="Medium" type="SecurityLevel" />
+			<DatabaseType desc="4" type="DatabaseType" />
+			<DatabaseType desc="1" type="DatabaseType" />
+			<DatabaseType desc="5" type="DatabaseType" />
+		</TestEnvironment>
+		<TestEnvironment extra_test_time="-60" network_controller="All" desc="Virtual Test" type="TestEnvironment" can_be_blocked="false" extra_cost="0">
+			<SecurityLevel desc="Low" type="SecurityLevel" />
+			<SecurityLevel desc="Medium" type="SecurityLevel" />
+			<SecurityLevel desc="High" type="SecurityLevel" />
+			<DatabaseType desc="1" type="DatabaseType" />
+			<DatabaseType desc="2" type="DatabaseType" />
+			<DatabaseType desc="3" type="DatabaseType" />
+			<DatabaseType desc="4" type="DatabaseType" />
+			<DatabaseType desc="5" type="DatabaseType" />
+		</TestEnvironment>
+		<TestEnvironment network_controller="All" desc="Bypass" type="TestEnvironment" can_be_blocked="false" time="0" effectiveness_percent="60" />
+	</TestEnvironments>
+	<VendorBuildEnvironments name="VendorBuildEnvironments" type="VendorBuildEnvironments">
+		<VendorBuildEnvironment desc="4.1.4" type="VendorBuildEnvironment" />
+		<VendorBuildEnvironment desc="4.1.8" type="VendorBuildEnvironment" />
+		<VendorBuildEnvironment desc="4.5.3" type="VendorBuildEnvironment" />
+		<VendorBuildEnvironment desc="4.5.7" type="VendorBuildEnvironment" />
+		<VendorBuildEnvironment desc="4.9.2" type="VendorBuildEnvironment" />
+	</VendorBuildEnvironments>
+	<Blades name="Blades" type="Blades">
+		<Blade cost="6000" type="blade" cpu="15" name="blade" />
+	</Blades>
+	<SupportedPlatforms name="SupportedPlatforms" type="SupportedPlatforms">
+		<SupportedPlatform desc="X" type="SupportedPlatform" />
+		<SupportedPlatform desc="Y" type="SupportedPlatform" />
+		<SupportedPlatform desc="Z" type="SupportedPlatform" />
+	</SupportedPlatforms>
+	<SupportedDatabaseTypes name="SupportedDatabaseTypes" type="SupportedDatabaseTypes">
+		<SupportedDatabaseType desc="1" type="SupportedDatabaseType" />
+		<SupportedDatabaseType desc="2" type="SupportedDatabaseType" />
+		<SupportedDatabaseType desc="3" type="SupportedDatabaseType" />
+		<SupportedDatabaseType desc="4" type="SupportedDatabaseType" />
+	</SupportedDatabaseTypes>
+	<ReleaseCodes name="ReleaseCodes" type="ReleaseCodes">
+		<Round round="1" type="Round">
+			<ReleaseCode data_security_classification="Low" type="ReleaseCode" desc="XP-3" />
+			<ReleaseCode data_security_classification="Medium" type="ReleaseCode" desc="CD-2" />
+			<ReleaseCode data_security_classification="High" type="ReleaseCode" desc="BX-2" />
+		</Round>
+		<Round round="2" type="Round">
+			<ReleaseCode data_security_classification="Low" type="ReleaseCode" desc="LD-5" />
+			<ReleaseCode data_security_classification="Medium" type="ReleaseCode" desc="DS-4" />
+			<ReleaseCode data_security_classification="High" type="ReleaseCode" desc="XP-4" />
+		</Round>
+		<Round round="3" type="Round">
+			<ReleaseCode data_security_classification="Low" type="ReleaseCode" desc="LD-5" />
+			<ReleaseCode data_security_classification="Medium" type="ReleaseCode" desc="BG-3" />
+			<ReleaseCode data_security_classification="High" type="ReleaseCode" desc="BG-3" />
+		</Round>
+	</ReleaseCodes>
+	<Budgets name="Budgets" type="Budgets">
+		<RoundBudget round="1" maxbudget="200000" budget="200000" type="RoundBudget" />
+		<RoundBudget round="2" maxbudget="250000" budget="250000" type="RoundBudget" />
+		<RoundBudget round="3" maxbudget="250000" budget="250000" type="RoundBudget" />
+		<RoundBudget round="4" maxbudget="50000" budget="50000" type="RoundBudget" />
+	</Budgets>
+	<Targets name="Targets" type="Targets">
+		<RoundTarget round="1" target="5000000" type="RoundTarget" />
+		<RoundTarget round="2" target="5000000" type="RoundTarget" />
+		<RoundTarget round="3" target="5000000" type="RoundTarget" />
+		<RoundTarget round="4" target="5000000" type="RoundTarget" />
+	</Targets>
+	<OptionalDemandCodes name="OptionalDemandCodes" type="OptionalDemandCodes" />
+	<NewServicesGainMade name="NewServicesGainMade" type="NewServicesGainMade">
+		<Round round="1" type="round" gain_made="0" name="Round 1 New Services Gain" />
+		<Round round="2" type="round" gain_made="0" name="Round 2 New Services Gain" />
+		<Round round="3" type="round" gain_made="0" name="Round 3 New Services Gain" />
+		<Round round="4" type="round" gain_made="0" name="Round 4 New Services Gain" />
+	</NewServicesGainMade>
+	<CompletedNewServices name="CompletedNewServices" type="CompletedNewServices">
+		<Round round="1" type="round" name="Round 1 Completed New Services" />
+		<Round round="2" type="round" name="Round 2 Completed New Services" />
+		<Round round="3" type="round" name="Round 3 Completed New Services" />
+		<Round round="4" type="round" name="Round 4 Completed New Services" />
+	</CompletedNewServices>
+	<Awt name="Awt" type="awt">
+		<AwtEntry type="awt_entry" index="1" service="Catalog Management" fixed="true" />
+		<AwtEntry type="awt_entry" index="2" service="Credit Authorization" fixed="true" />
+		<AwtEntry type="awt_entry" index="3" service="Customer Support" fixed="true" />
+		<AwtEntry type="awt_entry" index="4" service="Dispatch Scanning" fixed="true" />
+		<AwtEntry type="awt_entry" index="5" service="EPOS" fixed="true" />
+		<AwtEntry type="awt_entry" index="6" service="Fulfilment" fixed="true" />
+		<AwtEntry type="awt_entry" index="7" service="G-Tunes" fixed="true" />
+		<AwtEntry type="awt_entry" index="8" service="Multi-Store" fixed="true" />
+		<AwtEntry type="awt_entry" index="9" service="Online Security Management" fixed="true" />
+		<AwtEntry type="awt_entry" index="10" service="Promotion Management" fixed="true" />
+		<AwtEntry type="awt_entry" index="11" service="Retail Management" fixed="true" />
+		<AwtEntry type="awt_entry" index="12" service="Shopping Basket Management" fixed="true" />
+		<AwtEntry type="awt_entry" index="13" service="Stock Control" fixed="true" />
+		<AwtEntry type="awt_entry" index="14" service="Warehouse Management" fixed="true" />
+	</Awt>
+	<AppDevelopmentStageFailures name="AppDevelopmentStageFailures" type="AppDevelopmentStageFailures" />
+</Root>

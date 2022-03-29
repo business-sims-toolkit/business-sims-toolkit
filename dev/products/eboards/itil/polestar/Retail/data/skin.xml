@@ -1,0 +1,349 @@
+<skin>  // Skin file for PoleStar Retail v3
+	<rounds_with_regulation_fines>2</rounds_with_regulation_fines>
+	
+	<game_selection_screen_use_boxes>false</game_selection_screen_use_boxes>
+	<windows_buttons_styled>false</windows_buttons_styled>
+	<windows_button_border>false</windows_button_border>
+	
+	<comparison_left_color>1, 181, 145</comparison_left_color>
+	<comparison_right_color>199, 234, 6</comparison_right_color>
+
+	<allow_import_and_export_of_games>true</allow_import_and_export_of_games>
+	<access_all_training_rounds>true</access_all_training_rounds>
+	<race_preplay_status>true</race_preplay_status>
+	<race_preplay_time>300</race_preplay_time>
+	<errortextcolor>255,255,255</errortextcolor>
+	<badge>PoleStarBadge.png</badge>
+	<changewindowactions>true</changewindowactions>
+	<changewindowtimes>451,1051</changewindowtimes>
+	<use_clearing_incident_system_for_reports>true</use_clearing_incident_system_for_reports>
+	// Setting voice_enable to true (can be taken out).
+	<voice_enable>true</voice_enable>
+	// voice_mode can be "biz" or "batch"
+	// "biz" means one sound per business.
+	// "batch" means one sound per transaction/flight.
+	<voice_mode>batch</voice_mode>
+	<maxname>Maximum</maxname>
+	// voice_files chould be expanded so that it is not a comma delimited list
+	// but actually maps the sound to the business that makes it.
+	<voice_files>launch.wav</voice_files>
+	
+	<pdf_report_font_size>10</pdf_report_font_size>	
+	<pdf_report_table_font_size>8</pdf_report_table_font_size>
+
+	<popups_use_image_background>false</popups_use_image_background>	
+	<popup_title_background_colour>230,84,0</popup_title_background_colour>
+	<popup_title_foreground_colour>255,255,255</popup_title_foreground_colour>
+	<popup_title_gap>5</popup_title_gap>
+	<sla_foreground>0,0,0</sla_foreground>
+	<sla_title_foreground>255,255,255</sla_title_foreground>
+	
+	<buttons_override_colours>true</buttons_override_colours>
+	<button_normal_text_colour>80, 84, 77</button_normal_text_colour>
+	<button_active_text_colour>255, 255, 255</button_active_text_colour>
+	<button_disabled_text_colour>128, 138, 142</button_disabled_text_colour>
+	<button_focussed_text_colour>80, 84, 77</button_focussed_text_colour>
+	<button_hover_text_colour>255, 255, 255</button_hover_text_colour>
+	
+	<table_row_colour>255,255,255</table_row_colour>
+	<table_row_colour_alternate>238,238,238</table_row_colour_alternate>
+	<table_header_text_colour>255,255,255</table_header_text_colour>
+	<table_header_alignment>left</table_header_alignment>
+	<table_centre_headers>false</table_centre_headers>
+	<table_header_colour>70,69,83</table_header_colour>
+	<table_centre_first_column>false</table_centre_first_column>
+	<table_border_color>255,255,255</table_border_color>
+	<tables_have_outer_border>false</tables_have_outer_border>
+	<table_text_alignment>left</table_text_alignment>
+	
+	<pending_action_text_colour>0,0,0</pending_action_text_colour>
+	
+	<awt_provision_name>Ankaa</awt_provision_name>
+	<awt_titles_in_bold>true</awt_titles_in_bold>
+	<awt_horizontal_border_width>1</awt_horizontal_border_width>
+	<awt_vertical_border_height>1</awt_vertical_border_height>
+	
+	<awt_colour_ok>136,171,104</awt_colour_ok>
+	<awt_colour_warning>255,237,69</awt_colour_warning>
+	<awt_colour_danger>237,166,69</awt_colour_danger>
+	<awt_colour_fault>216,78,79</awt_colour_fault>
+	<awt_background_colour_ok>68,72,62</awt_background_colour_ok>
+	<awt_background_colour_warning>92,92,50</awt_background_colour_warning>
+	<awt_background_colour_danger>92,77,50</awt_background_colour_danger>
+	<awt_background_colour_fault>87,52,53</awt_background_colour_fault>	
+	
+	<power_graph_background_colour>30,37,43</power_graph_background_colour>
+	<power_graph_background_colour_ok>68,72,62</power_graph_background_colour_ok>
+	<power_graph_background_colour_high>92,92,50</power_graph_background_colour_high>
+	<power_graph_background_colour_warning>92,77,50</power_graph_background_colour_warning>
+	<power_graph_background_colour_overload>87,52,53</power_graph_background_colour_overload>
+	<power_graph_colour_ok>136,171,104</power_graph_colour_ok>
+	<power_graph_colour_high>255,237,69</power_graph_colour_high>
+	<power_graph_colour_warning>237,166,69</power_graph_colour_warning>
+	<power_graph_colour_overload>216,78,79</power_graph_colour_overload>	
+	
+	<ops_banner>Round</ops_banner>
+	<ops_screen_tooltip>Game Screen</ops_screen_tooltip>
+	<ops_background_colour>34, 40, 49</ops_background_colour>
+	<esm_main_screen_background_colour>34, 40, 49</esm_main_screen_background_colour>
+	<ops_header_background_colour>34, 40, 49</ops_header_background_colour>
+	<ops_availability_background_colour>34, 40, 49</ops_availability_background_colour>
+	
+	<reboot_time>105</reboot_time>
+	<timer_y_offset>5</timer_y_offset>
+	
+	<setMaturityDefaults>true</setMaturityDefaults>	
+	<maturity_show_boxes_round_labels>false</maturity_show_boxes_round_labels>
+	<maturity_show_box_round_key>false</maturity_show_box_round_key>
+	<maturity_show_boxes_round_key_swatches>false</maturity_show_boxes_round_key_swatches>
+
+	<licensed_game_text>Start a licensed PoleStar Retail game. Each licensed game is charged on a pay-per-play basis.</licensed_game_text>
+	<licensed_game_slides_text>Start a licensed PoleStar Retail game with Courseware. Each licensed game is charged on a pay-per-play basis.</licensed_game_slides_text>
+	<licensed_content_text>Start a licensed PoleStar Retail Courseware presentation. Each Courseware presentation is charged on a pay-per-delivery basis.</licensed_content_text>
+	<sales_game>The Sales Game is free to use for demonstration purposes. The Sales Game is limited to the first 10 minutes of Round 2 then Round 3 transition.</sales_game>
+	<biz>Store</biz>
+	<ourbiz>playerstore</ourbiz>
+	<allbiz>All Stores</allbiz>
+	
+	<race_panels_upgrade_app_corneroffset>0</race_panels_upgrade_app_corneroffset>
+	<race_panels_upgrade_memdisk_corneroffset>0</race_panels_upgrade_memdisk_corneroffset>
+	<race_paneltitleforecolor>255,255,255</race_paneltitleforecolor>
+	
+	<show_courseware_buttons>true</show_courseware_buttons>
+	//
+	<mirrored_server1>Pluto</mirrored_server1>
+	<mirrored_server2>Saturn</mirrored_server2>
+	//
+	<show_hour>14</show_hour>
+	<race_screen_name>Game Screen</race_screen_name>
+	<bannerForeColor>0,0,0</bannerForeColor>
+	<bannerPrePlayForeColor>0,0,0</bannerPrePlayForeColor>
+	<admin_pages_title_forecolor>0,0,0</admin_pages_title_forecolor>
+	<error_panel_font_size>12</error_panel_font_size>
+	<skinname>PoleStar</skinname>
+	<gametype>PoleStar</gametype>
+	
+	<lozenge_font_size>12</lozenge_font_size>
+	<lozenge_text_bu_y_offset>-4</lozenge_text_bu_y_offset>
+	<lozenge_text_time_y_offset>15</lozenge_text_time_y_offset>
+  <lozenge_flash_count>10</lozenge_flash_count>
+	
+	<transition_auto_size_buttons>true</transition_auto_size_buttons>
+	<transition_display_name>Transition</transition_display_name>
+	<transition_title_font_size>12</transition_title_font_size>
+	<transition_calendar_title_font_size>12</transition_calendar_title_font_size>
+	<transition_calendar_text_colour>182,182,182</transition_calendar_text_colour>
+	<transition_preplay_status>false</transition_preplay_status>
+	<transition_preplay_time>0</transition_preplay_time>
+	<transition_screen_name>Transition Screen</transition_screen_name>
+	<transition_projects_count>2</transition_projects_count>
+	<transition_text_colour>0,0,0</transition_text_colour>
+	<transition_title_colour>182,182,182</transition_title_colour>
+	<transition_project_title_colour>182,182,182</transition_project_title_colour>
+	<transition_project_header_colour>255,255,255</transition_project_header_colour>
+	<transition_project_footer_colour>255,255,255</transition_project_footer_colour>
+	<transition_basebackgroundcolor>30,37,43</transition_basebackgroundcolor>
+	<transition_basebackcolor_train>232,165,7</transition_basebackcolor_train>
+	<transition_basebackcolor>34, 40, 49</transition_basebackcolor>	
+	<transition_operationsbackcolor>30,37,43</transition_operationsbackcolor>	
+	<transition_groupbackcolor>30,37,43</transition_groupbackcolor>
+	<transition_title_lozenge_colour>34, 40, 49</transition_title_lozenge_colour>
+	<transition_title_lozenges_full_width>true</transition_title_lozenges_full_width>
+	
+	<transition_service_lozenge_colour_active>136,171,104</transition_service_lozenge_colour_active>
+	<transition_service_lozenge_colour_retired>128,138,142</transition_service_lozenge_colour_retired>
+	
+	<smi_icon_offset>0</smi_icon_offset>
+	<smi_box_offset>0</smi_box_offset>
+	<smi_text_offset>-7</smi_text_offset>
+	<smi_top_pad>1</smi_top_pad>
+	
+	<transition_project_progress_colour_unstarted>128,138,142</transition_project_progress_colour_unstarted>
+	<transition_project_progress_colour_running>237,166,69</transition_project_progress_colour_running>
+	<transition_project_progress_colour_succeeded>136,171,104</transition_project_progress_colour_succeeded>
+	<transition_project_progress_colour_failed>216,78,79</transition_project_progress_colour_failed>
+	
+	<race_upgradebackcolor>255,255,255</race_upgradebackcolor>		
+	<race_controlpanelcolor>255,255,255</race_controlpanelcolor>
+	<autotimebackcolor>255,255,255</autotimebackcolor>
+	<race_backgroundcolor_normal>255,255,255</race_backgroundcolor_normal>		
+	<race_backgroundcolor_training>255,157,0</race_backgroundcolor_training>			
+	<race_revenue_background>0,0,0</race_revenue_background>
+	<race_revenue_normaltext>25,255,255</race_revenue_normaltext>
+	<race_revenue_revlostcolor>255,165,0</race_revenue_revlostcolor>
+	<race_revenue_revgaincolor>124,252,0</race_revenue_revgaincolor>
+	<race_panellabelforecolor>0,0,0</race_panellabelforecolor>
+	
+	<revenue_lost_revenue_colour>216,78,79</revenue_lost_revenue_colour>
+	<revenue_gained_revenue_colour>136,171,104</revenue_gained_revenue_colour>
+	
+	<boardview_background_colour>255,255,255</boardview_background_colour>
+	<boardview_zone1_colour>235,95,1</boardview_zone1_colour>
+	<boardview_zone2_colour>0,102,255</boardview_zone2_colour>
+	<boardview_zone3_colour>79,175,0</boardview_zone3_colour>
+	<boardview_zone4_colour>153,0,0</boardview_zone4_colour>
+	<boardview_zone5_colour>51,102,102</boardview_zone5_colour>
+	<boardview_zone6_colour>85,192,216</boardview_zone6_colour>
+	<boardview_zone7_colour>255,204,0</boardview_zone7_colour>
+	<boardview_header_text_colour>255,255,255</boardview_header_text_colour>
+	
+	<gradient_panels_tab_graphic>tab_dark.png</gradient_panels_tab_graphic>
+	<draw_gradient_panels_using_unselected_tab_graphics>true</draw_gradient_panels_using_unselected_tab_graphics>
+	<generated_normal_tab_color>205,205,205</generated_normal_tab_color>
+	<generated_dark_tab_color>204,204,204</generated_dark_tab_color>
+	<generated_tint_tab_color>255,255,255</generated_tint_tab_color>
+	<generated_tab_text_normal_color>255,255,255</generated_tab_text_normal_color>
+	<generated_tab_text_highlight_color>0,0,0</generated_tab_text_highlight_color>
+	<generated_tab_text_selected_normal_color>0,0,0</generated_tab_text_selected_normal_color>
+	<generated_tab_text_selected_highlight_color>0,0,0</generated_tab_text_selected_highlight_color>
+	<generated_tab_extra_gap>10</generated_tab_extra_gap>
+	<tab_text_normal_color>0,0,0</tab_text_normal_color>
+	<tab_text_highlight_color>0,0,0</tab_text_highlight_color>
+	<tab_text_selected_normal_color>255,255,255</tab_text_selected_normal_color>
+	<tab_text_selected_highlight_color>255,255,255</tab_text_selected_highlight_color>
+	
+	<fontname>Segoe UI</fontname>
+	
+	<transactionname>Transactions</transactionname>
+	<transaction_queued_fore_colour>255, 255, 255</transaction_queued_fore_colour>
+	<transaction_handled_fore_colour></transaction_handled_fore_colour>
+	<transaction_cancelled_fore_colour></transaction_cancelled_fore_colour>
+	<transaction_at_risk_fore_colour></transaction_at_risk_fore_colour>	
+	<transaction_queued_back_colour></transaction_queued_back_colour>
+	<transaction_handled_back_colour>136,171,104</transaction_handled_back_colour>
+	<transaction_cancelled_back_colour>216,78,79</transaction_cancelled_back_colour>
+	<transaction_at_risk_back_colour>237,166,69</transaction_at_risk_back_colour>
+	<transaction_time_bold>true</transaction_time_bold>
+	<transaction_code_bold>true</transaction_code_bold>
+	<transaction_store_bold>true</transaction_store_bold>
+	<transaction_status_bold>true</transaction_status_bold>
+		
+	<report_network_default_text_colour>0,0,0</report_network_default_text_colour>
+	<report_network_upgraded_memory_text_colour>255,0,0</report_network_upgraded_memory_text_colour>
+	<report_network_upgraded_storage_text_colour>255,0,0</report_network_upgraded_storage_text_colour>
+	<report_network_createdsip_text_colour>176,196,222</report_network_createdsip_text_colour>
+	<report_network_upgradedsip_text_colour>32,178,170</report_network_upgradedsip_text_colour>
+	
+	<gainlossname>Improvement On Previous Round</gainlossname>
+	<mtrsname>Mean Time to Restore Service</mtrsname>
+	
+	<ScheduleDayTaskTextOffsetY>-2</ScheduleDayTaskTextOffsetY>
+	
+	<availability_bold>true</availability_bold>
+	
+	<transition_use_code_drawn_catalog_button>1</transition_use_code_drawn_catalog_button>
+	
+	<show_gantt_key>true</show_gantt_key>
+	<gantt_show_warnings>0</gantt_show_warnings>
+	<gantt_warnings_start_round>3</gantt_warnings_start_round>
+	<gantt_shade_alternate_rows>true</gantt_shade_alternate_rows>
+	<gantt_graduate_bars>false</gantt_graduate_bars>
+	<gantt_bars_have_vertical_inset>false</gantt_bars_have_vertical_inset>
+	<gantt_show_y_axis_ticks>false</gantt_show_y_axis_ticks>
+	<gantt_y_axis_font_size>10</gantt_y_axis_font_size>
+	
+	<project_progress_panel_install_location_colour>0,0,0</project_progress_panel_install_location_colour>
+	<project_progress_panel_install_fail_colour>255,255,255</project_progress_panel_install_fail_colour>
+	<project_progress_panel_title_text_colour>255,255,255</project_progress_panel_title_text_colour>
+	<project_progress_panel_current_stage_text_colour>0,0,0</project_progress_panel_current_stage_text_colour>
+	<project_progress_panel_money_text_colour>255,255,255</project_progress_panel_money_text_colour>
+
+	<use_impact_based_slas>true</use_impact_based_slas>
+
+  <use_lozenge_height>true</use_lozenge_height>
+
+  <ops_popup_title_use_full_width>true</ops_popup_title_use_full_width>
+  <ops_popup_title_font_size>12</ops_popup_title_font_size>
+  <ops_title_use_bold_font>false</ops_title_use_bold_font>
+  <ops_popup_title_location>0,0</ops_popup_title_location>
+  <ops_popup_title_size>500,40</ops_popup_title_size>
+  <ops_popup_title_height>25</ops_popup_title_height>
+
+  <lozenge_colour_up>79, 175, 1</lozenge_colour_up>
+  <lozenge_colour_up_by_mirror>242, 171, 0</lozenge_colour_up_by_mirror>
+  <lozenge_colour_up_by_workaround>1, 102, 255</lozenge_colour_up_by_workaround>
+  <lozenge_colour_down_incident_1>153, 0, 0</lozenge_colour_down_incident_1>
+  <lozenge_colour_down_incident_2>210, 16, 51</lozenge_colour_down_incident_2>
+  <lozenge_colour_down_incident_sla_breach_1>255, 204, 0</lozenge_colour_down_incident_sla_breach_1>
+  <lozenge_colour_down_incident_sla_breach_2>210, 16, 51</lozenge_colour_down_incident_sla_breach_2>
+  <lozenge_colour_going_down>204, 102, 255</lozenge_colour_going_down>
+  <lozenge_colour_rebooting>204, 102, 255</lozenge_colour_rebooting>
+  <lozenge_border_thickness>2</lozenge_border_thickness>
+  <lozenge_border_colour>69, 69, 83</lozenge_border_colour>
+
+  <cascaded_background_transparency>240</cascaded_background_transparency>
+
+  <install_service_popup_button_size>220,20</install_service_popup_button_size>
+  <upgrade_server_popup_button_size>120,30</upgrade_server_popup_button_size>
+  <upgrade_app_popup_button_size>120,20</upgrade_app_popup_button_size>
+
+  <use_custom_mtrs_popup_headers>true</use_custom_mtrs_popup_headers>
+  <sla_revenue_streams_title>Revenue Streams</sla_revenue_streams_title>
+  <use_custom_popup_header>true</use_custom_popup_header>
+  
+  <standard_button_default_back_colour>189, 190, 188</standard_button_default_back_colour>
+  <standard_button_active_back_colour>230, 84, 0</standard_button_active_back_colour>
+  <standard_button_hover_back_colour>25, 102, 177</standard_button_hover_back_colour>
+  <standard_button_highlight_back_colour>189, 190, 188</standard_button_highlight_back_colour>
+
+  <standard_button_default_disabled_back_colour>80, 84, 77</standard_button_default_disabled_back_colour>
+  <standard_button_active_disabled_back_colour>80, 84, 77</standard_button_active_disabled_back_colour>
+  <standard_button_highlight_disabled_back_colour>80, 84, 77</standard_button_highlight_disabled_back_colour>
+
+  <standard_button_default_border_colour>189, 190, 188</standard_button_default_border_colour>
+  <standard_button_active_border_colour>230, 84, 0</standard_button_active_border_colour>
+  <standard_button_hover_border_colour>25, 102, 177</standard_button_hover_border_colour>
+  <standard_button_highlight_border_colour>135, 137, 133</standard_button_highlight_border_colour>
+
+  <standard_button_default_disabled_border_colour>80, 84, 77</standard_button_default_disabled_border_colour>
+  <standard_button_active_disabled_border_colour>80, 84, 77</standard_button_active_disabled_border_colour>
+  <standard_button_highlight_disabled_border_colour>80, 84, 77</standard_button_highlight_disabled_border_colour>
+
+  <standard_button_default_fore_colour>80, 84, 77</standard_button_default_fore_colour>
+  <standard_button_active_fore_colour>255, 255, 255</standard_button_active_fore_colour>
+  <standard_button_hover_fore_colour>255, 255, 255</standard_button_hover_fore_colour>
+  <standard_button_highlight_fore_colour>80, 84, 77</standard_button_highlight_fore_colour>
+
+  <standard_button_default_disabled_fore_colour>128, 138, 142</standard_button_default_disabled_fore_colour>
+  <standard_button_active_disabled_fore_colour>128, 138, 142</standard_button_active_disabled_fore_colour>
+  <standard_button_highlight_disabled_fore_colour>128, 138, 142</standard_button_highlight_disabled_fore_colour>
+
+  <standard_button_border_width>2</standard_button_border_width>
+
+  <combo_box_button_default_back_colour>#0052cc</combo_box_button_default_back_colour>
+  <combo_box_button_active_back_colour>#4c9aff</combo_box_button_active_back_colour>
+  <combo_box_button_hover_back_colour>#b2d4ff</combo_box_button_hover_back_colour>
+
+  <combo_box_button_default_disabled_back_colour>#091d42</combo_box_button_default_disabled_back_colour>
+  <combo_box_button_active_disabled_back_colour>#4c9aff</combo_box_button_active_disabled_back_colour>
+
+  <combo_box_button_default_border_colour>#0052cc</combo_box_button_default_border_colour>
+  <combo_box_button_active_border_colour>#4c9aff</combo_box_button_active_border_colour>
+  <combo_box_button_hover_border_colour>#b2d4ff</combo_box_button_hover_border_colour>
+
+  <combo_box_button_default_disabled_border_colour>#091d42</combo_box_button_default_disabled_border_colour>
+  <combo_box_button_active_disabled_border_colour>#4c9aff</combo_box_button_active_disabled_border_colour>
+
+  <combo_box_button_default_text_colour>240, 245, 249</combo_box_button_default_text_colour>
+  <combo_box_button_active_text_colour>34, 40, 49</combo_box_button_active_text_colour>
+  <combo_box_button_hover_text_colour>69, 69, 83</combo_box_button_hover_text_colour>
+
+  <combo_box_button_default_disabled_text_colour>35, 35, 42</combo_box_button_default_disabled_text_colour>
+  <combo_box_button_active_disabled_text_colour>#454545</combo_box_button_active_disabled_text_colour>
+
+  <combo_box_button_font>9,Regular</combo_box_button_font>
+
+  <tabs_drawn_in_code>true</tabs_drawn_in_code>
+
+  <tab_normal_background_colour>23, 43, 77</tab_normal_background_colour>
+  <tab_normal_foreground_colour>255, 255, 255</tab_normal_foreground_colour>
+  
+  <tab_hover_background_colour>23, 43, 77</tab_hover_background_colour>
+  <tab_hover_foreground_colour>255, 255, 255</tab_hover_foreground_colour>
+  
+  <tab_selected_background_colour>240, 245, 249</tab_selected_background_colour>
+  <tab_selected_foreground_colour>0, 0, 0</tab_selected_foreground_colour>
+  
+  <tab_selected_hover_background_colour>240, 245, 249</tab_selected_hover_background_colour>
+  <tab_selected_hover_foreground_colour>0, 0, 0</tab_selected_hover_foreground_colour>  
+</skin>

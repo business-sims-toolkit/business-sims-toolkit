@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{885CEC37-2FA1-4678-BE89-B1778CB49CE1}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Polestar_PM.OpsGUI</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Polestar_PM.OpsGUI</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug-NoPostBuildSteps|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug-NoPostBuildSteps\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Polestar_PM.OpsGUI.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-NoPostBuildSteps|AnyCPU'">
+    <OutputPath>bin\Release-NoPostBuildSteps\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Polestar_PM.OpsGUI.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\..\..\..\..\libraries\core\LibCore\LibCore.csproj">
+      <Project>{6D70195C-C791-4909-81FC-37DAA61C143D}</Project>
+      <Name>LibCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\Network\Network.csproj">
+      <Project>{B7AC785C-E7CE-4A7D-99CE-604E0CBA231B}</Project>
+      <Name>Network</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\BusinessServiceRules\BusinessServiceRules.csproj">
+      <Project>{1E21BC23-1B63-4DCE-8B41-71E1556F56DF}</Project>
+      <Name>BusinessServiceRules</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\CommonGUI\CommonGUI.csproj">
+      <Name>CommonGUI</Name>
+      <Project>{35070F1C-CE4F-4DCA-86AC-9D6240882DE0}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\core\CoreUtils\CoreUtils.csproj">
+      <Name>CoreUtils</Name>
+      <Project>{9C61E4E5-78BC-4D27-B5B0-DFDCB8DC935E}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\DiscreteSimGUI\DiscreteSimGUI.csproj">
+      <Project>{A432C8E4-C426-4269-ADB2-88EE1DBC8AE9}</Project>
+      <Name>DiscreteSimGUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\GameEngine\GameEngine.csproj">
+      <Project>{D2A6864B-8134-416F-9E46-39C9DD0FEAEC}</Project>
+      <Name>GameEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\GameManagement\GameManagement.csproj">
+      <Project>{37599BB8-B493-4323-BA2D-BE2BD8FE4561}</Project>
+      <Name>GameManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\IncidentManagement\IncidentManagement.csproj">
+      <Project>{4E68E998-4959-42C2-8C9B-9D482AB2465D}</Project>
+      <Name>IncidentManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\core\Logging\Logging.csproj">
+      <Project>{4D8B9BD2-3BCC-4BD0-80C0-DF2744DB16EE}</Project>
+      <Name>Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\media\Media\Media.csproj">
+      <Name>Media</Name>
+      <Project>{5C02966B-F7E4-40BF-B40F-A36489CFF1CB}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Polestar_PM.DataLookup\Polestar_PM.DataLookup.csproj">
+      <Project>{D05A3A05-B603-4B35-9C11-8753D03E3AFC}</Project>
+      <Name>Polestar_PM.DataLookup</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Polestar_PM.OpsEngine\Polestar_PM.OpsEngine.csproj">
+      <Project>{7099EC95-964B-4BF4-ABC4-DB990EE4F174}</Project>
+      <Name>Polestar_PM.OpsEngine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivityLog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AutoScrollCommsPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataEntryPanel_AddProgram.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataEntryPanel_CancelProject.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataEntryPanel_Cancel_Actions.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataEntryPanel_ChangeCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataEntryPanel_ChangeExpertsStatus.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataEntryPanel_ChangePMO.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataEntryPanel_ChangePredictedMarketPos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataEntryPanel_DescopeCritPathProject.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataEntryPanel_DescopeProject.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataEntryPanel_FixExpertsPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataEntryPanel_FSC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataEntryPanel_Handover.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataEntryPanel_MiscChoice.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataEntryPanel_PauseProject.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataEntryPanel_ResourceEditProject.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataEntryPanel_SetupProject.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataEntryPanel_UpgradePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GameCommsDisplay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GameFinStatsDisplay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GameOpsDisplay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GamePlanDisplay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GamePlanPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GameRaceControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GameStatsDisplay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GameTargetsDisplay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GameTransStatsDisplay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GlobalTeamEditorPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OpsBusinessDisplay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OpsScreenDayAndTimeBanner.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OpsScreenTimeBanner.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PM_CalendarView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PM_DayActivityView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PM_LogoPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PM_LogoPanelBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PM_OpsScreenBanner.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PM_PopupAnalysisChartsDisplay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PortfolioBusinessDisplay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PortfolioStatsDisplay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PortfolioView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProgramLabelPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProgramProgressPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProgramStatusPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProgramView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectLinearDisplay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectResourceEditorPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectsStatusDisplay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RevenueAvail_Display.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TaskEntryPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskListPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DataEntryPanel_CancelProject.resx">
+      <DependentUpon>DataEntryPanel_CancelProject.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryPanel_Cancel_Actions.resx">
+      <DependentUpon>DataEntryPanel_Cancel_Actions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryPanel_ChangeCard.resx">
+      <DependentUpon>DataEntryPanel_ChangeCard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryPanel_ChangePMO.resx">
+      <DependentUpon>DataEntryPanel_ChangePMO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryPanel_ChangePredictedMarketPos.resx">
+      <DependentUpon>DataEntryPanel_ChangePredictedMarketPos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryPanel_DescopeProject.resx">
+      <DependentUpon>DataEntryPanel_DescopeProject.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryPanel_FSC.resx">
+      <DependentUpon>DataEntryPanel_FSC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryPanel_Handover.resx">
+      <DependentUpon>DataEntryPanel_Handover.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryPanel_MiscChoice.resx">
+      <DependentUpon>DataEntryPanel_MiscChoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryPanel_PauseProject.resx">
+      <DependentUpon>DataEntryPanel_PauseProject.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryPanel_ResourceEditProject.resx">
+      <DependentUpon>DataEntryPanel_ResourceEditProject.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryPanel_SetupProject.resx">
+      <DependentUpon>DataEntryPanel_SetupProject.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataEntryPanel_UpgradePanel.resx">
+      <DependentUpon>DataEntryPanel_UpgradePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameFinStatsDisplay.resx">
+      <DependentUpon>GameFinStatsDisplay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GamePlanPanel.resx">
+      <DependentUpon>GamePlanPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameRaceControl.resx">
+      <DependentUpon>GameRaceControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameTransStatsDisplay.resx">
+      <DependentUpon>GameTransStatsDisplay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PM_LogoPanel.resx">
+      <DependentUpon>PM_LogoPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PM_LogoPanelBase.resx">
+      <DependentUpon>PM_LogoPanelBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PM_PopupAnalysisChartsDisplay.resx">
+      <DependentUpon>PM_PopupAnalysisChartsDisplay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskEntryPanel.resx">
+      <DependentUpon>TaskEntryPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

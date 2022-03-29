@@ -1,0 +1,10 @@
+<Visuals>
+  <Mark name="pos" />
+  <Icons width="48" height="48">
+    <Icon type="Hub" image="images\hub.jpg" tred="0" tblue="0" tgreen="0" canadd="true" />
+    <Icon type="Router" image="images\router.gif" tred="0" tblue="0" tgreen="0" />
+    <Icon type="Server" image="images\server.gif" tred="0" tblue="0" tgreen="0" canadd="true" />
+    <Icon type="Database" image="images\dbase.gif" tred="190" tblue="255" tgreen="12" />
+    <Icon type="App" image="images\app.jpg" tred="190" tblue="255" tgreen="12" />
+  </Icons>
+</Visuals>

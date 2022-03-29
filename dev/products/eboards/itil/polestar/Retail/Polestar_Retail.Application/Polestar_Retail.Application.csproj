@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{49748820-D5C9-48E4-8337-6787E220F92B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Polestar_Retail.Application</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Polestar_Retail.Application</RootNamespace>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE;DEBUG;NO_XND DEVTOOLS</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug-With-No-Licensor|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug-With-No-Licensor\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NO_XND DEVTOOLS ALLOW_LICENCE_FREE_PLAY</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\libraries\core\Algorithms\Algorithms.csproj">
+      <Project>{A402764F-2455-4AE6-B1B9-D129C2B083CD}</Project>
+      <Name>Algorithms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\libraries\eboards\ChartScreens\ChartScreens.csproj">
+      <Project>{9BCEC677-B934-4082-B614-4E9A6565AA65}</Project>
+      <Name>ChartScreens</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\libraries\eboards\DiscreteSimGUI\DiscreteSimGUI.csproj">
+      <Project>{a432c8e4-c426-4269-adb2-88ee1dbc8ae9}</Project>
+      <Name>DiscreteSimGUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\libraries\eboards\GameEngine\GameEngine.csproj">
+      <Project>{D2A6864B-8134-416F-9E46-39C9DD0FEAEC}</Project>
+      <Name>GameEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\libraries\eboards\IncidentManagement\IncidentManagement.csproj">
+      <Project>{4E68E998-4959-42C2-8C9B-9D482AB2465D}</Project>
+      <Name>IncidentManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\libraries\eboards\maturity_check\maturity_check.csproj">
+      <Project>{4C09046E-11B7-443C-861B-75139D96C39A}</Project>
+      <Name>maturity_check</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\libraries\eboards\NetworkScreens\NetworkScreens.csproj">
+      <Project>{7002FFFF-B22B-480B-9C9B-A375EDE27DD4}</Project>
+      <Name>NetworkScreens</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\libraries\eboards\Network\Network.csproj">
+      <Project>{b7ac785c-e7ce-4a7d-99ce-604e0cba231b}</Project>
+      <Name>Network</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\libraries\eboards\NodeTreeViewer\NodeTreeViewer.csproj">
+      <Project>{a03f30a1-00ae-4b31-9e3d-446f2b78f539}</Project>
+      <Name>NodeTreeViewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\libraries\eboards\ReportBuilder\ReportBuilder.csproj">
+      <Project>{82B44D1D-F102-4199-9E32-562D3563070B}</Project>
+      <Name>ReportBuilder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\libraries\eboards\TransitionObjects\TransitionObjects.csproj">
+      <Project>{82FAAA1D-E0A6-4BAD-B151-6D8545436F69}</Project>
+      <Name>TransitionObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\libraries\eboards\TransitionScreens\TransitionScreens.csproj">
+      <Project>{0EADAF40-2A1D-4282-9E4D-A8266B14C3F0}</Project>
+      <Name>TransitionScreens</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\libraries\EboardUi\ApplicationUi\ApplicationUi.csproj">
+      <Project>{ca4c7599-c8b9-42f2-997c-523aeb265e3f}</Project>
+      <Name>ApplicationUi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Polestar_Retail.OpsEngine\Polestar_Retail.OpsEngine.csproj">
+      <Project>{a9b1f698-cc5f-42a4-8f64-77ddafc411fa}</Project>
+      <Name>Polestar_Retail.OpsEngine</Name>
+    </ProjectReference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.XML">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\..\..\..\..\..\libraries\core\BaseUtils\BaseUtils.csproj">
+      <Project>{0ADD80D1-5E7E-46B1-BF36-1E57DCCF4D84}</Project>
+      <Name>BaseUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\libraries\core\LibCore\LibCore.csproj">
+      <Project>{6D70195C-C791-4909-81FC-37DAA61C143D}</Project>
+      <Name>LibCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\libraries\eboards\CommonGUI\CommonGUI.csproj">
+      <Project>{35070F1C-CE4F-4DCA-86AC-9D6240882DE0}</Project>
+      <Name>CommonGUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\libraries\eboards\CoreScreens\CoreScreens.csproj">
+      <Project>{CF933AC2-17F2-4948-B16C-9FB4BE7E1765}</Project>
+      <Name>CoreScreens</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\libraries\core\CoreUtils\CoreUtils.csproj">
+      <Project>{9C61E4E5-78BC-4D27-B5B0-DFDCB8DC935E}</Project>
+      <Name>CoreUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\libraries\eboards\GameDetails\GameDetails.csproj">
+      <Name>GameDetails</Name>
+      <Project>{8ACB73F6-8191-483F-90C5-6387E89E8EEA}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\libraries\eboards\GameManagement\GameManagement.csproj">
+      <Project>{37599BB8-B493-4323-BA2D-BE2BD8FE4561}</Project>
+      <Name>GameManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\libraries\core\Logging\Logging.csproj">
+      <Project>{4D8B9BD2-3BCC-4BD0-80C0-DF2744DB16EE}</Project>
+      <Name>Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\libraries\EboardUi\ResizingUi\ResizingUi.csproj">
+      <Project>{08FDA587-8773-4B58-A8E0-7F7D5C8E4637}</Project>
+      <Name>ResizingUi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\libraries\Licensor\Licensor.csproj">
+      <Project>{3A93A44B-3855-4F52-B44E-AF7D19461195}</Project>
+      <Name>Licensor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\libraries\media\Media\Media.csproj">
+      <Project>{5c02966b-f7e4-40bf-b40f-a36489cff1cb}</Project>
+      <Name>Media</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainApplication.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="CompleteGamePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MainGameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PolestarOperationsScreen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PolestarTransitionScreen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DebugWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MainGameForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainGameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DebugWindow.resx">
+      <DependentUpon>DebugWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

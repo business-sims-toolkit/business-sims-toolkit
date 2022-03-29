@@ -1,0 +1,566 @@
+<project projectid="302" round="3" regulation="false" installname="Category Management" upgradename = "">
+<product productid="3021" actual_cost="350000">
+<platform platformid="X" designdays="5" builddays="6" testdays="5" handovervalue="80">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="X" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="1000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" type="biz_service" slalimit="YYY" notinnetwork="true" new="true" created_by_sip="302" has_impact="true" impactkmh="-1" biz_service_function="Category Management" gantt_order="9"/>
+	</createNodes>
+	<createNodes i_to="Category Management">
+		<upgrades type="upgrades" />
+	</createNodes>	
+  <apply i_name = "302" MaxRevOffset="230400" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Category Management" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="6" has_impact="false" impactkmh="-1" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="6" has_impact="false" impactkmh="-1" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Pollux" />
+	<apply i_name = "Store 1 Category Management" i_doAfterSecs="105" transaction_type="none"/>
+	<apply i_name = "Store 2 Category Management" i_doAfterSecs="105" transaction_type="none"/>
+	<apply i_name = "Store 3 Category Management" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Category Management" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Pollux" />
+	<apply i_name="Pollux" type="App" proccap="2" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="1000" diskrequired="20" created_by_sip="302" />
+	<createNodes i_to="Pollux">
+		<link to="Store 3 Category Management" type="Connection" name="Pollux Store 3 Category Management Connection" />
+		<link to="Store 4 Category Management" type="Connection" name="Pollux Store 4 Category Management Connection" />
+	</createNodes>
+	<createNodes i_to="Category Management">
+		<link to="Store 3 Category Management" type="Connection" contype="Category Management" name="BS Store 3 Category Management Connection" />
+		<link to="Store 4 Category Management" type="Connection" contype="Category Management" name="BS Store 4 Category Management Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="4800" instore_bonus="4800" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="4800" instore_bonus="4800" />
+	<apply i_name="Store 3 Category Management" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 4 Category Management" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Category Management" sip="302" ref="Category Management" />
+		<node type="project" desc="Category Management" sip="302" regulation="false" />
+	</createNodes>
+  <apply i_name = "302" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Y" designdays="5" builddays="8" testdays="5" handovervalue="80">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Y" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="1000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" type="biz_service" slalimit="YYY" notinnetwork="true" new="true" created_by_sip="302" has_impact="true" impactkmh="-1" biz_service_function="Category Management" gantt_order="9"/>
+	</createNodes>
+	<createNodes i_to="Category Management">
+		<upgrades type="upgrades" />
+	</createNodes>	
+  <apply i_name = "302" MaxRevOffset="230400" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Category Management" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="6" has_impact="false" impactkmh="-1" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="6" has_impact="false" impactkmh="-1" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Pollux" />
+	<apply i_name = "Store 1 Category Management" i_doAfterSecs="105" transaction_type="none"/>
+	<apply i_name = "Store 2 Category Management" i_doAfterSecs="105" transaction_type="none"/>
+	<apply i_name = "Store 3 Category Management" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Category Management" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Pollux" />
+	<apply i_name="Pollux" type="App" proccap="2" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="1000" diskrequired="20" created_by_sip="302" />
+	<createNodes i_to="Pollux">
+		<link to="Store 3 Category Management" type="Connection" name="Pollux Store 3 Category Management Connection" />
+		<link to="Store 4 Category Management" type="Connection" name="Pollux Store 4 Category Management Connection" />
+	</createNodes>
+	<createNodes i_to="Category Management">
+		<link to="Store 3 Category Management" type="Connection" contype="Category Management" name="BS Store 3 Category Management Connection" />
+		<link to="Store 4 Category Management" type="Connection" contype="Category Management" name="BS Store 4 Category Management Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="4800" instore_bonus="4800" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="4800" instore_bonus="4800" />
+	<apply i_name="Store 3 Category Management" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 4 Category Management" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Category Management" sip="302" ref="Category Management" />
+		<node type="project" desc="Category Management" sip="302" regulation="false" />
+	</createNodes>
+  <apply i_name = "302" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Z" designdays="7" builddays="9" testdays="5" handovervalue="80">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Z" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="1000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" type="biz_service" slalimit="YYY" notinnetwork="true" new="true" created_by_sip="302" has_impact="true" impactkmh="-1" biz_service_function="Category Management" gantt_order="9"/>
+	</createNodes>
+	<createNodes i_to="Category Management">
+		<upgrades type="upgrades" />
+	</createNodes>	
+  <apply i_name = "302" MaxRevOffset="230400" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Category Management" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="6" has_impact="false" impactkmh="-1" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="6" has_impact="false" impactkmh="-1" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Pollux" />
+	<apply i_name = "Store 1 Category Management" i_doAfterSecs="105" transaction_type="none"/>
+	<apply i_name = "Store 2 Category Management" i_doAfterSecs="105" transaction_type="none"/>
+	<apply i_name = "Store 3 Category Management" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Category Management" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Pollux" />
+	<apply i_name="Pollux" type="App" proccap="2" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="1000" diskrequired="20" created_by_sip="302" />
+	<createNodes i_to="Pollux">
+		<link to="Store 3 Category Management" type="Connection" name="Pollux Store 3 Category Management Connection" />
+		<link to="Store 4 Category Management" type="Connection" name="Pollux Store 4 Category Management Connection" />
+	</createNodes>
+	<createNodes i_to="Category Management">
+		<link to="Store 3 Category Management" type="Connection" contype="Category Management" name="BS Store 3 Category Management Connection" />
+		<link to="Store 4 Category Management" type="Connection" contype="Category Management" name="BS Store 4 Category Management Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="4800" instore_bonus="4800" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="4800" instore_bonus="4800" />
+	<apply i_name="Store 3 Category Management" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 4 Category Management" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Category Management" sip="302" ref="Category Management" />
+		<node type="project" desc="Category Management" sip="302" regulation="false" />
+	</createNodes>
+  <apply i_name = "302" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+<product productid="3022" actual_cost="300000">
+<platform platformid="X" designdays="4" builddays="5" testdays="3" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="X" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="1000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" type="biz_service" slalimit="YYY" notinnetwork="true" new="true" created_by_sip="302" has_impact="true" impactkmh="-1" biz_service_function="Category Management" gantt_order="9"/>
+	</createNodes>
+	<createNodes i_to="Category Management">
+		<upgrades type="upgrades" />
+	</createNodes>	
+  <apply i_name = "302" MaxRevOffset="144000" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Category Management" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="6" has_impact="false" impactkmh="-1" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="6" has_impact="false" impactkmh="-1" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Pollux" />
+	<apply i_name = "Store 1 Category Management" i_doAfterSecs="105" transaction_type="none"/>
+	<apply i_name = "Store 2 Category Management" i_doAfterSecs="105" transaction_type="none"/>
+	<apply i_name = "Store 3 Category Management" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Category Management" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Pollux" />
+	<apply i_name="Pollux" type="App" proccap="2" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="1000" diskrequired="20" created_by_sip="302" />
+	<createNodes i_to="Pollux">
+		<link to="Store 3 Category Management" type="Connection" name="Pollux Store 3 Category Management Connection" />
+		<link to="Store 4 Category Management" type="Connection" name="Pollux Store 4 Category Management Connection" />
+	</createNodes>
+	<createNodes i_to="Category Management">
+		<link to="Store 3 Category Management" type="Connection" contype="Category Management" name="BS Store 3 Category Management Connection" />
+		<link to="Store 4 Category Management" type="Connection" contype="Category Management" name="BS Store 4 Category Management Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="3000" instore_bonus="3000" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="3000" instore_bonus="3000" />
+	<apply i_name="Store 3 Category Management" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 4 Category Management" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Category Management" sip="302" ref="Category Management" />
+		<node type="project" desc="Category Management" sip="302" regulation="false" />
+	</createNodes>
+  <apply i_name = "302" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Y" designdays="5" builddays="5" testdays="3" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Y" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="1000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" type="biz_service" slalimit="YYY" notinnetwork="true" new="true" created_by_sip="302" has_impact="true" impactkmh="-1" biz_service_function="Category Management" gantt_order="9"/>
+	</createNodes>
+	<createNodes i_to="Category Management">
+		<upgrades type="upgrades" />
+	</createNodes>	
+  <apply i_name = "302" MaxRevOffset="144000" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Category Management" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="6" has_impact="false" impactkmh="-1" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="6" has_impact="false" impactkmh="-1" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Pollux" />
+	<apply i_name = "Store 1 Category Management" i_doAfterSecs="105" transaction_type="none"/>
+	<apply i_name = "Store 2 Category Management" i_doAfterSecs="105" transaction_type="none"/>
+	<apply i_name = "Store 3 Category Management" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Category Management" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Pollux" />
+	<apply i_name="Pollux" type="App" proccap="2" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="1000" diskrequired="20" created_by_sip="302" />
+	<createNodes i_to="Pollux">
+		<link to="Store 3 Category Management" type="Connection" name="Pollux Store 3 Category Management Connection" />
+		<link to="Store 4 Category Management" type="Connection" name="Pollux Store 4 Category Management Connection" />
+	</createNodes>
+	<createNodes i_to="Category Management">
+		<link to="Store 3 Category Management" type="Connection" contype="Category Management" name="BS Store 3 Category Management Connection" />
+		<link to="Store 4 Category Management" type="Connection" contype="Category Management" name="BS Store 4 Category Management Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="3000" instore_bonus="3000" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="3000" instore_bonus="3000" />
+	<apply i_name="Store 3 Category Management" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 4 Category Management" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Category Management" sip="302" ref="Category Management" />
+		<node type="project" desc="Category Management" sip="302" regulation="false" />
+	</createNodes>
+  <apply i_name = "302" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Z" designdays="4" builddays="5" testdays="5" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Z" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="1000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" type="biz_service" slalimit="YYY" notinnetwork="true" new="true" created_by_sip="302" has_impact="true" impactkmh="-1" biz_service_function="Category Management" gantt_order="9"/>
+	</createNodes>
+	<createNodes i_to="Category Management">
+		<upgrades type="upgrades" />
+	</createNodes>	
+  <apply i_name = "302" MaxRevOffset="144000" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Category Management" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="6" has_impact="false" impactkmh="-1" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="6" has_impact="false" impactkmh="-1" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Pollux" />
+	<apply i_name = "Store 1 Category Management" i_doAfterSecs="105" transaction_type="none"/>
+	<apply i_name = "Store 2 Category Management" i_doAfterSecs="105" transaction_type="none"/>
+	<apply i_name = "Store 3 Category Management" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Category Management" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Pollux" />
+	<apply i_name="Pollux" type="App" proccap="2" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="1000" diskrequired="20" created_by_sip="302" />
+	<createNodes i_to="Pollux">
+		<link to="Store 3 Category Management" type="Connection" name="Pollux Store 3 Category Management Connection" />
+		<link to="Store 4 Category Management" type="Connection" name="Pollux Store 4 Category Management Connection" />
+	</createNodes>
+	<createNodes i_to="Category Management">
+		<link to="Store 3 Category Management" type="Connection" contype="Category Management" name="BS Store 3 Category Management Connection" />
+		<link to="Store 4 Category Management" type="Connection" contype="Category Management" name="BS Store 4 Category Management Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="3000" instore_bonus="3000" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="3000" instore_bonus="3000" />
+	<apply i_name="Store 3 Category Management" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 4 Category Management" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Category Management" sip="302" ref="Category Management" />
+		<node type="project" desc="Category Management" sip="302" regulation="false" />
+	</createNodes>
+  <apply i_name = "302" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+<product productid="3023" actual_cost="180000">
+<platform platformid="X" designdays="3" builddays="3" testdays="3" handovervalue="80">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="X" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="1000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" type="biz_service" slalimit="YYY" notinnetwork="true" new="true" created_by_sip="302" has_impact="true" impactkmh="-1" biz_service_function="Category Management" gantt_order="9"/>
+	</createNodes>
+	<createNodes i_to="Category Management">
+		<upgrades type="upgrades" />
+	</createNodes>	
+  <apply i_name = "302" MaxRevOffset="153600" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Category Management" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="6" has_impact="false" impactkmh="-1" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="6" has_impact="false" impactkmh="-1" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Pollux" />
+	<apply i_name = "Store 1 Category Management" i_doAfterSecs="105" transaction_type="none"/>
+	<apply i_name = "Store 2 Category Management" i_doAfterSecs="105" transaction_type="none"/>
+	<apply i_name = "Store 3 Category Management" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Category Management" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Pollux" />
+	<apply i_name="Pollux" type="App" proccap="2" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="1000" diskrequired="20" created_by_sip="302" />
+	<createNodes i_to="Pollux">
+		<link to="Store 3 Category Management" type="Connection" name="Pollux Store 3 Category Management Connection" />
+		<link to="Store 4 Category Management" type="Connection" name="Pollux Store 4 Category Management Connection" />
+	</createNodes>
+	<createNodes i_to="Category Management">
+		<link to="Store 3 Category Management" type="Connection" contype="Category Management" name="BS Store 3 Category Management Connection" />
+		<link to="Store 4 Category Management" type="Connection" contype="Category Management" name="BS Store 4 Category Management Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="3200" instore_bonus="3200" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="3200" instore_bonus="3200" />
+	<apply i_name="Store 3 Category Management" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 4 Category Management" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Category Management" sip="302" ref="Category Management" />
+		<node type="project" desc="Category Management" sip="302" regulation="false" />
+	</createNodes>
+  <apply i_name = "302" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Y" designdays="3" builddays="4" testdays="2" handovervalue="80">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Y" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="1000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" type="biz_service" slalimit="YYY" notinnetwork="true" new="true" created_by_sip="302" has_impact="true" impactkmh="-1" biz_service_function="Category Management" gantt_order="9"/>
+	</createNodes>
+	<createNodes i_to="Category Management">
+		<upgrades type="upgrades" />
+	</createNodes>	
+  <apply i_name = "302" MaxRevOffset="153600" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Category Management" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="6" has_impact="false" impactkmh="-1" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="6" has_impact="false" impactkmh="-1" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Pollux" />
+	<apply i_name = "Store 1 Category Management" i_doAfterSecs="105" transaction_type="none"/>
+	<apply i_name = "Store 2 Category Management" i_doAfterSecs="105" transaction_type="none"/>
+	<apply i_name = "Store 3 Category Management" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Category Management" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Pollux" />
+	<apply i_name="Pollux" type="App" proccap="2" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="1000" diskrequired="20" created_by_sip="302" />
+	<createNodes i_to="Pollux">
+		<link to="Store 3 Category Management" type="Connection" name="Pollux Store 3 Category Management Connection" />
+		<link to="Store 4 Category Management" type="Connection" name="Pollux Store 4 Category Management Connection" />
+	</createNodes>
+	<createNodes i_to="Category Management">
+		<link to="Store 3 Category Management" type="Connection" contype="Category Management" name="BS Store 3 Category Management Connection" />
+		<link to="Store 4 Category Management" type="Connection" contype="Category Management" name="BS Store 4 Category Management Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="3200" instore_bonus="3200" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="3200" instore_bonus="3200" />
+	<apply i_name="Store 3 Category Management" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 4 Category Management" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Category Management" sip="302" ref="Category Management" />
+		<node type="project" desc="Category Management" sip="302" regulation="false" />
+	</createNodes>
+  <apply i_name = "302" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Z" designdays="3" builddays="4" testdays="3" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Z" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="1000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" type="biz_service" slalimit="YYY" notinnetwork="true" new="true" created_by_sip="302" has_impact="true" impactkmh="-1" biz_service_function="Category Management" gantt_order="9"/>
+	</createNodes>
+	<createNodes i_to="Category Management">
+		<upgrades type="upgrades" />
+	</createNodes>	
+  <apply i_name = "302" MaxRevOffset="192000" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Category Management" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="0" has_impact="false" impactkmh="0" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="6" has_impact="false" impactkmh="-1" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="6" has_impact="false" impactkmh="-1" biz_service_function="Category Management" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Pollux" />
+	<apply i_name = "Store 1 Category Management" i_doAfterSecs="105" transaction_type="none"/>
+	<apply i_name = "Store 2 Category Management" i_doAfterSecs="105" transaction_type="none"/>
+	<apply i_name = "Store 3 Category Management" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Category Management" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Pollux" />
+	<apply i_name="Pollux" type="App" proccap="2" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="1000" diskrequired="20" created_by_sip="302" />
+	<createNodes i_to="Pollux">
+		<link to="Store 3 Category Management" type="Connection" name="Pollux Store 3 Category Management Connection" />
+		<link to="Store 4 Category Management" type="Connection" name="Pollux Store 4 Category Management Connection" />
+	</createNodes>
+	<createNodes i_to="Category Management">
+		<link to="Store 3 Category Management" type="Connection" contype="Category Management" name="BS Store 3 Category Management Connection" />
+		<link to="Store 4 Category Management" type="Connection" contype="Category Management" name="BS Store 4 Category Management Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="4000" instore_bonus="4000" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="4000" instore_bonus="4000" />
+	<apply i_name="Store 3 Category Management" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 4 Category Management" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Category Management" sip="302" ref="Category Management" />
+		<node type="project" desc="Category Management" sip="302" regulation="false" />
+	</createNodes>
+  <apply i_name = "302" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+</project>

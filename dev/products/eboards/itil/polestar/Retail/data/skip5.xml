@@ -1,0 +1,25 @@
+<incidents>
+<i id="AtStart">
+  // Put SIPS 502 and 504 into the network as if they have been done and
+  // are ready for install.
+
+	<createNodes i_to="Fulfillment/upgrades">
+		<node version="2" name="Fulfillment v2" desc="Fulfillment v2" shortdesc="Fulfillment v2" slalimit="360" notinnetwork="true" upgraded_by_sip="502" biz_service_function="Fulfillment" />
+	</createNodes>
+
+	<createNodes i_to="G-Tunes/upgrades">
+		<node version="2" name="G-Tunes v2"  desc="G-Tunes v2" shortdesc="G-Tunes v2" notinnetwork="true" slalimit="360" upgraded_by_sip="504" has_impact="true" impactkmh="-1" biz_service_function="G-Tunes"/>
+	</createNodes>
+	
+  //
+  <createNodes i_to="Projects">
+	<project round="5" createdinround="5" name="502" projectid="502" productid="5021" platformid="X" installname="Fulfillment v2" upgradename="Rastaban" fixedlocation="B337" fixedzone="X" designdays="2" builddays="3" testdays="1" scheduled_days="6" completed_days="6" readyfordeployment="9" handovervalue="100" currentspend="200000" actual_cost="200000" daiyspend="33333" MaxRevOffset="288000" stagedaystogo="0" regulation="false" slalimit="360" wrequest="1" wcount="1" stage="ready" />
+	<project round="5" createdinround="5" name="504" projectid="504" productid="5041" platformid="X" installname="G-Tunes v2" upgradename="Polaris" fixedlocation="B334" fixedzone="X" designdays="2" builddays="4" testdays="3" scheduled_days="9" completed_days="9" readyfordeployment="12" handovervalue="100" currentspend="200000" actual_cost="200000" daiyspend="22222" MaxRevOffset="288000" stagedaystogo="0" regulation="false" slalimit="360" wrequest="1" wcount="1" stage="ready" />
+  </createNodes>
+  
+	<apply i_name="DevelopmentSpend" RoundBudgetLeft="450000" currentspendtotal="0" actualcosttotal ="0"/>  
+	<apply i_name="DevelopmentSpend" RoundBudgetLeft="50000" currentspendtotal="400000" actualcosttotal ="400000"/>  
+</i>
+<i id="AtStart"><apply i_name="IncidentCount" count="0" />
+</i>
+</incidents>

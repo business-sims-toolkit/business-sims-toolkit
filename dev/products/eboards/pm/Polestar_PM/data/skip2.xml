@@ -1,0 +1,182 @@
+<incidents>
+<i id="AtStart">
+	
+	<apply i_name="CurrentDay" day="0" />
+	<apply i_name="endpoint" skip2="true" />
+	
+	<apply i_name="operational_results" predicted_market_position = "16" />
+	
+	<apply i_name="market_info"
+			leader_transaction_volume="236,000 (8.4%)" transactions_gain="123000"
+			cost_reduction="102000" cost_avoidance="1800000"
+	/>
+
+	<deleteNode i_name="pm_projects_running" />
+	<deleteNode i_name="pm_projects_known" />
+	<deleteNode i_name="pm_project_unique_no" />
+	<deleteNode i_name="pm_projects_cancelled" />
+
+	<createNodes i_to="pm_projects" >
+		<node name="pm_projects_running" />
+		<node name="pm_projects_known" />
+		<node name="pm_project_unique_no" />
+		<node name="pm_projects_cancelled" />
+	</createNodes>	
+	
+	<apply i_name="pm_project_unique_no" value = "1000" />
+
+	<deleteNode i_name="project_plans" />
+	<createNodes i_to="Root">
+		<project_plans name="project_plans" type="project_plans" />		
+	</createNodes>	
+
+	<deleteNode i_name="dev_staff" />
+	<createNodes i_to="department">
+		<node name="dev_staff"  total="30"/>
+	</createNodes>	
+	<createNodes i_to="dev_staff">
+    <node type="person" name="di01" skill="dev" section="dev_staff" is_contractor="false" />
+    <node type="person" name="di02" skill="dev" section="dev_staff" is_contractor="false" />
+    <node type="person" name="di03" skill="dev" section="dev_staff" is_contractor="false" />
+    <node type="person" name="di04" skill="dev" section="dev_staff" is_contractor="false" />
+    <node type="person" name="di05" skill="dev" section="dev_staff" is_contractor="false" />
+    <node type="person" name="di06" skill="dev" section="dev_staff" is_contractor="false" />
+    <node type="person" name="di07" skill="dev" section="dev_staff" is_contractor="false" />
+    <node type="person" name="di08" skill="dev" section="dev_staff" is_contractor="false" />
+    <node type="person" name="di09" skill="dev" section="dev_staff" is_contractor="false" />
+    <node type="person" name="di10" skill="dev" section="dev_staff" is_contractor="false" />
+    <node type="person" name="di11" skill="dev" section="dev_staff" is_contractor="false" />
+    <node type="person" name="di12" skill="dev" section="dev_staff" is_contractor="false" />
+    <node type="person" name="di13" skill="dev" section="dev_staff" is_contractor="false" />
+    <node type="person" name="di14" skill="dev" section="dev_staff" is_contractor="false" />
+    <node type="person" name="di15" skill="dev" section="dev_staff" is_contractor="false" />
+    <node type="person" name="di16" skill="dev" section="dev_staff" is_contractor="false" />
+    <node type="person" name="di17" skill="dev" section="dev_staff" is_contractor="false" />
+    <node type="person" name="di18" skill="dev" section="dev_staff" is_contractor="false" />
+    <node type="person" name="di19" skill="dev" section="dev_staff" is_contractor="false" />
+    <node type="person" name="di20" skill="dev" section="dev_staff" is_contractor="false" />
+    <node type="person" name="di21" skill="dev" section="dev_staff" is_contractor="false" />
+    <node type="person" name="di22" skill="dev" section="dev_staff" is_contractor="false" />
+    <node type="person" name="di23" skill="dev" section="dev_staff" is_contractor="false" />
+    <node type="person" name="di24" skill="dev" section="dev_staff" is_contractor="false" />
+    <node type="person" name="di25" skill="dev" section="dev_staff" is_contractor="false" />
+		<node type="person" name="di26" skill="dev" section="dev_staff" is_contractor="false" />
+    <node type="person" name="di27" skill="dev" section="dev_staff" is_contractor="false" />
+    <node type="person" name="di28" skill="dev" section="dev_staff" is_contractor="false" />
+    <node type="person" name="di29" skill="dev" section="dev_staff" is_contractor="false" />
+    <node type="person" name="di30" skill="dev" section="dev_staff" is_contractor="false" />		
+	</createNodes>	
+
+	<deleteNode i_name="dev_contractor" />
+	<createNodes i_to="department">
+		<node name="dev_contractor"  total="4"/>
+	</createNodes>	
+	<createNodes i_to="dev_contractor">
+    <node type="person" name="dc01" skill="dev" section="dev_contractor" is_contractor="true" />
+    <node type="person" name="dc02" skill="dev" section="dev_contractor" is_contractor="true" />
+    <node type="person" name="dc03" skill="dev" section="dev_contractor" is_contractor="true" />
+    <node type="person" name="dc04" skill="dev" section="dev_contractor" is_contractor="true" />
+	</createNodes>	
+
+	<deleteNode i_name="test_staff" />
+	<createNodes i_to="department">
+		<node name="test_staff"  total="0"/>
+	</createNodes>	
+
+	<deleteNode i_name="test_contractor" />
+	<createNodes i_to="department">
+		<node name="test_contractor"  total="0"/>
+	</createNodes>	
+
+	<deleteNode i_name="ops_worklist" />
+	<createNodes i_to="Root">
+		<ops_work name="ops_worklist" type="ops_worklist" jobname="" block="false" project="false"/>
+	</createNodes>	
+
+	<deleteNode i_name="comms_list" />
+	<createNodes i_to="Root">
+		<comms_list name="comms_list" type="comms_list" />		
+	</createNodes>	
+
+	<deleteNode i_name="project_duration_change_list" />
+	<createNodes i_to="Root">
+		<node name="project_duration_change_list" />		
+	</createNodes>	
+	
+	<deleteNode i_name="journal" />
+	<createNodes i_to="Root">
+		<node name="journal"  desc="records what happend TO BE UPGRADED"/>		
+	</createNodes>	
+	<createNodes i_to="journal">
+    <day name="j1" day="1" />
+    <day name="j2" day="2" />
+    <day name="j3" day="3" />
+    <day name="j4" day="4" />
+    <day name="j5" day="5" />
+    <day name="j6" day="6" />
+    <day name="j7" day="7" />
+    <day name="j8" day="8" />
+    <day name="j9" day="9" />
+    <day name="j10" day="10" />
+    <day name="j11" day="11" />
+    <day name="j12" day="12" />
+    <day name="j13" day="13" />
+    <day name="j14" day="14" />
+    <day name="j15" day="15" />
+    <day name="j16" day="16" />
+    <day name="j17" day="17" />
+    <day name="j18" day="18" />
+    <day name="j19" day="19" />
+    <day name="j20" day="20" />
+    <day name="j21" day="21" />
+    <day name="j22" day="22" />
+    <day name="j23" day="23" />
+    <day name="j24" day="24" />
+    <day name="j25" day="25" />
+    <day name="j26" day="26" />
+    <day name="j27" day="27" />
+    <day name="j28" day="28" />
+    <day name="j29" day="29" />
+    <day name="j30" day="30" />    
+	</createNodes>	
+		
+
+	<deleteNode i_name="globaltimesheets" />
+	<createNodes i_to="Root">
+		<node name="globaltimesheets"  desc="records what happend TO BE UPGRADED"/>		
+	</createNodes>	
+	<createNodes i_to="globaltimesheets">
+    <day name="timesheet1" day="1" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet2" day="2" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet3" day="3" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet4" day="4" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet5" day="5" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet6" day="6" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet7" day="7" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet8" day="8" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet9" day="9" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet10" day="10" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet11" day="11" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet12" day="12" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet13" day="13" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet14" day="14" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet15" day="15" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet16" day="16" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet17" day="17" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet18" day="18" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet19" day="19" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet20" day="20" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet21" day="21" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet22" day="22" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet23" day="23" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet24" day="24" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet25" day="25" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet26" day="26" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet27" day="27" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet28" day="28" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet29" day="29" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+    <day name="timesheet30" day="30" IntDevPeopleWorked="0" ExtDevPeopleWorked="0" IntDevPeopleWasted="0" ExtDevPeopleWasted="0" IntTestDevPeopleWorked="0" ExtTestPeopleWorked="0" IntTestPeopleWasted="0" ExtTestPeopleWasted="0"/>
+ </createNodes>	
+
+</i>
+</incidents>

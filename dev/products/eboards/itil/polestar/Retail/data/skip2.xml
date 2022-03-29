@@ -1,0 +1,28 @@
+<incidents>
+<i id="AtStart">
+
+	// Put SIPS 201 and 204 into the network as if they have been done and
+  // are ready for install.
+  <createNodes i_to="Business Services Group">
+    <node version="1" type="biz_service" biz_service_function="Central Comms" icon="Icon_com" new="true" name="Central Comms" notinnetwork="true" desc="Central\r\nComms" shortdesc="Central Comms" has_impact="true" impactkmh="-1" slalimit="360" created_by_sip="201"/> 
+  </createNodes>
+  <createNodes i_to="Central Comms">
+			<upgrades type="upgrades" />
+	</createNodes>
+	<createNodes i_to="EPOS/upgrades">
+		<node name="EPOS v2" version="2" desc="EPOS v2" shortdesc="EPOS v2" notinnetwork="true" upgraded_by_sip="204" biz_service_function="EPOS"/>
+	</createNodes>  
+  
+  //
+  <createNodes i_to="Projects">
+    <project testdays="1" scheduled_days="6" currentspend="220000" handovervalue="100" fixedlocation="F333" name="204" regulation="true" builddays="3" productid="2041" wrequest="1" fixedzone="Y" actual_cost="220000" round="2" createdinround="2" platformid="Y" completed_days="6" readyfordeployment="9" installname="EPOS v2" stagedaystogo="0" projectid="204" designdays="2" wcount="1" stage="ready" slalimit="360" upgradename = "Izar" MaxRevOffset="0" /> 
+    <project actual_cost="200000" currentspend="200000" designdays="4" builddays="7" testdays="3" scheduled_days="14" completed_days="14" readyfordeployment="17" handovervalue="100" name="201" regulation="false" productid="2011" wrequest="1" round="2" createdinround="2" platformid="Y" installname="Central Comms" stagedaystogo="0" projectid="201" wcount="1" stage="ready" slalimit="360" MaxRevOffset="480000" /> 
+  </createNodes>
+
+  <apply i_name="DevelopmentSpend" RoundBudgetLeft="450000" currentspendtotal="0" actualcosttotal ="0"/>  
+	<apply i_name="DevelopmentSpend" RoundBudgetLeft="30000" currentspendtotal="420000" actualcosttotal ="420000"/>  
+	
+</i>
+<i id="AtStart"><apply i_name="IncidentCount" count="0" /></i>
+
+</incidents>

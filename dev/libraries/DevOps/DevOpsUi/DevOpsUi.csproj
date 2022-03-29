@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B9640DC4-44BA-4703-9AEA-72702763D891}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevOpsUi</RootNamespace>
+    <AssemblyName>DevOpsUi</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FacilitatorControls\FeatureDevelopment\Agile\UpgradesPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorControls\FeatureDevelopment\FeatureSelectionButtonFactory.cs" />
+    <Compile Include="FacilitatorControls\FeatureDevelopment\FeatureSelectionButtonsPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorControls\ServiceLozenge\ContainerCustomBackground.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorControls\ServiceLozenge\CsatReadout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorControls\ServiceLozenge\ILozengeRenderer.cs" />
+    <Compile Include="FacilitatorControls\ServiceLozenge\LozengeFeatureRow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorControls\ServiceLozenge\LozengeIconRenderer.cs" />
+    <Compile Include="FacilitatorControls\ServiceLozenge\LozengeProperties.cs" />
+    <Compile Include="FacilitatorControls\ServiceLozenge\ServiceLozengePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorControls\ServiceLozenge\ServiceSystem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorControls\ServiceLozenge\ServiceSystemsContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorControls\Sla\SlaEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorControls\Sla\SlaStream.cs" />
+    <Compile Include="FacilitatorControls\Sla\SlaStreamRow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorScreen\Agile\ServiceLozenge.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorScreen\DevOps\DevOpsFacilitatorScreen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorControls\FeatureDevelopment\Agile\AgileDeploymentStagePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorControls\FeatureDevelopment\Agile\FeatureProgressionPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorControls\FeatureDevelopment\DevOps\StartAppDevelopmentPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorControls\FeatureDevelopment\ILinkedStage.cs" />
+    <Compile Include="FacilitatorControls\FeatureDevelopment\StageFailurePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorControls\FeatureDevelopment\StageGroupPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorControls\FeatureDevelopment\StageGroupProperties.cs" />
+    <Compile Include="FacilitatorControls\FeatureDevelopment\StageOptionsButtonGroupPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorControls\FeatureDevelopment\StageOptionsDropdownPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorControls\FeatureDevelopment\StageOptionsPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\Algorithms\Algorithms.csproj">
+      <Project>{a402764f-2455-4ae6-b1b9-d129c2b083cd}</Project>
+      <Name>Algorithms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\core\CoreUtils\CoreUtils.csproj">
+      <Project>{9c61e4e5-78bc-4d27-b5b0-dfdcb8dc935e}</Project>
+      <Name>CoreUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\core\Events\Events.csproj">
+      <Project>{0e80302d-2ef7-4428-8ce2-198aef8ed0fc}</Project>
+      <Name>Events</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\core\LibCore\LibCore.csproj">
+      <Project>{6d70195c-c791-4909-81fc-37daa61c143d}</Project>
+      <Name>LibCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\eboards\Charts\Charts.csproj">
+      <Project>{134455f1-df66-410b-93bc-e19494acff46}</Project>
+      <Name>Charts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\eboards\CommonGUI\CommonGUI.csproj">
+      <Project>{35070f1c-ce4f-4dca-86ac-9d6240882de0}</Project>
+      <Name>CommonGUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\eboards\DiscreteSimGUI\DiscreteSimGUI.csproj">
+      <Project>{a432c8e4-c426-4269-adb2-88ee1dbc8ae9}</Project>
+      <Name>DiscreteSimGUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\eboards\GameManagement\GameManagement.csproj">
+      <Project>{37599bb8-b493-4323-ba2d-be2bd8fe4561}</Project>
+      <Name>GameManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\eboards\IncidentManagement\IncidentManagement.csproj">
+      <Project>{4e68e998-4959-42c2-8c9b-9d482ab2465d}</Project>
+      <Name>IncidentManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\eboards\Network\Network.csproj">
+      <Project>{b7ac785c-e7ce-4a7d-99ce-604e0cba231b}</Project>
+      <Name>Network</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\EboardUi\ResizingUi\ResizingUi.csproj">
+      <Project>{08fda587-8773-4b58-a8e0-7f7d5c8e4637}</Project>
+      <Name>ResizingUi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DevOpsEngine\DevOpsEngine.csproj">
+      <Project>{d8599a09-86fb-4dd0-96ff-ffc36653c458}</Project>
+      <Name>DevOpsEngine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

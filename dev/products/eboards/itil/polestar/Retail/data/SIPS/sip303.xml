@@ -1,0 +1,140 @@
+<project projectid="303" round="3" regulation="false" installname="Dispatch Scanning System v2" fixedlocation="G327" fixedzone="Y" upgradename = "Nash">
+<product productid="3031" actual_cost="280000">
+<platform platformid="Y" designdays="1" builddays="2" testdays="1" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireExists i_name="Nash" i_failReason="App Not Found" i_failShortReason="App Not\r\nFound" />
+	<requireExists i_name="Dispatch Scanning System" i_failReason="Invalid Version" i_failShortReason="Invalid\r\nVersion" />
+	<requireAttrs i_name="Nash" location="XXXX" i_failReason="Invalid Location" i_failShortReason="Invalid\r\nLocation" />
+	<requireMin i_parentOf="Nash" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="Nash" mem_left="500" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Dispatch Scanning System/upgrades">
+		<node version="2" name="Dispatch Scanning System v2" desc="Dispatch\r\nScanning v2" shortdesc="Dispatch Scanning v2" slalimit="YYY" notinnetwork="true" upgraded_by_sip="303" has_impact="true" impactkmh="-1" biz_service_function="Dispatch Scanning System" />
+	</createNodes>
+  <apply i_name = "303" MaxRevOffset="120000" /> 
+</oncreate>
+<oninstall>
+	<createNodes i_to="Retired Business Services">
+		<node name="Dispatch Scanning System (v1)" icon="Icon_dss" version="1"/>
+	</createNodes>
+	<copyAttributes i_to="Dispatch Scanning System (v1)" i_from="Dispatch Scanning System"/>
+	<apply i_name="Dispatch Scanning System (v1)"	type="retired_biz_service"/>
+	<copyAttributes i_to="Dispatch Scanning System" i_from="Dispatch Scanning System v2"/>
+	<deleteNode i_name="Dispatch Scanning System v2" />
+	<apply i_name="Dispatch Scanning System" slalimit="YYY"/>
+	<apply i_name="Store 1 Dispatch Scanning System" desc="Dispatch\r\nScanning v2" shortdesc="Dispatch Scanning v2" icon="Icon_dss" slalimit="YYY" />
+	<apply i_name="Store 2 Dispatch Scanning System" desc="Dispatch\r\nScanning v2" shortdesc="Dispatch Scanning v2" icon="Icon_dss" slalimit="YYY" />
+	<apply i_name="Store 3 Dispatch Scanning System" desc="Dispatch\r\nScanning v2" shortdesc="Dispatch Scanning v2" icon="Icon_dss" slalimit="YYY" />
+	<apply i_name="Store 4 Dispatch Scanning System" desc="Dispatch\r\nScanning v2" shortdesc="Dispatch Scanning v2" icon="Icon_dss" slalimit="YYY" />
+	<incrementAtt i_name="Nash" i_doAfterSecs="0" memrequired="500" diskrequired="20" />
+	<apply i_name="Nash" upgraded_by_sip="303" />
+	<incrementAtt i_name="Nash" proccap="0" />
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="5000" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="5000" />
+	<apply i_name="Mars" rebootFor="105" reasondown="Upgrading Nash" />
+	<createNodes i_to="CostedEvents">
+		<node type="sipupgrade" desc="Upgraded Dispatch Scanning System To Version 2" sip="303" ref="Dispatch Scanning System" />
+		<node type="project" desc="Dispatch\r\nScanning v2" sip="303" regulation="false" />
+	</createNodes>
+  <apply i_name = "303" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+<product productid="3032" actual_cost="230000">
+<platform platformid="Y" designdays="1" builddays="1" testdays="1" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireExists i_name="Nash" i_failReason="App Not Found" i_failShortReason="App Not\r\nFound" />
+	<requireExists i_name="Dispatch Scanning System" i_failReason="Invalid Version" i_failShortReason="Invalid\r\nVersion" />
+	<requireAttrs i_name="Nash" location="XXXX" i_failReason="Invalid Location" i_failShortReason="Invalid\r\nLocation" />
+	<requireMin i_parentOf="Nash" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="Nash" mem_left="500" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Dispatch Scanning System/upgrades">
+		<node version="2" name="Dispatch Scanning System v2" desc="Dispatch\r\nScanning v2" shortdesc="Dispatch Scanning v2" slalimit="YYY" notinnetwork="true" upgraded_by_sip="303" has_impact="true" impactkmh="-1" biz_service_function="Dispatch Scanning System" />
+	</createNodes>
+  <apply i_name = "303" MaxRevOffset="120000" /> 
+</oncreate>
+<oninstall>
+	<createNodes i_to="Retired Business Services">
+		<node name="Dispatch Scanning System (v1)" icon="Icon_dss" version="1"/>
+	</createNodes>
+	<copyAttributes i_to="Dispatch Scanning System (v1)" i_from="Dispatch Scanning System"/>
+	<apply i_name="Dispatch Scanning System (v1)"	type="retired_biz_service"/>
+	<copyAttributes i_to="Dispatch Scanning System" i_from="Dispatch Scanning System v2"/>
+	<deleteNode i_name="Dispatch Scanning System v2" />
+	<apply i_name="Dispatch Scanning System" slalimit="YYY"/>
+	<apply i_name="Store 1 Dispatch Scanning System" desc="Dispatch\r\nScanning v2" shortdesc="Dispatch Scanning v2" icon="Icon_dss" slalimit="YYY" />
+	<apply i_name="Store 2 Dispatch Scanning System" desc="Dispatch\r\nScanning v2" shortdesc="Dispatch Scanning v2" icon="Icon_dss" slalimit="YYY" />
+	<apply i_name="Store 3 Dispatch Scanning System" desc="Dispatch\r\nScanning v2" shortdesc="Dispatch Scanning v2" icon="Icon_dss" slalimit="YYY" />
+	<apply i_name="Store 4 Dispatch Scanning System" desc="Dispatch\r\nScanning v2" shortdesc="Dispatch Scanning v2" icon="Icon_dss" slalimit="YYY" />
+	<incrementAtt i_name="Nash" i_doAfterSecs="0" memrequired="500" diskrequired="20" />
+	<apply i_name="Nash" upgraded_by_sip="303" />
+	<incrementAtt i_name="Nash" proccap="0" />
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="5000" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="5000" />
+	<apply i_name="Mars" rebootFor="105" reasondown="Upgrading Nash" />
+	<createNodes i_to="CostedEvents">
+		<node type="sipupgrade" desc="Upgraded Dispatch Scanning System To Version 2" sip="303" ref="Dispatch Scanning System" />
+		<node type="project" desc="Dispatch\r\nScanning v2" sip="303" regulation="false" />
+	</createNodes>
+  <apply i_name = "303" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+<product productid="3033" actual_cost="180000">
+<platform platformid="Y" designdays="3" builddays="2" testdays="2" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireExists i_name="Nash" i_failReason="App Not Found" i_failShortReason="App Not\r\nFound" />
+	<requireExists i_name="Dispatch Scanning System" i_failReason="Invalid Version" i_failShortReason="Invalid\r\nVersion" />
+	<requireAttrs i_name="Nash" location="XXXX" i_failReason="Invalid Location" i_failShortReason="Invalid\r\nLocation" />
+	<requireMin i_parentOf="Nash" disk_left="20" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="Nash" mem_left="500" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Dispatch Scanning System/upgrades">
+		<node version="2" name="Dispatch Scanning System v2" desc="Dispatch\r\nScanning v2" shortdesc="Dispatch Scanning v2" slalimit="YYY" notinnetwork="true" upgraded_by_sip="303" has_impact="true" impactkmh="-1" biz_service_function="Dispatch Scanning System" />
+	</createNodes>
+  <apply i_name = "303" MaxRevOffset="72000" /> 
+</oncreate>
+<oninstall>
+	<createNodes i_to="Retired Business Services">
+		<node name="Dispatch Scanning System (v1)" icon="Icon_dss" version="1"/>
+	</createNodes>
+	<copyAttributes i_to="Dispatch Scanning System (v1)" i_from="Dispatch Scanning System"/>
+	<apply i_name="Dispatch Scanning System (v1)"	type="retired_biz_service"/>
+	<copyAttributes i_to="Dispatch Scanning System" i_from="Dispatch Scanning System v2"/>
+	<deleteNode i_name="Dispatch Scanning System v2" />
+	<apply i_name="Dispatch Scanning System" slalimit="YYY"/>
+	<apply i_name="Store 1 Dispatch Scanning System" desc="Dispatch\r\nScanning v2" shortdesc="Dispatch Scanning v2" icon="Icon_dss" slalimit="YYY" />
+	<apply i_name="Store 2 Dispatch Scanning System" desc="Dispatch\r\nScanning v2" shortdesc="Dispatch Scanning v2" icon="Icon_dss" slalimit="YYY" />
+	<apply i_name="Store 3 Dispatch Scanning System" desc="Dispatch\r\nScanning v2" shortdesc="Dispatch Scanning v2" icon="Icon_dss" slalimit="YYY" />
+	<apply i_name="Store 4 Dispatch Scanning System" desc="Dispatch\r\nScanning v2" shortdesc="Dispatch Scanning v2" icon="Icon_dss" slalimit="YYY" />
+	<incrementAtt i_name="Nash" i_doAfterSecs="0" memrequired="500" diskrequired="20" />
+	<apply i_name="Nash" upgraded_by_sip="303" />
+	<incrementAtt i_name="Nash" proccap="0" />
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="3000" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="3000" />
+	<apply i_name="Mars" rebootFor="105" reasondown="Upgrading Nash" />
+	<createNodes i_to="CostedEvents">
+		<node type="sipupgrade" desc="Upgraded Dispatch Scanning System To Version 2" sip="303" ref="Dispatch Scanning System" />
+		<node type="project" desc="Dispatch\r\nScanning v2" sip="303" regulation="false" />
+	</createNodes>
+  <apply i_name = "303" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+</project>

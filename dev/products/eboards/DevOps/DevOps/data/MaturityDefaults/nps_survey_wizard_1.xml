@@ -1,0 +1,115 @@
+<root>
+  <section colour="204,160,202">
+    <section_name>Performance</section_name>
+    <section_order>2</section_order>
+    <aspects>
+      <aspect>
+        <aspect_name>How likely would you be to recommend our services?</aspect_name>
+        <aspect_desc>
+        </aspect_desc>
+        <dest_tag_name>Performance_How_likely_would_you_be_to_recommend_our_services?_0</dest_tag_name>
+        <dest_tag_data>0</dest_tag_data>
+        <factors />
+      </aspect>
+      <aspect>
+        <aspect_name>Were Operations aligned with the business needs?</aspect_name>
+        <aspect_desc>
+        </aspect_desc>
+        <dest_tag_name>Performance_Were_Operations_aligned_with_the_business_needs?_1</dest_tag_name>
+        <dest_tag_data>1</dest_tag_data>
+        <factors />
+      </aspect>
+      <aspect>
+        <aspect_name>Were Development and Operations aligned?</aspect_name>
+        <aspect_desc>
+        </aspect_desc>
+        <dest_tag_name>Performance_Were_Development_and_Operations_aligned?_2</dest_tag_name>
+        <dest_tag_data>1</dest_tag_data>
+        <factors />
+      </aspect>
+      <aspect>
+        <aspect_name>Were agile processes followed?</aspect_name>
+        <aspect_desc>
+        </aspect_desc>
+        <dest_tag_name>Performance_Were_agile_processes_followed?_3</dest_tag_name>
+        <dest_tag_data>2</dest_tag_data>
+        <factors />
+      </aspect>
+      <aspect>
+        <aspect_name>How well did your team interact with the other teams in the development cycle?</aspect_name>
+        <aspect_desc>
+        </aspect_desc>
+        <dest_tag_name>Performance_How_well_did_your_team_interact_with_the_other_teams_in_the_development_cycle?_4</dest_tag_name>
+        <dest_tag_data>3</dest_tag_data>
+        <factors />
+      </aspect>
+      <aspect>
+        <aspect_name>Are new services chosen and deployed with the customer in mind?</aspect_name>
+        <aspect_desc>
+        </aspect_desc>
+        <dest_tag_name>Performance_Are_new_services_chosen_and_deployed_with_the_customer_in_mind?_5</dest_tag_name>
+        <dest_tag_data>2</dest_tag_data>
+        <factors />
+      </aspect>
+      <aspect>
+        <aspect_name>Was the one team culture visible?</aspect_name>
+        <aspect_desc>
+        </aspect_desc>
+        <dest_tag_name>Performance_Was_the_one_team_culture_visible?_6</dest_tag_name>
+        <dest_tag_data>1</dest_tag_data>
+        <factors />
+      </aspect>
+    </aspects>
+  </section>
+  <section colour="242,175,201">
+    <section_name>Time</section_name>
+    <section_order>3</section_order>
+    <aspects>
+      <aspect>
+        <aspect_name>Were new services delivered in a timely and efficient manner?</aspect_name>
+        <aspect_desc>
+        </aspect_desc>
+        <dest_tag_name>Time_Were_new_services_delivered_in_a_timely_and_efficient_manner?_7</dest_tag_name>
+        <dest_tag_data>2</dest_tag_data>
+        <factors />
+      </aspect>
+    </aspects>
+  </section>
+  <section colour="244,241,158">
+    <section_name>Stability</section_name>
+    <section_order>4</section_order>
+    <aspects>
+      <aspect>
+        <aspect_name>How do you think customers would rate the quality of new services?</aspect_name>
+        <aspect_desc>
+        </aspect_desc>
+        <dest_tag_name>Stability_How_do_you_think_customers_would_rate_the_quality_of_new_services?_8</dest_tag_name>
+        <dest_tag_data>2</dest_tag_data>
+        <factors />
+      </aspect>
+      <aspect>
+        <aspect_name>How reliable and stable were new services when deployed?</aspect_name>
+        <aspect_desc>
+        </aspect_desc>
+        <dest_tag_name>Stability_How_reliable_and_stable_were_new_services_when_deployed?_9</dest_tag_name>
+        <dest_tag_data>3</dest_tag_data>
+        <factors />
+      </aspect>
+    </aspects>
+  </section>
+  <section colour="114,198,219">
+    <section_name>Expected Value</section_name>
+    <section_order>1</section_order>
+    <aspects>
+      <aspect>
+        <aspect_name>Target score for round</aspect_name>
+        <aspect_desc>
+        </aspect_desc>
+        <dest_tag_name>Expected_Value_Target_score_for_round_10</dest_tag_name>
+        <dest_tag_data>80</dest_tag_data>
+		<max_limit>100</max_limit>
+        <factors />
+      </aspect>
+    </aspects>
+  </section>
+</root>

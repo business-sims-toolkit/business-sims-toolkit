@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3AA9821F-C768-47AE-A9BC-9487BF90544A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevOps.OpsScreen</RootNamespace>
+    <AssemblyName>DevOps.OpsScreen</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DEVTOOLS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release-With-Dev-Tools|AnyCPU' ">
+    <OutputPath>bin\Release-With-Dev-Tools\</OutputPath>
+    <DefineConstants>TRACE;DEVTOOLS</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\DevOps.OpsScreen.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="ActiveIncidentsPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="AttributeValuePairPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AwtPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DevOpsGameSelectionScreen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorControls\AppDevelopmentUi\AppDevelopmentColumn.cs" />
+    <Compile Include="FacilitatorControls\AppDevelopmentUi\AppDevelopmentColumnInfo.cs" />
+    <Compile Include="FacilitatorControls\AppDevelopmentUi\AppDevelopmentPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorControls\AppDevelopmentUi\DynamicGridLayoutPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorControls\AppDevelopmentUi\EnclosurePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorControls\AppDevelopmentUi\StartAppDevelopmentButtonsPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorControls\AppDevelopmentUi\Table\AppDevelopmentTable.cs" />
+    <Compile Include="FacilitatorControls\AppDevelopmentUi\DeploymentStagePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorControls\DetailedIncidentList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DevMetricView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DevOps_EditGamePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CCDWrapper.cs" />
+    <Compile Include="EnclosurePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorControls\AppDevelopmentUi\StartAppDevelopmentPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorControls\DetailedIncidentView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorControls\AppDevelopmentUi\DevelopingAppView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorControls\AppDevelopmentUi\DevelopingAppsList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorControls\IncidentColumnInfo.cs" />
+    <Compile Include="FacilitatorControls\IncidentPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FacilitatorOpsScreen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DevOpsErrorPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DevOpsImpactBasedSlaEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DevOpsLozengePopupMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevOpsMetricView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SecondaryDisplay\GameScreenPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NewServiceIcon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SecondaryDisplay\SecondaryDisplayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecondaryDisplay\SecondaryDisplayForm.Designer.cs">
+      <DependentUpon>SecondaryDisplayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecondaryDisplay\SecondaryDisplayPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SecondaryDisplay\TimedMessageDisplay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SecondaryDisplay\WindowControlBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ServiceDevelopmentUi\AppDevelopmentButtonFactory.cs" />
+    <Compile Include="ServiceDevelopmentUi\StageFailurePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ServiceDevelopmentUi\StageGroupPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ServiceDevelopmentUi\ServiceIconEventArgs.cs" />
+    <Compile Include="ServiceDevelopmentUi\StageGroupProperties.cs" />
+    <Compile Include="ServiceDevelopmentUi\StageButtonGroupPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ServiceProgressFeedbackPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TimeLine.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TimerViewer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DevOpsQuadStatusLozenge.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DevOpsQuadStatusLozengeGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InstallServicePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NewServiceProductPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NewServicesDisplay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RequestStatusDisplayPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RequestStatusDisplayRow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CompleteGamePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NewServicesPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RequestsPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OpsControlPanelBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ServiceProgressPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TradingOpsScreen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TransactionViewPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\libraries\core\Algorithms\Algorithms.csproj">
+      <Project>{A402764F-2455-4AE6-B1B9-D129C2B083CD}</Project>
+      <Name>Algorithms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\core\BaseUtils\BaseUtils.csproj">
+      <Project>{0add80d1-5e7e-46b1-bf36-1e57dccf4d84}</Project>
+      <Name>BaseUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\core\CoreUtils\CoreUtils.csproj">
+      <Project>{9c61e4e5-78bc-4d27-b5b0-dfdcb8dc935e}</Project>
+      <Name>CoreUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\core\Events\Events.csproj">
+      <Project>{0e80302d-2ef7-4428-8ce2-198aef8ed0fc}</Project>
+      <Name>Events</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\core\LibCore\LibCore.csproj">
+      <Project>{6d70195c-c791-4909-81fc-37daa61c143d}</Project>
+      <Name>LibCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\CommonGUI\CommonGUI.csproj">
+      <Project>{35070f1c-ce4f-4dca-86ac-9d6240882de0}</Project>
+      <Name>CommonGUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\GameManagement\GameManagement.csproj">
+      <Project>{37599bb8-b493-4323-ba2d-be2bd8fe4561}</Project>
+      <Name>GameManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\maturity_check\maturity_check.csproj">
+      <Project>{4C09046E-11B7-443C-861B-75139D96C39A}</Project>
+      <Name>maturity_check</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\Network\Network.csproj">
+      <Project>{b7ac785c-e7ce-4a7d-99ce-604e0cba231b}</Project>
+      <Name>Network</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\ChartScreens\ChartScreens.csproj">
+      <Project>{9bcec677-b934-4082-b614-4e9a6565aa65}</Project>
+      <Name>ChartScreens</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\CoreScreens\CoreScreens.csproj">
+      <Project>{cf933ac2-17f2-4948-b16c-9fb4be7e1765}</Project>
+      <Name>CoreScreens</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\DiscreteSimGUI\DiscreteSimGUI.csproj">
+      <Project>{a432c8e4-c426-4269-adb2-88ee1dbc8ae9}</Project>
+      <Name>DiscreteSimGUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\GameDetails\GameDetails.csproj">
+      <Project>{8acb73f6-8191-483f-90c5-6387e89e8eea}</Project>
+      <Name>GameDetails</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\GameEngine\GameEngine.csproj">
+      <Project>{d2a6864b-8134-416f-9e46-39c9dd0feaec}</Project>
+      <Name>GameEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\IncidentManagement\IncidentManagement.csproj">
+      <Project>{4e68e998-4959-42c2-8c9b-9d482ab2465d}</Project>
+      <Name>IncidentManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\core\Logging\Logging.csproj">
+      <Project>{4d8b9bd2-3bcc-4bd0-80c0-df2744db16ee}</Project>
+      <Name>Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\EboardUi\ResizingUi\ResizingUi.csproj">
+      <Project>{08fda587-8773-4b58-a8e0-7f7d5c8e4637}</Project>
+      <Name>ResizingUi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\Licensor\Licensor.csproj">
+      <Project>{3a93a44b-3855-4f52-b44e-af7d19461195}</Project>
+      <Name>Licensor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\media\Media\Media.csproj">
+      <Project>{5c02966b-f7e4-40bf-b40f-a36489cff1cb}</Project>
+      <Name>Media</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\NetworkScreens\NetworkScreens.csproj">
+      <Project>{7002ffff-b22b-480b-9c9b-a375ede27dd4}</Project>
+      <Name>NetworkScreens</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\ReportBuilder\ReportBuilder.csproj">
+      <Project>{82b44d1d-f102-4199-9e32-562d3563070b}</Project>
+      <Name>ReportBuilder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\TransitionObjects\TransitionObjects.csproj">
+      <Project>{82faaa1d-e0a6-4bad-b151-6d8545436f69}</Project>
+      <Name>TransitionObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\libraries\eboards\TransitionScreens\TransitionScreens.csproj">
+      <Project>{0eadaf40-2a1d-4282-9e4d-a8266b14c3f0}</Project>
+      <Name>TransitionScreens</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DevOps.OpsEngine\DevOps.OpsEngine.csproj">
+      <Project>{e870637b-3cb9-495c-b6c0-4345b7fd19c6}</Project>
+      <Name>DevOps.OpsEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DevOps.ReportsScreen\DevOps.ReportsScreen.csproj">
+      <Project>{7ca3bdd1-6ab8-4dfa-b466-9a78e9d5cc64}</Project>
+      <Name>DevOps.ReportsScreen</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+</Project>

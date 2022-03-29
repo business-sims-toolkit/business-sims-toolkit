@@ -1,0 +1,47 @@
+<project projectid="501" round="5" regulation="false" installname="Customer Support v2" upgradename = "Zosma" fixedzone = "Y" fixedlocation = "F329">
+<product productid="5011" actual_cost="210000">
+<platform platformid="Y" designdays="3" builddays="3" testdays="2" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireMin i_locationOf="XXXX" disk_left="30" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_locationOf="XXXX" mem_left="1000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Customer Support/upgrades">
+	<node version="2" name="Customer Support v2" desc="Customer\r\nSupport v2" shortdesc="Customer Support v2" slalimit="YYY" notinnetwork="true" upgraded_by_sip="501" biz_service_function="Customer Support" />
+	</createNodes>
+	<apply i_name = "501" MaxRevOffset="0" />
+</oncreate>
+<oninstall>
+	<createNodes i_to="Retired Business Services">
+		<node name="Customer Support (v1)" icon="icon_a" version="1"/>
+	</createNodes>
+	<copyAttributes i_to="Customer Support (v1)" i_from="Customer Support"/>
+	<apply i_name="Customer Support (v1)"	type="retired_biz_service"/>
+	<copyAttributes i_to="Customer Support" i_from="Customer Support v2"/>
+	<deleteNode i_name="Customer Support v2"/>
+	<apply i_name="Customer Support" slalimit="YYY"/>
+	<apply i_name="Store 1 Customer Support" desc="Customer\r\nSupport v2" shortdesc="Customer Support v2" icon="Icon_CS" slalimit="YYY" />
+	<apply i_name="Store 2 Customer Support" desc="Customer\r\nSupport v2" shortdesc="Customer Support v2" icon="Icon_CS" slalimit="YYY" />
+	<apply i_name="Store 3 Customer Support" desc="Customer\r\nSupport v2" shortdesc="Customer Support v2" icon="Icon_CS" slalimit="YYY" />
+	<apply i_name="Store 4 Customer Support" desc="Customer\r\nSupport v2" shortdesc="Customer Support v2" icon="Icon_CS" slalimit="YYY" />
+	<incrementAtt i_name="Zosma" i_doAfterSecs="0" memrequired="1000" diskrequired="30" />
+	<incrementAtt i_name="Zosma" i_doAfterSecs="0" proccap="0" />
+	<apply i_name="Zosma" upgraded_by_sip="501" />
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="0" instore_bonus="0" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="0" instore_bonus="0" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="0" instore_bonus="0" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="0" instore_bonus="0" />
+	<apply i_parentOf="Zosma" rebootFor="105" reasondown="Installing Zosma v2" />
+	<createNodes i_to="CostedEvents">
+		<node type="sipupgrade" desc="Upgraded Customer Support To Version 2" sip="501" ref="Customer Support" />
+		<node type="project" desc="Customer Support v2" sip="501" regulation="false" />
+	</createNodes>
+	<apply i_name = "501" MaxRevOffset="0" />
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+</project>

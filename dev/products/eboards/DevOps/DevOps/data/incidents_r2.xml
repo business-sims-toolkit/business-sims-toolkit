@@ -1,0 +1,583 @@
+<incidents>
+	<i id="AtStart">
+		<apply i_name="Availability" availability="100.0" />
+		<apply i_name="Revenue" max_revenue="0" revenue="0" revenue_lost="0" revenue_refresh="true" />
+		<apply i_name="Impact" impact="0" />
+		<apply i_name="Transactions" count_processed="0" count_good="0" count_max="96" transmaximum="96" instoremaxpermbu="12" onlinemaxpermbu="12" instoremaximum="48" onlinemaximum="48" />
+		<apply i_name="sla_breach" biz_serv_count="0" biz_serv_user_count="0" impact_count="0" />
+		<apply i_name="AppliedWorkArounds" num="0" />
+	</i>
+	<i id="AtStart">
+		<apply i_name="BU 1" last_transaction="0" />
+		<apply i_name="BU 2" last_transaction="0" />
+		<apply i_name="BU 3" last_transaction="0" />
+		<apply i_name="BU 4" last_transaction="0" />
+	</i>
+	<i id="AtStart">
+		<apply i_name="ApplicationsProcessed" apps_processed="0" max_apps_processed="0" apps_lost="0" complaints="0" />
+		<apply i_name="ApplicationsProcessed" max_apps_refresh="true" />
+	</i>
+
+
+	<i id="1" question="19" answer="3" ci_name="Phad PD-1 (U)">
+		<if i_name="Phad">
+			<then>
+				<if i_name="Phad" unbreakable="True">
+					<then>
+						<createNodes i_to="FacilitatorNotifiedErrors">
+							<Error type="error" sound="ding.wav" title="Incident Prevented" flash="false" text="Congratulations, an incident has been prevented as a result of effective Problem Management."  display_to_participants="true"/>
+						</createNodes>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="prevented_incident" desc="Cannot Apply Incident 1 to Phad Because It Has Been Upgraded To Version 2." />
+						</createNodes>
+					</then>
+					<else>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="incident" incident_id="1" desc="Phad Down." impacted_store_channels="2" service_name="Promotion Management" />
+						</createNodes>
+						<apply i_name="Phad BU 1 Promotion Management Connection" up="false" up_instore="true" up_online="false" incident_id="1" />
+						<apply i_name="Phad BU 2 Promotion Management Connection" up="false" up_instore="true" up_online="false" incident_id="1" />
+						<apply i_name="Promotion Management" incident_id="1" />
+					</else>
+				</if>
+			</then>
+		</if>
+	</i>
+
+	<i id="2" question="23" answer="27" ci_name="Bellatrix BX-1">
+		<if i_name="Bellatrix">
+			<then>
+				<if i_name="Bellatrix" unbreakable="True">
+					<then>
+						<createNodes i_to="FacilitatorNotifiedErrors">
+							<Error type="error" sound="ding.wav" title="Incident Prevented" flash="false" text="Congratulations, an incident has been prevented as a result of effective Problem Management."  display_to_participants="true"/>
+						</createNodes>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="prevented_incident" desc="Cannot Apply Incident 2 to Bellatrix Because It Has Been Upgraded To Version 2." />
+						</createNodes>
+					</then>
+					<else>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="incident" incident_id="2" desc="Bellatrix Down." impacted_store_channels="4" service_name="Credit Authorization" />
+						</createNodes>
+						<apply i_name="Bellatrix BU 1 Credit Authorization Connection" up="false" up_instore="false" up_online="false" incident_id="2" />
+						<apply i_name="Bellatrix BU 2 Credit Authorization Connection" up="false" up_instore="false" up_online="false" incident_id="2" />
+						<apply i_name="Credit Authorization" incident_id="2" />
+					</else>
+				</if>
+			</then>
+		</if>
+	</i>
+
+	<i id="3" question="63" answer="C" ci_name="Megrez MZ-1">
+		<if i_name="Megrez">
+			<then>
+				<if i_name="Megrez" unbreakable="True">
+					<then>
+						<createNodes i_to="FacilitatorNotifiedErrors">
+							<Error type="error" sound="ding.wav" title="Incident Prevented" flash="false" text="Congratulations, an incident has been prevented as a result of effective Problem Management."  display_to_participants="true"/>
+						</createNodes>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="prevented_incident" desc="Cannot Apply Incident 3 to Megrez Because It Has Been Upgraded To Version 2." />
+						</createNodes>
+					</then>
+					<else>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="incident" incident_id="3" desc="Megrez Down." impacted_store_channels="1" service_name="Retail Management" />
+						</createNodes>
+						<apply i_name="Megrez BU 4 Retail Management Connection" up="false" up_instore="true" up_online="false" incident_id="3" />
+						<apply i_name="Retail Management" incident_id="3" />
+					</else>
+				</if>
+			</then>
+		</if>
+	</i>
+
+	<i id="4" question="33" answer="C" ci_name="Castor CA-1">
+		<if i_name="Castor">
+			<then>
+				<if i_name="Castor" unbreakable="True">
+					<then>
+						<createNodes i_to="FacilitatorNotifiedErrors">
+							<Error type="error" sound="ding.wav" title="Incident Prevented" flash="false" text="Congratulations, an incident has been prevented as a result of effective Problem Management."  display_to_participants="true"/>
+						</createNodes>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="prevented_incident" desc="Cannot Apply Incident 4 to Castor Because It Has Been Upgraded To Version 2." />
+						</createNodes>
+					</then>
+					<else>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="incident" incident_id="4" desc="Castor Down." impacted_store_channels="2" service_name="Catalog Management" />
+						</createNodes>
+						<apply i_name="Castor BU 3 Catalog Management Connection" up="false" up_instore="false" up_online="false" incident_id="4" />
+						<apply i_name="Catalog Management" incident_id="4" />
+					</else>
+				</if>
+			</then>
+		</if>
+	</i>
+
+	<i id="5" question="62" answer="J" ci_name="Zosma ZO-1">
+		<if i_name="Zosma">
+			<then>
+				<if i_name="Zosma" unbreakable="True">
+					<then>
+						<createNodes i_to="FacilitatorNotifiedErrors">
+							<Error type="error" sound="ding.wav" title="Incident Prevented" flash="false" text="Congratulations, an incident has been prevented as a result of effective Problem Management."  display_to_participants="true"/>
+						</createNodes>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="prevented_incident" desc="Cannot Apply Incident 5 to Zosma Because It Has Been Upgraded To Version 2." />
+						</createNodes>
+					</then>
+					<else>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="incident" incident_id="5" desc="Zosma Down." impacted_store_channels="4" service_name="Customer Support" />
+						</createNodes>
+						<apply i_name="Zosma BU 1 Customer Support Connection" up="false" up_instore="true" up_online="false" incident_id="5" />
+						<apply i_name="Zosma BU 2 Customer Support Connection" up="false" up_instore="true" up_online="false" incident_id="5" />
+						<apply i_name="Zosma BU 3 Customer Support Connection" up="false" up_instore="true" up_online="false" incident_id="5" />
+						<apply i_name="Zosma BU 4 Customer Support Connection" up="false" up_instore="true" up_online="false" incident_id="5" />
+						<apply i_name="Customer Support" incident_id="5" />
+					</else>
+				</if>
+			</then>
+		</if>
+	</i>
+
+	<i id="6" question="34" answer="64" ci_name="Izar IZ-1">
+		<if i_name="Izar">
+			<then>
+				<if i_name="Izar" unbreakable="True">
+					<then>
+						<createNodes i_to="FacilitatorNotifiedErrors">
+							<Error type="error" sound="ding.wav" title="Incident Prevented" flash="false" text="Congratulations, an incident has been prevented as a result of effective Problem Management."  display_to_participants="true"/>
+						</createNodes>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="prevented_incident" desc="Cannot Apply Incident 6 to Izar Because It Has Been Upgraded To Version 2." />
+						</createNodes>
+					</then>
+					<else>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="incident" incident_id="6" desc="Izar Down." impacted_store_channels="3" service_name="Shopping Basket Management" />
+						</createNodes>
+						<apply i_name="Izar BU 1 Shopping Basket Management Connection" up="false" up_instore="true" up_online="false" incident_id="6" />
+						<apply i_name="Izar BU 2 Shopping Basket Management Connection" up="false" up_instore="true" up_online="false" incident_id="6" />
+						<apply i_name="Izar BU 3 Shopping Basket Management Connection" up="false" up_instore="true" up_online="false" incident_id="6" />
+						<apply i_name="Shopping Basket Management" incident_id="6" />
+					</else>
+				</if>
+			</then>
+		</if>
+	</i>
+
+	<i id="7" question="47" answer="2 Thirds" ci_name="Electra EA-1 (U)">
+		<if i_name="Electra">
+			<then>
+				<if i_name="Electra" unbreakable="True">
+					<then>
+						<createNodes i_to="FacilitatorNotifiedErrors">
+							<Error type="error" sound="ding.wav" title="Incident Prevented" flash="false" text="Congratulations, an incident has been prevented as a result of effective Problem Management."  display_to_participants="true"/>
+						</createNodes>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="prevented_incident" desc="Cannot Apply Incident 7 to Electra Because It Has Been Upgraded To Version 2." />
+						</createNodes>
+					</then>
+					<else>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="incident" incident_id="7" desc="Electra Down." impacted_store_channels="8" service_name="Stock Control" />
+						</createNodes>
+						<apply i_name="Electra BU 1 Stock Control Connection" up="false" up_instore="false" up_online="false" incident_id="7" />
+						<apply i_name="Electra BU 2 Stock Control Connection" up="false" up_instore="false" up_online="false" incident_id="7" />
+						<apply i_name="Electra BU 3 Stock Control Connection" up="false" up_instore="false" up_online="false" incident_id="7" />
+						<apply i_name="Electra BU 4 Stock Control Connection" up="false" up_instore="false" up_online="false" incident_id="7" />
+						<apply i_name="Stock Control" incident_id="7" />
+					</else>
+				</if>
+			</then>
+		</if>
+	</i>
+
+	<i id="8" question="68" answer="16061" ci_name="Tarazed TZ-1">
+		<if i_name="Tarazed">
+			<then>
+				<if i_name="Tarazed" unbreakable="True">
+					<then>
+						<createNodes i_to="FacilitatorNotifiedErrors">
+							<Error type="error" sound="ding.wav" title="Incident Prevented" flash="false" text="Congratulations, an incident has been prevented as a result of effective Problem Management."  display_to_participants="true"/>
+						</createNodes>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="prevented_incident" desc="Cannot Apply Incident 8 to Tarazed Because It Has Been Upgraded To Version 2." />
+						</createNodes>
+					</then>
+					<else>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="incident" incident_id="8" desc="Tarazed Down." impacted_store_channels="2" service_name="Warehouse Management" />
+						</createNodes>
+						<apply i_name="Tarazed BU 1 Warehouse Management Connection" up="false" up_instore="true" up_online="false" incident_id="8" />
+						<apply i_name="Tarazed BU 2 Warehouse Management Connection" up="false" up_instore="true" up_online="false" incident_id="8" />
+						<apply i_name="Warehouse Management" incident_id="8" />
+					</else>
+				</if>
+			</then>
+		</if>
+	</i>
+
+	<i id="9" question="63" answer="C" ci_name="Megrez MZ-1">
+		<if i_name="Megrez">
+			<then>
+				<if i_name="Megrez" unbreakable="True">
+					<then>
+						<createNodes i_to="FacilitatorNotifiedErrors">
+							<Error type="error" sound="ding.wav" title="Incident Prevented" flash="false" text="Congratulations, an incident has been prevented as a result of effective Problem Management."  display_to_participants="true"/>
+						</createNodes>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="prevented_incident" desc="Cannot Apply Incident 9 to Megrez Because It Has Been Upgraded To Version 2." />
+						</createNodes>
+					</then>
+					<else>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="incident" incident_id="9" desc="Megrez Down." impacted_store_channels="1" service_name="Retail Management" />
+						</createNodes>
+						<apply i_name="Megrez BU 4 Retail Management Connection" up="false" up_instore="true" up_online="false" incident_id="9" />
+						<apply i_name="Retail Management" incident_id="9" />
+					</else>
+				</if>
+			</then>
+		</if>
+	</i>
+
+	<i id="10" question="95" answer="2" ci_name="Pluto">
+		<if i_name="Electra">
+			<then>
+				<apply i_name="Electra BU 1 Stock Control Connection" up="false" incident_id="10" up_instore="false" up_online="false" />
+				<apply i_name="Electra BU 2 Stock Control Connection" up="false" incident_id="10" up_instore="false" up_online="false" />
+				<apply i_name="Electra BU 3 Stock Control Connection" up="false" incident_id="10" up_instore="false" up_online="false" />
+				<apply i_name="Electra BU 4 Stock Control Connection" up="false" incident_id="10" up_instore="false" up_online="false" />
+				<apply i_name="Stock Control" error_codes="RX12" />
+			</then>
+		</if>
+		<if i_name="Megrez">
+			<then>
+				<apply i_name="Megrez BU 1 Retail Management Connection" up="false" incident_id="10" up_instore="false" up_online="false" />
+				<apply i_name="Megrez BU 2 Retail Management Connection" up="false" incident_id="10" up_instore="false" up_online="false" />
+				<apply i_name="Megrez BU 3 Retail Management Connection" up="false" incident_id="10" up_instore="false" up_online="false" />
+				<apply i_name="Megrez BU 4 Retail Management Connection" up="false" incident_id="10" up_instore="false" up_online="false" />
+				<apply i_name="Retail Management" error_codes="XE30" />
+			</then>
+		</if>
+		<createNodes i_to="CostedEvents">
+			<CostedEvent type="incident" incident_id="10" desc="Electra, Megrez Down." impacted_store_channels="8" service_name="Stock Control,Retail Management" />
+		</createNodes>
+	</i>
+
+	<i id="11" question="22" answer="382" ci_name="Bellatrix BX-1">
+		<if i_name="Bellatrix">
+			<then>
+				<if i_name="Bellatrix" unbreakable="True">
+					<then>
+						<createNodes i_to="FacilitatorNotifiedErrors">
+							<Error type="error" sound="ding.wav" title="Incident Prevented" flash="false" text="Congratulations, an incident has been prevented as a result of effective Problem Management."  display_to_participants="true"/>
+						</createNodes>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="prevented_incident" desc="Cannot Apply Incident 11 to Bellatrix Because It Has Been Upgraded To Version 2." />
+						</createNodes>
+					</then>
+					<else>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="incident" incident_id="11" desc="Bellatrix Down." impacted_store_channels="8" service_name="Credit Authorization" />
+						</createNodes>
+						<apply i_name="Bellatrix BU 1 Credit Authorization Connection" up="false" up_instore="false" up_online="false" incident_id="11" />
+						<apply i_name="Bellatrix BU 2 Credit Authorization Connection" up="false" up_instore="false" up_online="false" incident_id="11" />
+						<apply i_name="Bellatrix BU 3 Credit Authorization Connection" up="false" up_instore="false" up_online="false" incident_id="11" />
+						<apply i_name="Bellatrix BU 4 Credit Authorization Connection" up="false" up_instore="false" up_online="false" incident_id="11" />
+						<apply i_name="Credit Authorization" incident_id="11" />
+					</else>
+				</if>
+			</then>
+		</if>
+	</i>
+
+	<i id="12" question="3" answer="7" ci_name="Electra EA-1 (U)">
+		<if i_name="Electra">
+			<then>
+				<if i_name="Electra" unbreakable="True">
+					<then>
+						<createNodes i_to="FacilitatorNotifiedErrors">
+							<Error type="error" sound="ding.wav" title="Incident Prevented" flash="false" text="Congratulations, an incident has been prevented as a result of effective Problem Management."  display_to_participants="true"/>
+						</createNodes>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="prevented_incident" desc="Cannot Apply Incident 12 to Electra Because It Has Been Upgraded To Version 2." />
+						</createNodes>
+					</then>
+					<else>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="incident" incident_id="12" desc="Electra Down." impacted_store_channels="6" service_name="Stock Control" />
+						</createNodes>
+						<apply i_name="Electra BU 1 Stock Control Connection" up="false" up_instore="false" up_online="false" incident_id="12" />
+						<apply i_name="Electra BU 2 Stock Control Connection" up="false" up_instore="false" up_online="false" incident_id="12" />
+						<apply i_name="Electra BU 3 Stock Control Connection" up="false" up_instore="false" up_online="false" incident_id="12" />
+						<apply i_name="Stock Control" incident_id="12" />
+					</else>
+				</if>
+			</then>
+		</if>
+	</i>
+
+	<i id="13" question="75" answer="6.45" ci_name="Nunki NN-1 (U)">
+		<if i_name="Nunki">
+			<then>
+				<if i_name="Nunki" unbreakable="True">
+					<then>
+						<createNodes i_to="FacilitatorNotifiedErrors">
+							<Error type="error" sound="ding.wav" title="Incident Prevented" flash="false" text="Congratulations, an incident has been prevented as a result of effective Problem Management."  display_to_participants="true"/>
+						</createNodes>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="prevented_incident" desc="Cannot Apply Incident 13 to Nunki Because It Has Been Upgraded To Version 2." />
+						</createNodes>
+					</then>
+					<else>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="incident" incident_id="13" desc="Nunki Down." impacted_store_channels="3" service_name="Online Security Management" />
+						</createNodes>
+						<apply i_name="Nunki BU 1 Online Security Management Connection" up="false" up_instore="true" up_online="false" incident_id="13" />
+						<apply i_name="Nunki BU 2 Online Security Management Connection" up="false" up_instore="true" up_online="false" incident_id="13" />
+						<apply i_name="Nunki BU 3 Online Security Management Connection" up="false" up_instore="true" up_online="false" incident_id="13" />
+						<apply i_name="Online Security Management" incident_id="13" />
+					</else>
+				</if>
+			</then>
+		</if>
+	</i>
+
+	<i id="51">
+		<apply i_name="Catalog Management" danger_level="100" />
+	</i>
+	<i id="51_fix">
+		<apply i_name="Catalog Management" danger_level="0" />
+	</i>
+	<i id="52">
+		<apply i_name="Credit Authorization" danger_level="100" />
+	</i>
+	<i id="52_fix">
+		<apply i_name="Credit Authorization" danger_level="0" />
+	</i>
+	<i id="53">
+		<apply i_name="Customer Support" danger_level="100" />
+	</i>
+	<i id="53_fix">
+		<apply i_name="Customer Support" danger_level="0" />
+	</i>
+	<i id="54">
+		<apply i_name="Dispatch Scanning" danger_level="100" />
+	</i>
+	<i id="54_fix">
+		<apply i_name="Dispatch Scanning" danger_level="0" />
+	</i>
+	<i id="55">
+		<apply i_name="EPOS" danger_level="100" />
+	</i>
+	<i id="55_fix">
+		<apply i_name="EPOS" danger_level="0" />
+	</i>
+	<i id="56">
+		<apply i_name="Fulfilment" danger_level="100" />
+	</i>
+	<i id="56_fix">
+		<apply i_name="Fulfilment" danger_level="0" />
+	</i>
+	<i id="57">
+		<apply i_name="G-Tunes" danger_level="100" />
+	</i>
+	<i id="57_fix">
+		<apply i_name="G-Tunes" danger_level="0" />
+	</i>
+	<i id="58">
+		<apply i_name="Multi-Store" danger_level="100" />
+	</i>
+	<i id="58_fix">
+		<apply i_name="Multi-Store" danger_level="0" />
+	</i>
+	<i id="59">
+		<apply i_name="Online Security Management" danger_level="100" />
+	</i>
+	<i id="59_fix">
+		<apply i_name="Online Security Management" danger_level="0" />
+	</i>
+	<i id="60">
+		<apply i_name="Promotion Management" danger_level="100" />
+	</i>
+	<i id="60_fix">
+		<apply i_name="Promotion Management" danger_level="0" />
+	</i>
+	<i id="61">
+		<apply i_name="Retail Management" danger_level="100" />
+	</i>
+	<i id="61_fix">
+		<apply i_name="Retail Management" danger_level="0" />
+	</i>
+	<i id="62">
+		<apply i_name="Shopping Basket Management" danger_level="100" />
+	</i>
+	<i id="62_fix">
+		<apply i_name="Shopping Basket Management" danger_level="0" />
+	</i>
+	<i id="63">
+		<apply i_name="Stock Control" danger_level="100" />
+	</i>
+	<i id="63_fix">
+		<apply i_name="Stock Control" danger_level="0" />
+	</i>
+	<i id="64">
+		<apply i_name="Warehouse Management" danger_level="100" />
+	</i>
+	<i id="64_fix">
+		<apply i_name="Warehouse Management" danger_level="0" />
+	</i>
+	<i id="21" question="63" answer="C" ci_name="Acamar (U)">
+		<if i_name="Acamar">
+			<then>
+				<if i_name="Acamar" unbreakable="True">
+					<then>
+						<createNodes i_to="FacilitatorNotifiedErrors">
+							<Error type="error" sound="ding.wav" title="Incident Prevented" flash="false" text="Congratulations, an incident has been prevented as a result of effective Problem Management."  display_to_participants="true"/>
+						</createNodes>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="prevented_incident" desc="Cannot Apply Incident 21 to Acamar Because It Has Been Upgraded To Version 2." />
+						</createNodes>
+					</then>
+					<else>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="incident" incident_id="21" desc="Acamar Down." impacted_store_channels="4" service_name="Event Planning" />
+						</createNodes>
+						<apply i_name="Acamar BU 1 Event Planning Connection" up="false" up_instore="false" up_online="true" incident_id="21" />
+						<apply i_name="Acamar BU 2 Event Planning Connection" up="false" up_instore="false" up_online="true" incident_id="21" />
+						<apply i_name="Acamar BU 3 Event Planning Connection" up="false" up_instore="false" up_online="true" incident_id="21" />
+						<apply i_name="Acamar BU 4 Event Planning Connection" up="false" up_instore="false" up_online="true" incident_id="21" />
+						<apply i_name="Event Planning" incident_id="21" />
+					</else>
+				</if>
+			</then>
+		</if>
+	</i>
+
+	<i id="22" question="80" answer="Picture">
+		<if i_name="Achird">
+			<then>
+				<if i_name="Achird" unbreakable="True">
+					<then>
+						<createNodes i_to="FacilitatorNotifiedErrors">
+							<Error type="error" sound="ding.wav" title="Incident Prevented" flash="false" text="Congratulations, an incident has been prevented as a result of effective Problem Management."  display_to_participants="true"/>
+						</createNodes>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="prevented_incident" desc="Cannot Apply Incident 22 to Achird Because It Has Been Upgraded To Version 2." />
+						</createNodes>
+					</then>
+					<else>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="incident" incident_id="22" desc="Achird Down." impacted_store_channels="4" service_name="Enterprise Business Management" />
+						</createNodes>
+						<apply i_name="Achird BU 1 Enterprise Business Management Connection" up="false" up_instore="false" up_online="false" incident_id="22" />
+						<apply i_name="Achird BU 4 Enterprise Business Management Connection" up="false" up_instore="false" up_online="false" incident_id="22" />
+						<apply i_name="Enterprise Business Management" incident_id="22" />
+					</else>
+				</if>
+			</then>
+		</if>
+	</i>
+
+	<i id="23" question="67" answer="5 Suns">
+		<if i_name="Acubens">
+			<then>
+				<if i_name="Acubens" unbreakable="True">
+					<then>
+						<createNodes i_to="FacilitatorNotifiedErrors">
+							<Error type="error" sound="ding.wav" title="Incident Prevented" flash="false" text="Congratulations, an incident has been prevented as a result of effective Problem Management."  display_to_participants="true"/>
+						</createNodes>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="prevented_incident" desc="Cannot Apply Incident 23 to Acubens Because It Has Been Upgraded To Version 2." />
+						</createNodes>
+					</then>
+					<else>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="incident" incident_id="23" desc="Acubens Down." impacted_store_channels="6" service_name="Production Scheduler" />
+						</createNodes>
+						<apply i_name="Acubens BU 1 Production Scheduler Connection" up="false" up_instore="false" up_online="false" incident_id="23" />
+						<apply i_name="Acubens BU 3 Production Scheduler Connection" up="false" up_instore="false" up_online="false" incident_id="23" />
+						<apply i_name="Acubens BU 4 Production Scheduler Connection" up="false" up_instore="false" up_online="false" incident_id="23" />
+						<apply i_name="Production Scheduler" incident_id="23" />
+					</else>
+				</if>
+			</then>
+		</if>
+	</i>
+
+	<i id="24" question="68" answer="16061">
+		<if i_name="Alcor">
+			<then>
+				<if i_name="Alcor" unbreakable="True">
+					<then>
+						<createNodes i_to="FacilitatorNotifiedErrors">
+							<Error type="error" sound="ding.wav" title="Incident Prevented" flash="false" text="Congratulations, an incident has been prevented as a result of effective Problem Management."  display_to_participants="true"/>
+						</createNodes>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="prevented_incident" desc="Cannot Apply Incident 24 to Alcor Because It Has Been Upgraded To Version 2." />
+						</createNodes>
+					</then>
+					<else>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="incident" incident_id="24" desc="Alcor Down." impacted_store_channels="1" service_name="Network - VPN Services" />
+						</createNodes>
+						<apply i_name="Alcor BU 4 Network - VPN Services Connection" up="false" up_instore="true" up_online="false" incident_id="24" />
+						<apply i_name="Network - VPN Services" incident_id="24" />
+					</else>
+				</if>
+			</then>
+		</if>
+	</i>
+
+	<i id="31" question="39" answer="Build" ci_name="Rastaban RD-1">
+		<if i_name="Rastaban">
+			<then>
+				<if i_name="Rastaban" unbreakable="True">
+					<then>
+						<createNodes i_to="FacilitatorNotifiedErrors">
+							<Error type="error" sound="ding.wav" title="Incident Prevented" flash="false" text="Congratulations, an incident has been prevented as a result of effective Problem Management."  display_to_participants="true"/>
+						</createNodes>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="prevented_incident" desc="Cannot Apply Incident 31 to Rastaban Because It Has Been Upgraded To Version 2." />
+						</createNodes>
+					</then>
+					<else>
+						<createNodes i_to="CostedEvents">
+							<CostedEvent type="incident" incident_id="31" desc="Rastaban Down." impacted_store_channels="1" service_name="Fulfilment" />
+						</createNodes>
+						<apply i_name="Rastaban BU 1 Fulfilment Connection" up="false" up_instore="true" up_online="false" incident_id="31" />
+						<apply i_name="Fulfilment" incident_id="31" />
+					</else>
+				</if>
+			</then>
+		</if>
+	</i>
+
+	<i id="31_fix">
+		<if_confirm text="Incident 31 should normally be closed by developing Fulfilment v2. Are you sure you want to close the incident directly instead?">
+			<then>
+				<createNodes i_to="enteredIncidents">
+					<IncidentNumber id="31_fix_confirmed" />
+				</createNodes>
+			</then>
+		</if_confirm>
+	</i>
+
+	<i id="31_fix_confirmed">
+		<createNodes i_to="CostedEvents">
+			<CostedEvent type="entity fix" desc="Incident 31 fixed" incident_id="31" />
+		</createNodes>
+
+		<apply i_name="Rastaban BU 1 Fulfilment Connection" up="true" up_instore="true" up_online="true" incident_id="" />
+		<apply i_name="Fulfilment" incident_id="" />
+	</i>
+
+	<include>data/Transactions_r2.xml</include>
+	<include>data/FreestyleIncidents.xml</include>
+</incidents>

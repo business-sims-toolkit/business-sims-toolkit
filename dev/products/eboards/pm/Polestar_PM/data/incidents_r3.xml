@@ -1,0 +1,152 @@
+<incidents>
+	// Generic stuff.
+	<i id="AtStart">
+		<apply i_name="IncidentCount" impact="0" />
+		<apply i_name="Availability" availability="100" />
+		<apply i_name="day_activity_messages" message="" />
+		<apply i_name="day_activity_messages1" message="" />
+		<apply i_name="day_activity_messages2" message="" />
+		<apply i_name="day_activity_messages3" message="" />
+		<apply i_name="day_activity_messages4" message="" />
+	</i>
+	
+	// Comms messages.
+	<i id="AtStart">
+		<createNodes i_to="comms_list" i_doAfterSecs="0">
+			<msg subtype="ops_msg" name="market_alert" display_icon="block_msg" display_title="Business Team: Market Analysis Reports - Day 5, 10, 15" type="msg" display_content="" />
+		</createNodes>
+		<deleteNode i_name="market_alert" i_doAfterSecs="300"/>
+		<createNodes i_to="comms_list" i_doAfterSecs="301">
+			<msg subtype="ops_msg" name="market_alert" display_icon="block_msg" display_title="Business Team: Market Analysis Reports - Day 10, 15" type="msg" display_content="" />
+		</createNodes>
+		<deleteNode i_name="market_alert" i_doAfterSecs="600" />
+		<createNodes i_to="comms_list" i_doAfterSecs="601">
+			<msg subtype="ops_msg" name="market_alert" display_icon="block_msg" display_title="Business Team: Market Analysis Reports - Day 15" type="msg" display_content="" />
+		</createNodes>
+		<deleteNode i_name="market_alert" i_doAfterSecs="900"/>
+	</i>
+
+	//ensuring that the Blocking days are correct
+	<i id="AtStart">
+		<createNodes i_to="ops_worklist" i_doAfterSecs="0">
+			<task type="ops_item" action="blockday" day="4" days_left="1" duration="1" status="todo" location="" display="Audit" memory_change="0" disk_change="0" money_cost="0" rx_nodename="" icon="audit.png" />
+			<task type="ops_item" action="blockday" day="13" days_left="1" duration="1" status="todo" location="" display="Audit" memory_change="0" disk_change="0" money_cost="0" rx_nodename="" icon="audit.png" />
+			<task type="ops_item" action="blockday" day="14" days_left="1" duration="1" status="todo" location="" display="Audit" memory_change="0" disk_change="0" money_cost="0" rx_nodename="" icon="audit.png" />
+			<task type="ops_item" action="blockday" day="25" days_left="1" duration="1" status="todo" location="" display="Freeze" memory_change="0" disk_change="0" money_cost="0" rx_nodename="" icon="freeze.png" />
+			<task type="ops_item" action="blockday" day="26" days_left="1" duration="1" status="todo" location="" display="Freeze" memory_change="0" disk_change="0" money_cost="0" rx_nodename="" icon="freeze.png" />
+		</createNodes>
+	</i>	
+
+	//ensuring that the experts system is switched on for Round 3
+	<i id="AtStart">
+		<apply i_name="experts" enabled="true" />
+	</i>
+
+	//ensuring that running benefit numbers are set to the correct start value 
+	<i id="AtStart">
+		<apply i_name="running_benefit" transactions_gained="0" cost_reduction="0" total_benefit="0" />
+	</i>
+	
+	// Initial state.
+	<i id="AtStart">
+		<apply i_doAfterSecs="0" i_name="market_info" transactions_gain="120000" />
+		<apply i_doAfterSecs="0" i_name="market_info" cost_reduction="461000" />
+		<apply i_doAfterSecs="0" i_name="market_info" cost_avoidance="120000" />
+		<apply i_name="pmo_budget" budget_allowed="1100000" budget_spent="0" budget_left="1100000" />
+		<apply i_name="BusinessProjectedPerformance" pmo_budgetTarget="13000000" peopleTarget="330" />
+	</i>
+
+	//==================================================
+	//==Alter the displayed transaction after 3 mins 
+	//==================================================	
+	<i id="100" >
+		<apply i_doAfterSecs="0" i_name="market_info" transactions_gain="125000" leader_transaction_volume="445,000 (6.2%)" display_alert_gain="true"/>
+	</i>
+	
+	<i id="101" >
+		<apply i_doAfterSecs="0" i_name="market_info" display_alert_gain="false" />
+	</i>
+	
+	<i id="AtStart">
+		<createNodes i_to="enteredIncidents" i_doAfterSecs="180">
+			<IncidentNumber id="100" />
+		</createNodes>
+		<createNodes i_to="enteredIncidents" i_doAfterSecs="300">
+			<IncidentNumber id="101" />
+		</createNodes>
+	</i>	
+
+	//Incidents.
+	<i id="1">
+		<createNodes i_to="FacilitatorNotifiedErrors">
+			<Error type="error" sound="ding.wav" text="No Project Incidents in Round 3" />
+		</createNodes>
+	</i>
+
+	<i id="2">
+		<createNodes i_to="FacilitatorNotifiedErrors">
+			<Error type="error" sound="ding.wav" text="No Project Incidents in Round 3" />
+		</createNodes>
+	</i>
+
+	<i id="3">
+		<createNodes i_to="FacilitatorNotifiedErrors">
+			<Error type="error" sound="ding.wav" text="No Project Incidents in Round 3" />
+		</createNodes>
+	</i>
+
+	<i id="4">
+		<createNodes i_to="FacilitatorNotifiedErrors">
+			<Error type="error" sound="ding.wav" text="No Project Incidents in Round 3" />
+		</createNodes>
+	</i>
+
+	<i id="5">
+		<createNodes i_to="FacilitatorNotifiedErrors">
+			<Error type="error" sound="ding.wav" text="No Project Incidents in Round 3" />
+		</createNodes>
+	</i>
+
+	<i id="6">
+		<createNodes i_to="FacilitatorNotifiedErrors">
+			<Error type="error" sound="ding.wav" text="No Project Incidents in Round 3" />
+		</createNodes>
+	</i>
+
+	<i id="7">
+		<createNodes i_to="FacilitatorNotifiedErrors">
+			<Error type="error" sound="ding.wav" text="No Project Incidents in Round 3" />
+		</createNodes>
+	</i>
+
+	<i id="8">
+		<createNodes i_to="FacilitatorNotifiedErrors">
+			<Error type="error" sound="ding.wav" text="No Project Incidents in Round 3" />
+		</createNodes>
+	</i>
+
+	<i id="9">
+		<createNodes i_to="FacilitatorNotifiedErrors">
+			<Error type="error" sound="ding.wav" text="No Project Incidents in Round 3" />
+		</createNodes>
+	</i>
+
+	<i id="10">
+		<createNodes i_to="FacilitatorNotifiedErrors">
+			<Error type="error" sound="ding.wav" text="No Project Incidents in Round 3" />
+		</createNodes>
+	</i>
+
+	<i id="11">
+		<createNodes i_to="FacilitatorNotifiedErrors">
+			<Error type="error" sound="ding.wav" text="No Project Incidents in Round 3" />
+		</createNodes>
+	</i>
+
+	<i id="12">
+		<createNodes i_to="FacilitatorNotifiedErrors">
+			<Error type="error" sound="ding.wav" text="No Project Incidents in Round 3" />
+		</createNodes>
+	</i>
+
+</incidents>

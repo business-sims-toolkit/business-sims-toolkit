@@ -1,0 +1,135 @@
+<AppUpgradeDefs>
+  <upgrade app="Cooling">
+    <requirements>
+      <requireAttrs i_name="CoolingSystem" upgraded="false" i_failReason="Already Upgraded" />
+    </requirements>
+    <i>
+      <apply i_name="CoolingSystem" upgraded="true" />
+      <apply i_name="Cybele" proccap="24" />
+      <apply i_name="Pluto" proccap="24" />
+      <apply i_name="Pallas" proccap="24" />
+      <apply i_name="Juno" proccap="24" />
+      <apply i_name="Saturn" proccap="24" />
+      <apply i_name="Europa" proccap="20" />
+      <apply i_name="Neptune" proccap="20" />
+      <apply i_name="Ceres" proccap="24" />
+      <apply i_name="Demos" proccap="24" />
+      <apply i_name="Mercury" proccap="24" />
+      <apply i_name="Venus" proccap="24" />
+      <apply i_name="Vesta" proccap="24" />
+      <apply i_name="Jupiter" proccap="24" />
+      <apply i_name="Mars" proccap="24" />
+      <apply i_name="Titan" proccap="24" />
+      <apply i_name="Ariel" proccap="20" />
+      <apply i_name="Charon" proccap="20" />
+      <apply i_name="Callisto" proccap="20" />
+      <apply i_name="Camilla" proccap="24" />
+      <apply i_name="Phobos" proccap="24" />
+      <apply i_name="Rhea" proccap="24" />
+      <apply i_name="Mimas" proccap="24" />
+      <createNodes i_to="CostedEvents">
+        <node type="upgradecooling" desc="Upgraded Cooling System" ref="Cooling" />
+      </createNodes>
+    </i>
+  </upgrade>
+  <upgrade app="Castor">
+    <requirements>
+      <requireExists i_name="Castor" i_failReason="App Not Found" />
+      <requireMin i_parentOf="Castor" disk_left="1" i_failReason="Not Sufficient Storage." />
+      <requireMin i_parentOf="Castor" mem_left="500" i_failReason="Not Sufficient Memory." />
+      <ifAttrs i_parentOf="Castor" up="false" i_failReason="Castor Cannot Be Upgraded As The Server It Is Installed On Is Down." />
+    </requirements>
+    <i>
+      <apply i_name="Castor" version="2" canupgrade="false" upgraded="true" danger_level="20" />
+      <apply i_name="Castor" up="true" up_online ="true" up_instore="true" workingAround="0" incident_id="" goingDownInSecs="" />
+      <apply i_name="Saturn" rebootFor="105" reasondown="Upgrading Castor" />
+      <incrementAtt i_name="Castor" i_doAfterSecs="0" memrequired="500" diskrequired="1" />
+      <createNodes i_to="AppUpgradeResetLinksQueue">
+        <node type="appupgrade_resetlinks" desc="Upgraded Castor so clear any downed links" ref="Castor" />
+      </createNodes>
+      <createNodes i_to="CostedEvents">
+        <node type="appupgrade" desc="Upgraded Castor To Version 2" ref="Castor" />
+      </createNodes>
+    </i>
+  </upgrade>
+  <upgrade app="Phad">
+    <requirements>
+      <requireExists i_name="Phad" i_failReason="App Not Found" />
+      <requireMin i_parentOf="Phad" disk_left="1" i_failReason="Not Sufficient Storage." />
+      <requireMin i_parentOf="Phad" mem_left="500" i_failReason="Not Sufficient Memory." />
+      <ifAttrs i_parentOf="Phad" up="false" i_failReason="Phad Cannot Be Upgraded As The Server It Is Installed On Is Down." />
+    </requirements>
+    <i>
+      <apply i_name="Phad" version="2" canupgrade="false" upgraded="true" danger_level="20" />
+      <apply i_name="Phad" up="true" up_online ="true" workingAround="0" incident_id="" goingDownInSecs="" />
+      <apply i_name="Mercury" rebootFor="105" reasondown="Upgrading Phad" />
+      <incrementAtt i_name="Phad" i_doAfterSecs="0" memrequired="500" diskrequired="1" />
+      <createNodes i_to="AppUpgradeResetLinksQueue">
+        <node type="appupgrade_resetlinks" desc="Upgraded Phad so clear any downed links" ref="Phad" />
+      </createNodes>
+      <createNodes i_to="CostedEvents">
+        <node type="appupgrade" desc="Upgraded Phad To Version 2" ref="Phad" />
+      </createNodes>
+    </i>
+  </upgrade>
+  <upgrade app="Tarazed">
+    <requirements>
+      <requireExists i_name="Tarazed" i_failReason="App Not Found" />
+      <requireMin i_parentOf="Tarazed" disk_left="1" i_failReason="Not Sufficient Storage." />
+      <requireMin i_parentOf="Tarazed" mem_left="500" i_failReason="Not Sufficient Memory." />
+      <ifAttrs i_parentOf="Tarazed" up="false" i_failReason="Tarazed Cannot Be Upgraded As The Server That It Is Installed On Is Down." />
+    </requirements>
+    <i>
+      <apply i_name="Tarazed" version="2" canupgrade="false" upgraded="true" danger_level="20" />
+      <apply i_name="Tarazed" up="true" up_online ="true" workingAround="0" incident_id="" goingDownInSecs="" />
+      <apply i_name="Venus" rebootFor="105" reasondown="Upgrading Tarazed" />
+      <incrementAtt i_name="Tarazed" i_doAfterSecs="0" memrequired="500" diskrequired="1" />
+      <createNodes i_to="AppUpgradeResetLinksQueue">
+        <node type="appupgrade_resetlinks" desc="Upgraded Tarazed so clear any downed links" ref="Tarazed" />
+      </createNodes>
+      <createNodes i_to="CostedEvents">
+        <node type="appupgrade" desc="Upgraded Tarazed To Version 2" ref="Tarazed" />
+      </createNodes>
+    </i>
+  </upgrade>
+  <upgrade app="Sham">
+    <requirements>
+      <requireExists i_name="Sham" i_failReason="App Not Found" />
+      <requireMin i_parentOf="Sham" disk_left="1" i_failReason="Not Sufficient Storage." />
+      <requireMin i_parentOf="Sham" mem_left="500" i_failReason="Not Sufficient Memory." />
+      <ifAttrs i_parentOf="Sham" up="false" i_failReason="Sham Cannot Be Upgraded As The Server It Is Installed On Is Down." />
+    </requirements>
+    <i>
+      <apply i_name="Sham" version="2" canupgrade="false" upgraded="true" danger_level="20" />
+      <apply i_name="Sham" up="true" up_online ="true" workingAround="0" incident_id="" goingDownInSecs="" />
+      <apply i_name="Venus" rebootFor="105" reasondown="Upgrading Sham" />
+      <incrementAtt i_name="Sham" i_doAfterSecs="0" memrequired="500" diskrequired="1" />
+      <createNodes i_to="AppUpgradeResetLinksQueue">
+        <node type="appupgrade_resetlinks" desc="Upgraded Sham so clear any downed links" ref="Sham" />
+      </createNodes>
+      <createNodes i_to="CostedEvents">
+        <node type="appupgrade" desc="Upgraded Sham To Version 2" ref="Sham" />
+      </createNodes>
+    </i>
+  </upgrade>
+  <upgrade app="Megrez">
+    <requirements>
+      <requireExists i_name="Megrez" i_failReason="App Not Found" />
+      <requireMin i_parentOf="Megrez" disk_left="1" i_failReason="Not Sufficient Storage." />
+      <requireMin i_parentOf="Megrez" mem_left="500" i_failReason="Not Sufficient Memory." />
+      <ifAttrs i_parentOf="Megrez" up="false" i_failReason="Megrez Cannot Be Upgraded As The Server It Is Installed On Is Down." />
+    </requirements>
+    <i>
+      <apply i_name="Megrez" version="2" beta="false" canupgrade="false" upgraded="true" danger_level="20" />
+      <apply i_name="Megrez" up="true" up_online ="true" workingAround="0" incident_id="" goingDownInSecs="" />
+      <apply i_name="Pluto" rebootFor="105" reasondown="Upgrading Megrez" />
+      <incrementAtt i_name="Megrez" i_doAfterSecs="0" memrequired="500" diskrequired="1" />
+      <createNodes i_to="AppUpgradeResetLinksQueue">
+        <node type="appupgrade_resetlinks" desc="Upgraded Megrez so clear any downed links" ref="Megrez" />
+      </createNodes>
+      <createNodes i_to="CostedEvents">
+        <node type="appupgrade" desc="Upgraded Megrez To Version 2" ref="Megrez" />
+      </createNodes>
+    </i>
+  </upgrade>
+</AppUpgradeDefs>

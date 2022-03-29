@@ -1,0 +1,44 @@
+<incidents>
+<i id="AtStart">
+// 15 Minutes into the round (900 seconds) the Terminals have an impact dependency on
+// an app that the players have to install. Before this point there is no impact
+// of not having that app installed.
+//
+// Apply Upgrade that should have been completed in round 1 but may have been missed.
+//
+
+<if i_name="Dartfish" beta="true">
+	<then>
+		<moveAllMatchingNodes i_to="Panther" i_attribute="name" i_value="Dartfish" />
+		<apply i_name="Dartfish" visible="true" location="E338" version="1" up="true" beta="false" new="true" downforsecs="0" slabreach="false" created_by_sip="101"/>
+		//
+		// Show in the Gantt chart once it is installed.
+		//
+		<apply i_name="Biometrics" ganttshow="true"/>
+		<apply i_name="Terminal 1 Biometrics" ganttshow="true"/>
+		<apply i_name="Terminal 2 Biometrics" ganttshow="true"/>
+		<apply i_name="Terminal 3 Biometrics" ganttshow="true"/>
+		<apply i_name="Terminal 4 Biometrics" ganttshow="true"/>
+		//
+		// If it doesn't have impact yet then give it an impact.
+		//
+		<if i_name="Biometrics" has_impact="false">
+		<then>
+			<apply i_name="Biometrics" has_impact="true" impactkmh="-1"/>
+			<apply i_name="Terminal 1 Biometrics" has_impact="true" impactkmh="-1"/>
+			<apply i_name="Terminal 2 Biometrics" has_impact="true" impactkmh="-1"/>
+			<apply i_name="Terminal 3 Biometrics" has_impact="true" impactkmh="-1"/>
+			<apply i_name="Terminal 4 Biometrics" has_impact="true" impactkmh="-1"/>
+		</then>
+		</if>
+
+		<moveAllMatchingNodes i_to="Business Services Group" i_attribute="name" i_value="Biometrics" />
+		<apply i_name="101" stage="installed_ok" />
+		<apply i_name="Panther" rebootFor="105" reasondown="Installing Biometrics" />
+		<createNodes i_to="CostedEvents">
+			<node type="Panther" desc="Installed Biometrics to 1" ref="Biometrics"/>
+		</createNodes>
+	</then>
+</if>
+</i>
+</incidents>

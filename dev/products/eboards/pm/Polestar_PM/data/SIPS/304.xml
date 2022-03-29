@@ -1,0 +1,105 @@
+<project>
+	<projectID>304</projectID>
+	<AppName>Voice Management Picking System</AppName>
+	<ProposedBudget>250000</ProposedBudget>
+	<CostReduction>0</CostReduction>  
+	<Type>OPTIONAL</Type>
+	<Visible>True</Visible>
+	<AllowedRecycle>True</AllowedRecycle>
+	<SkillsRequired>
+		<Skill><SkillType>Design Architect</SkillType><SkillLevel>2</SkillLevel></Skill>
+		<Skill><SkillType>Build Manager</SkillType><SkillLevel>3</SkillLevel></Skill>
+		<Skill><SkillType>Test Manager</SkillType><SkillLevel>5</SkillLevel></Skill>
+	</SkillsRequired>
+	<products>
+		<product>
+			<productID>3045</productID>
+			<cost>238000</cost>
+			<gain>12</gain>
+			<pick>False</pick>
+			<Platforms>
+				<Platform>
+					<PlatformID>1</PlatformID>
+					<PlatformRef>X</PlatformRef>
+					<NE_TotalCost>0</NE_TotalCost>
+					<NE_ImplementationEffect>100</NE_ImplementationEffect>
+					<NE_AppMemRequirements>3000</NE_AppMemRequirements>
+					<NE_AppStoreRequirements>60</NE_AppStoreRequirements>
+					<NE_RecycleImprovement>20</NE_RecycleImprovement>
+					<project_tasks>
+						<work_stage stage="A" man_days="10" />
+						<work_stage stage="B" >
+							<sub_work_stage name="i" man_days="5" droppable="false" sequential="true" scope_cost="100"/>
+							<sub_work_stage name="ii" man_days="5" droppable="false" sequential="true" scope_cost="100"/>
+							<sub_work_stage name="iii" man_days="10" droppable="true" sequential="true" scope_cost="0"/>
+						</work_stage>
+						<work_stage stage="C" man_days="15" />
+						<work_stage stage="D" >
+							<sub_work_stage name="i" man_days="5" droppable="false" sequential="true" scope_cost="100"/>
+							<sub_work_stage name="ii" man_days="5" droppable="false" sequential="true" scope_cost="100"/>
+							<sub_work_stage name="iii" man_days="10" droppable="true" sequential="true" scope_cost="0"/>
+						</work_stage>
+						<work_stage stage="E" man_days="10" />
+						<work_stage stage="F" man_days="5" />
+						<work_stage stage="G" man_days="15" />
+						<work_stage stage="H" man_days="5" />
+					</project_tasks>
+				</Platform>
+				<Platform>
+					<PlatformID>2</PlatformID>
+					<PlatformRef>Y</PlatformRef>
+					<NE_TotalCost>0</NE_TotalCost>
+					<NE_ImplementationEffect>100</NE_ImplementationEffect>
+					<NE_AppMemRequirements>3000</NE_AppMemRequirements>
+					<NE_AppStoreRequirements>60</NE_AppStoreRequirements>
+					<NE_RecycleImprovement>20</NE_RecycleImprovement>
+					<project_tasks>
+						<work_stage stage="A" man_days="10" />
+						<work_stage stage="B" >
+							<sub_work_stage name="i" man_days="5" droppable="false" sequential="true" scope_cost="100"/>
+							<sub_work_stage name="ii" man_days="5" droppable="false" sequential="true" scope_cost="100"/>
+							<sub_work_stage name="iii" man_days="10" droppable="true" sequential="true" scope_cost="0"/>
+						</work_stage>
+						<work_stage stage="C" man_days="14" />
+						<work_stage stage="D" >
+							<sub_work_stage name="i" man_days="5" droppable="false" sequential="true" scope_cost="100"/>
+							<sub_work_stage name="ii" man_days="5" droppable="false" sequential="true" scope_cost="100"/>
+							<sub_work_stage name="iii" man_days="10" droppable="true" sequential="true" scope_cost="0"/>
+						</work_stage>
+						<work_stage stage="E" man_days="10" />
+						<work_stage stage="F" man_days="5" />
+						<work_stage stage="G" man_days="14" />
+						<work_stage stage="H" man_days="5" />
+					</project_tasks>
+				</Platform>
+				<Platform>
+					<PlatformID>3</PlatformID>
+					<PlatformRef>Z</PlatformRef>
+					<NE_TotalCost>0</NE_TotalCost>
+					<NE_ImplementationEffect>100</NE_ImplementationEffect>
+					<NE_AppMemRequirements>3000</NE_AppMemRequirements>
+					<NE_AppStoreRequirements>60</NE_AppStoreRequirements>
+					<NE_RecycleImprovement>20</NE_RecycleImprovement>
+					<project_tasks>
+						<work_stage stage="A" man_days="10" />
+						<work_stage stage="B" >
+							<sub_work_stage name="i" man_days="5" droppable="false" sequential="true" scope_cost="100"/>
+							<sub_work_stage name="ii" man_days="5" droppable="false" sequential="true" scope_cost="100"/>
+							<sub_work_stage name="iii" man_days="10" droppable="true" sequential="true" scope_cost="0"/>
+						</work_stage>
+						<work_stage stage="C" man_days="15" />
+						<work_stage stage="D" >
+							<sub_work_stage name="i" man_days="5" droppable="false" sequential="true" scope_cost="100"/>
+							<sub_work_stage name="ii" man_days="5" droppable="false" sequential="true" scope_cost="100"/>
+							<sub_work_stage name="iii" man_days="10" droppable="true" sequential="true" scope_cost="0"/>
+						</work_stage>
+						<work_stage stage="E" man_days="10" />
+						<work_stage stage="F" man_days="5" />
+						<work_stage stage="G" man_days="15" />
+						<work_stage stage="H" man_days="5" />
+					</project_tasks>
+				</Platform>
+			</Platforms>
+		</product>
+	</products>
+</project>

@@ -1,0 +1,6 @@
+*.suo
+dev/AllProjects/.vs/
+dev/AllProjects/packages/
+**/bin
+**/obj
+*.settings

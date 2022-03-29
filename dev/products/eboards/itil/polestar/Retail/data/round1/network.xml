@@ -1,0 +1,511 @@
+<?xml version="1.0"?>
+<root name="Root" type="Root">
+  <node notinnetwork="true" type="biz_services" name="Business Services Group">
+  
+    <retirements notinnetwork="true" name="Retired Business Services" type="retired_biz_services">
+    </retirements>  
+  
+    <node version="1" name="Customer Support" desc="Customer\r\nSupport" shortdesc="Customer Support" icon="Icon_CS" notinnetwork="true" type="biz_service" slalimit="360" biz_service_function="Customer Support" impactkmh="-1" has_impact="true" gantt_order="17">
+      <link to="Store 1 Customer Support" type="Connection" contype="Customer Support" name="BS Store 1 Customer Support Connection" />
+      <link to="Store 2 Customer Support" type="Connection" contype="Customer Support" name="BS Store 2 Customer Support Connection" />
+      <link to="Store 3 Customer Support" type="Connection" contype="Customer Support" name="BS Store 3 Customer Support Connection" />
+      <link to="Store 4 Customer Support" type="Connection" contype="Customer Support" name="BS Store 4 Customer Support Connection" />
+      <upgrades type="upgrades">
+      </upgrades>
+    </node>
+    <node version="1" name="EPOS" desc="EPOS" shortdesc="EPOS" icon="Icon_EPOS" notinnetwork="true" type="biz_service" slalimit="360" biz_service_function="EPOS" impactkmh="-1" has_impact="true" gantt_order="7" >
+      <link to="Store 1 EPOS" type="Connection" contype="EPOS" name="BS Store 1 EPOS Connection" />
+      <link to="Store 2 EPOS" type="Connection" contype="EPOS" name="BS Store 2 EPOS Connection" />
+      <link to="Store 3 EPOS" type="Connection" contype="EPOS" name="BS Store 3 EPOS Connection" />
+      <link to="Store 4 EPOS" type="Connection" contype="EPOS" name="BS Store 4 EPOS Connection" />
+      <upgrades type="upgrades">
+      </upgrades>
+    </node>
+    <node version="1" name="Warehouse Management" desc="Warehouse\r\nMgt" shortdesc="Warehouse Mgt" icon="Icon_WM" notinnetwork="true" type="biz_service"  slalimit="360" biz_service_function="Warehouse Management" impactkmh="-1" has_impact="true" gantt_order="12">
+      <link to="Store 1 Warehouse Management" type="Connection" contype="Warehouse Management" name="BS Store 1 Warehouse Management Connection" />
+      <link to="Store 2 Warehouse Management" type="Connection" contype="Warehouse Management" name="BS Store 2 Warehouse Management Connection" />
+      <link to="Store 3 Warehouse Management" type="Connection" contype="Warehouse Management" name="BS Store 3 Warehouse Management Connection" />
+      <upgrades type="upgrades">
+      </upgrades>
+    </node>
+    <node version="1" name="Catalog Management" desc="Catalog\r\nManagement" shortdesc="Catalog Management" icon="Icon_CM" notinnetwork="true" type="biz_service"  slalimit="360" biz_service_function="Catalog Management" impactkmh="-1" has_impact="true" gantt_order="10">
+      <link to="Store 1 Catalog Management" type="Connection" contype="Catalog Management" name="BS Store 1 Catalog Management Connection" />
+      <link to="Store 2 Catalog Management" type="Connection" contype="Catalog Management" name="BS Store 2 Catalog Management Connection" />
+      <link to="Store 3 Catalog Management" type="Connection" contype="Catalog Management" name="BS Store 3 Catalog Management Connection" />
+      <upgrades type="upgrades">
+      </upgrades>
+    </node>
+    <node version="1" name="G-Tunes" desc="G-Tunes" shortdesc="G-Tunes" icon="Icon_GT" notinnetwork="true" type="biz_service" slalimit="360" biz_service_function="G-Tunes" impactkmh="-1" has_impact="true" gantt_order="16">
+      <link to="Store 4 G-Tunes" type="Connection" contype="G-Tunes" name="BS Store 4 G-Tunes Connection" />
+      <upgrades type="upgrades">
+      </upgrades>
+    </node>
+    <node version="1" name="Production Management System" desc="Production\r\nMgt" shortdesc="Production Mgt" icon="Icon_pss" notinnetwork="true" type="biz_service" slalimit="360" biz_service_function="Production Management System" impactkmh="-1" has_impact="true" gantt_order="15">
+      <link to="Store 1 Production Management System" type="Connection" contype="Production Management System" name="BS Store 1 Production Management System Connection" />
+      <link to="Store 2 Production Management System" type="Connection" contype="Production Management System" name="BS Store 2 Production Management System Connection" />
+      <upgrades type="upgrades">
+      </upgrades>
+    </node>
+    <node version="1" name="Multi Store" desc="Multi-Store" shortdesc="Multi-Store" icon="Icon_MS" notinnetwork="true" type="biz_service" slalimit="360" biz_service_function="Multi Store" impactkmh="-1" has_impact="true" gantt_order="14">
+      <link to="Store 1 Multi Store" type="Connection" contype="Multi Store" name="BS Store 1 Multi Store Connection" />
+      <link to="Store 2 Multi Store" type="Connection" contype="Multi Store" name="BS Store 2 Multi Store Connection" />
+      <upgrades type="upgrades">
+      </upgrades>
+    </node>
+    <node version="1" name="Stock Control" desc="Stock\r\nControl" shortdesc="Stock Control" icon="Icon_SC" notinnetwork="true" type="biz_service" slalimit="360" biz_service_function="Stock Control" impactkmh="-1" has_impact="true" gantt_order="3">
+      <link to="Store 1 Stock Control" type="Connection" contype="Stock Control" name="BS Store 1 Stock Control Connection" />
+      <link to="Store 2 Stock Control" type="Connection" contype="Stock Control" name="BS Store 2 Stock Control Connection" />
+      <link to="Store 3 Stock Control" type="Connection" contype="Stock Control" name="BS Store 3 Stock Control Connection" />
+      <link to="Store 4 Stock Control" type="Connection" contype="Stock Control" name="BS Store 4 Stock Control Connection" />
+      <upgrades type="upgrades">
+      </upgrades>
+    </node>
+    <node version="1" name="Credit Authorization" desc="Credit\r\nAuth" shortdesc="Credit Auth" icon="Icon_CA" notinnetwork="true" type="biz_service" slalimit="360" biz_service_function="Credit Authorization" impactkmh="-1" has_impact="true" gantt_order="1">
+      <link to="Store 1 Credit Authorization" type="Connection" contype="Credit Authorization" name="BS Store 1 Credit Authorization Connection" />
+      <link to="Store 2 Credit Authorization" type="Connection" contype="Credit Authorization" name="BS Store 2 Credit Authorization Connection" />
+      <link to="Store 3 Credit Authorization" type="Connection" contype="Credit Authorization" name="BS Store 3 Credit Authorization Connection" />
+      <link to="Store 4 Credit Authorization" type="Connection" contype="Credit Authorization" name="BS Store 4 Credit Authorization Connection" />
+      <upgrades type="upgrades">
+      </upgrades>
+    </node>
+    <node version="1" name="Retail Management System" desc="Retail\r\nMgt" shortdesc="Retail Mgt" icon="Icon_RMS" notinnetwork="true" type="biz_service" slalimit="360" biz_service_function="Retail Management System"  impactkmh="-1" has_impact="true" gantt_order="2">
+      <link to="Store 1 Retail Management System" type="Connection" contype="Retail Management System" name="BS Store 1 Retail Management System Connection" />
+      <link to="Store 2 Retail Management System" type="Connection" contype="Retail Management System" name="BS Store 2 Retail Management System Connection" />
+      <link to="Store 3 Retail Management System" type="Connection" contype="Retail Management System" name="BS Store 3 Retail Management System Connection" />
+      <link to="Store 4 Retail Management System" type="Connection" contype="Retail Management System" name="BS Store 4 Retail Management System Connection" />
+      <upgrades type="upgrades">
+      </upgrades>
+    </node>
+    <node version="1" name="Shopping Basket Management" desc="Basket\r\nManagement" shortdesc="Basket Management" icon="Icon_SBM" notinnetwork="true" type="biz_service" slalimit="360" biz_service_function="Shopping Basket Management"  impactkmh="-1" has_impact="true" gantt_order="6">
+      <link to="Store 1 Shopping Basket Management" type="Connection" contype="Shopping Basket Management" name="BS Store 1 Shopping Basket Management Connection" />
+      <link to="Store 2 Shopping Basket Management" type="Connection" contype="Shopping Basket Management" name="BS Store 2 Shopping Basket Management Connection" />
+      <link to="Store 3 Shopping Basket Management" type="Connection" contype="Shopping Basket Management" name="BS Store 3 Shopping Basket Management Connection" />
+      <link to="Store 4 Shopping Basket Management" type="Connection" contype="Shopping Basket Management" name="BS Store 4 Shopping Basket Management Connection" />
+      <upgrades type="upgrades">
+      </upgrades>
+    </node>
+    <node version="1" name="Dispatch Scanning System" desc="Dispatch\r\nScanning" shortdesc="Dispatch Scanning" icon="Icon_DSS" notinnetwork="true" type="biz_service" slalimit="360" biz_service_function="Dispatch Scanning System"  impactkmh="-1" has_impact="true" gantt_order="13">
+      <link to="Store 1 Dispatch Scanning System" type="Connection" contype="Dispatch Scanning System" name="BS Store 1 Dispatch Scanning System Connection" />
+      <link to="Store 2 Dispatch Scanning System" type="Connection" contype="Dispatch Scanning System" name="BS Store 2 Dispatch Scanning System Connection" />
+      <upgrades type="upgrades">
+      </upgrades>
+    </node>
+    <node version="1" name="Fulfillment" desc="Fulfillment" shortdesc="Fulfillment" icon="Icon_F" notinnetwork="true" type="biz_service" slalimit="360" biz_service_function="Fulfillment" impactkmh="-1" has_impact="true" gantt_order="11">
+      <link to="Store 1 Fulfillment" type="Connection" contype="Fulfillment" name="BS Store 1 Fulfillment Connection" />
+      <link to="Store 2 Fulfillment" type="Connection" contype="Fulfillment" name="BS Store 2 Fulfillment Connection" />
+      <link to="Store 3 Fulfillment" type="Connection" contype="Fulfillment" name="BS Store 3 Fulfillment Connection" />
+      <upgrades type="upgrades">
+      </upgrades>
+    </node>
+    <node version="0.9" name="Online Credit Card Authorization" desc="Credit\r\nCard Auth" shortdesc="Credit Card Auth" icon="Icon_osm" notinnetwork="true" type="biz_service" slalimit="360" biz_service_function="Security" impactkmh="-1" has_impact="true" gantt_order="8">
+      <link to="Store 1 Security" type="Connection" contype="Security" name="BS Store 1 Security Connection" />
+      <link to="Store 2 Security" type="Connection" contype="Security" name="BS Store 2 Security Connection" />
+      <link to="Store 3 Security" type="Connection" contype="Security" name="BS Store 3 Security Connection" />
+      <link to="Store 4 Security" type="Connection" contype="Security" name="BS Store 4 Security Connection" />
+      <upgrades type="upgrades">
+        <upgrade version="1" name="Online Security Mgt v1" desc="Online\r\nSecurity" shortdesc="Online Security" slalimit="360" icon="Icon_osm" notinnetwork="true" created_by_sip="101" gantt_order="8"/>
+      </upgrades>
+    </node>
+  </node>
+  <node type="nv" name="Stores">
+    <node type="Store" name="Store 1" desc="CrossWired" shortdesc="1" online_bonus="0" instore_bonus="0" playerstore="true" last_transaction="0" instore_portal_up= "true" online_portal_up= "true">
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 1 Catalog Management" upbymirror="false" downforsecs="0" desc="Catalog\r\nManagement" shortdesc="Catalog Management" icon="Icon_CM" up="true" slalimit="360" slabreach="false" slaimpact="4" has_impact="true" impactkmh="-1" transaction_type="online" />
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 1 Credit Authorization" upbymirror="false" downforsecs="0" desc="Credit\r\nAuth" shortdesc="Credit Auth" icon="Icon_CA" up="true" slalimit="360" slabreach="false" slaimpact="3" has_impact="true" impactkmh="-1" transaction_type="both"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 1 Customer Support" upbymirror="false" downforsecs="0" desc="Customer\r\nSupport" shortdesc="Customer Support" icon="Icon_CS" up="true" slalimit="360" slabreach="false" slaimpact="3" has_impact="false" impactkmh="0" transaction_type="none"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 1 Dispatch Scanning System" upbymirror="false" downforsecs="0" desc="Dispatch\r\nScanning" shortdesc="Dispatch Scanning" icon="Icon_DSS" up="true" slalimit="360" slabreach="false" slaimpact="6" has_impact="true" impactkmh="-1" transaction_type="online"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 1 EPOS" upbymirror="false" downforsecs="0" desc="EPOS" shortdesc="EPOS" icon="Icon_EPOS" up="true" slalimit="360" slabreach="false" slaimpact="3" has_impact="true" impactkmh="-1" transaction_type="instore" />
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 1 Fulfillment" upbymirror="false" downforsecs="0" desc="Fulfillment" shortdesc="Fulfillment" icon="Icon_F" up="true" slalimit="360" slabreach="false" slaimpact="4" has_impact="true" impactkmh="-1" transaction_type="online"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 1 G-Tunes" upbymirror="false" downforsecs="0" desc="G-Tunes" shortdesc="G-Tunes" icon="Icon_GT" up="true" slalimit="360" slabreach="false" slaimpact="12" has_impact="false" impactkmh="0" transaction_type="none"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 1 Multi Store" upbymirror="false" downforsecs="0" desc="Multi-Store" shortdesc="Multi-Store" icon="Icon_MS" up="true" slalimit="360" slabreach="false" slaimpact="6" has_impact="true" impactkmh="-1" transaction_type="instore"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 1 Production Management System" upbymirror="false" downforsecs="0" desc="Production\r\nMgt" shortdesc="Production Mgt" icon="Icon_pss" up="true" slalimit="360" slabreach="false" slaimpact="6" has_impact="true" impactkmh="-1" transaction_type="online"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 1 Retail Management System" upbymirror="false" downforsecs="0" desc="Retail\r\nMgt" shortdesc="Retail Mgt" icon="Icon_RMS" up="true" slalimit="360" slabreach="false" slaimpact="3" has_impact="true" impactkmh="-1" transaction_type="both"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 1 Shopping Basket Management" upbymirror="false" downforsecs="0" desc="Basket\r\nManagement" shortdesc="Basket Management" icon="Icon_SBM" up="true" slalimit="360" slabreach="false" slaimpact="4" has_impact="true" impactkmh="-1" transaction_type="online"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 1 Stock Control" upbymirror="false" downforsecs="0" desc="Stock\r\nControl" shortdesc="Stock Control" icon="Icon_SC" up="true" slalimit="360" slabreach="false" slaimpact="3" has_impact="true" impactkmh="-1" transaction_type="both"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 1 Warehouse Management" upbymirror="false" downforsecs="0" desc="Warehouse\r\nMgt" shortdesc="Warehouse Mgt" icon="Icon_WM" up="true" slalimit="360" slabreach="false" slaimpact="4" has_impact="true" impactkmh="-1" transaction_type="online"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 1 Security"  fixable="true" up="true" desc="Online Security" shortdesc="Online Security" icon="Icon_osm" appliedinround="1" slalimit="360" slabreach="false" slaimpact="3" has_impact="true" impactkmh="-1" transaction_type="online"/>
+    </node>
+    <node type="Store" name="Store 2" desc="Gizmo Tech" shortdesc="2" online_bonus="0" instore_bonus="0" playerstore="true" last_transaction="0" instore_portal_up= "true" online_portal_up= "true">
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 2 Catalog Management" upbymirror="false" downforsecs="0" desc="Catalog\r\nManagement" shortdesc="Catalog Management" icon="Icon_CM" up="true" slalimit="360" slabreach="false" slaimpact="4" has_impact="true" impactkmh="-1" transaction_type="online"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 2 Credit Authorization" upbymirror="false" downforsecs="0" desc="Credit\r\nAuth" shortdesc="Credit Auth" icon="Icon_CA" up="true" slalimit="360" slabreach="false" slaimpact="3" has_impact="true" impactkmh="-1" transaction_type="both"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 2 Customer Support" upbymirror="false" downforsecs="0" desc="Customer\r\nSupport" shortdesc="Customer Support" icon="Icon_CS" up="true" slalimit="360" slabreach="false" slaimpact="3" has_impact="true" impactkmh="-1" transaction_type="none"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 2 Dispatch Scanning System" upbymirror="false" downforsecs="0" desc="Dispatch\r\nScanning" shortdesc="Dispatch Scanning" icon="Icon_DSS" up="true" slalimit="360" slabreach="false" slaimpact="6" has_impact="true" impactkmh="-1" transaction_type="online"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 2 EPOS" upbymirror="false" downforsecs="0" desc="EPOS" shortdesc="EPOS" icon="Icon_EPOS" up="true" slalimit="360" slabreach="false" slaimpact="3" has_impact="true" impactkmh="-1" transaction_type="instore"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 2 Fulfillment" upbymirror="false" downforsecs="0" desc="Fulfillment" shortdesc="Fulfillment" icon="Icon_F" up="true" slalimit="360" slabreach="false" slaimpact="4" has_impact="true" impactkmh="-1" transaction_type="online"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 2 G-Tunes" upbymirror="false" downforsecs="0" desc="G-Tunes" shortdesc="G-Tunes" icon="Icon_GT" up="true" slalimit="360" slabreach="false" slaimpact="12" has_impact="false" impactkmh="0" transaction_type="none"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 2 Multi Store" upbymirror="false" downforsecs="0" desc="Multi-Store" shortdesc="Multi-Store" icon="Icon_MS" up="true" slalimit="360" slabreach="false" slaimpact="6" has_impact="true" impactkmh="-1" transaction_type="instore"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 2 Production Management System" upbymirror="false" downforsecs="0" desc="Production\r\nMgt" shortdesc="Production Mgt" icon="Icon_pss" up="true" slalimit="360" slabreach="false" slaimpact="6" has_impact="true" impactkmh="-1" transaction_type="online"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 2 Retail Management System" upbymirror="false" downforsecs="0" desc="Retail\r\nMgt" shortdesc="Retail Mgt" icon="Icon_RMS" up="true" slalimit="360" slabreach="false" slaimpact="3" has_impact="true" impactkmh="-1" transaction_type="both"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 2 Shopping Basket Management" upbymirror="false" downforsecs="0" desc="Basket\r\nManagement" shortdesc="Basket Management" icon="Icon_SBM" up="true" slalimit="360" slabreach="false" slaimpact="4" has_impact="true" impactkmh="-1" transaction_type="online"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 2 Stock Control" upbymirror="false" downforsecs="0" desc="Stock\r\nControl" shortdesc="Stock Control" icon="Icon_SC" up="true" slalimit="360" slabreach="false" slaimpact="3" has_impact="true" impactkmh="-1" transaction_type="both"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 2 Warehouse Management" upbymirror="false" downforsecs="0" desc="Warehouse\r\nMgt" shortdesc="Warehouse Mgt" icon="Icon_WM" up="true" slalimit="360" slabreach="false" slaimpact="4" has_impact="true" impactkmh="-1" transaction_type="online"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 2 Security" fixable="true" up="true" desc="Online Security" shortdesc="Online Security" icon="Icon_osm" appliedinround="1" slalimit="360" slabreach="false" slaimpact="3" has_impact="true" impactkmh="-1" transaction_type="online"/>
+    </node>
+    <node type="Store" name="Store 3" desc="Star Books" shortdesc="3" online_bonus="0" instore_bonus="0" playerstore="true" last_transaction="0" instore_portal_up= "true" online_portal_up= "true">
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 3 Catalog Management" upbymirror="false" downforsecs="0" desc="Catalog\r\nManagement" shortdesc="Catalog Management" icon="Icon_CM" up="true" slalimit="360" slabreach="false" slaimpact="4" has_impact="true" impactkmh="-1" transaction_type="online"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 3 Credit Authorization" upbymirror="false" downforsecs="0" desc="Credit\r\nAuth" shortdesc="Credit Auth" icon="Icon_CA" up="true" slalimit="360" slabreach="false" slaimpact="3" has_impact="true" impactkmh="-1" transaction_type="both"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 3 Customer Support" upbymirror="false" downforsecs="0" desc="Customer\r\nSupport" shortdesc="Customer Support" icon="Icon_CS" up="true" slalimit="360" slabreach="false" slaimpact="3" has_impact="true" impactkmh="-1" transaction_type="none"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 3 Dispatch Scanning System" upbymirror="false" downforsecs="0" desc="Dispatch\r\nScanning" shortdesc="Dispatch Scanning" icon="Icon_DSS" up="true" slalimit="360" slabreach="false" slaimpact="0" has_impact="false" impactkmh="0" transaction_type="none"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 3 EPOS" upbymirror="false" downforsecs="0" desc="EPOS" shortdesc="EPOS" icon="Icon_EPOS" up="true" slalimit="360" slabreach="false" slaimpact="3" has_impact="true" impactkmh="-1" transaction_type="instore"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 3 Fulfillment" upbymirror="false" downforsecs="0" desc="Fulfillment" shortdesc="Fulfillment" icon="Icon_F" up="true" slalimit="360" slabreach="false" slaimpact="4" has_impact="true" impactkmh="-1" transaction_type="online"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 3 G-Tunes" upbymirror="false" downforsecs="0" desc="G-Tunes" shortdesc="G-Tunes" icon="Icon_GT" up="true" slalimit="360" slabreach="false" slaimpact="12" has_impact="false" impactkmh="0" transaction_type="none"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 3 Multi Store" upbymirror="false" downforsecs="0" desc="Multi-Store" shortdesc="Multi-Store" icon="Icon_MS" up="true" slalimit="360" slabreach="false" slaimpact="0" has_impact="false" impactkmh="0" transaction_type="none"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 3 Production Management System" upbymirror="false" downforsecs="0" desc="Production\r\nMgt" shortdesc="Production Mgt" icon="Icon_pss" up="true" slalimit="360" slabreach="false" slaimpact="0" has_impact="false" impactkmh="0" transaction_type="none"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 3 Retail Management System" upbymirror="false" downforsecs="0" desc="Retail\r\nMgt" shortdesc="Retail Mgt" icon="Icon_RMS" up="true" slalimit="360" slabreach="false" slaimpact="3" has_impact="true" impactkmh="-1" transaction_type="both"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 3 Shopping Basket Management" upbymirror="false" downforsecs="0" desc="Basket\r\nManagement" shortdesc="Basket Management" icon="Icon_SBM" up="true" slalimit="360" slabreach="false" slaimpact="4" has_impact="true" impactkmh="-1" transaction_type="online"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 3 Stock Control" upbymirror="false" downforsecs="0" desc="Stock\r\nControl" shortdesc="Stock Control" icon="Icon_SC" up="true" slalimit="360" slabreach="false" slaimpact="3" has_impact="true" impactkmh="-1" transaction_type="both"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 3 Warehouse Management" upbymirror="false" downforsecs="0" desc="Warehouse\r\nMgt" shortdesc="Warehouse Mgt" icon="Icon_WM" up="true" slalimit="360" slabreach="false" slaimpact="4" has_impact="true" impactkmh="-1" transaction_type="online"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 3 Security" fixable="true" up="true" desc="Online Security" shortdesc="Online Security" icon="Icon_osm" appliedinround="1" slalimit="360" slabreach="false" slaimpact="3" has_impact="true" impactkmh="-1" transaction_type="online"/>
+    </node>
+    <node type="Store" name="Store 4" desc="Stars On Vinyl" shortdesc="4" online_bonus="0" instore_bonus="0" playerstore="true" last_transaction="0" instore_portal_up= "true" online_portal_up= "true">
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 4 Catalog Management" upbymirror="false" downforsecs="0" desc="Catalog\r\nManagement" shortdesc="Catalog Management" icon="Icon_CM" up="true" slalimit="360" slabreach="false" slaimpact="4" has_impact="false" impactkmh="0" transaction_type="none"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 4 Credit Authorization" upbymirror="false" downforsecs="0" desc="Credit\r\nAuth" shortdesc="Credit Auth" icon="Icon_CA" up="true" slalimit="360" slabreach="false" slaimpact="3" has_impact="true" impactkmh="-1" transaction_type="both"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 4 Customer Support" upbymirror="false" downforsecs="0" desc="Customer\r\nSupport" shortdesc="Customer Support" icon="Icon_CS" up="true" slalimit="360" slabreach="false" slaimpact="3" has_impact="true" impactkmh="-1" transaction_type="none"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 4 Dispatch Scanning System" upbymirror="false" downforsecs="0" desc="Dispatch\r\nScanning" shortdesc="Dispatch Scanning" icon="Icon_DSS" up="true" slalimit="360" slabreach="false" slaimpact="0" has_impact="false" impactkmh="0" transaction_type="none"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 4 EPOS" upbymirror="false" downforsecs="0" desc="EPOS" shortdesc="EPOS" icon="Icon_EPOS" up="true" slalimit="360" slabreach="false" slaimpact="3" has_impact="true" impactkmh="-1" transaction_type="instore"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 4 Fulfillment" upbymirror="false" downforsecs="0" desc="Fulfillment" shortdesc="Fulfillment" icon="Icon_F" up="true" slalimit="360" slabreach="false" slaimpact="0" has_impact="false" impactkmh="0" transaction_type="none"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 4 G-Tunes" upbymirror="false" downforsecs="0" desc="G-Tunes" shortdesc="G-Tunes" icon="Icon_GT" up="true" slalimit="360" slabreach="false" slaimpact="12" has_impact="true" impactkmh="-1" transaction_type="online"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 4 Multi Store" upbymirror="false" downforsecs="0" desc="Multi-Store" shortdesc="Multi-Store" icon="Icon_MS" up="true" slalimit="360" slabreach="false" slaimpact="0" has_impact="false" impactkmh="0" transaction_type="none"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 4 Production Management System" upbymirror="false" downforsecs="0" desc="Production\r\nMgt" shortdesc="Production Mgt" icon="Icon_pss" up="true" slalimit="360" slabreach="false" slaimpact="0" has_impact="false" impactkmh="0" transaction_type="none"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 4 Retail Management System" upbymirror="false" downforsecs="0" desc="Retail\r\nMgt" shortdesc="Retail Mgt" icon="Icon_RMS" up="true" slalimit="360" slabreach="false" slaimpact="3" has_impact="true" impactkmh="-1" transaction_type="both"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 4 Shopping Basket Management" upbymirror="false" downforsecs="0" desc="Basket\r\nManagement" shortdesc="Basket Management" icon="Icon_SBM" up="true" slalimit="360" slabreach="false" slaimpact="12" has_impact="true" impactkmh="-1" transaction_type="online"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 4 Stock Control" upbymirror="false" downforsecs="0" desc="Stock\r\nControl" shortdesc="Stock Control" icon="Icon_SC" up="true" slalimit="360" slabreach="false" slaimpact="3" has_impact="true" impactkmh="-1" transaction_type="both"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 4 Warehouse Management" upbymirror="false" downforsecs="0" desc="Warehouse\r\nMgt" shortdesc="Warehouse Mgt" icon="Icon_WM" up="true" slalimit="360" slabreach="false" slaimpact="0" has_impact="false" impactkmh="0" transaction_type="none"/>
+      <biz_service_user type="biz_service_user" rebootingforsecs="0" canworkaround="false" name="Store 4 Security" fixable="true" up="true" desc="Online Security" shortdesc="Online Security" icon="Icon_osm" appliedinround="1" slalimit="360" slabreach="false" slaimpact="3" has_impact="true" impactkmh="-1" transaction_type="online"/>
+    </node>
+  </node>
+  
+  <node type="Hub" usernode="false" snmpq="alert1" extraspeed="0" desc="Hub" name="Hub" xpos="556" extraspeedrace="0" ypos="233" propagate="true" del="false" location="A320" canlink="true">
+    <node type="Router" proczone="1" zone="1" usernode="false" snmpq="alert2" extraspeed="0" desc="Zone 1 Router" name="N1201" xpos="398" extraspeedrace="0" ypos="55" propagate="true" del="false" location="E320" canlink="false">
+      <node type="Slot" proczone="1" danger_level="0" usernode="true" propagate="true" name="M101" xpos="998" ypos="207" desc="" del="false" location="M101" canlink="false" />
+      <node type="Server" proczone="1" proccap="12" danger_level="0" usernode="false" snmpq="alert1" extraspeed="0" desc="Server" name="Cybele" xpos="299" extraspeedrace="0" ypos="13" propagate="true" del="false" location="E331" disk="90" can_upgrade_disk="true" canlink="false" mem="3000" can_upgrade_mem="true" can_upgrade_hardware="false" platform="X" zone="1">
+        <node type="App" proczone="1" proccap="3" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Chertan" xpos="30" extraspeedrace="0" ypos="8" desc="" del="false" location="E335" memrequired="1000" diskrequired="60" />
+        <node type="App" proczone="1" proccap="3" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Atlas" xpos="109" extraspeedrace="0" ypos="13" desc="" del="false" location="E339" memrequired="1000" diskrequired="20" />
+        <node type="Slot" proczone="1" danger_level="0" usernode="true" propagate="true" name="E343" xpos="109" ypos="13" desc="" del="false" location="E343" canlink="false" />
+        <node type="Slot" proczone="1" danger_level="0" usernode="true" propagate="true" name="E347" xpos="109" ypos="13" desc="" del="false" location="E347" canlink="false" />
+      </node>
+      <node type="Server" proczone="1" proccap="12" danger_level="0" usernode="false" snmpq="alert1" extraspeed="0" desc="Server" name="Pluto" canupgrade="true" xpos="170" extraspeedrace="0" ypos="67" propagate="true" del="false" location="E328" can_upgrade_disk="true" disk="250" canlink="false" can_upgrade_mem="true" can_upgrade_hardware="true" mem="4000" platform="X" zone="1">
+        <node type="App" proczone="1" proccap="2" danger_level="0" snmpq="alert2" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="true" name="Electra" xpos="32" extraspeedrace="0" ypos="70" desc="Retail Management System" del="false" location="E332" usernode="false" memrequired="1000" diskrequired="60">
+          <link to="Store 1 Retail Management System" type="Connection" name="Electra Store 1 Retail Management System Connection" />
+          <link to="Store 2 Retail Management System" type="Connection" name="Electra Store 2 Retail Management System Connection" />
+          <SupportTech type="SupportTech" name="Electra Stores 3 and 4 Retail Management System Connection Support Technology">
+            <link to="Store 3 Retail Management System" type="Connection" name="Electra Store 3 Retail Management System Connection" />
+            <link to="Store 4 Retail Management System" type="Connection" name="Electra Store 4 Retail Management System Connection" />
+          </SupportTech>          
+        </node>
+        <node type="App" proczone="1" proccap="3" danger_level="0" desc="Security" canlink="true" del="false" extraspeedrace="0" propagate="true" name="Megrez" beta="true" visible="false" version="0.9" canupgrade="true" userupgrade="true" diskrequired="18" memrequired="500" extraspeed="0" ypos="365" location="E336" snmpq="alert2" usernode="false" xpos="306">
+          <link to="Enif" type="dependsOn" item="Enif" />
+          <link to="Store 1 Security" type="Connection" name="Megrez Store 1 Security Connection" />
+          <link to="Store 2 Security" type="Connection" name="Megrez Store 2 Security Connection" />
+          <link to="Store 3 Security" type="Connection" name="Megrez Store 3 Security Connection" />
+          <link to="Store 4 Security" type="Connection" name="Megrez Store 4 Security Connection" />
+        </node>
+        <node type="Slot" proczone="1" danger_level="0" usernode="true" propagate="true" name="E340" xpos="32" ypos="70" desc="" del="false" location="E340" canlink="false" />
+        <node type="Slot" proczone="1" danger_level="0" usernode="true" propagate="true" name="E344" xpos="32" ypos="70" desc="" del="false" location="E344" canlink="false" />
+        <node type="Slot" proczone="1" danger_level="0" usernode="true" propagate="true" name="E348" xpos="32" ypos="70" desc="" del="false" location="E348" canlink="false" />
+      </node>
+      <node type="Server" proczone="1" proccap="12" danger_level="0" usernode="false" snmpq="alert1" extraspeed="0" desc="Server" name="Pallas" xpos="216" extraspeedrace="0" ypos="136" propagate="true" del="false" location="E329" can_upgrade_disk="true" disk="90" canlink="false" can_upgrade_mem="true" mem="2000" can_upgrade_hardware="false" platform="X" zone="1">
+        <node type="App" proczone="1" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Haldus" xpos="29" extraspeedrace="0" ypos="134" desc="" del="false" location="E333" memrequired="500" diskrequired="40" />
+        <node type="App" proczone="1" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Kastra" xpos="86" extraspeedrace="0" ypos="133" desc="" del="false" location="E337" memrequired="500" diskrequired="40" />
+        <node type="Slot" proczone="1" danger_level="0" usernode="true" propagate="true" name="E341" xpos="86" ypos="133" desc="" del="false" location="E341" canlink="false" />
+        <node type="Slot" proczone="1" danger_level="0" usernode="true" propagate="true" name="E345" xpos="86" ypos="133" desc="" del="false" location="E345" canlink="false" />
+        <node type="Slot" proczone="1" danger_level="0" usernode="true" propagate="true" name="E349" xpos="86" ypos="133" desc="" del="false" location="E349" canlink="false" />
+      </node>
+      <node type="Server" proczone="1" proccap="12" danger_level="0" usernode="false" snmpq="alert1" extraspeed="0" desc="Server" name="Juno" xpos="253" extraspeedrace="0" ypos="200" propagate="true" del="false" location="E330" can_upgrade_disk="true" disk="160" canlink="false" can_upgrade_mem="true" mem="2000" can_upgrade_hardware="false" platform="X" zone="1">
+        <node type="App" proczone="1" proccap="3" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Lucida" xpos="24" extraspeedrace="0" ypos="191" desc="" del="false" location="E334" memrequired="500" diskrequired="10" />
+        <node type="Slot" proczone="1" danger_level="0" usernode="true" propagate="true" name="E338" xpos="140" ypos="187" desc="" del="false" location="E338" canlink="false" />
+        <node type="Slot" proczone="1" danger_level="0" usernode="true" propagate="true" name="E342" xpos="140" ypos="187" desc="" del="false" location="E342" canlink="false" />
+        <node type="Slot" proczone="1" danger_level="0" usernode="true" propagate="true" name="E346" xpos="140" ypos="187" desc="" del="false" location="E346" canlink="false" />
+        <node type="Slot" proczone="1" danger_level="0" usernode="true" propagate="true" name="E350" xpos="140" ypos="187" desc="" del="false" location="E350" canlink="false" />
+      </node>
+      <node type="Router" proczone="6" zone="6" usernode="false" snmpq="alert2" extraspeed="0" desc="Zone 6 Router" name="M2403" xpos="399" extraspeedrace="0" ypos="194" propagate="true" del="false" location="D320" canlink="false">
+        <node type="Server" proczone="6" proccap="12" danger_level="0" usernode="false" snmpq="alert1" extraspeed="0" desc="Server" name="Saturn" xpos="306" extraspeedrace="0" ypos="284" propagate="true" del="false" location="D323" can_upgrade_disk="true" disk="160" canlink="false" can_upgrade_mem="true" mem="3000" can_upgrade_hardware="false" platform="X" zone="6">
+          <node type="App" proczone="6" proccap="4" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Bellatrix" xpos="19" extraspeedrace="0" ypos="262" desc="Stock Control" del="false" location="D325" memrequired="500" diskrequired="21">
+            <SupportTech type="SupportTech" name="Bellatrix Stores 1 and 2 Stock Control Connection Support Technology">
+              <link to="Store 1 Stock Control" type="Connection" name="Bellatrix Store 1 Stock Control Connection" />
+              <link to="Store 2 Stock Control" type="Connection" name="Bellatrix Store 2 Stock Control Connection" />
+            </SupportTech>  
+            <link to="Store 3 Stock Control" type="Connection" name="Bellatrix Store 3 Stock Control Connection" />
+            <link to="Store 4 Stock Control" type="Connection" name="Bellatrix Store 4 Stock Control Connection" />
+          </node>
+          <node type="App" proczone="6" proccap="4" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="true" canlink="false" name="Castor" xpos="77" extraspeedrace="0" ypos="258" desc="Credit Authorization" del="false" location="D327" memrequired="500" diskrequired="34">
+            <link to="Store 1 Credit Authorization" type="Connection" name="Castor Store 1 Credit Authorization Connection" />
+            <link to="Store 2 Credit Authorization" type="Connection" name="Castor Store 2 Credit Authorization Connection" />
+            <link to="Store 3 Credit Authorization" type="Connection" name="Castor Store 3 Credit Authorization Connection" />
+            <link to="Store 4 Credit Authorization" type="Connection" name="Castor Store 4 Credit Authorization Connection" />
+          </node>
+          <node type="App" proczone="6" proccap="1" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Acamar" xpos="146" extraspeedrace="0" ypos="268" desc="" del="false" location="D329" memrequired="1000" diskrequired="98" />
+          <node type="Slot" proczone="6" danger_level="0" usernode="true" propagate="true" name="D331" xpos="146" ypos="268" desc="" del="false" location="D331" canlink="false" />
+          <node type="Slot" proczone="6" danger_level="0" usernode="true" propagate="true" name="D333" xpos="146" ypos="268" desc="" del="false" location="D333" canlink="false" />
+        </node>
+        <node type="Server" proczone="6" proccap="10" danger_level="0" usernode="false" snmpq="alert1" extraspeed="0" desc="Server" name="Europa" xpos="338" extraspeedrace="0" ypos="352" propagate="true" del="false" location="D322" can_upgrade_disk="true" disk="160" canlink="false" can_upgrade_mem="true" mem="4000" can_upgrade_hardware="false" platform="X" zone="6">
+          <node type="App" proczone="6" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Kaus" xpos="15" extraspeedrace="0" ypos="334" desc="" del="false" location="D324" memrequired="1500" diskrequired="56" />
+          <node type="App" proczone="6" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Canopus" xpos="72" extraspeedrace="0" ypos="337" desc="" del="false" location="D326" memrequired="1000" diskrequired="67" />
+          <node type="App" proczone="6" proccap="4" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Girtab" xpos="144" extraspeedrace="0" ypos="338" desc="" del="false" location="D328" memrequired="1000" diskrequired="29" />
+          <node type="Slot" proczone="6" danger_level="0" usernode="true" propagate="true" name="D330" xpos="144" ypos="338" desc="" del="false" location="D330" canlink="false" />
+          <node type="Slot" proczone="6" danger_level="0" usernode="true" propagate="true" name="D332" xpos="144" ypos="338" desc="" del="false" location="D332" canlink="false" />
+          <node type="Slot" proczone="6" danger_level="0" usernode="true" propagate="true" name="D334" xpos="144" ypos="338" desc="" del="false" location="D334" canlink="false" />
+        </node>
+      </node>
+    </node>
+    <node type="Router" proczone="2" zone="2" usernode="false" snmpq="alert2" extraspeed="0" desc="Zone 2 Router" name="P2132-5" xpos="422" extraspeedrace="0" ypos="482" propagate="true" del="false" location="F322" canlink="false">
+      <node type="Server" proczone="2" proccap="10" danger_level="0" usernode="false" snmpq="alert1" extraspeed="0" desc="Server" name="Neptune" canupgrade="true" xpos="274" extraspeedrace="0" ypos="425" propagate="true" del="false" location="F325" can_upgrade_disk="true" disk="260" canlink="false" can_upgrade_mem="true" mem="12000" can_upgrade_hardware="true" platform="Y" zone="2">
+        <node type="App" proczone="2" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Zosma" xpos="19" extraspeedrace="0" ypos="412" desc="Customer Support" del="false" location="F329" memrequired="7000" diskrequired="200">
+          <link to="Store 1 Customer Support" type="Connection" name="Zosma Store 1 Customer Support Connection" />
+          <link to="Store 2 Customer Support" type="Connection" name="Zosma Store 2 Customer Support Connection" />
+          <link to="Store 3 Customer Support" type="Connection" name="Zosma Store 3 Customer Support Connection" />
+          <link to="Store 4 Customer Support" type="Connection" name="Zosma Store 4 Customer Support Connection" />
+        </node>
+        <node type="App" proczone="2" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Izar" xpos="93" extraspeedrace="0" ypos="413" desc="EPOS" del="false" location="F333" memrequired="1000" diskrequired="40">
+          <link to="Store 1 EPOS" type="Connection" name="Izar Store 1 EPOS Connection" />
+          <link to="Store 2 EPOS" type="Connection" name="Izar Store 2 EPOS Connection" />
+          <SupportTech type="SupportTech" name="Izar Stores 3 and 4 EPOS Connection Support Technology">
+            <link to="Store 3 EPOS" type="Connection" name="Izar Store 3 EPOS Connection" />
+            <link to="Store 4 EPOS" type="Connection" name="Izar Store 4 EPOS Connection" />
+          </SupportTech>
+        </node>
+        <node type="App" proczone="2" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Bunda" xpos="156" extraspeedrace="0" ypos="420" desc="" del="false" location="F337" memrequired="500" diskrequired="16" />
+        <node type="App" proczone="2" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Atik" xpos="220" extraspeedrace="0" ypos="411" desc="" del="false" location="F340" memrequired="500" diskrequired="2" />
+      </node>
+      <node type="Server" proczone="2" proccap="12" danger_level="0" usernode="false" snmpq="alert1" extraspeed="0" desc="Server" name="Ceres" xpos="298" extraspeedrace="0" ypos="524" propagate="true" del="false" location="F326" can_upgrade_disk="true" disk="90" canlink="false" can_upgrade_mem="true" mem="3000" can_upgrade_hardware="false" platform="Y" zone="2">
+        <node type="App" proczone="2" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Altair" xpos="15" extraspeedrace="0" ypos="489" desc="" del="false" location="F330" memrequired="500" diskrequired="2" />
+        <node type="App" proczone="2" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Acrab" xpos="70" extraspeedrace="0" ypos="489" desc="" del="false" location="F334" memrequired="500" diskrequired="34" />
+        <node type="App" proczone="2" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Hadar" xpos="127" extraspeedrace="0" ypos="491" desc="" del="false" location="F338" memrequired="500" diskrequired="12" />
+        <node type="App" proczone="2" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Alcor" xpos="182" extraspeedrace="0" ypos="500" desc="" del="false" location="F341" memrequired="500" diskrequired="5" />
+        <node type="App" proczone="2" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Alrakis" xpos="235" extraspeedrace="0" ypos="513" desc="" del="false" location="F343" memrequired="500" diskrequired="6" />
+        <node type="Slot" proczone="2" danger_level="0" usernode="true" propagate="true" name="F345" xpos="235" ypos="513" desc="" del="false" location="F345" canlink="false" />
+      </node>
+      <node type="Server" proczone="2" proccap="12" danger_level="0" usernode="false" snmpq="alert1" extraspeed="0" desc="Server" name="Demos" xpos="345" extraspeedrace="0" ypos="598" propagate="true" del="false" location="F327" can_upgrade_disk="true" disk="72" canlink="false" can_upgrade_mem="true" mem="3000" can_upgrade_hardware="false" platform="Y" zone="2">
+        <node type="App" proczone="2" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Cheleb" xpos="11" extraspeedrace="0" ypos="587" desc="" del="false" location="F331" memrequired="1000" diskrequired="27" />
+        <node type="App" proczone="2" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Matar" xpos="77" extraspeedrace="0" ypos="598" desc="" del="false" location="F335" memrequired="500" diskrequired="5" />
+        <node type="App" proczone="2" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Chara" xpos="138" extraspeedrace="0" ypos="585" desc="" del="false" location="F339" memrequired="500" diskrequired="2" />
+        <node type="Slot" proczone="2" danger_level="0" usernode="true" propagate="true" name="F342" xpos="138" ypos="585" desc="" del="false" location="F342" canlink="false" />
+        <node type="Slot" proczone="2" danger_level="0" usernode="true" propagate="true" name="F344" xpos="138" ypos="585" desc="" del="false" location="F344" canlink="false" />
+        <node type="Slot" proczone="2" danger_level="0" usernode="true" propagate="true" name="F346" xpos="138" ypos="585" desc="" del="false" location="F346" canlink="false" />
+      </node>
+    </node>
+    <node type="Router" proczone="3" zone="3" usernode="false" snmpq="alert2" extraspeed="0" desc="Zone 3 Router 1" name="N1321" xpos="732" extraspeedrace="0" ypos="32" propagate="true" del="false" location="B321" canlink="false">
+      <node type="Server" proczone="3" proccap="12" danger_level="0" usernode="false" snmpq="alert1" extraspeed="0" desc="Server" name="Mercury" canupgrade="true" xpos="894" extraspeedrace="0" ypos="5" propagate="true" del="false" location="B324" can_upgrade_disk="true" disk="160" canlink="false" can_upgrade_mem="true" mem="4000" can_upgrade_hardware="true" platform="X" zone="3">
+        <node type="App" proczone="3" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="true" canlink="false" name="Phad" xpos="997" extraspeedrace="0" ypos="11" desc="Production Management System" del="false" location="B329" memrequired="500" diskrequired="20">
+          <link to="Store 1 Production Management System" type="Connection" name="Phad Store 1 Production Management System Connection" />
+          <link to="Store 2 Production Management System" type="Connection" name="Phad Store 2 Production Management System Connection" />
+        </node>
+        <node type="App" proczone="3" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Polaris" xpos="1056" extraspeedrace="0" ypos="17" desc="G-Tunes" del="false" location="B334" memrequired="1000" diskrequired="32">
+          <link to="Enif" type="dependsOn" item="Enif" />
+          <link to="Store 4 G-Tunes" type="Connection" name="Polaris Store 4 G-Tunes Connection" />
+        </node>
+        <node type="App" proczone="3" proccap="1" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Arneb" xpos="1118" extraspeedrace="0" ypos="11" desc="" del="false" location="B339" memrequired="1000" diskrequired="56" />
+        <node type="App" proczone="3" proccap="1" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Theemin" xpos="1179" extraspeedrace="0" ypos="10" desc="" del="false" location="B344" memrequired="500" diskrequired="23" />
+        <node type="Slot" proczone="3" danger_level="0" usernode="true" propagate="true" name="B348" xpos="1179" ypos="10" desc="" del="false" location="B348" canlink="false" />
+        <node type="Slot" proczone="3" danger_level="0" usernode="true" propagate="true" name="B352" xpos="1179" ypos="10" desc="" del="false" location="B352" canlink="false" />
+      </node>
+      <node type="Server" proczone="3" proccap="12" danger_level="0" usernode="false" snmpq="alert1" extraspeed="0" desc="Server" name="Venus" canupgrade="true" xpos="926" extraspeedrace="0" ypos="92" propagate="true" del="false" location="B325" can_upgrade_disk="true" disk="160" canlink="false" can_upgrade_mem="true" mem="4000" can_upgrade_hardware="true" platform="X" zone="3">
+        <node type="App" proczone="3" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="true" canlink="false" name="Sham" xpos="999" extraspeedrace="0" ypos="77" desc="Catalog Management" del="false" location="B330" memrequired="500" diskrequired="9">
+          <link to="Store 1 Catalog Management" type="Connection" name="Sham Store 1 Catalog Management Connection" />
+          <link to="Store 2 Catalog Management" type="Connection" name="Sham Store 2 Catalog Management Connection" />
+          <link to="Store 3 Catalog Management" type="Connection" name="Sham Store 3 Catalog Management Connection" />
+        </node>
+        <node type="App" proczone="3" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="true" canlink="false" name="Tarazed" xpos="1062" extraspeedrace="0" ypos="79" desc="Warehouse Management" del="false" location="B335" memrequired="2000" diskrequired="83">
+          <SupportTech type="SupportTech" name="Tarazed Stores 1 and 2 Warehouse Management Connection Support Technology">
+            <link to="Store 1 Warehouse Management" type="Connection" name="Tarazed Store 1 Warehouse Management Connection" />
+            <link to="Store 2 Warehouse Management" type="Connection" name="Tarazed Store 2 Warehouse Management Connection" />
+          </SupportTech>
+          <link to="Store 3 Warehouse Management" type="Connection" name="Tarazed Store 3 Warehouse Management Connection" />
+        </node>
+        <node type="App" proczone="3" proccap="1" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Antares" xpos="1122" extraspeedrace="0" ypos="81" desc="" del="false" location="B340" memrequired="500" diskrequired="12" />
+        <node type="App" proczone="3" proccap="1" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Kuma" xpos="1181" extraspeedrace="0" ypos="74" desc="" del="false" location="B345" memrequired="500" diskrequired="20" />
+        <node type="Slot" proczone="3" danger_level="0" usernode="true" propagate="true" name="B349" xpos="1181" ypos="74" desc="" del="false" location="B349" canlink="false" />
+        <node type="Slot" proczone="3" danger_level="0" usernode="true" propagate="true" name="B353" xpos="1181" ypos="74" desc="" del="false" location="B353" canlink="false" />
+      </node>
+      <node type="Server" proczone="3" proccap="12" danger_level="0" usernode="false" snmpq="alert1" extraspeed="0" desc="Server" name="Vesta" xpos="863" extraspeedrace="0" ypos="130" propagate="true" del="false" location="B326" can_upgrade_disk="true" disk="146" canlink="false" can_upgrade_mem="true" mem="4000" can_upgrade_hardware="false" platform="X" zone="3">
+        <node type="App" proczone="3" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Duhr" xpos="997" extraspeedrace="0" ypos="142" desc="" del="false" location="B331" memrequired="500" diskrequired="2" />
+        <node type="App" proczone="3" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Grafias" xpos="1058" extraspeedrace="0" ypos="144" desc="" del="false" location="B336" memrequired="1000" diskrequired="4" />
+        <node type="App" proczone="3" proccap="1" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Dubhe" xpos="1128" extraspeedrace="0" ypos="149" desc="" del="false" location="B341" memrequired="500" diskrequired="12" />
+        <node type="Slot" proczone="3" danger_level="0" usernode="true" propagate="true" name="B346" xpos="1128" ypos="149" desc="" del="false" location="B346" canlink="false" />
+        <node type="Slot" proczone="3" danger_level="0" usernode="true" propagate="true" name="B350" xpos="1128" ypos="149" desc="" del="false" location="B350" canlink="false" />
+        <node type="Slot" proczone="3" danger_level="0" usernode="true" propagate="true" name="B354" xpos="1128" ypos="149" desc="" del="false" location="B354" canlink="false" />
+      </node>
+      <node type="Router" proczone="3" zone="3" usernode="false" snmpq="alert2" extraspeed="0" desc="Zone 3 Router 2" name="G3214" xpos="788" extraspeedrace="0" ypos="155" propagate="true" del="false" location="B323" canlink="false">
+        <node type="Server" proczone="3" proccap="12" danger_level="0" usernode="false" snmpq="alert1" extraspeed="0" desc="Server" name="Jupiter" xpos="808" extraspeedrace="0" ypos="233" propagate="true" del="false" location="B327" can_upgrade_disk="true" disk="250" canlink="false" can_upgrade_mem="true" mem="6000" can_upgrade_hardware="false" platform="X" zone="3">
+          <node type="App" proczone="3" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Alshat" xpos="998" extraspeedrace="0" ypos="207" desc="Multi Store" del="false" location="B332" memrequired="1500" diskrequired="24" platform="X" zone="3">
+            <link to="Arcturus" type="dependsOn" item="Arcturus" />
+            <link to="Store 1 Multi Store" type="Connection" name="Alshat Store 1 Multi Store Connection" />
+            <link to="Store 2 Multi Store" type="Connection" name="Alshat Store 2 Multi Store Connection" />
+          </node>
+          <node type="App" proczone="3" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Rastaban" xpos="998" extraspeedrace="0" ypos="207" desc="Fulfillment" del="false" location="B337" memrequired="3000" diskrequired="120" platform="X" zone="3">
+            <link to="Store 1 Fulfillment" type="Connection" name="Rastaban Store 1 Fulfillment Connection" />
+            <link to="Store 2 Fulfillment" type="Connection" name="Rastaban Store 2 Fulfillment Connection" />
+            <link to="Store 3 Fulfillment" type="Connection" name="Rastaban Store 3 Fulfillment Connection" />
+          </node>
+          <node type="Slot" proczone="3" danger_level="0" usernode="true" propagate="true" name="B342" xpos="998" ypos="207" desc="" del="false" location="B342" canlink="false" />
+          <node type="Slot" proczone="3" danger_level="0" usernode="true" propagate="true" name="B347" xpos="998" ypos="207" desc="" del="false" location="B347" canlink="false" />
+          <node type="Slot" proczone="3" danger_level="0" usernode="true" propagate="true" name="B351" xpos="998" ypos="207" desc="" del="false" location="B351" canlink="false" />
+        </node>
+        <node type="Slot" proczone="3" danger_level="0" usernode="true" propagate="true" name="M201" xpos="144" ypos="338" desc="" del="false" location="M201" canlink="false" />				
+      </node>
+    </node>
+    <node type="Router" proczone="4" zone="4" usernode="false" snmpq="alert2" extraspeed="0" desc="Zone 4 Router" name="P2123-4" xpos="755" extraspeedrace="0" ypos="353" propagate="true" del="false" location="G322" canlink="false">
+      <node type="Server" proczone="4" proccap="12" danger_level="0" usernode="false" snmpq="alert1" extraspeed="0" desc="Server" name="Mars" xpos="827" extraspeedrace="0" ypos="305" propagate="true" del="false" location="G325" can_upgrade_disk="true" disk="100" canlink="false" can_upgrade_mem="true" mem="4000" can_upgrade_hardware="false" platform="Y" zone="4">
+        <node type="App" proczone="4" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Nash" xpos="952" extraspeedrace="0" ypos="287" desc="Dispatch Scanning System" del="false" location="G327" memrequired="500" diskrequired="23">
+          <link to="Arcturus" type="dependsOn" item="Arcturus" />
+          <SupportTech type="SupportTech" name="Nash Stores 1 and 2 Dispatch Scanning System Connection Support Technology">
+            <link to="Store 1 Dispatch Scanning System" type="Connection" name="Nash Store 1 Dispatch Scanning System Connection" />
+            <link to="Store 2 Dispatch Scanning System" type="Connection" name="Nash Store 2 Dispatch Scanning System Connection" />
+          </SupportTech>
+        </node>
+        <node type="App" proczone="4" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Nunki" xpos="1013" extraspeedrace="0" ypos="287" desc="Shopping Basket Management" del="false" location="G329" memrequired="500" diskrequired="6">
+          <link to="Store 1 Shopping Basket Management" type="Connection" name="Nunki Store 1 Shopping Basket Management Connection" />
+          <link to="Store 2 Shopping Basket Management" type="Connection" name="Nunki Store 2 Shopping Basket Management Connection" />
+          <link to="Store 3 Shopping Basket Management" type="Connection" name="Nunki Store 3 Shopping Basket Management Connection" />
+        </node>
+        <node type="App" proczone="4" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Vega" xpos="1067" extraspeedrace="0" ypos="286" desc="Shopping Basket Management" del="false" location="G331" memrequired="1000" diskrequired="27">
+          <link to="Store 4 Shopping Basket Management" type="Connection" name="Nunki Store 4 Shopping Basket Management Connection" />
+        </node>
+        <node type="App" proczone="4" proccap="1" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Gatria" xpos="1126" extraspeedrace="0" ypos="285" desc="" del="false" location="G333" memrequired="500" diskrequired="20" />
+        <node type="App" proczone="4" proccap="1" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Keid" xpos="1182" extraspeedrace="0" ypos="287" desc="" del="false" location="G335" memrequired="500" diskrequired="19" />
+        <node type="Slot" proczone="4" danger_level="0" usernode="true" propagate="true" name="G337" xpos="1182" ypos="287" desc="" del="false" location="G337" canlink="false" />
+        <node type="Slot" proczone="4" danger_level="0" usernode="true" propagate="true" name="G339" xpos="1182" ypos="287" desc="" del="false" location="G339" canlink="false" />
+      </node>
+      <node type="Server" proczone="4" proccap="12" danger_level="0" usernode="false" snmpq="alert1" extraspeed="0" desc="Server" name="Titan" xpos="875" extraspeedrace="0" ypos="377" propagate="true" del="false" location="G324" can_upgrade_disk="true" disk="160" canlink="false" can_upgrade_mem="true" mem="4000" can_upgrade_hardware="false" platform="Y" zone="4">
+        <node type="App" proczone="4" proccap="1" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Chort" xpos="962" extraspeedrace="0" ypos="375" desc="" del="false" location="G326" memrequired="1000" diskrequired="10" />
+        <node type="App" proczone="4" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Botein" xpos="1020" extraspeedrace="0" ypos="376" desc="" del="false" location="G328" memrequired="1000" diskrequired="18" />
+        <node type="Slot" proczone="4" danger_level="0" usernode="true" propagate="true" name="G330" xpos="1020" ypos="376" desc="" del="false" location="G330" canlink="false" />
+        <node type="Slot" proczone="4" danger_level="0" usernode="true" propagate="true" name="G332" xpos="1020" ypos="376" desc="" del="false" location="G332" canlink="false" />
+        <node type="Slot" proczone="4" danger_level="0" usernode="true" propagate="true" name="G334" xpos="1020" ypos="376" desc="" del="false" location="G334" canlink="false" />
+        <node type="Slot" proczone="4" danger_level="0" usernode="true" propagate="true" name="G336" xpos="1020" ypos="376" desc="" del="false" location="G336" canlink="false" />
+        <node type="Slot" proczone="4" danger_level="0" usernode="true" propagate="true" name="G338" xpos="1020" ypos="376" desc="" del="false" location="G338" canlink="false" />
+      </node>
+    </node>
+    <node type="Router" proczone="5" zone="5" usernode="false" snmpq="alert2" extraspeed="0" desc="Zone 5 Router" name="M1232-1" xpos="570" extraspeedrace="0" ypos="546" propagate="true" del="false" location="H320" canlink="false">
+      <node type="Server" proczone="5" proccap="10" danger_level="0" usernode="false" snmpq="alert1" extraspeed="0" desc="Server" name="Ariel" xpos="428" extraspeedrace="0" ypos="635" propagate="true" del="false" location="H325" can_upgrade_disk="true" disk="160" canlink="false" can_upgrade_mem="true" mem="3000" can_upgrade_hardware="false" platform="Z" zone="5">
+        <node type="Database" proczone="5" proccap="1" usernode="false" propagate="true" extraspeed="0" version="1" canlink="false" userupgrade="false" name="Arcturus" xpos="432" extraspeedrace="0" ypos="712" desc="" del="false" location="H330" memrequired="500" diskrequired="23" />
+        <node type="App" proczone="5" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Arrakis" xpos="428" extraspeedrace="0" ypos="782" desc="" del="false" location="H335" memrequired="500" diskrequired="10" />
+        <node type="Slot" proczone="5" danger_level="0" usernode="true" propagate="true" name="H340" xpos="428" ypos="782" desc="" del="false" location="H340" canlink="false" />
+        <node type="Slot" proczone="5" danger_level="0" usernode="true" propagate="true" name="H345" xpos="428" ypos="782" desc="" del="false" location="H345" canlink="false" />
+        <node type="Slot" proczone="5" danger_level="0" usernode="true" propagate="true" name="H350" xpos="428" ypos="782" desc="" del="false" location="H350" canlink="false" />
+      </node>
+      <node type="Server" proczone="5" proccap="10" danger_level="0" usernode="false" snmpq="alert1" extraspeed="0" desc="Server" name="Charon" xpos="504" extraspeedrace="0" ypos="642" propagate="true" del="false" location="H326" can_upgrade_disk="true" disk="160" canlink="false" can_upgrade_mem="true" mem="4000" can_upgrade_hardware="false" platform="Z" zone="5">
+        <node type="Database" proczone="5" proccap="1" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Enif" xpos="501" extraspeedrace="0" ypos="716" desc="" del="false" location="H331" memrequired="500" diskrequired="72" />
+        <node type="App" proczone="5" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Heka" xpos="500" extraspeedrace="0" ypos="787" desc="" del="false" location="H336" memrequired="1000" diskrequired="11" />
+        <node type="App" proczone="5" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Eltanin" xpos="552" extraspeedrace="0" ypos="742" desc="" del="false" location="H341" memrequired="500" diskrequired="2" />
+        <node type="Slot" proczone="5" danger_level="0" usernode="true" propagate="true" name="H346" xpos="552" ypos="742" desc="" del="false" location="H346" canlink="false" />
+        <node type="Slot" proczone="5" danger_level="0" usernode="true" propagate="true" name="H351" xpos="552" ypos="742" desc="" del="false" location="H351" canlink="false" />
+      </node>
+      <node type="Server" proczone="5" proccap="10" danger_level="0" usernode="false" snmpq="alert1" extraspeed="0" desc="Server" name="Callisto" xpos="648" extraspeedrace="0" ypos="635" propagate="true" del="false" location="H327" can_upgrade_disk="true" disk="50" canlink="false" can_upgrade_mem="true" mem="3000" can_upgrade_hardware="false" platform="Z" zone="5">
+        <node type="App" proczone="5" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Ankaa" xpos="654" extraspeedrace="0" ypos="706" desc="" del="false" location="H332" memrequired="500" diskrequired="4" />
+        <node type="App" proczone="5" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Merak" xpos="658" extraspeedrace="0" ypos="776" desc="" del="false" location="H337" memrequired="500" diskrequired="8" />
+        <node type="App" proczone="5" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Baham" xpos="707" extraspeedrace="0" ypos="739" desc="" del="false" location="H342" memrequired="1000" diskrequired="26" />
+        <node type="Slot" proczone="5" danger_level="0" usernode="true" propagate="true" name="H347" xpos="707" ypos="739" desc="" del="false" location="H347" canlink="false" />
+        <node type="Slot" proczone="5" danger_level="0" usernode="true" propagate="true" name="H352" xpos="707" ypos="739" desc="" del="false" location="H352" canlink="false" />
+      </node>
+      <node type="Server" proczone="5" proccap="12" danger_level="0" usernode="false" snmpq="alert1" extraspeed="0" desc="Server" name="Camilla" xpos="776" extraspeedrace="0" ypos="639" propagate="true" del="false" location="H328" can_upgrade_disk="true" disk="90" canlink="false" can_upgrade_mem="true" mem="2000" can_upgrade_hardware="false" platform="Z" zone="5">
+        <node type="App" proczone="5" proccap="4" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Arcab" xpos="786" extraspeedrace="0" ypos="778" desc="" del="false" location="H333" memrequired="500" diskrequired="43" />
+        <node type="App" proczone="5" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Hamal" xpos="785" extraspeedrace="0" ypos="714" desc="" del="false" location="H338" memrequired="500" diskrequired="9" />
+        <node type="Slot" proczone="5" danger_level="0" usernode="true" propagate="true" name="H343" xpos="785" ypos="714" desc="" del="false" location="H343" canlink="false" />
+        <node type="Slot" proczone="5" danger_level="0" usernode="true" propagate="true" name="H348" xpos="785" ypos="714" desc="" del="false" location="H348" canlink="false" />
+      </node>
+    </node>
+    <node type="Router" proczone="7" zone="7" usernode="false" snmpq="alert2" extraspeed="0" desc="Zone 7 Router" name="K1232-1" xpos="668" extraspeedrace="0" ypos="447" propagate="true" del="false" location="C321" canlink="false">
+      <node type="Server" proczone="7" proccap="12" danger_level="0" usernode="false" snmpq="alert1" extraspeed="0" desc="Server" name="Phobos" xpos="840" extraspeedrace="0" ypos="444" propagate="true" del="false" location="C324" can_upgrade_disk="true" disk="160" canlink="false" can_upgrade_mem="true" mem="2000" can_upgrade_hardware="false" platform="Z" zone="7">
+        <node type="App" proczone="7" proccap="3" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Algol" xpos="945" extraspeedrace="0" ypos="460" desc="" del="false" location="C328" memrequired="500" diskrequired="20" />
+        <node type="App" proczone="7" proccap="3" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Minkar" xpos="1014" extraspeedrace="0" ypos="453" desc="" del="false" location="C332" memrequired="500" diskrequired="76" />
+        <node type="App" proczone="7" proccap="3" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Ascella" xpos="1089" extraspeedrace="0" ypos="457" desc="" del="false" location="C335" memrequired="500" diskrequired="23" />
+        <node type="Slot" proczone="7" danger_level="0" usernode="true" propagate="true" name="C338" xpos="1089" ypos="457" desc="" del="false" location="C338" canlink="false" />
+        <node type="Slot" proczone="7" danger_level="0" usernode="true" propagate="true" name="C344" xpos="1089" ypos="457" desc="" del="false" location="C344" canlink="false" />
+      </node>
+      <node type="Server" proczone="7" proccap="12" danger_level="0" usernode="false" snmpq="alert1" extraspeed="0" desc="Server" name="Rhea" xpos="850" extraspeedrace="0" ypos="605" propagate="true" del="false" location="C325" can_upgrade_disk="true" disk="72" canlink="false" can_upgrade_mem="true" mem="2000" can_upgrade_hardware="false" platform="Z" zone="7">
+        <node type="App" proczone="7" proccap="3" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Capella" xpos="937" extraspeedrace="0" ypos="626" desc="" del="false" location="C329" memrequired="500" diskrequired="9" />
+        <node type="App" proczone="7" proccap="3" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Alzir" xpos="1079" extraspeedrace="0" ypos="617" desc="" del="false" location="C333" memrequired="500" diskrequired="13" />
+        <node type="App" proczone="7" proccap="3" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Deneb" xpos="1001" extraspeedrace="0" ypos="616" desc="" del="false" location="C336" memrequired="500" diskrequired="20" />
+        <node type="Slot" proczone="7" danger_level="0" usernode="true" propagate="true" name="C339" xpos="1079" ypos="616" desc="" del="false" location="C339" canlink="false" />
+        <node type="Slot" proczone="7" danger_level="0" usernode="true" propagate="true" name="C341" xpos="1079" ypos="616" desc="" del="false" location="C341" canlink="false" />
+        <node type="Slot" proczone="7" danger_level="0" usernode="true" propagate="true" name="C345" xpos="1079" ypos="616" desc="" del="false" location="C345" canlink="false" />
+      </node>
+      <node type="Server" proczone="7" proccap="12" danger_level="0" usernode="false" snmpq="alert1" extraspeed="0" desc="Server" name="Mimas" xpos="879" extraspeedrace="0" ypos="531" propagate="true" del="false" location="C326" can_upgrade_disk="true" disk="160" canlink="false" can_upgrade_mem="true" mem="4000" can_upgrade_hardware="false" platform="Z" zone="7">
+        <node type="App" proczone="7" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Etamin" xpos="936" extraspeedrace="0" ypos="545" desc="" del="false" location="C330" memrequired="500" diskrequired="4" />
+        <node type="App" proczone="7" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Becrux" xpos="991" extraspeedrace="0" ypos="539" desc="" del="false" location="C334" memrequired="500" diskrequired="19" />
+        <node type="App" proczone="7" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Kraz" xpos="1045" extraspeedrace="0" ypos="532" desc="" del="false" location="C337" memrequired="500" diskrequired="7" />
+        <node type="App" proczone="7" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Furud" xpos="1100" extraspeedrace="0" ypos="532" desc="" del="false" location="C340" memrequired="1000" diskrequired="97" />
+        <node type="App" proczone="7" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Homam" xpos="1153" extraspeedrace="0" ypos="527" desc="" del="false" location="C342" memrequired="500" diskrequired="24" />
+        <node type="App" proczone="7" proccap="2" danger_level="0" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" name="Maia" xpos="1205" extraspeedrace="0" ypos="532" desc="" del="false" location="C343" memrequired="500" diskrequired="2" />
+      </node>
+    </node>
+  </node>
+  <node up="false" notinnetwork="true" name="uninstalled">
+    <node type="Cooling" name="C1" xpos="1089" ypos="457" desc="Cooling Zone 1" del="false" location="E327" />
+    <node type="Cooling" name="C2" xpos="1089" ypos="457" desc="Cooling Zone 2" del="false" location="F321" />
+    <node type="Cooling" name="C3" xpos="1089" ypos="457" desc="Cooling Zone 3" del="false" location="B319" />
+    <node type="Cooling" name="C4" xpos="1089" ypos="457" desc="Cooling Zone 4" del="false" location="G323" />
+    <node type="Cooling" name="C5" xpos="1089" ypos="457" desc="Cooling Zone 5" del="false" location="H321" />
+    <node type="Cooling" name="C6" xpos="1089" ypos="457" desc="Cooling Zone 6" del="false" location="D321" />
+    <node type="Cooling" name="C7" xpos="1089" ypos="457" desc="Cooling Zone 7" del="false" location="C320" />
+  </node>
+  <PitStop activefor="" name="PitStop" />
+  <AdvancedWarningTechnology enabled="false" name="AdvancedWarningTechnology" up="true" />
+  <CameraActions num="0" name="CameraActions" />
+  <AppliedWorkArounds num="0" name="AppliedWorkArounds" />
+  <CostedEvents name="CostedEvents" totalspent="0" />
+  <ProjectsIncomingRequests name="ProjectsIncomingRequests" />
+  <Projects name="Projects">
+    <project name="101" projectid="101" regulation="false" productid="1011" platformid="X" stage="ready" slalimit="360" round="1" createdinround="1" handovervalue="100" estimated_gain="0" currentspend="0" wrequest="1" actual_cost="0" handover="100" readyfordeployment="1" testdays="3" stagedaystogo="0" designdays="6" builddays="5" wcount="1" installname="Online Security Management" fixedlocation="E336" fixedzone="X" />
+  </Projects>
+  <Calendar name="Calendar" days="30" />
+  <CurrentDay name="CurrentDay" day="1" />
+  <CurrentTime seconds="0" name="CurrentTime" round_start_clock_time="14:00:00" />
+  <enteredIncidents name="enteredIncidents" />
+  <FixItQueue name="FixItQueue" />
+  <FacilitatorNotifiedErrors name="FacilitatorNotifiedErrors" />
+  <BusinessNotifiedEvents name="BusinessNotifiedEvents" />
+
+  <TransactionStatus name="TransactionStatus" TransCompleted="0" TransMaximum="96"/>
+
+  <Transactions name="Transactions" zzz="" count_good = "0" count_processed = "0" count_max = "96">
+  </Transactions>
+  
+  <TransactionProfile name="TransactionProfiles">
+    <transactiontype  name="transactionprofile1" storename = "Store 1" profile="O5,I5,O5,I5,O5,I5,O3,I2,O3,I2,O6,I6,O6,I6,O6,I6,O3,I2,O3,I2,O3,I2,O6,I6"/>
+    <transactiontype  name="transactionprofile2" storename = "Store 2" profile="O5,I5,O5,I5,O5,I5,O3,I2,O3,I2,O6,I6,O6,I6,O6,I6,O3,I2,O3,I2,O3,I2,O6,I6"/>
+    <transactiontype  name="transactionprofile3" storename = "Store 3" profile="O3,I2,O3,I2,O3,I2,O1,I1,O1,I2,O4,I4,O4,I4,O4,I4,O2,I2,O2,I2,O2,I2,O4,I4"/>
+    <transactiontype  name="transactionprofile4" storename = "Store 4" profile="O2,I2,O2,I2,O2,I2,O1,I1,O1,I1,O4,I4,O4,I4,O4,I4,O1,I1,O1,I1,O1,I1,O4,I4"/>
+  </TransactionProfile>
+  
+  <TransactionValues name="TransactionValues">
+    <transactiontype  name="transaction_type_1_instore" revenuelevel = "1" event_type="instore" revenue = "140000" />
+    <transactiontype  name="transaction_type_2_instore" revenuelevel = "2" event_type="instore" revenue = "160000" />
+    <transactiontype  name="transaction_type_3_instore" revenuelevel = "3" event_type="instore" revenue = "180000" />
+    <transactiontype  name="transaction_type_4_instore" revenuelevel = "4" event_type="instore" revenue = "200000" />
+    <transactiontype  name="transaction_type_5_instore" revenuelevel = "5" event_type="instore" revenue = "220000" />
+    <transactiontype  name="transaction_type_6_instore" revenuelevel = "6" event_type="instore" revenue = "240000" />
+    <transactiontype  name="transaction_type_1_online" revenuelevel = "1" event_type="online" revenue = "140000" />
+    <transactiontype  name="transaction_type_2_online" revenuelevel = "2" event_type="online" revenue = "160000" />
+    <transactiontype  name="transaction_type_3_online" revenuelevel = "3" event_type="online" revenue = "180000" />
+    <transactiontype  name="transaction_type_4_online" revenuelevel = "4" event_type="online" revenue = "200000" />
+    <transactiontype  name="transaction_type_5_online" revenuelevel = "5" event_type="online" revenue = "220000" />
+    <transactiontype  name="transaction_type_6_online" revenuelevel = "6" event_type="online" revenue = "240000" />
+  </TransactionValues>
+  
+  <PrePlaySystem name="PrePlaySystem">
+    <preplay_name name="preplay_control" start="false" escape="false" time_ref="300"/>
+    <preplay_status name="preplay_status" time_left="300" preplay_running="true" />
+	</PrePlaySystem>
+  
+  <Revenue name="Revenue" revenue="0" max_revenue="0" revenue_lost="0"/>
+  <Availability name="Availability" availability="100.0" />
+  <Impact name="Impact" impact="0" />
+  <PowerLevel name="PowerLevel" level="100.0" z1_base="48" z1_now="48" z2_base="34" z2_now="34" z3_base="48" z3_now="48" z4_base="24" z4_now="24" z5_base="42" z5_now="42" z6_base="22" z6_now="22" z7_base="36" z7_now="36" />
+  <SLA_Breach name="sla_breach" biz_serv_count="0" biz_serv_user_count="0" impact_count="0" />
+  <MachineUpgradeQueue name="MachineUpgradeQueue" />
+  <AppUpgradeQueue name="AppUpgradeQueue" />
+  <AppUpgradeResetLinksQueue name="AppUpgradeResetLinksQueue" />
+  <MirrorCommandQueue name="MirrorCommandQueue" />
+  
+  <DevelopmentalSpend name="DevelopmentSpend" CurrentSpendTotal="0" ActualCostTotal="0" RoundBudgetLeft="0" />
+  <CoolingSystem name="CoolingSystem" upgraded="false" />
+ 
+  	<SLAs name="SLAs" type="slas">
+		<SLA type="sla" revenue_streams_min="6" revenue_streams_max="8" slalimit="360" />
+		<SLA type="sla" revenue_streams_min="4" revenue_streams_max="5" slalimit="360" />
+		<SLA type="sla" revenue_streams_min="2" revenue_streams_max="3" slalimit="360" />
+		<SLA type="sla" revenue_streams_min="1" revenue_streams_max="1" slalimit="360" />
+		<SLA type="sla" revenue_streams_min="0" revenue_streams_max="0" slalimit="360" />
+	</SLAs>
+ </root>

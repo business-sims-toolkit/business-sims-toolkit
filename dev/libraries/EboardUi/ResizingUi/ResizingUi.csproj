@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{08FDA587-8773-4B58-A8E0-7F7D5C8E4637}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ResizingUi</RootNamespace>
+    <AssemblyName>ResizingUi</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animation\AnimatorProvider.cs" />
+    <Compile Include="Animation\PulseAnimator.cs" />
+    <Compile Include="AttributeDisplayPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AwtCollectionPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AwtPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BackgroundPainter.cs" />
+    <Compile Include="BarGraph.cs" />
+    <Compile Include="BusinessChannel.cs" />
+    <Compile Include="BusinessServiceLozengeGroup.cs" />
+    <Compile Include="Button\ButtonStyler.cs" />
+    <Compile Include="Button\ButtonStyleSheet.cs" />
+    <Compile Include="Button\IStyledButton.cs" />
+    <Compile Include="Button\StyledDynamicButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Button\StyledImageButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CascadedBackgroundPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CascadedBackgroundProperties.cs" />
+    <Compile Include="ClockPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Component\AnimationPropertiesEventArgs.cs" />
+    <Compile Include="Component\ControlAnimationComponent.cs" />
+    <Compile Include="DynamicGridLayoutPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Enums\RectangleCorners.cs" />
+    <Compile Include="Enums\RectangleSides.cs" />
+    <Compile Include="Extensions\GraphicsExtensions.cs" />
+    <Compile Include="FontScaler.cs" />
+    <Compile Include="GradientBackgroundProperties.cs" />
+    <Compile Include="HatchFillImage.cs" />
+    <Compile Include="HatchFillProperties.cs" />
+    <Compile Include="ImageRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IncidentEntryPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ControlBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Interfaces\IAnimator.cs" />
+    <Compile Include="Interfaces\IDialogOpener.cs" />
+    <Compile Include="Interfaces\IDynamicSharedFontSize.cs" />
+    <Compile Include="LogoStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PicturePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PopupControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopupMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PowerLevelPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReadoutPanel\Entry.cs" />
+    <Compile Include="ReadoutPanel\ReadoutFetcher.cs" />
+    <Compile Include="ReadoutPanel\Layout.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadoutPanel\ReadoutPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RevealablePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RoundTimeViewPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SharedMouseEventControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TextWrapper.cs" />
+    <Compile Include="TimeDisplays\TimeLine.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TimeDisplays\TimerView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TimedMessageDisplay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TransactionsView\TransactionRowView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TransactionsView\TransactionStatus.cs" />
+    <Compile Include="TransactionsView\TransactionsView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TransactionViewPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ZoomMode.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\core\Algorithms\Algorithms.csproj">
+      <Project>{A402764F-2455-4AE6-B1B9-D129C2B083CD}</Project>
+      <Name>Algorithms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\core\CoreUtils\CoreUtils.csproj">
+      <Project>{9c61e4e5-78bc-4d27-b5b0-dfdcb8dc935e}</Project>
+      <Name>CoreUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\core\Events\Events.csproj">
+      <Project>{0e80302d-2ef7-4428-8ce2-198aef8ed0fc}</Project>
+      <Name>Events</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\core\LibCore\LibCore.csproj">
+      <Project>{6d70195c-c791-4909-81fc-37daa61c143d}</Project>
+      <Name>LibCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\eboards\CommonGUI\CommonGUI.csproj">
+      <Project>{35070f1c-ce4f-4dca-86ac-9d6240882de0}</Project>
+      <Name>CommonGUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\eboards\GameManagement\GameManagement.csproj">
+      <Project>{37599BB8-B493-4323-BA2D-BE2BD8FE4561}</Project>
+      <Name>GameManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\eboards\IncidentManagement\IncidentManagement.csproj">
+      <Project>{4E68E998-4959-42C2-8C9B-9D482AB2465D}</Project>
+      <Name>IncidentManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\eboards\Network\Network.csproj">
+      <Project>{b7ac785c-e7ce-4a7d-99ce-604e0cba231b}</Project>
+      <Name>Network</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\media\Media\Media.csproj">
+      <Project>{5c02966b-f7e4-40bf-b40f-a36489cff1cb}</Project>
+      <Name>Media</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

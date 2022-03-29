@@ -1,0 +1,26 @@
+<incidents>
+  <i id="AtStart">
+    <apply i_name="Calendar" days="21" showdays="20" offset="1" />
+//
+// This defines the various standard events for the cars in Round 5 Transition 
+// It defines both the Booked Days and the Flash Files
+//
+// TO DO : Have a way of saying "wipe all child nodes" from a particular node.
+
+    <createNodes i_to="Calendar">
+    
+      <opsevent showName="" day="1" type="external" block="false" duration="0" gamemoviefile="ActionLoop.wmv" trainingmoviefile="ActionLoopTraining.wmv" synch="0" />
+
+      <opsevent showName="Audit" day="3" image="audit.png" type="external" block="true" duration="60" gamemoviefile="Matrix.avi" trainingmoviefile="Matrix.avi" synch="0" />
+
+      <opsevent showName="" day="4" type="external" block="false" duration="0" gamemoviefile="ActionLoop.wmv" trainingmoviefile="ActionLoopTraining.wmv" synch="0" />
+
+      <opsevent showName="Audit" day="18" image="audit.png" type="external" block="true" duration="60" gamemoviefile="Matrix.avi" trainingmoviefile="Matrix.avi" synch="0" />
+
+      <opsevent showName="Freeze Countdown" day="19" type="external" block="false" duration="60" gamemoviefile="ChangeFreezeCountdown.wmv" trainingmoviefile="ChangeFreezeCountdown.wmv" loop="false" synch="0" />
+      <opsevent showName="Freeze" day="20" image="freeze.png" type="external" block="true" duration="0" gamemoviefile="ChangeFreeze.wmv" trainingmoviefile="ActionLoopTraining.wmv" synch="0" />
+      <opsevent showName="Freeze" day="21" image="freeze.png" type="external" block="true" duration="0" gamemoviefile="ChangeFreeze.wmv" trainingmoviefile="ActionLoopTraining.wmv" synch="0" />
+   	</createNodes>
+   </i>
+</incidents>
+

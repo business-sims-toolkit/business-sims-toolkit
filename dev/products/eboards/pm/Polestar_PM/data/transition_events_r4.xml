@@ -1,0 +1,14 @@
+<events>
+  <i id="AtStart"> // Reseting the Development Budget
+		<apply i_name="DevelopmentSpend" RoundBudgetLeft="450000" CurrentSpendTotal="0" ActualCostTotal="0" />
+	</i>
+	
+	//
+	// Include the SIP 101 Upgrade.
+	//
+	<include>data/upgrade_101.xml</include>
+
+	// Include the calendar incidents.
+	//
+	<include>data/CalendarEvents_r4.xml</include>
+</events>

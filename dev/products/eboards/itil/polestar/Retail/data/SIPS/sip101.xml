@@ -1,0 +1,41 @@
+<project projectid="101" round = "1" regulation = "true" installname = "Online Security Management" fixedlocation="E336" fixedzone="X" upgradename = "">
+<product productid = "1011" actual_cost = "200000">
+<platform platformid = "X" designdays = "7" builddays = "7" testdays = "6" Handover = "100" >
+<InstallScript>
+<requirements>
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="2" name="Online Security Management" desc="Online\r\nSecurity" shortdesc="Online Security" icon="Icon_osm" notinnetwork="true" type="biz_service"  new="true" created_by_sip="101" slalimit="360" impactkmh="-1" has_impact="true" gantt_order="8" />
+	</createNodes>
+</oncreate>
+<oninstall>
+	<createNodes i_to="Retired Business Services">
+		<node name="Online Credit Card Authorization (v0.9)" icon="Icon_PMon" version="0.9"/>
+	</createNodes>
+	<copyAttributes i_to="Online Credit Card Authorization (v0.9)" i_from="Online Credit Card Authorization"/>
+	<apply i_name="Online Credit Card Authorization (v0.9)"	type="retired_biz_service"/>
+	<copyAttributes i_to="Online Credit Card Authorization" i_from="Online Security Mgt v1"/>
+	<deleteNode i_name="Online Security Mgt v1" />
+	<apply i_name="Online Credit Card Authorization" slalimit="YYY"/>
+	<incrementAtt i_name="Megrez" i_doAfterSecs="0" memrequired="500" diskrequired="20" />
+	<apply i_name="Store 1 Security" shortdesc="Security v1" icon="Icon_osm" slalimit="YYY"/>
+	<apply i_name="Store 2 Security" shortdesc="Security v1" icon="Icon_osm" slalimit="YYY"/>
+	<apply i_name="Store 3 Security" shortdesc="Security v1" icon="Icon_osm" slalimit="YYY"/>
+	<apply i_name="Store 4 Security" shortdesc="Security v1" icon="Icon_osm" slalimit="YYY"/>
+	<apply i_name="Megrez" visible="true" version="1" beta = "false" up="true"/>
+	<apply i_name="Megrez" upgraded_by_sip="101" />
+	<apply i_name="Pluto" rebootFor="105" reasondown="Upgrading Megrez" />
+	<apply i_name="101" stage="installed_ok" />
+	<createNodes i_to="CostedEvents">
+		<node type="sipupgrade" desc="Upgraded Security to 1 " ref="Security"/>
+	</createNodes>
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+</project>
+
+

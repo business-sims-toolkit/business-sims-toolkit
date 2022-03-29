@@ -1,0 +1,818 @@
+<project projectid="201" round="2" regulation="false" installname="Central Comms" upgradename = "">
+<product productid="2011" actual_cost="200000">
+<platform platformid="X" designdays="5" builddays="7" testdays="4" handovervalue="80">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="X" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="50" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="2000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" notinnetwork="true" type="biz_service" slalimit="YYY" new="true" created_by_sip="201" has_impact="true" impactkmh="-1" biz_service_function="Central Comms" gantt_order="4" />
+	</createNodes>
+	<createNodes i_to="Central Comms">
+		<upgrades type="upgrades" />
+	</createNodes>
+  <apply i_name = "201" MaxRevOffset="384000" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Central Comms" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Okul" />
+	<apply i_name = "Store 1 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Okul" />
+	<apply i_name="Okul" type="App" proccap="4" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="2000" diskrequired="50" created_by_sip="201" />
+	<createNodes i_to="Okul">
+		<link to="Store 1 Central Comms" type="Connection" name="Okul Store 1 Central Comms Connection" />
+		<link to="Store 2 Central Comms" type="Connection" name="Okul Store 2 Central Comms Connection" />
+		<link to="Store 3 Central Comms" type="Connection" name="Okul Store 3 Central Comms Connection" />
+		<link to="Store 4 Central Comms" type="Connection" name="Okul Store 4 Central Comms Connection" />
+	</createNodes>
+	<createNodes i_to="Central Comms">
+		<link to="Store 1 Central Comms" type="Connection" contype="Central Comms" name="BS Store 1 Central Comms Connection" />
+		<link to="Store 2 Central Comms" type="Connection" contype="Central Comms" name="BS Store 2 Central Comms Connection" />
+		<link to="Store 3 Central Comms" type="Connection" contype="Central Comms" name="BS Store 3 Central Comms Connection" />
+		<link to="Store 4 Central Comms" type="Connection" contype="Central Comms" name="BS Store 4 Central Comms Connection" />
+	</createNodes>
+	<incrementAtt i_name="Bellatrix" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Saturn" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Bellatrix">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Sham" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Venus" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Sham">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Polaris" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Mercury" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Polaris">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Megrez" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Pluto" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Megrez">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="4000" instore_bonus="4000" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="4000" instore_bonus="4000" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="4000" instore_bonus="4000" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="4000" instore_bonus="4000" />
+	<apply i_name="Store 1 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<apply i_name="Store 2 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<apply i_name="Store 3 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<apply i_name="Store 4 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Central Comms" sip="201" ref="Central Comms" />
+		<node type="project" desc="Central\r\nComms" sip="201" regulation="false" />
+	</createNodes>
+  <apply i_name = "201" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Y" designdays="4" builddays="7" testdays="3" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Y" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="50" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="2000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" notinnetwork="true" type="biz_service" slalimit="YYY" new="true" created_by_sip="201" has_impact="true" impactkmh="-1" biz_service_function="Central Comms" gantt_order="4" />
+	</createNodes>
+	<createNodes i_to="Central Comms">
+		<upgrades type="upgrades" />
+	</createNodes>
+  <apply i_name = "201" MaxRevOffset="480000" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Central Comms" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Okul" />
+	<apply i_name = "Store 1 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Okul" />
+	<apply i_name="Okul" type="App" proccap="4" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="2000" diskrequired="50" created_by_sip="201" />
+	<createNodes i_to="Okul">
+		<link to="Store 1 Central Comms" type="Connection" name="Okul Store 1 Central Comms Connection" />
+		<link to="Store 2 Central Comms" type="Connection" name="Okul Store 2 Central Comms Connection" />
+		<link to="Store 3 Central Comms" type="Connection" name="Okul Store 3 Central Comms Connection" />
+		<link to="Store 4 Central Comms" type="Connection" name="Okul Store 4 Central Comms Connection" />
+	</createNodes>
+	<createNodes i_to="Central Comms">
+		<link to="Store 1 Central Comms" type="Connection" contype="Central Comms" name="BS Store 1 Central Comms Connection" />
+		<link to="Store 2 Central Comms" type="Connection" contype="Central Comms" name="BS Store 2 Central Comms Connection" />
+		<link to="Store 3 Central Comms" type="Connection" contype="Central Comms" name="BS Store 3 Central Comms Connection" />
+		<link to="Store 4 Central Comms" type="Connection" contype="Central Comms" name="BS Store 4 Central Comms Connection" />
+	</createNodes>
+	<incrementAtt i_name="Bellatrix" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Saturn" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Bellatrix">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Sham" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Venus" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Sham">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Polaris" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Mercury" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Polaris">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Megrez" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Pluto" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Megrez">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="5000" instore_bonus="5000" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="5000" instore_bonus="5000" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="5000" instore_bonus="5000" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="5000" instore_bonus="5000" />
+	<apply i_name="Store 1 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<apply i_name="Store 2 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<apply i_name="Store 3 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<apply i_name="Store 4 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Central Comms" sip="201" ref="Central Comms" />
+		<node type="project" desc="Central\r\nComms" sip="201" regulation="false" />
+	</createNodes>
+  <apply i_name = "201" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Z" designdays="4" builddays="4" testdays="2" handovervalue="80">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Z" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="50" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="2000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" notinnetwork="true" type="biz_service" slalimit="YYY" new="true" created_by_sip="201" has_impact="true" impactkmh="-1" biz_service_function="Central Comms" gantt_order="4" />
+	</createNodes>
+	<createNodes i_to="Central Comms">
+		<upgrades type="upgrades" />
+	</createNodes>
+  <apply i_name = "201" MaxRevOffset="384000" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Central Comms" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Okul" />
+	<apply i_name = "Store 1 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Okul" />
+	<apply i_name="Okul" type="App" proccap="4" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="2000" diskrequired="50" created_by_sip="201" />
+	<createNodes i_to="Okul">
+		<link to="Store 1 Central Comms" type="Connection" name="Okul Store 1 Central Comms Connection" />
+		<link to="Store 2 Central Comms" type="Connection" name="Okul Store 2 Central Comms Connection" />
+		<link to="Store 3 Central Comms" type="Connection" name="Okul Store 3 Central Comms Connection" />
+		<link to="Store 4 Central Comms" type="Connection" name="Okul Store 4 Central Comms Connection" />
+	</createNodes>
+	<createNodes i_to="Central Comms">
+		<link to="Store 1 Central Comms" type="Connection" contype="Central Comms" name="BS Store 1 Central Comms Connection" />
+		<link to="Store 2 Central Comms" type="Connection" contype="Central Comms" name="BS Store 2 Central Comms Connection" />
+		<link to="Store 3 Central Comms" type="Connection" contype="Central Comms" name="BS Store 3 Central Comms Connection" />
+		<link to="Store 4 Central Comms" type="Connection" contype="Central Comms" name="BS Store 4 Central Comms Connection" />
+	</createNodes>
+	<incrementAtt i_name="Bellatrix" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Saturn" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Bellatrix">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Sham" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Venus" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Sham">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Polaris" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Mercury" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Polaris">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Megrez" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Pluto" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Megrez">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="4000" instore_bonus="4000" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="4000" instore_bonus="4000" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="4000" instore_bonus="4000" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="4000" instore_bonus="4000" />
+	<apply i_name="Store 1 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<apply i_name="Store 2 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<apply i_name="Store 3 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<apply i_name="Store 4 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Central Comms" sip="201" ref="Central Comms" />
+		<node type="project" desc="Central\r\nComms" sip="201" regulation="false" />
+	</createNodes>
+  <apply i_name = "201" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+<product productid="2012" actual_cost="220000">
+<platform platformid="X" designdays="5" builddays="7" testdays="7" handovervalue="80">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="X" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="50" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="2000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" notinnetwork="true" type="biz_service" slalimit="YYY" new="true" created_by_sip="201" has_impact="true" impactkmh="-1" biz_service_function="Central Comms" gantt_order="4" />
+	</createNodes>
+	<createNodes i_to="Central Comms">
+		<upgrades type="upgrades" />
+	</createNodes>
+  <apply i_name = "201" MaxRevOffset="307200" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Central Comms" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Okul" />
+	<apply i_name = "Store 1 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Okul" />
+	<apply i_name="Okul" type="App" proccap="4" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="2000" diskrequired="50" created_by_sip="201" />
+	<createNodes i_to="Okul">
+		<link to="Store 1 Central Comms" type="Connection" name="Okul Store 1 Central Comms Connection" />
+		<link to="Store 2 Central Comms" type="Connection" name="Okul Store 2 Central Comms Connection" />
+		<link to="Store 3 Central Comms" type="Connection" name="Okul Store 3 Central Comms Connection" />
+		<link to="Store 4 Central Comms" type="Connection" name="Okul Store 4 Central Comms Connection" />
+	</createNodes>
+	<createNodes i_to="Central Comms">
+		<link to="Store 1 Central Comms" type="Connection" contype="Central Comms" name="BS Store 1 Central Comms Connection" />
+		<link to="Store 2 Central Comms" type="Connection" contype="Central Comms" name="BS Store 2 Central Comms Connection" />
+		<link to="Store 3 Central Comms" type="Connection" contype="Central Comms" name="BS Store 3 Central Comms Connection" />
+		<link to="Store 4 Central Comms" type="Connection" contype="Central Comms" name="BS Store 4 Central Comms Connection" />
+	</createNodes>
+	<incrementAtt i_name="Bellatrix" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Saturn" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Bellatrix">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Sham" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Venus" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Sham">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Polaris" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Mercury" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Polaris">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Megrez" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Pluto" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Megrez">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="3200" instore_bonus="3200" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="3200" instore_bonus="3200" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="3200" instore_bonus="3200" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="3200" instore_bonus="3200" />
+	<apply i_name="Store 1 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<apply i_name="Store 2 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<apply i_name="Store 3 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<apply i_name="Store 4 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Central Comms" sip="201" ref="Central Comms" />
+		<node type="project" desc="Central\r\nComms" sip="201" regulation="false" />
+	</createNodes>
+  <apply i_name = "201" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Y" designdays="5" builddays="8" testdays="3" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Y" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="50" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="2000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" notinnetwork="true" type="biz_service" slalimit="YYY" new="true" created_by_sip="201" has_impact="true" impactkmh="-1" biz_service_function="Central Comms" gantt_order="4" />
+	</createNodes>
+	<createNodes i_to="Central Comms">
+		<upgrades type="upgrades" />
+	</createNodes>
+  <apply i_name = "201" MaxRevOffset="384000" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Central Comms" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Okul" />
+	<apply i_name = "Store 1 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Okul" />
+	<apply i_name="Okul" type="App" proccap="4" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="2000" diskrequired="50" created_by_sip="201" />
+	<createNodes i_to="Okul">
+		<link to="Store 1 Central Comms" type="Connection" name="Okul Store 1 Central Comms Connection" />
+		<link to="Store 2 Central Comms" type="Connection" name="Okul Store 2 Central Comms Connection" />
+		<link to="Store 3 Central Comms" type="Connection" name="Okul Store 3 Central Comms Connection" />
+		<link to="Store 4 Central Comms" type="Connection" name="Okul Store 4 Central Comms Connection" />
+	</createNodes>
+	<createNodes i_to="Central Comms">
+		<link to="Store 1 Central Comms" type="Connection" contype="Central Comms" name="BS Store 1 Central Comms Connection" />
+		<link to="Store 2 Central Comms" type="Connection" contype="Central Comms" name="BS Store 2 Central Comms Connection" />
+		<link to="Store 3 Central Comms" type="Connection" contype="Central Comms" name="BS Store 3 Central Comms Connection" />
+		<link to="Store 4 Central Comms" type="Connection" contype="Central Comms" name="BS Store 4 Central Comms Connection" />
+	</createNodes>
+	<incrementAtt i_name="Bellatrix" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Saturn" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Bellatrix">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Sham" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Venus" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Sham">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Polaris" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Mercury" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Polaris">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Megrez" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Pluto" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Megrez">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="4000" instore_bonus="4000" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="4000" instore_bonus="4000" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="4000" instore_bonus="4000" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="4000" instore_bonus="4000" />
+	<apply i_name="Store 1 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<apply i_name="Store 2 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<apply i_name="Store 3 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<apply i_name="Store 4 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Central Comms" sip="201" ref="Central Comms" />
+		<node type="project" desc="Central\r\nComms" sip="201" regulation="false" />
+	</createNodes>
+  <apply i_name = "201" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Z" designdays="4" builddays="7" testdays="2" handovervalue="80">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Z" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="50" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="2000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" notinnetwork="true" type="biz_service" slalimit="YYY" new="true" created_by_sip="201" has_impact="true" impactkmh="-1" biz_service_function="Central Comms" gantt_order="4" />
+	</createNodes>
+	<createNodes i_to="Central Comms">
+		<upgrades type="upgrades" />
+	</createNodes>
+  <apply i_name = "201" MaxRevOffset="307200" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Central Comms" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Okul" />
+	<apply i_name = "Store 1 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Okul" />
+	<apply i_name="Okul" type="App" proccap="4" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="2000" diskrequired="50" created_by_sip="201" />
+	<createNodes i_to="Okul">
+		<link to="Store 1 Central Comms" type="Connection" name="Okul Store 1 Central Comms Connection" />
+		<link to="Store 2 Central Comms" type="Connection" name="Okul Store 2 Central Comms Connection" />
+		<link to="Store 3 Central Comms" type="Connection" name="Okul Store 3 Central Comms Connection" />
+		<link to="Store 4 Central Comms" type="Connection" name="Okul Store 4 Central Comms Connection" />
+	</createNodes>
+	<createNodes i_to="Central Comms">
+		<link to="Store 1 Central Comms" type="Connection" contype="Central Comms" name="BS Store 1 Central Comms Connection" />
+		<link to="Store 2 Central Comms" type="Connection" contype="Central Comms" name="BS Store 2 Central Comms Connection" />
+		<link to="Store 3 Central Comms" type="Connection" contype="Central Comms" name="BS Store 3 Central Comms Connection" />
+		<link to="Store 4 Central Comms" type="Connection" contype="Central Comms" name="BS Store 4 Central Comms Connection" />
+	</createNodes>
+	<incrementAtt i_name="Bellatrix" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Saturn" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Bellatrix">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Sham" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Venus" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Sham">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Polaris" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Mercury" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Polaris">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Megrez" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Pluto" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Megrez">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="3200" instore_bonus="3200" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="3200" instore_bonus="3200" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="3200" instore_bonus="3200" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="3200" instore_bonus="3200" />
+	<apply i_name="Store 1 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<apply i_name="Store 2 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<apply i_name="Store 3 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<apply i_name="Store 4 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Central Comms" sip="201" ref="Central Comms" />
+		<node type="project" desc="Central\r\nComms" sip="201" regulation="false" />
+	</createNodes>
+  <apply i_name = "201" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+<product productid="2013" actual_cost="190000">
+<platform platformid="X" designdays="5" builddays="8" testdays="3" handovervalue="80">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="X" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="50" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="2000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" notinnetwork="true" type="biz_service" slalimit="YYY" new="true" created_by_sip="201" has_impact="true" impactkmh="-1" biz_service_function="Central Comms" gantt_order="4" />
+	</createNodes>
+	<createNodes i_to="Central Comms">
+		<upgrades type="upgrades" />
+	</createNodes>
+  <apply i_name = "201" MaxRevOffset="153600" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Central Comms" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Okul" />
+	<apply i_name = "Store 1 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Okul" />
+	<apply i_name="Okul" type="App" proccap="4" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="2000" diskrequired="50" created_by_sip="201" />
+	<createNodes i_to="Okul">
+		<link to="Store 1 Central Comms" type="Connection" name="Okul Store 1 Central Comms Connection" />
+		<link to="Store 2 Central Comms" type="Connection" name="Okul Store 2 Central Comms Connection" />
+		<link to="Store 3 Central Comms" type="Connection" name="Okul Store 3 Central Comms Connection" />
+		<link to="Store 4 Central Comms" type="Connection" name="Okul Store 4 Central Comms Connection" />
+	</createNodes>
+	<createNodes i_to="Central Comms">
+		<link to="Store 1 Central Comms" type="Connection" contype="Central Comms" name="BS Store 1 Central Comms Connection" />
+		<link to="Store 2 Central Comms" type="Connection" contype="Central Comms" name="BS Store 2 Central Comms Connection" />
+		<link to="Store 3 Central Comms" type="Connection" contype="Central Comms" name="BS Store 3 Central Comms Connection" />
+		<link to="Store 4 Central Comms" type="Connection" contype="Central Comms" name="BS Store 4 Central Comms Connection" />
+	</createNodes>
+	<incrementAtt i_name="Bellatrix" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Saturn" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Bellatrix">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Sham" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Venus" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Sham">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Polaris" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Mercury" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Polaris">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Megrez" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Pluto" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Megrez">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="1600" instore_bonus="1600" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="1600" instore_bonus="1600" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="1600" instore_bonus="1600" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="1600" instore_bonus="1600" />
+	<apply i_name="Store 1 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<apply i_name="Store 2 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<apply i_name="Store 3 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<apply i_name="Store 4 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Central Comms" sip="201" ref="Central Comms" />
+		<node type="project" desc="Central\r\nComms" sip="201" regulation="false" />
+	</createNodes>
+  <apply i_name = "201" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Y" designdays="4" builddays="7" testdays="6" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Y" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="50" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="2000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" notinnetwork="true" type="biz_service" slalimit="YYY" new="true" created_by_sip="201" has_impact="true" impactkmh="-1" biz_service_function="Central Comms" gantt_order="4" />
+	</createNodes>
+	<createNodes i_to="Central Comms">
+		<upgrades type="upgrades" />
+	</createNodes>
+  <apply i_name = "201" MaxRevOffset="192000" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Central Comms" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Okul" />
+	<apply i_name = "Store 1 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Okul" />
+	<apply i_name="Okul" type="App" proccap="4" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="2000" diskrequired="50" created_by_sip="201" />
+	<createNodes i_to="Okul">
+		<link to="Store 1 Central Comms" type="Connection" name="Okul Store 1 Central Comms Connection" />
+		<link to="Store 2 Central Comms" type="Connection" name="Okul Store 2 Central Comms Connection" />
+		<link to="Store 3 Central Comms" type="Connection" name="Okul Store 3 Central Comms Connection" />
+		<link to="Store 4 Central Comms" type="Connection" name="Okul Store 4 Central Comms Connection" />
+	</createNodes>
+	<createNodes i_to="Central Comms">
+		<link to="Store 1 Central Comms" type="Connection" contype="Central Comms" name="BS Store 1 Central Comms Connection" />
+		<link to="Store 2 Central Comms" type="Connection" contype="Central Comms" name="BS Store 2 Central Comms Connection" />
+		<link to="Store 3 Central Comms" type="Connection" contype="Central Comms" name="BS Store 3 Central Comms Connection" />
+		<link to="Store 4 Central Comms" type="Connection" contype="Central Comms" name="BS Store 4 Central Comms Connection" />
+	</createNodes>
+	<incrementAtt i_name="Bellatrix" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Saturn" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Bellatrix">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Sham" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Venus" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Sham">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Polaris" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Mercury" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Polaris">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Megrez" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Pluto" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Megrez">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<apply i_name="Store 1 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<apply i_name="Store 2 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<apply i_name="Store 3 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<apply i_name="Store 4 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Central Comms" sip="201" ref="Central Comms" />
+		<node type="project" desc="Central\r\nComms" sip="201" regulation="false" />
+	</createNodes>
+  <apply i_name = "201" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Z" designdays="3" builddays="7" testdays="3" handovervalue="80">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Z" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="50" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="2000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" notinnetwork="true" type="biz_service" slalimit="YYY" new="true" created_by_sip="201" has_impact="true" impactkmh="-1" biz_service_function="Central Comms" gantt_order="4" />
+	</createNodes>
+	<createNodes i_to="Central Comms">
+		<upgrades type="upgrades" />
+	</createNodes>
+  <apply i_name = "201" MaxRevOffset="153600" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="Central Comms" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 Central Comms" desc="Central\r\nComms" shortdesc="Central Comms" icon="Icon_com" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="Central Comms" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Okul" />
+	<apply i_name = "Store 1 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 Central Comms" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Okul" />
+	<apply i_name="Okul" type="App" proccap="4" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="2000" diskrequired="50" created_by_sip="201" />
+	<createNodes i_to="Okul">
+		<link to="Store 1 Central Comms" type="Connection" name="Okul Store 1 Central Comms Connection" />
+		<link to="Store 2 Central Comms" type="Connection" name="Okul Store 2 Central Comms Connection" />
+		<link to="Store 3 Central Comms" type="Connection" name="Okul Store 3 Central Comms Connection" />
+		<link to="Store 4 Central Comms" type="Connection" name="Okul Store 4 Central Comms Connection" />
+	</createNodes>
+	<createNodes i_to="Central Comms">
+		<link to="Store 1 Central Comms" type="Connection" contype="Central Comms" name="BS Store 1 Central Comms Connection" />
+		<link to="Store 2 Central Comms" type="Connection" contype="Central Comms" name="BS Store 2 Central Comms Connection" />
+		<link to="Store 3 Central Comms" type="Connection" contype="Central Comms" name="BS Store 3 Central Comms Connection" />
+		<link to="Store 4 Central Comms" type="Connection" contype="Central Comms" name="BS Store 4 Central Comms Connection" />
+	</createNodes>
+	<incrementAtt i_name="Bellatrix" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Saturn" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Bellatrix">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Sham" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Venus" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Sham">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Polaris" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Mercury" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Polaris">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Megrez" i_doAfterSecs="0" diskrequired="-5" proccap="-1" memrequired="-200" />
+	<apply i_name="Pluto" rebootFor="105" reasondown="Installing Central Comms" affectedby="203"/>
+	<createNodes i_to="Megrez">
+		<link to="Okul" type="dependsOn" item="Okul" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="1600" instore_bonus="1600" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="1600" instore_bonus="1600" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="1600" instore_bonus="1600" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="1600" instore_bonus="1600" />
+	<apply i_name="Store 1 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<apply i_name="Store 2 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<apply i_name="Store 3 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<apply i_name="Store 4 Central Comms" i_doAfterSecs="105" has_impact="true" />
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added Central Comms" sip="201" ref="Central Comms" />
+		<node type="project" desc="Central\r\nComms" sip="201" regulation="false" />
+	</createNodes>
+  <apply i_name = "201" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+</project>

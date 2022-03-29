@@ -1,0 +1,12 @@
+<icons>
+	<node><type>Root</type><icon>images/root.png</icon></node>
+	<node><type>App</type><icon>images/app.png</icon></node>
+	<node><type>Server</type><icon>images/server.png</icon></node>
+	<node><type>Router</type><icon>images/router.png</icon></node>
+	<node><type>Hub</type><icon>images/hub.png</icon></node>
+	<node><type>Car</type><icon>images/car.png</icon></node>
+	<node><type>Connection</type><icon>images/link.png</icon></node>
+	<node><type>SupportTech</type><icon>images/tech.png</icon></node>
+	<node><type>biz_service</type><icon>images/biz_service.png</icon></node>
+	<node><type>biz_service_user</type><icon>images/biz_service_user.png</icon></node>
+</icons>

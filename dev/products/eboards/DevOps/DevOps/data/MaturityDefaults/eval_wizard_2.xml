@@ -1,0 +1,124 @@
+<root>
+	<section colour="102,152,121">
+		<section_name>Collaboration</section_name>
+		<section_order>1</section_order>
+		<aspects>
+			<aspect>
+				<aspect_name>Customer Satisfaction</aspect_name>
+				<aspect_guidance>
+				</aspect_guidance>
+				<dest_tag_name>Collaboration_Customer_Satisfaction_0</dest_tag_name>
+				<dest_tag_data>4</dest_tag_data>
+				<factors />
+			</aspect>
+			<aspect>
+				<aspect_name>Common Success Measures</aspect_name>
+				<aspect_guidance>
+				</aspect_guidance>
+				<dest_tag_name>Collaboration_Common_Success_Measures_1</dest_tag_name>
+				<dest_tag_data>5</dest_tag_data>
+				<factors />
+			</aspect>
+			<aspect>
+				<aspect_name>Silos Broken Down</aspect_name>
+				<aspect_guidance>
+				</aspect_guidance>
+				<dest_tag_name>Collaboration_Silos_Broken_Down_2</dest_tag_name>
+				<dest_tag_data>4</dest_tag_data>
+				<factors />
+			</aspect>
+		</aspects>
+	</section>
+	<section colour="204,160,202">
+		<section_name>Process</section_name>
+		<section_order>3</section_order>
+		<aspects>
+			<aspect>
+				<aspect_name>Time to Value</aspect_name>
+				<aspect_guidance>
+				</aspect_guidance>
+				<dest_tag_name>Process_Time_to_Value_3</dest_tag_name>
+				<dest_tag_data>5</dest_tag_data>
+				<factors />
+			</aspect>
+			<aspect>
+				<aspect_name>Reliability &amp; Robustness</aspect_name>
+				<aspect_guidance>
+				</aspect_guidance>
+				<dest_tag_name>Process_Reliability_Robustness_4</dest_tag_name>
+				<dest_tag_data>6</dest_tag_data>
+				<factors />
+			</aspect>
+			<aspect>
+				<aspect_name>Continuous Planning</aspect_name>
+				<aspect_guidance>
+				</aspect_guidance>
+				<dest_tag_name>Process_Continuous_Planning_5</dest_tag_name>
+				<dest_tag_data>6</dest_tag_data>
+				<factors />
+			</aspect>
+			<aspect>
+				<aspect_name>Test &amp; Behaviour Driven Dev</aspect_name>
+				<aspect_guidance>
+				</aspect_guidance>
+				<dest_tag_name>Process_test_Behaviour_Driven_Dev_6</dest_tag_name>
+				<dest_tag_data>4</dest_tag_data>
+				<factors />
+			</aspect>
+			<aspect>
+				<aspect_name>Release &amp; Deployment Mgt</aspect_name>
+				<aspect_guidance>
+				</aspect_guidance>
+				<dest_tag_name>Process_Release_Deployment_Mgt_7</dest_tag_name>
+				<dest_tag_data>5</dest_tag_data>
+				<factors />
+			</aspect>
+		</aspects>
+	</section>
+	<section colour="242,175,201">
+		<section_name>Automation</section_name>
+		<section_order>2</section_order>
+		<aspects>
+			<aspect>
+				<aspect_name>Automation</aspect_name>
+				<aspect_guidance>
+				</aspect_guidance>
+				<dest_tag_name>Automation_Automation_8</dest_tag_name>
+				<dest_tag_data>4</dest_tag_data>
+				<factors />
+			</aspect>
+			<aspect>
+				<aspect_name>Deployment Frequency</aspect_name>
+				<aspect_guidance>
+				</aspect_guidance>
+				<dest_tag_name>Automation_Deployment_Frequency_9</dest_tag_name>
+				<dest_tag_data>6</dest_tag_data>
+				<factors />
+			</aspect>
+			<aspect>
+				<aspect_name>Continuous Testing</aspect_name>
+				<aspect_guidance>
+				</aspect_guidance>
+				<dest_tag_name>Automation_Continuous_Testing_10</dest_tag_name>
+				<dest_tag_data>5</dest_tag_data>
+				<factors />
+			</aspect>
+			<aspect>
+				<aspect_name>Continuous Integration</aspect_name>
+				<aspect_guidance>
+				</aspect_guidance>
+				<dest_tag_name>Automation_Continuous_Integration_11</dest_tag_name>
+				<dest_tag_data>4</dest_tag_data>
+				<factors />
+			</aspect>
+			<aspect>
+				<aspect_name>Continuous Delivery</aspect_name>
+				<aspect_guidance>
+				</aspect_guidance>
+				<dest_tag_name>Automation_Continuous_Delivery_12</dest_tag_name>
+				<dest_tag_data>6</dest_tag_data>
+				<factors />
+			</aspect>
+		</aspects>
+	</section>
+</root>

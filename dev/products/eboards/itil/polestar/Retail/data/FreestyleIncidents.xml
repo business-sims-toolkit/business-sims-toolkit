@@ -1,0 +1,377 @@
+<incidents>
+	//
+	// Freestyle Incidents
+	//
+	<i id="50">
+		<apply i_name="Hub" up="false" incident_id="50" />
+		<createNodes i_to="CostedEvents">
+			<CostedEvent type="incident" incident_id="50" desc="Hub Down." />
+		</createNodes>
+	</i>
+	<i id="51">
+		<apply i_name="P2132-5" up="false" incident_id="51" />
+		<createNodes i_to="CostedEvents">
+		<CostedEvent type="incident" incident_id="51" desc="P2132-5 Down." />
+		</createNodes>
+	</i>
+	<i id="52">
+		<if i_name="Neptune" can_upgrade_hardware="true">
+			<then>
+				<apply i_name="Neptune" up="false" incident_id="52" />
+				<createNodes i_to="CostedEvents">
+					<CostedEvent type="incident" incident_id="52" desc="Neptune Down." />
+				</createNodes>
+			</then>
+			<else>
+	      <createNodes i_to="FacilitatorNotifiedErrors">
+	        <Error type="error" sound="ding.wav" title="Incident Prevented" flash="true" text="Congratulations, an incident has been prevented as a result of effective Problem Management." />			
+	      </createNodes>
+	      <createNodes i_to="CostedEvents">
+	        <CostedEvent type="prevented_incident" desc="Cannot Apply Incident 52 To Neptune Because It Has Been Upgraded to Version 2." />
+	      </createNodes>
+	    </else>
+	  </if>
+	</i>
+	<i id="53">
+	  <apply i_name="Zosma" up="false" incident_id="53" />
+	  <createNodes i_to="CostedEvents">
+	    <CostedEvent type="incident" incident_id="53" desc="Zosma Down." />
+	  </createNodes>
+	</i>
+	<i id="54">
+	  <apply i_name="Izar" up="false" incident_id="54" />
+    <createNodes i_to="CostedEvents">
+      <CostedEvent type="incident" incident_id="54" desc="Izar Down." />
+    </createNodes>
+	</i>
+	<i id="55">
+	  <apply i_name="N1321" up="false" incident_id="55" />
+	  <createNodes i_to="CostedEvents">
+	    <CostedEvent type="incident" incident_id="55" desc="N1321 Down." />
+	  </createNodes>
+	</i>
+	<i id="56">
+	  <apply i_name="G3214" up="false" incident_id="56" />
+	  <createNodes i_to="CostedEvents">
+	    <CostedEvent type="incident" incident_id="56" desc="G3214 Down." />
+	  </createNodes>
+	</i>
+	<i id="57">
+	  <if i_name="Mercury" can_upgrade_hardware="true">
+	    <then>
+	      <apply i_name="Mercury" up="false" incident_id="57" />
+	      <createNodes i_to="CostedEvents">
+	        <CostedEvent type="incident" incident_id="57" desc="Mercury Down." />
+	      </createNodes>
+	    </then>
+	    <else>
+	      <createNodes i_to="FacilitatorNotifiedErrors">
+	        <Error type="error" sound="ding.wav" title="Incident Prevented" flash="true" text="Congratulations, an incident has been prevented as a result of effective Problem Management." />			
+	      </createNodes>
+	      <createNodes i_to="CostedEvents">
+	        <CostedEvent type="prevented_incident" desc="Cannot Apply Incdient 57 To Mercury Because It Has Been Upgraded to Version 2" />
+	      </createNodes>
+	    </else>
+	  </if>
+	</i>
+	<i id="58">
+	  <apply i_name="Polaris" up="false" incident_id="58" />
+	    <createNodes i_to="CostedEvents">
+	      <CostedEvent type="incident" incident_id="58" desc="Polaris Down." />
+	    </createNodes>
+	</i>
+	<i id="59">
+	  <if i_name="Phad" canupgrade="true">
+	    <then>
+	      <apply i_name="Phad" up="false" incident_id="59" />
+	      <createNodes i_to="CostedEvents">
+	        <CostedEvent type="incident" incident_id="59" desc="Phad Down." />
+	      </createNodes>
+	    </then>
+	    <else>
+	      <createNodes i_to="FacilitatorNotifiedErrors">
+	        <Error type="error" sound="ding.wav" title="Incident Prevented" flash="true" text="Congratulations, an incident has been prevented as a result of effective Problem Management." />			
+	      </createNodes>
+	      <createNodes i_to="CostedEvents">
+	        <CostedEvent type="prevented_incident" desc="Cannot Apply Incdient 59 To Phad Because It Has Been Upgraded to Version 2." />
+	      </createNodes>
+	    </else>
+	  </if>
+	</i>
+	<i id="60">
+	  <apply i_name="Jupiter" up="false" incident_id="60" />
+	  <createNodes i_to="CostedEvents">
+	    <CostedEvent type="incident" incident_id="60" desc="Jupiter Down." />
+	  </createNodes>
+	</i>
+	<i id="61">
+	  <apply i_name="Alshat" up="false" incident_id="61" />
+	  <createNodes i_to="CostedEvents">
+	    <CostedEvent type="incident" incident_id="61" desc="Alshat Down." />
+	  </createNodes>
+	</i>
+	<i id="62">
+	  <apply i_name="Rastaban" up="false" incident_id="62" />
+	  <createNodes i_to="CostedEvents">
+	    <CostedEvent type="incident" incident_id="62" desc="Rastaban Down." />
+	  </createNodes>
+	</i>
+	<i id="63">
+	  <if i_name="Venus" can_upgrade_hardware="true">
+	    <then>
+	      <apply i_name="Venus" up="false" incident_id="63" />
+	      <createNodes i_to="CostedEvents">
+	        <CostedEvent type="incident" incident_id="63" desc="Venus Down." />
+	      </createNodes>
+	    </then>
+	    <else>
+	      <createNodes i_to="FacilitatorNotifiedErrors">
+	        <Error type="error" sound="ding.wav" title="Incident Prevented" flash="true" text="Congratulations, an incident has been prevented as a result of effective Problem Management." />			
+	      </createNodes>
+	      <createNodes i_to="CostedEvents">
+	        <CostedEvent type="prevented_incident" desc="Cannot Apply Incdient 63 To Venus Because It Has Been Upgraded to Version 2." />
+	      </createNodes>
+	    </else>
+	  </if>
+	</i>
+	<i id="64">
+	  <if i_name="Tarazed" canupgrade="true">
+	    <then>
+	      <apply i_name="Tarazed" up="false" incident_id="64" />
+	      <createNodes i_to="CostedEvents">
+	        <CostedEvent type="incident" incident_id="64" desc="Tarazed Down." />
+	      </createNodes>
+	    </then>
+	    <else>
+	      <createNodes i_to="FacilitatorNotifiedErrors">
+	        <Error type="error" sound="ding.wav" title="Incident Prevented" flash="true" text="Congratulations, an incident has been prevented as a result of effective Problem Management." />			
+	      </createNodes>
+	      <createNodes i_to="CostedEvents">
+	        <CostedEvent type="prevented_incident" desc="Cannot Apply Incident 64 to Tarazed Because It Has Been Upgraded to Version 2." />
+	      </createNodes>
+	    </else>
+	  </if>
+	</i>
+	<i id="65">
+	  <if i_name="Sham" canupgrade="true">
+	    <then>
+	      <apply i_name="Sham" up="false" incident_id="65" />
+	      <createNodes i_to="CostedEvents">
+	        <CostedEvent type="incident" incident_id="65" desc="Sham Down." />
+	      </createNodes>
+	    </then>
+	    <else>
+	      <createNodes i_to="FacilitatorNotifiedErrors">
+	        <Error type="error" sound="ding.wav" title="Incident Prevented" flash="true" text="Congratulations, an incident has been prevented as a result of effective Problem Management." />			
+	      </createNodes>
+	      <createNodes i_to="CostedEvents">
+	        <CostedEvent type="prevented_incident" desc="Cannot Apply Incident 65 to Sham Because It Has Been Upgraded to Version 2." />
+	      </createNodes>
+	    </else>
+	  </if>
+	</i>
+	<i id="66">
+	  <apply i_name="N1201" up="false" incident_id="66" />
+	  <createNodes i_to="CostedEvents">
+	    <CostedEvent type="incident" incident_id="66" desc="N1201 Down." />
+	  </createNodes>
+	</i>
+	<i id="67">
+	  <if i_name="Pluto" can_upgrade_hardware="true">
+	    <then>
+	      <apply i_name="Pluto" up="false" incident_id="67" />
+	      <createNodes i_to="CostedEvents">
+	        <CostedEvent type="incident" incident_id="67" desc="Pluto Down." />
+	      </createNodes>
+	    </then>
+	    <else>
+	      <createNodes i_to="FacilitatorNotifiedErrors">
+	        <Error type="error" sound="ding.wav" title="Incident Prevented" flash="true" text="Congratulations, an incident has been prevented as a result of effective Problem Management." />			
+	      </createNodes>
+	      <createNodes i_to="CostedEvents">
+	        <CostedEvent type="prevented_incident" desc="Cannot Apply Incident 67 to Pluto Because It Has Been Upgraded to Version 2" />
+	      </createNodes>
+	    </else>
+	  </if>
+	</i>
+	<i id="68">
+	  <apply i_name="Electra" up="false" incident_id="68" />
+	  <createNodes i_to="CostedEvents">
+	    <CostedEvent type="incident" incident_id="68" desc="Electra Down." />
+	  </createNodes>
+	</i>
+	<i id="69">
+	  <if i_name="Megrez" canupgrade="true">
+	    <then>
+	      <apply i_name="Megrez" up="false" incident_id="69" />
+	      <createNodes i_to="CostedEvents">
+	        <CostedEvent type="incident" incident_id="69" desc="Megrez Down." />
+	      </createNodes>
+	    </then>
+	    <else>
+	      <createNodes i_to="FacilitatorNotifiedErrors">
+	        <Error type="error" sound="ding.wav" title="Incident Prevented" flash="true" text="Congratulations, an incident has been prevented as a result of effective Problem Management." />			
+	      </createNodes>
+	      <createNodes i_to="CostedEvents">
+	        <CostedEvent type="prevented_incident" desc="Cannot Apply Incdient 69 to Megrez Because It Has Been Upgraded to Version 2." />
+	      </createNodes>
+	    </else>
+	  </if>
+	</i>
+	<i id="70">
+	  <apply i_name="M2403" up="false" incident_id="70" />
+	  <createNodes i_to="CostedEvents">
+	    <CostedEvent type="incident" incident_id="70" desc="M2403 Down." />
+	  </createNodes>
+	</i>
+	<i id="71">
+	  <apply i_name="Saturn" up="false" incident_id="71" />
+	  <createNodes i_to="CostedEvents">
+	    <CostedEvent type="incident" incident_id="71" desc="Saturn Down." />
+	  </createNodes>
+	</i>
+	<i id="72">
+	  <if i_name="Castor" canupgrade="true">
+	    <then>
+	      <apply i_name="Castor" up="false" incident_id="72" />
+	      <createNodes i_to="CostedEvents">
+	        <CostedEvent type="incident" incident_id="72" desc="Castor Down." />
+	      </createNodes>
+	    </then>
+	    <else>
+	      <createNodes i_to="FacilitatorNotifiedErrors">
+	        <Error type="error" sound="ding.wav" title="Incident Prevented" flash="true" text="Congratulations, an incident has been prevented as a result of effective Problem Management." />			
+	      </createNodes>
+	      <createNodes i_to="CostedEvents">
+	        <CostedEvent type="prevented_incident" desc="Cannot Apply Incdient 72 to Castor Because It Has Been Upgraded to Version 2" />
+	      </createNodes>
+	    </else>
+	  </if>
+	</i>
+	<i id="99">
+	  <if i_name="Castor" canupgrade="true">
+	    <then>
+	      <apply i_name="Castor" up="true" incident_id="99" />
+	      <createNodes i_to="CostedEvents">
+	        <CostedEvent type="incident" incident_id="99" desc="Castor Up." />
+	      </createNodes>
+	    </then>
+	    <else>
+	      <createNodes i_to="FacilitatorNotifiedErrors">
+	        <Error type="error" sound="ding.wav" title="Incident Prevented" flash="true" text="Congratulations, an incident has been prevented as a result of effective Problem Management." />			
+	      </createNodes>
+	      <createNodes i_to="CostedEvents">
+	        <CostedEvent type="prevented_incident" desc="Cannot Apply Incdient 99 to Castor Because It Has Been Upgraded to Version 2" />
+	      </createNodes>
+	    </else>
+	  </if>
+	</i>
+	
+	<i id="73">
+	  <apply i_name="Bellatrix" up="false" incident_id="73" />
+	  <createNodes i_to="CostedEvents">
+	    <CostedEvent type="incident" incident_id="73" desc="Bellatrix Down." />
+	  </createNodes>
+	</i>
+	<i id="74">
+	  <apply i_name="P2123-4" up="false" incident_id="74" />
+	  <createNodes i_to="CostedEvents">
+	    <CostedEvent type="incident" incident_id="74" desc="P2123-4 Down." />
+	  </createNodes>
+	</i>
+	<i id="75">
+	  <apply i_name="Mars" up="false" incident_id="75" />
+	  <createNodes i_to="CostedEvents">
+	    <CostedEvent type="incident" incident_id="75" desc="Mars Down." />
+	  </createNodes>
+	</i>
+	<i id="76">
+	  <apply i_name="Nash" up="false" incident_id="76" />
+	  <createNodes i_to="CostedEvents">
+	    <CostedEvent type="incident" incident_id="76" desc="Nash Down." />
+	  </createNodes>
+	</i>
+	<i id="77">
+	  <apply i_name="Vega" up="false" incident_id="77" />
+	  <createNodes i_to="CostedEvents">
+	    <CostedEvent type="incident" incident_id="77" desc="Vega Down." />
+	  </createNodes>
+	</i>
+	<i id="78">
+	  <apply i_name="Nunki" up="false" incident_id="78" />
+	  <createNodes i_to="CostedEvents">
+	    <CostedEvent type="incident" incident_id="78" desc="Nunki Down." />
+	  </createNodes>
+	</i>
+	<i id="81">
+	  <apply i_name="Sarin" up="false" incident_id="81" />
+	  <createNodes i_to="CostedEvents">
+	    <CostedEvent type="incident" incident_id="81" desc="Sarin Down." />
+	  </createNodes>
+	</i>
+	<i id="82">
+	  <apply i_name="Rigel" up="false" incident_id="82" />
+	  <createNodes i_to="CostedEvents">
+	    <CostedEvent type="incident" incident_id="82" desc="Rigel Down." />
+	  </createNodes>
+	</i>
+	<i id="83">
+	  <apply i_name="Navi" up="false" incident_id="83" />
+	  <createNodes i_to="CostedEvents">
+	    <CostedEvent type="incident" incident_id="83" desc="Navi Down." />
+	  </createNodes>
+	</i>
+	<i id="84">
+	  <apply i_name="Nashira" up="false" incident_id="84" />
+	  <createNodes i_to="CostedEvents">
+	    <CostedEvent type="incident" incident_id="84" desc="Nashira Down." />
+	  </createNodes>
+	</i>
+	<i id="85">
+	  <apply i_name="Phact" up="false" incident_id="85" />
+	  <createNodes i_to="CostedEvents">
+	    <CostedEvent type="incident" incident_id="85" desc="Phact Down." />
+	  </createNodes>
+	</i>
+	<i id="86">
+	  <apply i_name="Pollux" up="false" incident_id="86" />
+	  <createNodes i_to="CostedEvents">
+	    <CostedEvent type="incident" incident_id="86" desc="Pollux Down." />
+	  </createNodes>
+	</i>
+	<i id="87">
+	  <apply i_name="Porrima" up="false" incident_id="87" />
+	  <createNodes i_to="CostedEvents">
+	    <CostedEvent type="incident" incident_id="87" desc="Porrima Down." />
+	  </createNodes>
+	</i>
+	<i id="88">
+	  <apply i_name="Ariel" up="false" incident_id="88" />
+	  <createNodes i_to="CostedEvents">
+	    <CostedEvent type="incident" incident_id="88" desc="Ariel Down." />
+	  </createNodes>
+	</i>
+	<i id="89">
+	  <apply i_name="Charon" up="false" incident_id="89" />
+	  <createNodes i_to="CostedEvents">
+	    <CostedEvent type="incident" incident_id="89" desc="Charon Down." />
+	  </createNodes>
+	</i>
+	<i id="90">
+	  <apply i_name="Okul" up="false" incident_id="90" />
+	  <createNodes i_to="CostedEvents">
+	    <CostedEvent type="incident" incident_id="90" desc="Okul Down." />
+	  </createNodes>
+	</i>
+	<i id="91">
+	  <apply i_name="Enif" up="false" incident_id="91" />
+	  <createNodes i_to="CostedEvents">
+	    <CostedEvent type="incident" incident_id="91" desc="Enif Down." />
+	  </createNodes>
+	</i>
+	<i id="92">
+	  <apply i_name="Arcturus" up="false" incident_id="92" />
+	  <createNodes i_to="CostedEvents">
+	    <CostedEvent type="incident" incident_id="92" desc="Arcturus Down." />
+	  </createNodes></i>
+</incidents>

@@ -1,0 +1,29 @@
+<incidents>
+<i id="AtStart">
+  // Put SIPS 301 and 302 into the network as if they have been done and
+  // are ready for install.
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="CRM System" desc="CRM" shortdesc="CRM" icon="Icon_crm" type="biz_service" slalimit="360" new="true" created_by_sip="301" has_impact="true" impactkmh="-1" biz_service_function="CRM System" />
+	</createNodes>
+	<createNodes i_to="CRM System">
+		<upgrades type="upgrades" />
+	</createNodes>	
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="Category Management" desc="Category Management" shortdesc="Category Management" icon="icon_cat" notinnetwork="true" type="biz_service"  slalimit="360" new="true" created_by_sip="302" has_impact="true" impactkmh="-1" biz_service_function="Category Management" />
+	</createNodes>
+	<createNodes i_to="Category Management">
+		<upgrades type="upgrades" />
+	</createNodes>	
+  
+  //
+  <createNodes i_to="Projects">
+    <project testdays="3" scheduled_days="10" currentspend="200000" handovervalue="100" name="301" readyfordeployment="13" regulation="false" builddays="4" productid="3012" wrequest="1" actual_cost="200000" round="3" createdinround="3" platformid="Y" completed_days="10" installname="CRM System" stagedaystogo="0" projectid="301" designdays="3" wcount="1" stage="ready" slalimit="360" MaxRevOffset="480000"/>
+    <project testdays="3" scheduled_days="10" currentspend="180000" handovervalue="100" name="302" readyfordeployment="13" regulation="false" builddays="4" productid="3023" wrequest="1" actual_cost="180000" round="3" createdinround="3" platformid="Z" completed_days="10" installname="Category Management" stagedaystogo="0" projectid="302" designdays="3" wcount="1" stage="ready" slalimit="360" MaxRevOffset="192000"/>
+  </createNodes>
+  
+	<apply i_name="DevelopmentSpend" RoundBudgetLeft="450000" currentspendtotal="0" actualcosttotal ="0"/>  
+	<apply i_name="DevelopmentSpend" RoundBudgetLeft="70000" currentspendtotal="380000" actualcosttotal ="380000"/>  
+</i>
+
+<i id="AtStart"><apply i_name="IncidentCount" count="0" /></i>
+</incidents>

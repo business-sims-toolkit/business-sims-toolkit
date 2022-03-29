@@ -1,0 +1,638 @@
+<project projectid="301" round="3" regulation="false" installname="CRM System" upgradename = "">
+<product productid="3011" actual_cost="500000">
+<platform platformid="X" designdays="8" builddays="6" testdays="6" handovervalue="90">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="X" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="40" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="3000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" type="biz_service" slalimit="YYY" new="true" created_by_sip="301" has_impact="true" impactkmh="-1" biz_service_function="CRM System" gantt_order="5" />
+	</createNodes>
+	<createNodes i_to="CRM System">
+		<upgrades type="upgrades" />
+	</createNodes>	
+  <apply i_name = "301" MaxRevOffset="518400" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="CRM System" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Phact" />
+	<apply i_name = "Store 1 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Phact" />
+	<apply i_name="Phact" type="App" proccap="4" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="3000" diskrequired="40" created_by_sip="301" />
+	<createNodes i_to="Phact">
+		<link to="Store 1 CRM System" type="Connection" name="Phact Store 1 CRM System Connection" />
+		<link to="Store 2 CRM System" type="Connection" name="Phact Store 2 CRM System Connection" />
+		<link to="Store 3 CRM System" type="Connection" name="Phact Store 3 CRM System Connection" />
+		<link to="Store 4 CRM System" type="Connection" name="Phact Store 4 CRM System Connection" />
+	</createNodes>
+	<createNodes i_to="CRM System">
+		<link to="Store 1 CRM System" type="Connection" contype="CRM System" name="BS Store 1 CRM System Connection" />
+		<link to="Store 2 CRM System" type="Connection" contype="CRM System" name="BS Store 2 CRM System Connection" />
+		<link to="Store 3 CRM System" type="Connection" contype="CRM System" name="BS Store 3 CRM System Connection" />
+		<link to="Store 4 CRM System" type="Connection" contype="CRM System" name="BS Store 4 CRM System Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="5400" instore_bonus="5400" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="5400" instore_bonus="5400" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="5400" instore_bonus="5400" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="5400" instore_bonus="5400" />
+	<apply i_name="Store 1 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 2 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 3 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 4 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added CRM System" sip="301" ref="CRM System" />
+		<node type="project" desc="CRM System" sip="301" regulation="false" />
+	</createNodes>
+  <apply i_name = "301" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Y" designdays="7" builddays="8" testdays="7" handovervalue="90">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Y" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="40" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="3000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" type="biz_service" slalimit="YYY" new="true" created_by_sip="301" has_impact="true" impactkmh="-1" biz_service_function="CRM System" gantt_order="5" />
+	</createNodes>
+	<createNodes i_to="CRM System">
+		<upgrades type="upgrades" />
+	</createNodes>	
+  <apply i_name = "301" MaxRevOffset="518400" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="CRM System" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Phact" />
+	<apply i_name = "Store 1 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Phact" />
+	<apply i_name="Phact" type="App" proccap="4" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="3000" diskrequired="40" created_by_sip="301" />
+	<createNodes i_to="Phact">
+		<link to="Store 1 CRM System" type="Connection" name="Phact Store 1 CRM System Connection" />
+		<link to="Store 2 CRM System" type="Connection" name="Phact Store 2 CRM System Connection" />
+		<link to="Store 3 CRM System" type="Connection" name="Phact Store 3 CRM System Connection" />
+		<link to="Store 4 CRM System" type="Connection" name="Phact Store 4 CRM System Connection" />
+	</createNodes>
+	<createNodes i_to="CRM System">
+		<link to="Store 1 CRM System" type="Connection" contype="CRM System" name="BS Store 1 CRM System Connection" />
+		<link to="Store 2 CRM System" type="Connection" contype="CRM System" name="BS Store 2 CRM System Connection" />
+		<link to="Store 3 CRM System" type="Connection" contype="CRM System" name="BS Store 3 CRM System Connection" />
+		<link to="Store 4 CRM System" type="Connection" contype="CRM System" name="BS Store 4 CRM System Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="5400" instore_bonus="5400" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="5400" instore_bonus="5400" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="5400" instore_bonus="5400" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="5400" instore_bonus="5400" />
+	<apply i_name="Store 1 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 2 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 3 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 4 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added CRM System" sip="301" ref="CRM System" />
+		<node type="project" desc="CRM System" sip="301" regulation="false" />
+	</createNodes>
+  <apply i_name = "301" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Z" designdays="7" builddays="9" testdays="7" handovervalue="90">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Z" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="40" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="3000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" type="biz_service" slalimit="YYY" new="true" created_by_sip="301" has_impact="true" impactkmh="-1" biz_service_function="CRM System" gantt_order="5" />
+	</createNodes>
+	<createNodes i_to="CRM System">
+		<upgrades type="upgrades" />
+	</createNodes>	
+  <apply i_name = "301" MaxRevOffset="518400" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="CRM System" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Phact" />
+	<apply i_name = "Store 1 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Phact" />
+	<apply i_name="Phact" type="App" proccap="4" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="3000" diskrequired="40" created_by_sip="301" />
+	<createNodes i_to="Phact">
+		<link to="Store 1 CRM System" type="Connection" name="Phact Store 1 CRM System Connection" />
+		<link to="Store 2 CRM System" type="Connection" name="Phact Store 2 CRM System Connection" />
+		<link to="Store 3 CRM System" type="Connection" name="Phact Store 3 CRM System Connection" />
+		<link to="Store 4 CRM System" type="Connection" name="Phact Store 4 CRM System Connection" />
+	</createNodes>
+	<createNodes i_to="CRM System">
+		<link to="Store 1 CRM System" type="Connection" contype="CRM System" name="BS Store 1 CRM System Connection" />
+		<link to="Store 2 CRM System" type="Connection" contype="CRM System" name="BS Store 2 CRM System Connection" />
+		<link to="Store 3 CRM System" type="Connection" contype="CRM System" name="BS Store 3 CRM System Connection" />
+		<link to="Store 4 CRM System" type="Connection" contype="CRM System" name="BS Store 4 CRM System Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="5400" instore_bonus="5400" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="5400" instore_bonus="5400" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="5400" instore_bonus="5400" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="5400" instore_bonus="5400" />
+	<apply i_name="Store 1 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 2 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 3 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 4 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added CRM System" sip="301" ref="CRM System" />
+		<node type="project" desc="CRM System" sip="301" regulation="false" />
+	</createNodes>
+  <apply i_name = "301" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+<product productid="3012" actual_cost="200000">
+<platform platformid="X" designdays="3" builddays="3" testdays="3" handovervalue="80">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="X" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="40" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="3000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" type="biz_service" slalimit="YYY" new="true" created_by_sip="301" has_impact="true" impactkmh="-1" biz_service_function="CRM System" gantt_order="5" />
+	</createNodes>
+	<createNodes i_to="CRM System">
+		<upgrades type="upgrades" />
+	</createNodes>	
+  <apply i_name = "301" MaxRevOffset="384000" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="CRM System" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Phact" />
+	<apply i_name = "Store 1 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Phact" />
+	<apply i_name="Phact" type="App" proccap="4" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="3000" diskrequired="40" created_by_sip="301" />
+	<createNodes i_to="Phact">
+	<link to="Store 1 CRM System" type="Connection" name="Phact Store 1 CRM System Connection" />
+		<link to="Store 2 CRM System" type="Connection" name="Phact Store 2 CRM System Connection" />
+		<link to="Store 3 CRM System" type="Connection" name="Phact Store 3 CRM System Connection" />
+		<link to="Store 4 CRM System" type="Connection" name="Phact Store 4 CRM System Connection" />
+	</createNodes>
+	<createNodes i_to="CRM System">
+		<link to="Store 1 CRM System" type="Connection" contype="CRM System" name="BS Store 1 CRM System Connection" />
+		<link to="Store 2 CRM System" type="Connection" contype="CRM System" name="BS Store 2 CRM System Connection" />
+		<link to="Store 3 CRM System" type="Connection" contype="CRM System" name="BS Store 3 CRM System Connection" />
+		<link to="Store 4 CRM System" type="Connection" contype="CRM System" name="BS Store 4 CRM System Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="4000" instore_bonus="4000" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="4000" instore_bonus="4000" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="4000" instore_bonus="4000" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="4000" instore_bonus="4000" />
+	<apply i_name="Store 1 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 2 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 3 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 4 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added CRM System" sip="301" ref="CRM System" />
+		<node type="project" desc="CRM System" sip="301" regulation="false" />
+	</createNodes>
+  <apply i_name = "301" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Y" designdays="3" builddays="4" testdays="3" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Y" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="40" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="3000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" type="biz_service" slalimit="YYY" new="true" created_by_sip="301" has_impact="true" impactkmh="-1" biz_service_function="CRM System" gantt_order="5" />
+	</createNodes>
+	<createNodes i_to="CRM System">
+		<upgrades type="upgrades" />
+	</createNodes>	
+  <apply i_name = "301" MaxRevOffset="480000" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="CRM System" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Phact" />
+	<apply i_name = "Store 1 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Phact" />
+	<apply i_name="Phact" type="App" proccap="4" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="3000" diskrequired="40" created_by_sip="301" />
+	<createNodes i_to="Phact">
+		<link to="Store 1 CRM System" type="Connection" name="Phact Store 1 CRM System Connection" />
+		<link to="Store 2 CRM System" type="Connection" name="Phact Store 2 CRM System Connection" />
+		<link to="Store 3 CRM System" type="Connection" name="Phact Store 3 CRM System Connection" />
+		<link to="Store 4 CRM System" type="Connection" name="Phact Store 4 CRM System Connection" />
+	</createNodes>
+	<createNodes i_to="CRM System">
+		<link to="Store 1 CRM System" type="Connection" contype="CRM System" name="BS Store 1 CRM System Connection" />
+		<link to="Store 2 CRM System" type="Connection" contype="CRM System" name="BS Store 2 CRM System Connection" />
+		<link to="Store 3 CRM System" type="Connection" contype="CRM System" name="BS Store 3 CRM System Connection" />
+		<link to="Store 4 CRM System" type="Connection" contype="CRM System" name="BS Store 4 CRM System Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="5000" instore_bonus="5000" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="5000" instore_bonus="5000" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="5000" instore_bonus="5000" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="5000" instore_bonus="5000" />
+	<apply i_name="Store 1 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 2 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 3 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 4 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added CRM System" sip="301" ref="CRM System" />
+		<node type="project" desc="CRM System" sip="301" regulation="false" />
+	</createNodes>
+  <apply i_name = "301" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Z" designdays="4" builddays="4" testdays="4" handovervalue="70">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Z" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="40" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="3000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" type="biz_service" slalimit="YYY" new="true" created_by_sip="301" has_impact="true" impactkmh="-1" biz_service_function="CRM System" gantt_order="5" />
+	</createNodes>
+	<createNodes i_to="CRM System">
+		<upgrades type="upgrades" />
+	</createNodes>	
+  <apply i_name = "301" MaxRevOffset="336000" /> 	
+</oncreate>
+<oninstall>
+	<apply i_name="CRM System" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Phact" />
+	<apply i_name = "Store 1 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Phact" />
+	<apply i_name="Phact" type="App" proccap="4" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="3000" diskrequired="40" created_by_sip="301" />
+	<createNodes i_to="Phact">
+		<link to="Store 1 CRM System" type="Connection" name="Phact Store 1 CRM System Connection" />
+		<link to="Store 2 CRM System" type="Connection" name="Phact Store 2 CRM System Connection" />
+		<link to="Store 3 CRM System" type="Connection" name="Phact Store 3 CRM System Connection" />
+		<link to="Store 4 CRM System" type="Connection" name="Phact Store 4 CRM System Connection" />
+	</createNodes>
+	<createNodes i_to="CRM System">
+		<link to="Store 1 CRM System" type="Connection" contype="CRM System" name="BS Store 1 CRM System Connection" />
+		<link to="Store 2 CRM System" type="Connection" contype="CRM System" name="BS Store 2 CRM System Connection" />
+		<link to="Store 3 CRM System" type="Connection" contype="CRM System" name="BS Store 3 CRM System Connection" />
+		<link to="Store 4 CRM System" type="Connection" contype="CRM System" name="BS Store 4 CRM System Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="3500" instore_bonus="3500" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="3500" instore_bonus="3500" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="3500" instore_bonus="3500" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="3500" instore_bonus="3500" />
+	<apply i_name="Store 1 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 2 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 3 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 4 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added CRM System" sip="301" ref="CRM System" />
+		<node type="project" desc="CRM System" sip="301" regulation="false" />
+	</createNodes>
+  <apply i_name = "301" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+<product productid="3013" actual_cost="190000">
+<platform platformid="X" designdays="4" builddays="3" testdays="2" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="X" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="40" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="3000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" type="biz_service" slalimit="YYY" new="true" created_by_sip="301" has_impact="true" impactkmh="-1" biz_service_function="CRM System" gantt_order="5" />
+	</createNodes>
+	<createNodes i_to="CRM System">
+		<upgrades type="upgrades" />
+	</createNodes>	
+  <apply i_name = "301" MaxRevOffset="192000" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="CRM System" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Phact" />
+	<apply i_name = "Store 1 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Phact" />
+	<apply i_name="Phact" type="App" proccap="4" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="3000" diskrequired="40" created_by_sip="301" />
+	<createNodes i_to="Phact">
+		<link to="Store 1 CRM System" type="Connection" name="Phact Store 1 CRM System Connection" />
+		<link to="Store 2 CRM System" type="Connection" name="Phact Store 2 CRM System Connection" />
+		<link to="Store 3 CRM System" type="Connection" name="Phact Store 3 CRM System Connection" />
+		<link to="Store 4 CRM System" type="Connection" name="Phact Store 4 CRM System Connection" />
+	</createNodes>
+	<createNodes i_to="CRM System">
+		<link to="Store 1 CRM System" type="Connection" contype="CRM System" name="BS Store 1 CRM System Connection" />
+		<link to="Store 2 CRM System" type="Connection" contype="CRM System" name="BS Store 2 CRM System Connection" />
+		<link to="Store 3 CRM System" type="Connection" contype="CRM System" name="BS Store 3 CRM System Connection" />
+		<link to="Store 4 CRM System" type="Connection" contype="CRM System" name="BS Store 4 CRM System Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<apply i_name="Store 1 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 2 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 3 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 4 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added CRM System" sip="301" ref="CRM System" />
+		<node type="project" desc="CRM System" sip="301" regulation="false" />
+	</createNodes>
+  <apply i_name = "301" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Y" designdays="4" builddays="4" testdays="2" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Y" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="40" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="3000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" type="biz_service" slalimit="YYY" new="true" created_by_sip="301" has_impact="true" impactkmh="-1" biz_service_function="CRM System" gantt_order="5" />
+	</createNodes>
+	<createNodes i_to="CRM System">
+		<upgrades type="upgrades" />
+	</createNodes>	
+  <apply i_name = "301" MaxRevOffset="192000" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="CRM System" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Phact" />
+	<apply i_name = "Store 1 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Phact" />
+	<apply i_name="Phact" type="App" proccap="4" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="3000" diskrequired="40" created_by_sip="301" />
+	<createNodes i_to="Phact">
+		<link to="Store 1 CRM System" type="Connection" name="Phact Store 1 CRM System Connection" />
+		<link to="Store 2 CRM System" type="Connection" name="Phact Store 2 CRM System Connection" />
+		<link to="Store 3 CRM System" type="Connection" name="Phact Store 3 CRM System Connection" />
+		<link to="Store 4 CRM System" type="Connection" name="Phact Store 4 CRM System Connection" />
+	</createNodes>
+	<createNodes i_to="CRM System">
+		<link to="Store 1 CRM System" type="Connection" contype="CRM System" name="BS Store 1 CRM System Connection" />
+		<link to="Store 2 CRM System" type="Connection" contype="CRM System" name="BS Store 2 CRM System Connection" />
+		<link to="Store 3 CRM System" type="Connection" contype="CRM System" name="BS Store 3 CRM System Connection" />
+		<link to="Store 4 CRM System" type="Connection" contype="CRM System" name="BS Store 4 CRM System Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<apply i_name="Store 1 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 2 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 3 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 4 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added CRM System" sip="301" ref="CRM System" />
+		<node type="project" desc="CRM System" sip="301" regulation="false" />
+	</createNodes>
+  <apply i_name = "301" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+<platform platformid="Z" designdays="3" builddays="3" testdays="3" handovervalue="100">
+<InstallScript>
+<requirements>
+	<requireLocExists i_name="XXXX" i_failReason="Unknown Location (XXXX)" i_failShortReason="Unknown\r\nLocation" />
+	<requireLocNotUsed i_name="XXXX" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_name="XXXX" type="Slot" i_failReason="Location Used (XXXX)" i_failShortReason="Location\r\nUsed" />
+	<requireAttrs i_parentOf="XXXX" platform="Z" i_failReason="Platform Conflict (XXXX)" i_failShortReason="Platform\r\nConflict" />
+	<requireMin i_parentOf="XXXX" disk_left="40" i_failReason="No Storage (XXXX)" i_failShortReason="No\r\nStorage" />
+	<requireMin i_parentOf="XXXX" mem_left="3000" i_failReason="No Memory (XXXX)" i_failShortReason="No\r\nMemory" />
+</requirements>
+<i>
+<oncreate>
+	<createNodes i_to="Business Services Group">
+		<node version="1" name="CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" type="biz_service" slalimit="YYY" new="true" created_by_sip="301" has_impact="true" impactkmh="-1" biz_service_function="CRM System" gantt_order="5" />
+	</createNodes>
+	<createNodes i_to="CRM System">
+		<upgrades type="upgrades" />
+	</createNodes>	
+  <apply i_name = "301" MaxRevOffset="192000" /> 
+</oncreate>
+<oninstall>
+	<apply i_name="CRM System" slalimit="YYY"/>
+	<createNodes i_to="Store 1">
+		<biz_service_user type="biz_service_user" name="Store 1 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 2">
+		<biz_service_user type="biz_service_user" name="Store 2 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 3">
+		<biz_service_user type="biz_service_user" name="Store 3 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<createNodes i_to="Store 4">
+		<biz_service_user type="biz_service_user" name="Store 4 CRM System" desc="CRM System" shortdesc="CRM System" icon="Icon_crm" rebootingforsecs="0" canworkaround="false" upbymirror="false" downforsecs="0" up="true" slalimit="YYY" slaimpact="3" has_impact="false" impactkmh="-1" biz_service_function="CRM System" transaction_type="none"/>
+	</createNodes>
+	<apply i_parentOf="XXXX" rebootFor="105" reasondown="Installing Phact" />
+	<apply i_name = "Store 1 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 2 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 3 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name = "Store 4 CRM System" i_doAfterSecs="105" transaction_type="both"/>
+	<apply i_name="XXXX" name="Phact" />
+	<apply i_name="Phact" type="App" proccap="4" danger_level="20" usernode="false" propagate="true" extraspeed="0" version="1" canupgrade="true" userupgrade="false" canlink="false" xpos="1020" ypos="376" desc="" del="false" location="XXXX" new="true" memrequired="3000" diskrequired="40" created_by_sip="301" />
+	<createNodes i_to="Phact">
+		<link to="Store 1 CRM System" type="Connection" name="Phact Store 1 CRM System Connection" />
+		<link to="Store 2 CRM System" type="Connection" name="Phact Store 2 CRM System Connection" />
+		<link to="Store 3 CRM System" type="Connection" name="Phact Store 3 CRM System Connection" />
+		<link to="Store 4 CRM System" type="Connection" name="Phact Store 4 CRM System Connection" />
+	</createNodes>
+	<createNodes i_to="CRM System">
+		<link to="Store 1 CRM System" type="Connection" contype="CRM System" name="BS Store 1 CRM System Connection" />
+		<link to="Store 2 CRM System" type="Connection" contype="CRM System" name="BS Store 2 CRM System Connection" />
+		<link to="Store 3 CRM System" type="Connection" contype="CRM System" name="BS Store 3 CRM System Connection" />
+		<link to="Store 4 CRM System" type="Connection" contype="CRM System" name="BS Store 4 CRM System Connection" />
+	</createNodes>
+	<incrementAtt i_name="Store 1" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<incrementAtt i_name="Store 2" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<incrementAtt i_name="Store 3" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<incrementAtt i_name="Store 4" i_doAfterSecs="105" online_bonus="2000" instore_bonus="2000" />
+	<apply i_name="Store 1 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 2 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 3 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<apply i_name="Store 4 CRM System" i_doAfterSecs="105" has_impact="true" /> 
+	<createNodes i_to="CostedEvents">
+		<node type="Install" desc="Added CRM System" sip="301" ref="CRM System" />
+		<node type="project" desc="CRM System" sip="301" regulation="false" />
+	</createNodes>
+  <apply i_name = "301" MaxRevOffset="0" /> 
+</oninstall>
+</i>
+</InstallScript>
+</platform>
+</product>
+</project>

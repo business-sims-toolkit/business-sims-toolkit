@@ -1,0 +1,596 @@
+<incidents>
+
+// Incident elements have a series of local attributes hat start with i_
+// Any other attributes that do not start with i_ are applied to the target nodes.
+
+// The incident engine should clear all incidents at startup.
+// Any reboots should be finished and any nodes that are down should
+// be brought up.
+
+// Automatic Applied Incidents At Start (To Ensure Network Matches the Board in
+// case the players didn't get any installs in earlier rounds).
+
+// Incidents with an id of "AtStart" should be applied immediately at the start of
+// a round.
+
+	// Round four still applies upgrades that should have occured in earlier rounds to
+	// aid testing. Allows developers to go straight to round X and have the network
+	// set-up correctly.
+
+	//ensuring that the availability  is 100% at start
+	<i id="AtStart">
+		<apply i_name="Availability" availability="100.0"/>
+	</i>
+
+	//ensuring all stores start at the same point 
+	<i id="AtStart">
+	  <apply i_name="Store 1" last_transaction="0"/>
+	  <apply i_name="Store 2" last_transaction="0"/>
+	  <apply i_name="Store 3" last_transaction="0"/>
+	  <apply i_name="Store 4" last_transaction="0"/>
+	</i>			
+
+	//ensuring that the Revenue system is correct (Reset to 0 and refresh the Max Revenue figure)
+	<i id="AtStart">
+		<apply i_name="Revenue" max_revenue="0" revenue="0" revenue_lost="0" />
+		<apply i_name="Revenue" revenue_refresh="true" />
+	</i>
+	
+	//Reseting the Impact to 0
+	<i id="AtStart">
+		<apply i_name="Impact" impact = "0" />
+	</i>
+	
+	//Reseting the Transactions for the start of the round
+	<i id="AtStart">
+		<apply i_name="Transactions" count_good = "0" count_processed = "0" count_max = "96" />
+	</i>
+
+	<i id="AtStart">
+		//
+		// Setting the base Danger levels for the AWT
+		//
+		<apply i_name="Ceres" danger_level="20" />
+		<apply i_name="Rhea" danger_level="20" />
+		<apply i_name="Phobos" danger_level="20" />
+		<apply i_name="Demos" danger_level="20" />
+		<apply i_name="Titan" danger_level="20" />
+		<apply i_name="Callisto" danger_level="20" />
+		<apply i_name="Neptune" danger_level="20" />
+		<apply i_name="Ariel" danger_level="20" />
+		<apply i_name="Mars" danger_level="20" />
+		<apply i_name="Mimas" danger_level="20" />
+		<apply i_name="Cybele" danger_level="20" />
+		<apply i_name="Charon" danger_level="20" />
+		<apply i_name="Jupiter" danger_level="20" />
+		<apply i_name="Saturn" danger_level="20" />
+		<apply i_name="Europa" danger_level="20" />
+		<apply i_name="Venus" danger_level="20" />
+		<apply i_name="Mercury" danger_level="20" />
+		<apply i_name="Juno" danger_level="20" />
+		<apply i_name="Pallas" danger_level="20" />
+		<apply i_name="Pluto" danger_level="20" />
+		<apply i_name="Vesta" danger_level="20" />
+		<apply i_name="Camilla" danger_level="20" />
+		<apply i_name="Arcab" danger_level="20" />
+		<apply i_name="Phad" danger_level="20" />
+		<apply i_name="Zosma" danger_level="20" />
+		<apply i_name="Alrakis" danger_level="20" />
+		<apply i_name="Electra" danger_level="20" />
+		<apply i_name="Arcturus" danger_level="20" />
+		<apply i_name="Rastaban" danger_level="20" />
+		<apply i_name="Bellatrix" danger_level="20" />
+		<apply i_name="Nunki" danger_level="20" />
+		<apply i_name="Tarazed" danger_level="20" />
+		<apply i_name="Bunda" danger_level="20" />
+		<apply i_name="Izar" danger_level="20" />
+		<apply i_name="Chertan" danger_level="20" />
+		<apply i_name="Nash" danger_level="20" />
+		<apply i_name="Enif" danger_level="20" />
+		<apply i_name="Girtab" danger_level="20" />
+		<apply i_name="Megrez" danger_level="20" />
+		<apply i_name="Hadar" danger_level="20" />
+		<apply i_name="Haldus" danger_level="20" />
+		<apply i_name="Kastra" danger_level="20" />
+		<apply i_name="Alshat" danger_level="20" />
+		<apply i_name="Bellatrix" danger_level="20" />
+		<apply i_name="Castor" danger_level="20" />
+		<apply i_name="Sham" danger_level="20" />
+		<apply i_name="Tarazed" procdown="false" />
+		<apply i_name="Megrez" procdown="false" />
+		<apply i_name="Sham" procdown="false" />
+		<apply i_name="Electra" procdown="false" />
+		<apply i_name="Rastaban" procdown="false" />
+		<apply i_name="Bellatrix" procdown="false" />
+		<apply i_name="Nunki" procdown="false" />
+		<apply i_name="Izar" procdown="false" />
+		<apply i_name="Nash" procdown="false" />
+		<apply i_name="Bellatrix" procdown="false" />
+		<apply i_name="Polaris" danger_level="20" />
+		<apply i_name="Vega" danger_level="20" />	
+	</i>
+
+	<i id="AtStart">
+		//
+		<if i_name="Pluto(M)">
+			<then>
+				<apply i_name="Pluto(M)" danger_level="20" />	
+			</then>
+		</if>
+		<if i_name="Saturn(M)">
+			<then>
+				<apply i_name="Saturn(M)" danger_level="20" />	
+			</then>
+		</if>
+	</i>
+
+	// At Time Start covering the intial set of transactions 
+	<i id="AtStart">
+		<createNodes i_to="Transactions" i_doAfterSecs="1">
+		<transaction round="4" name="trans01" displayname="CW001" revenuelevel = "5" event_type="online" sequence = "1" status = "Queued" time = "60" store = "Store 1"/>
+		<transaction round="4" name="trans02" displayname="GT001" revenuelevel = "5" event_type="online" sequence = "2" status = "Queued" time = "60" store = "Store 2"/>
+		<transaction round="4" name="trans03" displayname="SB001" revenuelevel = "3" event_type="online" sequence = "3" status = "Queued" time = "60" store = "Store 3"/>
+		<transaction round="4" name="trans04" displayname="SV001" revenuelevel = "2" event_type="online" sequence = "4" status = "Queued" time = "60" store = "Store 4"/>
+		
+		<transaction round="4" name="trans05" displayname="CW002" revenuelevel = "5" event_type="instore" sequence = "5" status = "Queued" time = "120" store = "Store 1"/>
+		<transaction round="4" name="trans06" displayname="GT002" revenuelevel = "5" event_type="instore" sequence = "6" status = "Queued" time = "120" store = "Store 2"/>
+		<transaction round="4" name="trans07" displayname="SB002" revenuelevel = "2" event_type="instore" sequence = "7" status = "Queued" time = "120" store = "Store 3"/>
+		<transaction round="4" name="trans08" displayname="SV002" revenuelevel = "2" event_type="instore" sequence = "8" status = "Queued" time = "120" store = "Store 4"/>
+		
+		<transaction round="4" name="trans09" displayname="CW003" revenuelevel = "5" event_type="online" sequence = "9" status = "Queued" time = "180" store = "Store 1"/>
+		<transaction round="4" name="trans10" displayname="GT003" revenuelevel = "5" event_type="online" sequence = "10" status = "Queued" time = "180" store = "Store 2"/>
+		<transaction round="4" name="trans11" displayname="SB003" revenuelevel = "3" event_type="online" sequence = "11" status = "Queued" time = "180" store = "Store 3"/>
+		<transaction round="4" name="trans12" displayname="SV003" revenuelevel = "2" event_type="online" sequence = "12" status = "Queued" time = "180" store = "Store 4"/>
+		
+		<transaction round="4" name="trans13" displayname="CW004" revenuelevel = "5" event_type="instore" sequence = "13" status = "Queued" time = "240" store = "Store 1"/>
+		<transaction round="4" name="trans14" displayname="GT004" revenuelevel = "5" event_type="instore" sequence = "14" status = "Queued" time = "240" store = "Store 2"/>
+		<transaction round="4" name="trans15" displayname="SB004" revenuelevel = "2" event_type="instore" sequence = "15" status = "Queued" time = "240" store = "Store 3"/>
+		<transaction round="4" name="trans16" displayname="SV004" revenuelevel = "2" event_type="instore" sequence = "16" status = "Queued" time = "240" store = "Store 4"/>
+		</createNodes>
+	</i>
+
+
+	// At Time 5:00
+	<i id="AtStart">
+		<createNodes i_to="Transactions" i_doAfterSecs="90">
+			<transaction round="4" name="trans17" displayname="CW005" revenuelevel = "5" event_type="online" sequence = "17" status = "Queued" time = "300" store = "Store 1"/>
+			<transaction round="4" name="trans18" displayname="GT005" revenuelevel = "5" event_type="online" sequence = "18" status = "Queued" time = "300" store = "Store 2"/>
+			<transaction round="4" name="trans19" displayname="SB005" revenuelevel = "3" event_type="online" sequence = "19" status = "Queued" time = "300" store = "Store 3"/>
+			<transaction round="4" name="trans20" displayname="SV005" revenuelevel = "2" event_type="online" sequence = "20" status = "Queued" time = "300" store = "Store 4"/>
+		</createNodes>
+	</i>
+
+	// At Time 6:00
+	<i id="AtStart">
+		<createNodes i_to="Transactions" i_doAfterSecs="150">
+			<transaction round="4" name="trans21" displayname="CW006" revenuelevel = "5" event_type="instore" sequence = "21" status = "Queued" time = "360" store = "Store 1"/>
+			<transaction round="4" name="trans22" displayname="GT006" revenuelevel = "5" event_type="instore" sequence = "22" status = "Queued" time = "360" store = "Store 2"/>
+			<transaction round="4" name="trans23" displayname="SB006" revenuelevel = "2" event_type="instore" sequence = "23" status = "Queued" time = "360" store = "Store 3"/>
+			<transaction round="4" name="trans24" displayname="SV006" revenuelevel = "2" event_type="instore" sequence = "24" status = "Queued" time = "360" store = "Store 4"/>
+		</createNodes>
+	</i>
+
+	// At Time 7:00
+	<i id="AtStart">
+		<createNodes i_to="Transactions" i_doAfterSecs="210">
+			<transaction round="4" name="trans25" displayname="CW007" revenuelevel = "3" event_type="online" sequence = "25" status = "Queued" time = "420" store = "Store 1"/>
+			<transaction round="4" name="trans26" displayname="GT007" revenuelevel = "3" event_type="online" sequence = "26" status = "Queued" time = "420" store = "Store 2"/>
+			<transaction round="4" name="trans27" displayname="SB007" revenuelevel = "1" event_type="online" sequence = "27" status = "Queued" time = "420" store = "Store 3"/>
+			<transaction round="4" name="trans28" displayname="SV007" revenuelevel = "1" event_type="online" sequence = "28" status = "Queued" time = "420" store = "Store 4"/>
+		</createNodes>
+	</i>
+
+	// At Time 7:30
+	<i id="AtStart">
+		<createNodes i_to="Transactions" i_doAfterSecs="240">
+			<transaction round="4" name="trans29" displayname="CW008" revenuelevel = "2" event_type="instore" sequence = "29" status = "Queued" time = "450" store = "Store 1"/>
+			<transaction round="4" name="trans30" displayname="GT008" revenuelevel = "2" event_type="instore" sequence = "30" status = "Queued" time = "450" store = "Store 2"/>
+			<transaction round="4" name="trans31" displayname="SB008" revenuelevel = "1" event_type="instore" sequence = "31" status = "Queued" time = "450" store = "Store 3"/>
+			<transaction round="4" name="trans32" displayname="SV008" revenuelevel = "1" event_type="instore" sequence = "32" status = "Queued" time = "450" store = "Store 4"/>
+		</createNodes>
+	</i>
+
+	// At Time 9:30
+	<i id="AtStart">
+		<createNodes i_to="Transactions" i_doAfterSecs="330">
+			<transaction round="4" name="trans33" displayname="CW009" revenuelevel = "3" event_type="online" sequence = "33" status = "Queued" time = "570" store = "Store 1"/>
+			<transaction round="4" name="trans34" displayname="GT009" revenuelevel = "3" event_type="online" sequence = "34" status = "Queued" time = "570" store = "Store 2"/>
+			<transaction round="4" name="trans35" displayname="SB009" revenuelevel = "1" event_type="online" sequence = "35" status = "Queued" time = "570" store = "Store 3"/>
+			<transaction round="4" name="trans36" displayname="SV009" revenuelevel = "1" event_type="online" sequence = "36" status = "Queued" time = "570" store = "Store 4"/>
+		</createNodes>
+	</i>
+
+	// At Time 10:00
+	<i id="AtStart">
+		<createNodes i_to="Transactions" i_doAfterSecs="390">
+			<transaction round="4" name="trans37" displayname="CW010" revenuelevel = "2" event_type="instore" sequence = "37" status = "Queued" time = "600" store = "Store 1"/>
+			<transaction round="4" name="trans38" displayname="GT010" revenuelevel = "2" event_type="instore" sequence = "38" status = "Queued" time = "600" store = "Store 2"/>
+			<transaction round="4" name="trans39" displayname="SB010" revenuelevel = "2" event_type="instore" sequence = "39" status = "Queued" time = "600" store = "Store 3"/>
+			<transaction round="4" name="trans40" displayname="SV010" revenuelevel = "1" event_type="instore" sequence = "40" status = "Queued" time = "600" store = "Store 4"/>
+		</createNodes>
+	</i>
+
+	// At Time 11:00
+	<i id="AtStart">
+		<createNodes i_to="Transactions" i_doAfterSecs="450">
+			<transaction round="4" name="trans41" displayname="CW011" revenuelevel = "6" event_type="online" sequence = "41" status = "Queued" time = "660" store = "Store 1"/>
+			<transaction round="4" name="trans42" displayname="GT011" revenuelevel = "6" event_type="online" sequence = "42" status = "Queued" time = "660" store = "Store 2"/>
+			<transaction round="4" name="trans43" displayname="SB011" revenuelevel = "4" event_type="online" sequence = "43" status = "Queued" time = "660" store = "Store 3"/>
+			<transaction round="4" name="trans44" displayname="SV011" revenuelevel = "4" event_type="online" sequence = "44" status = "Queued" time = "660" store = "Store 4"/>
+		</createNodes>
+	</i>
+
+	// At Time 12:00
+	<i id="AtStart">
+		<createNodes i_to="Transactions" i_doAfterSecs="480">
+			<transaction round="4" name="trans45" displayname="CW012" revenuelevel = "6" event_type="instore" sequence = "45" status = "Queued" time = "720" store = "Store 1"/>
+			<transaction round="4" name="trans46" displayname="GT012" revenuelevel = "6" event_type="instore" sequence = "46" status = "Queued" time = "720" store = "Store 2"/>
+			<transaction round="4" name="trans47" displayname="SB012" revenuelevel = "4" event_type="instore" sequence = "47" status = "Queued" time = "720" store = "Store 3"/>
+			<transaction round="4" name="trans48" displayname="SV012" revenuelevel = "4" event_type="instore" sequence = "48" status = "Queued" time = "720" store = "Store 4"/>
+		</createNodes>
+	</i>
+
+	// At Time 13:00
+	<i id="AtStart">
+		<createNodes i_to="Transactions" i_doAfterSecs="570">
+			<transaction round="4" name="trans49" displayname="CW013" revenuelevel = "6" event_type="online" sequence = "49" status = "Queued" time = "780" store = "Store 1"/>
+			<transaction round="4" name="trans50" displayname="GT013" revenuelevel = "6" event_type="online" sequence = "50" status = "Queued" time = "780" store = "Store 2"/>
+			<transaction round="4" name="trans51" displayname="SB013" revenuelevel = "4" event_type="online" sequence = "51" status = "Queued" time = "780" store = "Store 3"/>
+			<transaction round="4" name="trans52" displayname="SV013" revenuelevel = "4" event_type="online" sequence = "52" status = "Queued" time = "780" store = "Store 4"/>
+		</createNodes>
+	</i>
+
+	// At Time 14:00
+	<i id="AtStart">
+		<createNodes i_to="Transactions" i_doAfterSecs="630">
+			<transaction round="4" name="trans53" displayname="CW014" revenuelevel = "6" event_type="instore" sequence = "53" status = "Queued" time = "840" store = "Store 1"/>
+			<transaction round="4" name="trans54" displayname="GT014" revenuelevel = "6" event_type="instore" sequence = "54" status = "Queued" time = "840" store = "Store 2"/>
+			<transaction round="4" name="trans55" displayname="SB014" revenuelevel = "4" event_type="instore" sequence = "55" status = "Queued" time = "840" store = "Store 3"/>
+			<transaction round="4" name="trans56" displayname="SV014" revenuelevel = "4" event_type="instore" sequence = "56" status = "Queued" time = "840" store = "Store 4"/>
+		</createNodes>
+	</i>
+
+	// At Time 15:00
+	<i id="AtStart">
+		<createNodes i_to="Transactions" i_doAfterSecs="690">
+			<transaction round="4" name="trans57" displayname="CW015" revenuelevel = "6" event_type="online" sequence = "57" status = "Queued" time = "900" store = "Store 1"/>
+			<transaction round="4" name="trans58" displayname="GT015" revenuelevel = "6" event_type="online" sequence = "58" status = "Queued" time = "900" store = "Store 2"/>
+			<transaction round="4" name="trans59" displayname="SB015" revenuelevel = "4" event_type="online" sequence = "59" status = "Queued" time = "900" store = "Store 3"/>
+			<transaction round="4" name="trans60" displayname="SV015" revenuelevel = "4" event_type="online" sequence = "60" status = "Queued" time = "900" store = "Store 4"/>
+		</createNodes>
+	</i>
+
+	// At Time 16:00
+	<i id="AtStart">
+		<createNodes i_to="Transactions" i_doAfterSecs="750">
+			<transaction round="4" name="trans61" displayname="CW016" revenuelevel = "6" event_type="instore" sequence = "61" status = "Queued" time = "960" store = "Store 1"/>
+    	<transaction round="4" name="trans62" displayname="GT016" revenuelevel = "6" event_type="instore" sequence = "62" status = "Queued" time = "960" store = "Store 2"/>
+			<transaction round="4" name="trans63" displayname="SB016" revenuelevel = "4" event_type="instore" sequence = "63" status = "Queued" time = "960" store = "Store 3"/>
+			<transaction round="4" name="trans64" displayname="SV016" revenuelevel = "4" event_type="instore" sequence = "64" status = "Queued" time = "960" store = "Store 4"/>
+		</createNodes>
+	</i>
+
+	// At Time 17:00
+	<i id="AtStart">
+		<createNodes i_to="Transactions" i_doAfterSecs="810">
+			<transaction round="4" name="trans65" displayname="CW017" revenuelevel = "3" event_type="online" sequence = "65" status = "Queued" time = "1020" store = "Store 1"/>
+			<transaction round="4" name="trans66" displayname="GT017" revenuelevel = "3" event_type="online" sequence = "66" status = "Queued" time = "1020" store = "Store 2"/>
+			<transaction round="4" name="trans67" displayname="SB017" revenuelevel = "2" event_type="online" sequence = "67" status = "Queued" time = "1020" store = "Store 3"/>
+			<transaction round="4" name="trans68" displayname="SV017" revenuelevel = "1" event_type="online" sequence = "68" status = "Queued" time = "1020" store = "Store 4"/>
+		</createNodes>
+	</i>
+
+	// At Time 17:30
+	<i id="AtStart">
+		<createNodes i_to="Transactions" i_doAfterSecs="840">
+			<transaction round="4" name="trans69" displayname="CW018" revenuelevel = "2" event_type="instore" sequence = "69" status = "Queued" time = "1050" store = "Store 1"/>
+			<transaction round="4" name="trans70" displayname="GT018" revenuelevel = "2" event_type="instore" sequence = "70" status = "Queued" time = "1050" store = "Store 2"/>
+			<transaction round="4" name="trans71" displayname="SB018" revenuelevel = "2" event_type="instore" sequence = "71" status = "Queued" time = "1050" store = "Store 3"/>
+			<transaction round="4" name="trans72" displayname="SV018" revenuelevel = "1" event_type="instore" sequence = "72" status = "Queued" time = "1050" store = "Store 4"/>
+		</createNodes>
+	</i>
+
+	// At Time 19:30
+	<i id="AtStart">
+		<createNodes i_to="Transactions" i_doAfterSecs="930">
+			<transaction round="4" name="trans73" displayname="CW019" revenuelevel = "3" event_type="online" sequence = "73" status = "Queued" time = "1170" store = "Store 1"/>
+			<transaction round="4" name="trans74" displayname="GT019" revenuelevel = "3" event_type="online" sequence = "74" status = "Queued" time = "1170" store = "Store 2"/>
+			<transaction round="4" name="trans75" displayname="SB019" revenuelevel = "2" event_type="online" sequence = "75" status = "Queued" time = "1170" store = "Store 3"/>
+			<transaction round="4" name="trans76" displayname="SV019" revenuelevel = "1" event_type="online" sequence = "76" status = "Queued" time = "1170" store = "Store 4"/>
+		</createNodes>
+	</i>
+
+	// At Time 20:00
+	<i id="AtStart">
+		<createNodes i_to="Transactions" i_doAfterSecs="990">
+			<transaction round="4" name="trans77" displayname="CW020" revenuelevel = "2" event_type="instore" sequence = "77" status = "Queued" time = "1200" store = "Store 1"/>
+			<transaction round="4" name="trans78" displayname="GT020" revenuelevel = "2" event_type="instore" sequence = "78" status = "Queued" time = "1200" store = "Store 2"/>
+			<transaction round="4" name="trans79" displayname="SB020" revenuelevel = "2" event_type="instore" sequence = "79" status = "Queued" time = "1200" store = "Store 3"/>
+			<transaction round="4" name="trans80" displayname="SV020" revenuelevel = "1" event_type="instore" sequence = "80" status = "Queued" time = "1200" store = "Store 4"/>
+		</createNodes>
+	</i>
+
+	// At Time 21:00
+	<i id="AtStart">
+		<createNodes i_to="Transactions" i_doAfterSecs="1050">
+			<transaction round="4" name="trans81" displayname="CW021" revenuelevel = "3" event_type="online" sequence = "81" status = "Queued" time = "1260" store = "Store 1"/>
+			<transaction round="4" name="trans82" displayname="GT021" revenuelevel = "3" event_type="online" sequence = "82" status = "Queued" time = "1260" store = "Store 2"/>
+			<transaction round="4" name="trans83" displayname="SB021" revenuelevel = "2" event_type="online" sequence = "83" status = "Queued" time = "1260" store = "Store 3"/>
+			<transaction round="4" name="trans84" displayname="SV021" revenuelevel = "1" event_type="online" sequence = "84" status = "Queued" time = "1260" store = "Store 4"/>
+		</createNodes>
+	</i>
+
+	// At Time 22:00
+	<i id="AtStart">
+		<createNodes i_to="Transactions" i_doAfterSecs="1080">
+			<transaction round="4" name="trans85" displayname="CW022" revenuelevel = "2" event_type="instore" sequence = "85" status = "Queued" time = "1320" store = "Store 1"/>
+			<transaction round="4" name="trans86" displayname="GT022" revenuelevel = "2" event_type="instore" sequence = "86" status = "Queued" time = "1320" store = "Store 2"/>
+			<transaction round="4" name="trans87" displayname="SB022" revenuelevel = "2" event_type="instore" sequence = "87" status = "Queued" time = "1320" store = "Store 3"/>
+			<transaction round="4" name="trans88" displayname="SV022" revenuelevel = "1" event_type="instore" sequence = "88" status = "Queued" time = "1320" store = "Store 4"/>
+		</createNodes>
+	</i>
+
+	// At Time 23:00
+	<i id="AtStart">
+		<createNodes i_to="Transactions" i_doAfterSecs="1110">
+			<transaction round="4" name="trans89" displayname="CW023" revenuelevel = "6" event_type="online" sequence = "89" status = "Queued" time = "1380" store = "Store 1"/>
+			<transaction round="4" name="trans90" displayname="GT023" revenuelevel = "6" event_type="online" sequence = "90" status = "Queued" time = "1380" store = "Store 2"/>
+			<transaction round="4" name="trans91" displayname="SB023" revenuelevel = "4" event_type="online" sequence = "91" status = "Queued" time = "1380" store = "Store 3"/>
+			<transaction round="4" name="trans92" displayname="SV023" revenuelevel = "4" event_type="online" sequence = "92" status = "Queued" time = "1380" store = "Store 4"/>
+		</createNodes>
+	</i>
+
+	// At Time 24:00
+	<i id="AtStart">
+		<createNodes i_to="Transactions" i_doAfterSecs="1200">
+			<transaction round="4" name="trans93" displayname="CW024" revenuelevel = "6" event_type="instore" sequence = "93" status = "Queued" time = "1440" store = "Store 1"/>
+			<transaction round="4" name="trans94" displayname="GT024" revenuelevel = "6" event_type="instore" sequence = "94" status = "Queued" time = "1440" store = "Store 2"/>
+			<transaction round="4" name="trans95" displayname="SB024" revenuelevel = "4" event_type="instore" sequence = "95" status = "Queued" time = "1440" store = "Store 3"/>
+			<transaction round="4" name="trans96" displayname="SV024" revenuelevel = "4" event_type="instore" sequence = "96" status = "Queued" time = "1440" store = "Store 4"/>
+		</createNodes>
+	</i>
+
+
+	//
+	// AWT Indicators for scripted incidents (usually 15 secs before scripted incidents)
+	// Do not apply if danger level already in failure
+	//
+	<i id="AtStart"> 
+		<if_not i_name="Jupiter" i_doAfterSecs="30" danger_level="44">
+			<then>
+				<apply i_name="Jupiter"  danger_level="33"/>
+			</then>
+		</if_not>
+	</i>	
+	<i id="AtStart"> 
+		<if_not i_name="Castor" i_doAfterSecs="90" danger_level="44">
+			<then>
+				<if i_name="Castor" canupgrade="true">
+					<then>
+						<apply i_name="Castor"  danger_level="33"/>
+					</then>
+				</if>
+			</then>
+		</if_not>
+	</i>	
+	<i id="AtStart"> 
+		<if_not i_name="Mars" i_doAfterSecs="210" danger_level="44">
+			<then>
+				<apply i_name="Mars"  danger_level="33"/>
+			</then>
+		</if_not>
+	</i>	
+	<i id="AtStart"> 
+		<if_not i_name="Jupiter" i_doAfterSecs="630" danger_level="44">
+			<then>
+				<apply i_name="Jupiter"  danger_level="33"/>
+			</then>
+		</if_not>
+	</i>
+	<i id="AtStart"> 
+		<if_not i_name="Electra" i_doAfterSecs="870" danger_level="44">
+			<then>
+				<apply i_name="Electra"  danger_level="33"/>
+			</then>
+		</if_not>
+	</i>	
+	<i id="AtStart"> 
+		<if_not i_name="Polaris" i_doAfterSecs="990" danger_level="44">
+			<then>
+				<apply i_name="Polaris"  danger_level="33"/>
+			</then>
+		</if_not>
+	</i>	
+	
+	<i id="AtStart"> 
+		<if_not i_name="Pluto" i_doAfterSecs="1170" danger_level="44">
+			<then>
+				<if i_name="Pluto" can_upgrade_hardware="true">
+					<then>
+						<apply i_name="Pluto"  danger_level="33"/>
+					</then>
+				</if>
+			</then>
+		</if_not>
+	</i>	
+	
+	<i id="AtStart"> // Reset the Breach Count and Work Arounds
+		<apply i_name="sla_breach" biz_serv_count="0" biz_serv_user_count="0" impact_count="0"/>
+		<apply i_name="AppliedWorkArounds" num="0" />
+	</i>
+
+	//
+	// Include the SIP 101 Upgrade.
+	//
+	<include>data/upgrade_101.xml</include>
+
+	//
+	// Problem Incidents
+	//
+
+	<i id="1">
+		<if i_name="Phad" canupgrade="true">
+			<then>
+				<apply i_name="Phad" up="false" up_instore="false" up_online="false" incident_id="1"/>
+				<createNodes i_to="CostedEvents">
+					<CostedEvent type="incident" incident_id="1" desc="Phad Down."/>
+				</createNodes>
+			</then>
+			<else>
+				<apply i_name="Phad" danger_level="20" />			
+				<createNodes i_to="FacilitatorNotifiedErrors">
+					<Error type="error" sound="ding.wav" title="Incident Prevented" flash="true" text="Congratulations, an incident has been prevented as a result of effective Problem Management." />
+				</createNodes>
+				<createNodes i_to="CostedEvents">
+					<CostedEvent type="prevented_incident" desc="Cannot Apply Incident 1 to Phad Because It Has Been Upgraded to Version 2."/>
+				</createNodes>
+			</else>
+		</if>
+	</i>
+
+	<i id="2">
+		<apply i_name="Jupiter" up="false" up_instore="false" up_online="false" incident_id="2"/>
+		<createNodes i_to="CostedEvents">
+			<CostedEvent type="incident" incident_id="2" desc="Jupiter Down."/>
+		</createNodes>
+	</i>
+	
+	<i id="3">
+		<if i_name="Castor" canupgrade="true">
+			<then>
+				<apply i_name="Castor" up="false" up_instore="false" up_online="false" incident_id="3"/>
+				<createNodes i_to="CostedEvents">
+					<CostedEvent type="incident" incident_id="3" desc="Castor Down."/>
+				</createNodes>
+			</then>
+			<else>
+				<apply i_name="Castor" danger_level="20" />
+				<createNodes i_to="FacilitatorNotifiedErrors">
+					<Error type="error" sound="ding.wav" title="Incident Prevented" flash="true" text="Congratulations, an incident has been prevented as a result of effective Problem Management." />
+				</createNodes>
+				<createNodes i_to="CostedEvents">
+					<CostedEvent type="prevented_incident" desc="Cannot Apply Incident 3 to Castor Because It Has Been Upgraded to Version 2."/>
+				</createNodes>
+			</else>
+		</if>
+	</i>
+	
+	<i id="4">
+		<apply i_name="Mars" up="false" up_instore="false" up_online="false" incident_id="4"/>
+		<createNodes i_to="CostedEvents">
+			<CostedEvent type="incident" incident_id="4" desc="Mars Down."/>
+		</createNodes>
+	</i>
+
+	<i id="5">
+		<apply i_name="Electra Stores 3 and 4 Retail Management System Connection Support Technology" up="false" up_instore="false" up_online="false" incident_id="5"/>
+		<apply i_name="Electra" danger_level="44" procdown="true"/>
+		<createNodes i_to="CostedEvents">
+			<CostedEvent type="incident" incident_id="5" desc="Electra Store 3 and 4 Connection Down."/>
+		</createNodes>
+	</i>
+
+	<i id="6">
+		<apply i_name="Izar Store 4 EPOS Connection" up="false" up_instore="false" up_online="false" incident_id="6"/>
+		<apply i_name="Izar" danger_level="44" procdown="true"/>
+		<createNodes i_to="CostedEvents">
+			<CostedEvent type="incident" incident_id="6" desc="Izar Store 4 EPOS Connection Down."/>
+		</createNodes>
+	</i>
+	
+	<i id="7">
+		<apply i_name="Jupiter" up="false" up_instore="false" up_online="false" incident_id="7"/>
+		<createNodes i_to="CostedEvents">
+			<CostedEvent type="incident" incident_id="7" desc="Jupiter Down."/>
+		</createNodes>
+	</i>	
+	
+	<i id="8">
+		<apply i_name="Izar Stores 3 and 4 EPOS Connection Support Technology" up="false" up_instore="false" up_online="false" incident_id="8"/>
+		<apply i_name="Izar" danger_level="44" procdown="true"/>
+		<createNodes i_to="CostedEvents">
+			<CostedEvent type="incident" incident_id="8" desc="Izar Store 3 and 4 EPOS Connection Down."/>
+		</createNodes>
+	</i>	
+
+	<i id="9">
+		<apply i_name="Electra" up="false" up_instore="false" up_online="false" incident_id="9"/>
+		<apply i_name="Electra" danger_level="44" procdown="true"/>
+		<createNodes i_to="CostedEvents">
+			<CostedEvent type="incident" incident_id="9" desc="Electra Store 3 and 4 Connection Down."/>
+		</createNodes>
+	</i>
+
+	<i id="10">
+		<apply i_name="Polaris" up="false" up_instore="false" up_online="false" incident_id="10"/>
+		<createNodes i_to="CostedEvents">
+			<CostedEvent type="incident" incident_id="10" desc="Polaris Down."/>
+		</createNodes>
+	</i>
+	
+	<i id="11">
+		<if i_name="Tarazed" canupgrade="true">
+			<then>
+				<apply i_name="Tarazed Stores 1 and 2 Warehouse Management Connection Support Technology" up="false" up_instore="false" up_online="false" incident_id="11"/>
+				<apply i_name="Tarazed" danger_level="44" procdown="true"/>
+				<createNodes i_to="CostedEvents">
+					<CostedEvent type="incident" incident_id="11" desc="Tarazed Store 1 and 2 Warehouse Management Down."/>
+				</createNodes>
+			</then>
+			<else>
+				<apply i_name="Tarazed" danger_level="20" />
+				<createNodes i_to="FacilitatorNotifiedErrors">
+					<Error type="error" sound="ding.wav" title="Incident Prevented" flash="true" text="Congratulations, an incident has been prevented as a result of effective Problem Management." />
+				</createNodes>
+				<createNodes i_to="CostedEvents">
+					<CostedEvent type="prevented_incident" desc="Cannot Apply Incident 11 to Tarazed Because It Has Been Upgraded to Version 2."/>
+				</createNodes>
+			</else>
+		</if>
+	</i>
+	
+	<i id="12">
+		<if i_name="Pluto" can_upgrade_hardware="true">
+			<then>
+				<apply i_name="Pluto" up="false" up_instore="false" up_online="false" incident_id="12"/>
+				<createNodes i_to="CostedEvents">
+					<CostedEvent type="incident" incident_id="12" desc="Pluto Down."/>
+				</createNodes>
+			</then>
+			<else>
+				<apply i_name="Pluto" danger_level="20" />
+				<createNodes i_to="FacilitatorNotifiedErrors">
+					<Error type="error" sound="ding.wav" title="Incident Prevented" flash="true" text="Congratulations, an incident has been prevented as a result of effective Problem Management." />
+				</createNodes>
+				<createNodes i_to="CostedEvents">
+					<CostedEvent type="prevented_incident" desc="Cannot Apply Incident 12 to Pluto Because It Has Been Upgraded to Version 2."/>
+				</createNodes>
+			</else>
+		</if>
+	</i>
+	<i id="13">
+		<if i_name="Sham" canupgrade="true">
+			<then>
+				<apply i_name="Sham Store 2 Catalog Management Connection" up="false" up_instore="false" up_online="false" incident_id="13"/>
+				<apply i_name="Sham" danger_level="44" procdown="true"/>
+				<createNodes i_to="CostedEvents">
+					<CostedEvent type="incident" incident_id="13" desc="Sham Store 2 Catalog Management Down."/>
+				</createNodes>
+			</then>
+			<else>
+				<apply i_name="Sham" danger_level="20" />
+				<createNodes i_to="FacilitatorNotifiedErrors">
+					<Error type="error" sound="ding.wav" title="Incident Prevented" flash="true" text="Congratulations, an incident has been prevented as a result of effective Problem Management." />
+				</createNodes>
+				<createNodes i_to="CostedEvents">
+					<CostedEvent type="prevented_incident" desc="Cannot Apply Incident 13 to Sham Because It Has Been Upgraded to Version 2."/>
+				</createNodes>
+			</else>
+		</if>
+	</i>
+	//
+	// Include the FreeStyle Incidents incidents.
+	//
+	<include>data/FreeStyleIncidents.xml</include>
+	//
+</incidents>

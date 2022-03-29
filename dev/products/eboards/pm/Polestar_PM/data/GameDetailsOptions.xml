@@ -1,0 +1,35 @@
+<details>
+	<table cols="2">
+	<col>
+	<entry>
+		<name>Title</name>
+		<default></default>
+	</entry>
+	<entry>
+		<name>Town / City</name>
+		<default></default>
+	</entry>
+	<combo>
+		<name>Country</name>
+		<options>data/countries.txt</options>
+	</combo>
+	</col>
+	<col>
+	<entry>
+		<name>Driver Name</name>
+		<default>Driver</default>
+	</entry>
+	<entry><name>Venue</name></entry>
+	<entry><name>Client</name></entry>
+	<entry><name>Players</name></entry>
+	<combo>
+		<name>Purpose</name>
+		<options>data/purposes.txt</options>
+	</combo>
+	</col>
+	</table>
+	<text>
+		<name>Notes</name>
+		<default>PM Game.</default>
+	</text>
+</details>
